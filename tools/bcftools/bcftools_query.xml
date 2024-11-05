@@ -121,7 +121,7 @@ Extracts fields from VCF/BCF file and prints them in user-defined format
     ``%SAMPLE``         Sample name
     ``%POS0``           POS in 0-based coordinates
     ``%END``            End position of the REF allele
-    ``%END0``           End position of the REF allele in 0-based cordinates
+    ``%END0``           End position of the REF allele in 0-based coordinates
     ``\n``              new line
     ``\t``              tab character
 

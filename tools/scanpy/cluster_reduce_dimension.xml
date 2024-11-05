@@ -293,7 +293,7 @@ sc.tl.embedding_density(
                 </param>
                 <param argument="early_exaggeration" type="float" value="12.0" label="Early exaggeration" help="Controls how tight natural clusters in the original space are in the embedded space and how much space will be between them. For larger values, the space between natural clusters will be larger in the embedded space. Again, the choice of this parameter is not very critical. If the cost function increases during initial optimization, the early exaggeration factor or the learning rate might be too high."/>
                 <param argument="learning_rate" type="float" value="1000" label="Learning rate" help="The learning rate can be a critical parameter. It should be between 100 and 1000. If the cost function increases during initial optimization, the early exaggeration factor or the learning rate might be too high. If the cost function gets stuck in a bad local minimum increasing the learning rate helps sometimes."/>
-                <param argument="random_state" type="integer" value="0" label="Random state" help="Change this to use different intial states for the optimization"/>
+                <param argument="random_state" type="integer" value="0" label="Random state" help="Change this to use different initial states for the optimization"/>
             </when>
             <when value="tl.umap">
                 <param argument="min_dist" type="float" value="0.5" label="Effective minimum distance between embedded points" help="Smaller values will result in a more clustered/clumped embedding where nearby points on the manifold are drawn closer together, while larger values will result on a more even dispersal of points. The value should be set relative to the 'spread' value, which determines the scale at which embedded points will be spread out. The default of in the 'umap-learn' package is 0.1."/>
@@ -314,7 +314,7 @@ sc.tl.embedding_density(
             <when value="tl.draw_graph">
                 <expand macro="param_layout"/>
                 <param argument="root" type="integer" value="" optional="true" label="Root for tree layouts"/>
-                <param argument="random_state" type="integer" value="0" optional="true" label="Random state" help="For layouts with random initialization like 'fr', change this to use different intial states for the optimization."/>
+                <param argument="random_state" type="integer" value="0" optional="true" label="Random state" help="For layouts with random initialization like 'fr', change this to use different initial states for the optimization."/>
                 <param argument="adjacency" type="data" format="mtx" optional="true" label="Sparse adjacency matrix of the graph" help="If not set, it uses the unstructured annotation (uns) / neighbors / connectivities"/>
                 <param argument="key_added_ext" type="text" optional="true" value="" label="External key" help="If not set, it appends 'layout'">
                     <expand macro="sanitize_query"/>
@@ -714,7 +714,7 @@ dramatic.
 
 The diffusion map representation of data are added to the return AnnData in the multi-dimensional
 observations annotation (obsm). It is the right eigen basis of the transition matrix with eigenvectors
-as colum. It can be accessed using the inspect tool for AnnData
+as column. It can be accessed using the inspect tool for AnnData
 
 More details on the `tl.diffmap scanpy documentation
 <https://scanpy.readthedocs.io/en/stable/api/scanpy.tl.diffmap.html>`__
@@ -724,7 +724,7 @@ t-distributed stochastic neighborhood embedding (tSNE), using `tl.tsne`
 =======================================================================
 
 t-distributed stochastic neighborhood embedding (tSNE) (Maaten et al, 2008) has been
-proposed for visualizating single-cell data by (Amir et al, 2013). Here, by default,
+proposed for visualizing single-cell data by (Amir et al, 2013). Here, by default,
 we use the implementation of *scikit-learn* (Pedregosa et al, 2011).
 
 It returns `X_tsne`, tSNE coordinates of data.

@@ -103,7 +103,7 @@
         <param name="colorList" type="text" value="g b c m y k" optional="true" label="Color list" help="Colorlist for the viewpoint lines. For all available colors please check matplotlib documentation: https://matplotlib.org/stable/gallery/color/named_colors.html">
             <validator type="expression" message="Only alphabetic characters and the colon are allowed.">value.replace(' ', '').replace(':', '').isalpha()</validator>
         </param>
-        <param argument="--truncateZeroPvalues" type="boolean" truevalue="--truncateZeroPvalues" falsevalue="" checked="false" label="Truncate zeros by setting them to one." help="Sets all p-values which are equal to zero to one. This has the effect that the associated positions are not disturbing the presenation of small p-values." />
+        <param argument="--truncateZeroPvalues" type="boolean" truevalue="--truncateZeroPvalues" falsevalue="" checked="false" label="Truncate zeros by setting them to one." help="Sets all p-values which are equal to zero to one. This has the effect that the associated positions are not disturbing the presentation of small p-values." />
     </inputs>
     <outputs>
         <data name="plotsTar" from_work_dir="plots.tar.gz" format="tar.gz" label="cHi-C viewpoint plots" />

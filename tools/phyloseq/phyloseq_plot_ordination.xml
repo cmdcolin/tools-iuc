@@ -72,7 +72,7 @@ and generates an ordination plot of the samples.
   * **CCA** - Performs correspondence analysis, or optionally, constrained correspondence analysis (a.k.a. canonical correspondence analysis) via vegan cca.
   * **RDA** - Performs redundancy analysis, or optionally principal components analysis, via vegan rda.
   * **CAP** - [Partial] Constrained Analysis of Principal Coordinates or distance-based RDA, via vegan capscale.
-  * **NMDS** - Performs Non-metric MultiDimenstional Scaling of a sample-wise ecological distance matrix onto a user-specified number of axes (k).  
+  * **NMDS** - Performs Non-metric MultiDimensional Scaling of a sample-wise ecological distance matrix onto a user-specified number of axes (k).  
   * **MDS/PCoA** - Performs principal coordinate analysis (also called principle coordinate decomposition, multidimensional scaling (MDS), or classical scaling) of a distance matrix including two correction methods for negative eigenvalues.
 
  **Distance method** - Utilized only if a distance matrix is required by the Ordination method documented above.

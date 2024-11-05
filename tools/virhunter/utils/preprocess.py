@@ -246,7 +246,7 @@ def prepare_seq_lists(in_paths, n_fragments, weights=None,):
     seqs_list - list with path to files with sequences
     n_fragments_list - number of fragments to be sampled
     """
-    # case when we recieve a single sequence file
+    # case when we receive a single sequence file
     if type(in_paths) is str and in_paths.endswith(('.fna', '.fasta')):
         return [[in_paths, n_fragments]]
     else:

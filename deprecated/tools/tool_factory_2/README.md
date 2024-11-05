@@ -123,7 +123,7 @@ If the script fails somehow, use the "redo" button on the tool output in
 your history to recreate the form complete with broken script. Fix the bug
 and execute again. Rinse, wash, repeat.
 
-Once the script runs sucessfully, a new Galaxy tool that runs your script
+Once the script runs successfully, a new Galaxy tool that runs your script
 can be generated. Select the "generate" option and supply some help text and
 names. The new tool will be generated in the form of a new Galaxy datatype
 - toolshed.gz - as the name suggests, it's an archive ready to upload to a

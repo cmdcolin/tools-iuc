@@ -36,7 +36,7 @@
 #       Volcano Plot
 #       Heatmap
 #       Expression Table
-#       HTML file linking to the ouputs
+#       HTML file linking to the outputs
 # Optional:
 #       Normalised counts Table
 #       RData file
@@ -117,7 +117,7 @@ paste_listname <- function(string) {
     return(paste0("factors$", string))
 }
 
-# Create cata function: default path set, default seperator empty and appending
+# Create cata function: default path set, default separator empty and appending
 # true by default (Ripped straight from the cat function with altered argument
 # defaults)
 cata <- function(..., file = opt$htmlPath, sep = "", fill = FALSE,
@@ -379,7 +379,7 @@ if (is.null(opt$contrastInput)) {
     contrast_data <- read.table(opt$contrastFile, header = TRUE, sep = "\t", quote = "", strip.white = TRUE, stringsAsFactors = FALSE)
     contrast_data <- contrast_data[, 1, drop = TRUE]
 } else {
-    # Split up contrasts seperated by comma into a vector then sanitise
+    # Split up contrasts separated by comma into a vector then sanitise
     contrast_data <- unlist(strsplit(opt$contrastInput, split = ","))
 }
 contrast_data <- sanitise_equation(contrast_data)

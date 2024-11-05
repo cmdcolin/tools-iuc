@@ -33,11 +33,11 @@ Rscript '$__tool_directory__/fgsea.R'
     ]]></command>
     <inputs>
         <param name="rnk_file" type="data" format="tabular" label="Ranked Genes" help="A tabular file with gene symbols in the first column, and a ranked statistic (e.g. t-statistic or log fold-change) in the second column"/>
-        <param name="header" type="boolean" truevalue="True" falsevalue="False" checked="True" label="File has header?" help="If this option is set to Yes, the tool will assume that the ranked genes file has a column header in the first row and the identifers commence on the second line. Default: Yes" />
+        <param name="header" type="boolean" truevalue="True" falsevalue="False" checked="True" label="File has header?" help="If this option is set to Yes, the tool will assume that the ranked genes file has a column header in the first row and the identifiers commence on the second line. Default: Yes" />
         <param name="sets_file" type="data" format="tabular,rdata" label="Gene Sets" help="A tabular file in GMT file or an RData file containing a list of gene sets, see below for more information"/>
         <param name="min_size" type="integer" min="0" value="1" label="Minimum Size of Gene Set" help="Minimal size of a gene set to test. All pathways below the threshold are excluded. Default: 1" />
         <param name="max_size" type="integer"  value="500" label="Maximal Size of Gene Set" help="Maximal size of a gene set to test. All pathways above the threshold are excluded. Default: 500" />
-        <param name="n_perm" type="integer" min="0" value="1000" label="Number of Permutations" help="Number of permutations to do. Minimial possible nominal p-value is about 1/nperm. Default: 1000" />
+        <param name="n_perm" type="integer" min="0" value="1000" label="Number of Permutations" help="Number of permutations to do. Minimal possible nominal p-value is about 1/nperm. Default: 1000" />
         <param name="plot_opt" type="boolean" truevalue="True" falsevalue="False" checked="False" label="Output plots" help="Output a PDF file containing plots for top pathways by P value significance. Default: No"/>
         <param name="top_num" type="integer" value="10" label="Plot top most significant pathways" help="If Output plots is selected the number of top pathways to plot can be specified. Default: 10"/>
         <param name="rda_opt" type="boolean" truevalue="True" falsevalue="False" checked="False" label="Output RData file?" help="Output all the data used by R in the fgsea analysis, can be loaded into R. Default: No" />

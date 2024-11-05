@@ -202,13 +202,13 @@ fi;
             <when value="required" />
             <when value="full">
                 <conditional name="number_of_runs_conditional">
-                    <param name="number_of_runs_selector" type="select" label="Multiple boostrap specification">
+                    <param name="number_of_runs_selector" type="select" label="Multiple bootstrap specification">
                         <option value="by_number_of_runs">By number of runs</option>
                         <option value="by_bootstopping">By bootstopping criteria</option>
                     </param>
                     <when value="by_number_of_runs">
                         <param name="number_of_runs" argument="-N" type="integer" value="1" label="Number of alternative runs on distinct starting trees"
-                            help="In combination with the '-b' option, this will invoke a multiple boostrap analysis" />
+                            help="In combination with the '-b' option, this will invoke a multiple bootstrap analysis" />
                     </when>
                     <when value="by_bootstopping">
                         <param name="number_of_runs_bootstop" argument="-N" type="select" label="Bootstopping criteria" help="Bootstopping will only work in combination with '-x' or '-b'">
@@ -400,7 +400,7 @@ fi;
             <filter>selExtraOpts['extraOptions'] == "full"</filter>
             <filter>selExtraOpts['majority_rule_consensus'] == 'MRE'</filter>
         </data>
-        <data format="txt" name="bipartitionFreq" from_work_dir="RAxML_bipartitionFrequences.galaxy" label="${tool.name} on ${on_string}: Pair-wise bipartition frequences.">
+        <data format="txt" name="bipartitionFreq" from_work_dir="RAxML_bipartitionFrequencies.galaxy" label="${tool.name} on ${on_string}: Pair-wise bipartition frequencies.">
             <filter>selExtraOpts['search_algorithm'] == 'm' </filter>
             <filter>selExtraOpts['extraOptions'] == "full"</filter>
         </data>

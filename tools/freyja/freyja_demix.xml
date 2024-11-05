@@ -55,7 +55,7 @@ sed 's/$in_file/$sn/' abundances_raw.tsv > abundances.tsv
         <param name="depth_cutoff" argument="--covcut" type="integer" min="0" value="10"
                multiple="true"
                label="Depth cutoff for coverage estimate"
-               help="In the result file the coverage value will provide the 10x coverage estimate (percent of sites with 10 or greater reads- 10 is the default but can be modfied in this field. "/>
+               help="In the result file the coverage value will provide the 10x coverage estimate (percent of sites with 10 or greater reads- 10 is the default but can be modified in this field. "/>
     </inputs>
     <outputs>
         <data name="abundances" format="tabular"
@@ -143,7 +143,7 @@ coverage   95.8
 ========== ===================================================
 
 
-Where *summarized* denotes a sum of all lineage abundances in a particular WHO designation (i.e. B.1.617.2 and AY.6 abundances are summed in the above example), otherwise they are grouped into "Other". The *lineage* array lists the identified lineages in descending order, and *abundances* contains the corresponding abundances estimates. The value of *resid* corresponds to the residual of the weighted least absolute devation problem used to estimate lineage abundances. The *coverage* value provides the 10x coverage estimate (percent of sites with 10 or greater reads- 10 is the default but can be modfied using the *--covcut* option).
+Where *summarized* denotes a sum of all lineage abundances in a particular WHO designation (i.e. B.1.617.2 and AY.6 abundances are summed in the above example), otherwise they are grouped into "Other". The *lineage* array lists the identified lineages in descending order, and *abundances* contains the corresponding abundances estimates. The value of *resid* corresponds to the residual of the weighted least absolute deviation problem used to estimate lineage abundances. The *coverage* value provides the 10x coverage estimate (percent of sites with 10 or greater reads- 10 is the default but can be modified using the *--covcut* option).
     ]]></help>
     <expand macro="citations"/>
 </tool>

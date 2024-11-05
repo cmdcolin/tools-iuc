@@ -66,7 +66,7 @@ _________________
 Usage
 -----
 
-**hicCompareMatrices** is usually perfomed on corrected matrices (``hicCorrectMatrix``) with bins merged (``hicMergeMatrixBins``) depending
+**hicCompareMatrices** is usually performed on corrected matrices (``hicCorrectMatrix``) with bins merged (``hicMergeMatrixBins``) depending
 on the downstream analyses to perform (visualisation of a whole chromosome, or of a small region, etc).
 
 _________________

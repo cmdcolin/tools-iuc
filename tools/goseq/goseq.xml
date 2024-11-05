@@ -34,11 +34,11 @@
         <regex match="Error in"
                source="both"
                level="fatal"
-               description="An undefined error occured, please check your input carefully and contact your administrator." />
+               description="An undefined error occurred, please check your input carefully and contact your administrator." />
         <regex match="Fatal error"
                source="both"
                level="fatal"
-               description="An undefined error occured, please check your input carefully and contact your administrator." />
+               description="An undefined error occurred, please check your input carefully and contact your administrator." />
     </stdio>
     <version_command><![CDATA[
 echo $(R --version | grep version | grep -v GNU)", goseq version" $(R --vanilla --slave -e "library(goseq); cat(sessionInfo()\$otherPkgs\$goseq\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", optparse version" $(R --vanilla --slave -e "library(optparse); cat(sessionInfo()\$otherPkgs\$optparse\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", org.Hs.eg.db version" $(R --vanilla --slave -e "library(org.Hs.eg.db); cat(sessionInfo()\$otherPkgs\$org.Hs.eg.db\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", org.Dr.eg.db version" $(R --vanilla --slave -e "library(org.Dr.eg.db); cat(sessionInfo()\$otherPkgs\$org.Dr.eg.db\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", org.Dm.eg.db version" $(R --vanilla --slave -e "library(org.Dm.eg.db); cat(sessionInfo()\$otherPkgs\$org.Dm.eg.db\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", org.Mm.eg.db version" $(R --vanilla --slave -e "library(org.Mm.eg.db); cat(sessionInfo()\$otherPkgs\$org.Mm.eg.db\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", dplyr version" $(R --vanilla --slave -e "library(dplyr); cat(sessionInfo()\$otherPkgs\$dplyr\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", ggplot2 version" $(R --vanilla --slave -e "library(ggplot2); cat(sessionInfo()\$otherPkgs\$ggplot2\$Version)" 2> /dev/null | grep -v -i "WARNING: ")

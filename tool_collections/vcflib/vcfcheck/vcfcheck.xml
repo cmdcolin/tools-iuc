@@ -42,7 +42,7 @@
             </when>
         </conditional>
         <param name="failure_selector" type="select" display="radio" label="Exclude or include failed sites">
-            <option value="-x">Exculde failures (-x option)</option>
+            <option value="-x">Exclude failures (-x option)</option>
             <option value="-k">Keep failures (-k option)</option>
         </param>
     </inputs>

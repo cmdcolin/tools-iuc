@@ -221,7 +221,7 @@
     </xml>
     <xml name="sample_sex_condition">
         <conditional name="Sample_sex">
-            <param name="sex" type="select" label="Sample sex availabel" help="">
+            <param name="sex" type="select" label="Sample sex available" help="">
                 <option value="no" selected="True">Sample sex unknown</option>
                 <option value="yes">Select sample sex</option>
             </param>

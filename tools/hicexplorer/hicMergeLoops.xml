@@ -50,7 +50,7 @@ Example usage:
 
 `$ hicMergeLoops -i gm12878_10kb.bedgraph gm12878_5kb.bedgraph gm12878_25kb.bedgraph -o merged_result.bedgraph -r 25000`
 
-Please recall: We work with binned data i.e. the lowest resolution is therefore the one where we merge the most bases into one bin. In the above example the lowest resultion is 25kb, the highest resolution is 5kb.
+Please recall: We work with binned data i.e. the lowest resolution is therefore the one where we merge the most bases into one bin. In the above example the lowest resolution is 25kb, the highest resolution is 5kb.
 
 
 For more information about HiCExplorer please consider our documentation on readthedocs.io_

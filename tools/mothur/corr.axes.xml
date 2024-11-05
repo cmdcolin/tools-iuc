@@ -54,7 +54,7 @@ echo 'corr.axes(
                 <param name="label" type="select" label="label - OTU Labels" multiple="false" optional="true">
                     <expand macro="labeloptions"/>
                 </param>
-                <param name="groups" type="select" label="groups - Pairwise comparision groups" multiple="true">
+                <param name="groups" type="select" label="groups - Pairwise comparison groups" multiple="true">
                     <options>
                         <filter type="data_meta" ref="otu" key="groups"/>
                     </options>

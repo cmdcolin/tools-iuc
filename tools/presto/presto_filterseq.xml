@@ -51,7 +51,7 @@
                 <param argument="-n" type="integer" value="" label="Minimum Length" help="Discard reads shorter than this number of bases long."/>
             </when>
             <when value="missing">
-                <param argument="-n" type="integer" value="" label="Max Missing" help="Dicard reads with more than this many no-calls or gaps."/>
+                <param argument="-n" type="integer" value="" label="Max Missing" help="Discard reads with more than this many no-calls or gaps."/>
             </when>
             <when value="repeats">
                 <param argument="-n" type="integer" value="" label="Max Repeat Length" help="Discard reads with simple repeats of this length of longer."/>

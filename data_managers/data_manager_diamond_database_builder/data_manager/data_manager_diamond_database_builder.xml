@@ -32,7 +32,7 @@
             </when>
             <when value="directory">
                 <param type="text" name="fasta_filename" value="" label="Full path to FASTA File on disk" optional="false" />
-                <param type="boolean" name="create_symlink" truevalue="create_symlink" falsevalue="copy_file" label="Create symlink to orignal data instead of copying" checked="false" />
+                <param type="boolean" name="create_symlink" truevalue="create_symlink" falsevalue="copy_file" label="Create symlink to original data instead of copying" checked="false" />
             </when>
         </conditional>
         <conditional name="tax_cond">

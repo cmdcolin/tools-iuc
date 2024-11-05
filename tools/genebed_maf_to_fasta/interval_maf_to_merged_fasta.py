@@ -168,7 +168,7 @@ def __main__():
                 else:
                     output.write(alignment.get_sequence(primary_species))
                 output.write("\n")
-            # Output all remainging species
+            # Output all remaining species
             for spec in secondary_species or alignment.get_species_names(skip=primary_species):
                 if secondary_name:
                     output.write(">%s.%s\n" % (spec, secondary_name))

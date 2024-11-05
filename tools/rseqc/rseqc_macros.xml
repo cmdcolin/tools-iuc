@@ -15,8 +15,8 @@
     </xml>
     <xml name="stdio">
         <stdio>
-            <exit_code range="1:" level="fatal" description="An error occured during execution, see stderr and stdout for more information"/>
-            <regex match="[Ee]rror" source="both" description="An error occured during execution, see stderr and stdout for more information"/>
+            <exit_code range="1:" level="fatal" description="An error occurred during execution, see stderr and stdout for more information"/>
+            <regex match="[Ee]rror" source="both" description="An error occurred during execution, see stderr and stdout for more information"/>
         </stdio>
     </xml>
     <!-- Params -->
@@ -27,13 +27,13 @@
         <param name="input" type="data" label="Input BAM/SAM file" format="bam,sam" help="(--input-file)"/>
     </xml>
     <xml name="refgene_param">
-        <param argument="--refgene" type="data" format="bed12" label="Reference gene model" help="Reference gene model in BED fomat"/>
+        <param argument="--refgene" type="data" format="bed12" label="Reference gene model" help="Reference gene model in BED format"/>
     </xml>
     <xml name="mapq_param">
         <param argument="--mapq" type="integer" label="Minimum mapping quality" value="30" help="Minimum mapping quality for an alignment to be considered as &quot;uniquely mapped&quot;"/>
     </xml>
     <xml name="readlength_param">
-        <param argument="--read-align-length" type="integer" value="" label="Alignment length" optional="false" help="Alignment length of read, usually set to the orignial read length"/>
+        <param argument="--read-align-length" type="integer" value="" label="Alignment length" optional="false" help="Alignment length of read, usually set to the original read length"/>
     </xml>
     <xml name="readnum_param">
         <param argument="--read-num" type="integer" label="Number of aligned reads" value="1000000" help="Number of aligned reads with mismatches used to calculate the mismatch profile"/>
@@ -75,7 +75,7 @@
     <xml name="multihits_param">
         <conditional name="multihits_type">
             <param name="multihits_type_selector" type="select" label="Reads with multiple hits" help="(--skip-multi-hits)">
-                <option value="use_multihits" selected="true">Count Mutliple Hit Reads</option>
+                <option value="use_multihits" selected="true">Count Multiple Hit Reads</option>
                 <option value="skip_multihits">Skip Multiple Hit Reads/Only Use Uniquely Mapped Reads</option>
             </param>
             <when value="skip_multihits">

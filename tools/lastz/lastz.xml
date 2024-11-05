@@ -314,7 +314,7 @@
                 <when value="yes">
                     <param name="qhsplimit_n" optional="true" type="integer" label="Discard queries that have more than N HSPs" help="Any queries that exceed this limit are reported as a warning (to stderr), and no alignments are reported. This is useful for mapping reads to a reference genome, when some reads align to too many places in the reference."/>
                     <param name="qhsplimit_nowarn" type="boolean" truevalue="nowarn" display="radio" checked="False" label=" Withhold warnings for queries that exceed the limit set above"/>
-                    <param name="qhsplimit_keep" type="boolean" truevalue="keep" display="radio" checked="False" label="Keep queries that exceed the limit and supress warnings" help="For such a query, the first N HSPs found are passed along to downstream processing. Note that the HSPs reported are not the best N HSPs. They are simply the first N found; they very likely have a positional bias."/>
+                    <param name="qhsplimit_keep" type="boolean" truevalue="keep" display="radio" checked="False" label="Keep queries that exceed the limit and suppress warnings" help="For such a query, the first N HSPs found are passed along to downstream processing. Note that the HSPs reported are not the best N HSPs. They are simply the first N found; they very likely have a positional bias."/>
                 </when>
                 <when value="no">
                     <!-- Do nothing -->
@@ -328,7 +328,7 @@
                 </param>
                 <when value="yes">
                     <param name="qdepth_n" optional="true" type="integer" label="Stop processing gapped alignments for a query/strand if its ratio of aligned bases to query length exceeds" help="This is a real number that corresponds to a depth of coverage threshold. For example, a value of 5.0 would cause termination once a query/strand has an average of five alignments for every base in the query. The numerator is the number of matches or substitutions (but not gaps); the denominator is the length of the query sequence. The purpose of this option is one of saving time. It is useful for automatically terminating the processing of queries with high repeat content, for which other methods of dealing with repetitive content fail. Moreover, back-end filtering options are not considered. In other words, matches are counted for any alignment that meets the scoring threshold, regardless of whether that alignment would be reported. The justification is that we are trying to abort the processing of queries that have too many bounding alignments in the DP matrix, and back-end filtering occurs later in the process."/>
-                    <param name="qdepth_keep" type="boolean" truevalue="keep" display="radio" checked="False" label="Warnings for queries that exceed the limit are witheld" help="Note that the alignments reported are not guaranteed to be the highest scoring alignments that would achieve the threshold. They are simply the first alignments found. In other words, the purpose of this option is one of saving time, not one of finding optimal alignments."/>
+                    <param name="qdepth_keep" type="boolean" truevalue="keep" display="radio" checked="False" label="Warnings for queries that exceed the limit are withheld" help="Note that the alignments reported are not guaranteed to be the highest scoring alignments that would achieve the threshold. They are simply the first alignments found. In other words, the purpose of this option is one of saving time, not one of finding optimal alignments."/>
                     <param name="qdepth_nowarn" type="boolean" truevalue="nowarn" display="radio" checked="False" label="Same as above but any alignments discovered for this query/strand, before it exceeds the threshold, are reported."/>
                 </when>
                 <when value="no">
@@ -337,7 +337,7 @@
             </conditional>
         </section>
         <section name="scoring" expanded="false" title="Scoring">
-            <param name="score_file" type="data" format="txt" optional="true" argument="--scores" label="Read the substitution scores and gap penalties (and possibly other options) from a scoring file (see help below for file fomat description)." help="This option cannot be used in conjunction with ‑‑match or inference."/> <!--TODO EDIT INFERENCE -->
+            <param name="score_file" type="data" format="txt" optional="true" argument="--scores" label="Read the substitution scores and gap penalties (and possibly other options) from a scoring file (see help below for file format description)." help="This option cannot be used in conjunction with ‑‑match or inference."/> <!--TODO EDIT INFERENCE -->
             <conditional name="match">
                 <param name="match_selector" type="select" display="radio" label="Set the score values for a match and mismatch" argument="--match" help="Note that specifying ‑‑match changes the defaults for some of the other options (e.g. the scoring penalties for gaps, and various extension thresholds), as described in respective sections of LASTZ manual. The regular defaults are chosen for compatibility with BLASTZ, but since BLASTZ doesn't support ‑‑match, LASTZ infers that you are not expecting BLASTZ compatibility for this run, so it is free to use improved defaults. THIS OPTION CANNOT BE USED WITH --scores">
                     <option value="yes">Yes</option>
@@ -525,7 +525,7 @@
                         <option value="end1" selected="true">end1: Ending position of the alignment block in the target</option>
                         <option value="length1">length1: Length of the alignment block in the target (excluding gaps)</option>
                         <option value="text1">text1: Aligned characters in the target, including gap characters</option>
-                        <option value="qalign1">qalign1: The target quality sequence (if there is one) correpsonding to aligned characters</option>
+                        <option value="qalign1">qalign1: The target quality sequence (if there is one) corresponding to aligned characters</option>
                         <option value="nucs1">nucs1: The entire target sequence</option>
                         <option value="name2" selected="true">name2: Name of the query sequence</option>
                         <option value="number2">number2: Number of the query sequence within the query file</option>
@@ -536,7 +536,7 @@
                         <option value="end2" selected="true">end2: Ending position of the alignment block in the query</option>
                         <option value="length2">length2: Length of the alignment block in the query (excluding gaps)</option>
                         <option value="text2">text2: Aligned characters in the query, including gap characters</option>
-                        <option value="qalign2">qalign2: The query quality sequence (if there is one) correpsonding to aligned characters</option>
+                        <option value="qalign2">qalign2: The query quality sequence (if there is one) corresponding to aligned characters</option>
                         <option value="nucs2">nucs2: The entire query sequence</option>
                         <option value="nmatch">nmatch: Match count</option>
                         <option value="nmismatch">nmismatch: Mismatch count</option>

@@ -245,7 +245,7 @@ In other words only reads that (1) have mapping quality of at least 20 **AND** (
 
 Suppose now you would like to select **either** reads that (**1**) have (*1.1*) no mismatches and (*1.2*) are on the forward strand **OR** (**2**) reads that have (*2.1*)
 at least one mismatch and (*2.2*) are on the reverse strand. In this scenario we have to set up two conditions: (**1**) and (**2**) each with two filters: *1.1* and *1.2* as well as *2.1* and *2.2*.
-The following screenshot expalins how this can be done:
+The following screenshot explains how this can be done:
 
 .. image:: complex-filters.png
 

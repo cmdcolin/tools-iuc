@@ -80,7 +80,7 @@ sa.pl.spectral_eigenvalues(
                 <param argument="color" type="text" value="" optional="true" label="Color"/>
                 <param argument="use_rep" type="text" value="X_umap" label="Use the indicated representation in .obsm"/>
                 <param argument="marker_size" type="float" value="" optional="true" label="Size of the dots"/>
-                <param argument="marker_opacity" type="float" value="1" label="Opactiy of the dots"/>
+                <param argument="marker_opacity" type="float" value="1" label="Opacity of the dots"/>
                 <param argument="sample_size" type="integer" value="" optional="true" label="Number of cells to use"/>
                 <expand macro="params_render_plot"/>
             </when>

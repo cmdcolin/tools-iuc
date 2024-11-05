@@ -189,7 +189,7 @@
         #if $names.add_names in ['classification','both'] and $names.only_official: 
             #set $summary_input = $classification_names
         #else 
-            #set $summary_input = 'classification_offical_names'
+            #set $summary_input = 'classification_official_names'
             && CAT add_names --only_official
                 @CAT_TAXONOMY@
                 #if $bcat == 'CAT'

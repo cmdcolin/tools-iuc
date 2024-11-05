@@ -202,7 +202,7 @@ Use the option ``Output UMI related statistics files?`` generate stats outfiles:
 
 edit_distance
   Reports the (binned) average edit distance between the UMIs at each
-  position. Positions with a single UMI are reported seperately.  The
+  position. Positions with a single UMI are reported separately.  The
   edit distances are reported pre- and post-deduplication alongside
   the null expectation from random sampling of UMIs from the UMIs
   observed across all positions. Note that separate null

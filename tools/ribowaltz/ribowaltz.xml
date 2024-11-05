@@ -76,7 +76,7 @@
                         <option value="5end">Share only the 5' extremity</option>
                         <option value="3end">Share only the 3' extremity</option>
                     </param>
-                    <param name="keep" type="select" label="Which read to keep if duplicates disply different lengths?"
+                    <param name="keep" type="select" label="Which read to keep if duplicates display different lengths?"
                         help="This parameter is considered only if one of 5' or 3' end extrimity was chosen">
                         <option value="shortest" selected="true">Keep the shortest reads </option>
                         <option value="longest">Keep the longest reads</option>
@@ -110,8 +110,8 @@
                 help="If not checked, the second to last codon is used instead"/>
             <param name="psite_extrimity" type="select" label="On which extrimity the correction step should be based on?">
                 <option value="auto" selected="true">Automatically select the optimal extremity</option>
-                <option value="5end">Use 5' extrimities</option>
-                <option value="3end">Use 3' extrimities</option>
+                <option value="5end">Use 5' extremities</option>
+                <option value="3end">Use 3' extremities</option>
             </param>
             <param name="cl" type="integer" value="99" min="1" max="100" 
             label="Confidence level for generating occupancy metaprofiles for to a sub-range of read lengths"/>
@@ -121,8 +121,8 @@
                 label="Write number of P-Sites falling per region?"
                 help="If not checked, number of read foot prints per region trturned"/>
             <param name="min_overlap" type="integer" value="1" min="1" label="Min number of overlapping positions between reads and codons to be considered"/>
-            <param name="start_nts" type="integer" value="0" min="0" label="Numer of nucleotides at the beginning of the coding sequences to be excluded"/>
-            <param name="stop_nts" type="integer" value="0" min="0" label="Numer of nucleotides at the end of the coding sequences to be excluded"/>
+            <param name="start_nts" type="integer" value="0" min="0" label="Number of nucleotides at the beginning of the coding sequences to be excluded"/>
+            <param name="stop_nts" type="integer" value="0" min="0" label="Number of nucleotides at the end of the coding sequences to be excluded"/>
         </section>
     </inputs>
     <outputs>

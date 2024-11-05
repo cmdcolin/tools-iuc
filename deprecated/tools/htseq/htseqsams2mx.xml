@@ -82,7 +82,7 @@ Counts reads in multiple sam/bam format mapped files and generates a matrix idea
 It uses HTSeq to count your sam reads over a gene model supplied as a GTF file
 The output is a tabular text (columnar - spreadsheet) file containing the
 count matrix for downstream processing. Each row contains the counts from each sample for each
-of the non-emtpy GTF input file contigs matching the GTF attribute choice above.
+of the non-empty GTF input file contigs matching the GTF attribute choice above.
 You probably want to use gene level GTF output attribute and count reads that overlap
 GTF exons for RNA-seq. Or you can count over exons by using transcript level output names or ids. Etc.
 

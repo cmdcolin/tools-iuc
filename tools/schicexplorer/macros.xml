@@ -16,7 +16,7 @@
     </xml>
     <xml name='matrix_cooler_multiple_macro'>
         <param name='matrix_cooler_multiple' type="data" format="cool"
-            label="Matricies to compute on" multiple="true"/>
+            label="Matrices to compute on" multiple="true"/>
     </xml>
     <token name="@ESCAPE_IDENTIFIER_FASTQ@"><![CDATA[re.sub('[^\s\w\.]', '_', str($fastq.element_identifier))]]></token>
     <token name="@ESCAPE_IDENTIFIER_SCOOL@"><![CDATA[re.sub('[^\s\w\.]', '_', str($matrix_scooler.element_identifier))]]></token>

@@ -36,7 +36,7 @@
 
     <inputs>
 
-        <param name="input" type="data" format="tabular,txt" label="Input genotype data file" help="must be space/tab delimitted plain text file" />
+        <param name="input" type="data" format="tabular,txt" label="Input genotype data file" help="must be space/tab delimited plain text file" />
         <conditional name="loci_file">
             <param name="loci" type="select" label="Discard loci?" help="" >
                 <option value="0">No</option>

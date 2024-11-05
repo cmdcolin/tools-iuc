@@ -168,7 +168,7 @@
             <option value="gaps">Fill gaps</option>
             <option value="local">Detect and fix local misassemblies</option>
             <option value="none">Do none of these fixes (no FASTA will be written)</option>
-            <option value="amb">Fix ambigious bases in FASTA output (experimental)</option>
+            <option value="amb">Fix ambiguous bases in FASTA output (experimental)</option>
             <option value="breaks">Allow local reassembly to open new gaps (experimental, requires local assembly fixing to be selected)</option>
             <option value="novel">Assemble novel sequence from unaligned non-jump reads (experimental)</option>
             <!-- TODO: enable this when documented in pilon <option value="circle">Trim long reads for circular continuity(experimental, requires unpaired reads)</option>-->
@@ -199,7 +199,7 @@
             help="Kmer size used by internal assembler" />
           <param argument="mindepth" label="Minimum depth" type="float" value="0.1"
             help="Minimum depth of coverage required for variants to be called. See complete documentation below." />
-          <param argument="mingap" label="Mininum gap size" type="integer" value="10"
+          <param argument="mingap" label="Minimum gap size" type="integer" value="10"
             help="Minimum size for unclosed gaps" />
           <param argument="minmq" label="Minimum mapping quality" type="integer" value="0"
             help="Minimum alignment mapping quality for a read to count in pileups" />
@@ -304,7 +304,7 @@
   Variants (snps and indels) will only be called if there is coverage of good pairs
   at the value set for *mindepth* depth or more; if this value is >= 1, it is an absolute depth, if it is a
   fraction < 1, then minimum depth is computed by multiplying this value by the mean
-  coverage for the region, with a minumum value of 5 (default 0.1: min depth to call
+  coverage for the region, with a minimum value of 5 (default 0.1: min depth to call
   is 10% of mean coverage or 5, whichever is greater).
 
   Note on **stray read filtering**

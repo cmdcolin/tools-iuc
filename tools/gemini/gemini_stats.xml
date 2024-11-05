@@ -148,7 +148,7 @@ expressions and/or WHERE clauses of GEMINI queries.
 **Counts of SNPs by nucleotide change**:
 
 This runs ``gemini stats`` with the ``--snp-count`` option. The result is a
-simple table listing the number of occurences of each observed REF->ALT change
+simple table listing the number of occurrences of each observed REF->ALT change
 in your database, e.g.::
 
  type    count

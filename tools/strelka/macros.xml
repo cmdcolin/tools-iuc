@@ -93,7 +93,7 @@
 
     <token name="@CONFIG@"><![CDATA[
 maxIndelSize = $strelka.maxIndelSize
-isWriteRealignedBam = 0 ## not inplemented
+isWriteRealignedBam = 0 ## not implemented
 extraVariantCallerArguments = ## not implemented
     ]]></token>
 
@@ -210,7 +210,7 @@ Input `VCF &lt;http://samtools.github.io/hts-specs/VCFv4.1.pdf&gt;`_ files are a
     <token name="@HELP_STRELKA@">
 Strelka2 is a fast and accurate small variant caller optimized for analysis of germline variation in small cohorts (Strelka Germline) and somatic variation in tumor/normal sample pairs (Strelka Somatic).
 
-Strelka accepts input read mappings from BAM or CRAM files, and optionally candidate and/or forced-call alleles from VCF. It reports all small variant predictions in VCF 4.1 format. Germline variant reporting uses the gVCF conventions to represent both variant and reference call confidence. For best somatic indel performance, Strelka is designed to be run with the Manta structural variant and indel caller, which provides additional indel candidates up to a given maxiumum indel size (by default this is 49). By design, Manta and Strelka run together with default settings provide complete coverage over all indel sizes (in additional to all SVs and SNVs) for clinical somatic and germline analysis scenarios.
+Strelka accepts input read mappings from BAM or CRAM files, and optionally candidate and/or forced-call alleles from VCF. It reports all small variant predictions in VCF 4.1 format. Germline variant reporting uses the gVCF conventions to represent both variant and reference call confidence. For best somatic indel performance, Strelka is designed to be run with the Manta structural variant and indel caller, which provides additional indel candidates up to a given maximum indel size (by default this is 49). By design, Manta and Strelka run together with default settings provide complete coverage over all indel sizes (in additional to all SVs and SNVs) for clinical somatic and germline analysis scenarios.
     </token>
     <token name="@HELP_REFERENCES@"><![CDATA[
 More information are available on `github <https://github.com/Illumina/strelka>`_.

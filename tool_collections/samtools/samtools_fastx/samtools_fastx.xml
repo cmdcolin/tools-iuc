@@ -8,7 +8,7 @@
     <expand macro="version_command" />
     <command><![CDATA[
 @ADDTHREADS@
-## name sort input file if neccessary
+## name sort input file if necessary
 #if not $input.is_of_type('qname_sorted.bam', 'qname_input_sorted.bam'):
     samtools sort -@ \$addthreads -n '$input' -T "\${TMPDIR:-.}" > input &&
 #else:

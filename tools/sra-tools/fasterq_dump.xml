@@ -238,7 +238,7 @@ When you decide to dump technical reads (in Advanced Options Dump only biologica
 
 .. class:: warningmark
 
-By default, only biological reads are dumped and in case of PAIRED dataset only the spots which have both reads will be in the paired-end collection. The remaining single reads will be in the other colletion.
+By default, only biological reads are dumped and in case of PAIRED dataset only the spots which have both reads will be in the paired-end collection. The remaining single reads will be in the other collection.
 To keep all reads, and potentially not have the same number of reads in forward and reverse use the --split-files option in Advanced Options, Select how to split the spots.
 
 @ACCESSION_LIST_HOWTO@
@@ -251,7 +251,7 @@ To keep all reads, and potentially not have the same number of reads in forward 
 .. _collection: https://galaxyproject.org/tutorials/collections/
 .. _link: https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&display=reads
 
-@SRATOOLS_ATTRRIBUTION@
+@SRATOOLS_ATTRIBUTION@
 ]]>
     </help>
     <expand macro="citation"/>

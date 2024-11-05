@@ -12,7 +12,7 @@
     <command detect_errors="exit_code"><![CDATA[
 #import re
 
-## The identifer for both of the following files is likely the same
+## The identifier for both of the following files is likely the same
 ## string, so we append a file extension to allow for both links.
 #set bam_identifier = re.sub('[^\s\w\-]', '_', str($bam_input.element_identifier)) + '.bam'
 ln -s '${bam_input}' '${bam_identifier}' &&

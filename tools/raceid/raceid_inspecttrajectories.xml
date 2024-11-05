@@ -194,7 +194,7 @@ StemID2 and FateID
 
 Given a previous lineage tree generated an RDS file generated from the previous Trajectory step, we can explore the variation of gene expression for all cells that lie on a given branch or trajectory.
 
-This will generate a PDF containing a heatmap of expression for all neighboring clusters that share links with  cluster 5, as well as a plot of all cells along the branches between 1 to 3 and 3 to 10. A table of the most differentially expressed genes across these projection will also be output, which will provide a more qualitative assessment of how signficant our Apoa-expressing genes are along this projection.
+This will generate a PDF containing a heatmap of expression for all neighboring clusters that share links with  cluster 5, as well as a plot of all cells along the branches between 1 to 3 and 3 to 10. A table of the most differentially expressed genes across these projection will also be output, which will provide a more qualitative assessment of how significant our Apoa-expressing genes are along this projection.
 
 For more information on the different types cluster and trajectory inspection that can be performed, please consult the RaceID vignette_.
 

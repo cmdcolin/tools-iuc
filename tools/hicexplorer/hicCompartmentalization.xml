@@ -38,7 +38,7 @@
         <param name="quantile" type="integer" value="30" label="Quantile" help="The number of to be used quantiles." />
         <param name="outliers" type="float" value="0.0" label="Outliers" help="The number of outliers to be removed." />
         <param name="set_offset_value" type="text" optional="True" value="" label="Offset values">
-            <validator type="expression" message="Only numeric characters and the a space as seperator are allowed.">value.replace(' ', '').isnumeric()</validator>
+            <validator type="expression" message="Only numeric characters and the a space as separator are allowed.">value.replace(' ', '').isnumeric()</validator>
         </param>
 
         <param name="image_file_format" type="select" label="Image output format">

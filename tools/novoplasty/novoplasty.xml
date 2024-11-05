@@ -95,7 +95,7 @@ Use Quality Scores    = ${optional.use_quality_scores}
                 <option value="false" selected="true">No</option>
             </param>
             <when value="true">
-                <param name="reference" type="data" format="fasta,fasta.gz" optional="true" label="Select reference file" help="The assembly will still be de novo, but references of the same genus can be used as a guide to resolve duplicated regions in the plant mitochondria or the inverted repeat in the chloroplast. References from different genus haven't beeen tested yet."/>
+                <param name="reference" type="data" format="fasta,fasta.gz" optional="true" label="Select reference file" help="The assembly will still be de novo, but references of the same genus can be used as a guide to resolve duplicated regions in the plant mitochondria or the inverted repeat in the chloroplast. References from different genus haven't been tested yet."/>
                 <conditional name="heteroplasmy_cond">
                     <param name="detect_heteroplasmy" type="select" label="Detect heteroplasmy" help="If you want to detect heteroplasmy, first assemble the genome without this option. Then give the resulting sequence as a reference and as a seed input.">
                         <option value="true">Yes</option>
@@ -143,7 +143,7 @@ Use Quality Scores    = ${optional.use_quality_scores}
         <section name="optional" title="Optional options">
             <param name="insert_size_auto" type="boolean" truevalue="yes" falsevalue="no" checked="false" label="Finetune your insert size automatically?" help="(Insert size auto)"/>
             <param name="use_quality_scores" type="boolean" truevalue="yes" falsevalue="no" label="Take quality scores into account?" help="Only use this when reads have low quality, like with the 300 bp reads of Illumina. (Use Quality Scores)"/>
-            <param name="save_assembled_reads" type="boolean" truevalue="yes" falsevalue="no" checked="false" label="Retain original IDs when saving assemled reads?" help="All the reads used for the assembly will be stored in seperate files. (Save assembled reads)"/>
+            <param name="save_assembled_reads" type="boolean" truevalue="yes" falsevalue="no" checked="false" label="Retain original IDs when saving assemled reads?" help="All the reads used for the assembly will be stored in separate files. (Save assembled reads)"/>
         </section>
         <param name="out" type="select" multiple="true" optional="true" display="checkboxes" label="Additional output files">
             <option value="config">Config file</option>

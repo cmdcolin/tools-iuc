@@ -56,7 +56,7 @@ echo 'cluster.classic(
             <option value="100000">.00001</option>
             <option value="1000000">.000001</option>
         </param>
-        <param argument="sim" type="boolean" checked="false" truevalue="true" falsevalue="false" label="sim - Matrix values are Similary instead of Distance"/>
+        <param argument="sim" type="boolean" checked="false" truevalue="true" falsevalue="false" label="sim - Matrix values are Similarly instead of Distance"/>
         <expand macro="param-savelog"/>
     </inputs>
     <outputs>

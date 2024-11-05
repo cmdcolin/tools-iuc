@@ -161,7 +161,7 @@ for discordant_file in disc_bams:
 
 ## *Split-reads* get analyzed on a per-sample level.
 ## Again, we only use samples that we've seen in the main inputs before.
-## The names of these samples and the correponding split-reads bam files are
+## The names of these samples and the corresponding split-reads bam files are
 ## used directly in the -sr option value of the LUMPY main command.
 for split_file in split_bams:
     sbam = pysam.AlignmentFile(split_file, 'rb')

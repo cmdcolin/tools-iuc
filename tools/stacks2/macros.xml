@@ -623,15 +623,15 @@ $identifier#slurp
 
     <xml name="barcode_encoding_single" token_type="">
         <option value="--inline_null" selected="True">@TYPE@ is inline with sequence, occurs only on single-end read (--inline_null)</option>
-        <option value="--index_null">@TYPE@ is provded in FASTQ header (Illumina i5 or i7 read) (--index_null)</option>
+        <option value="--index_null">@TYPE@ is provided in FASTQ header (Illumina i5 or i7 read) (--index_null)</option>
         <yield/>
     </xml>
 
     <xml name="barcode_encoding_pair" token_type="">
         <expand macro="barcode_encoding_single" type="@TYPE@">
-            <option value="--null_index">@TYPE@ is provded in FASTQ header (Illumina i7 read if both i5 and i7 read are provided) (--null_index)</option>
+            <option value="--null_index">@TYPE@ is provided in FASTQ header (Illumina i7 read if both i5 and i7 read are provided) (--null_index)</option>
             <option value="--inline_inline">@TYPE@ is inline with sequence, occurs on single and paired-end read (--inline_inline)</option>
-            <option value="--index_index">@TYPE@ is provded in FASTQ header (Illumina i5 and i7 reads) (--index_index)</option>
+            <option value="--index_index">@TYPE@ is provided in FASTQ header (Illumina i5 and i7 reads) (--index_index)</option>
             <option value="--inline_index">@TYPE@ is inline with sequence on single-end read and occurs in FASTQ header (from either i5 or i7 read) (--inline_index)</option>
             <option value="--index_inline">@TYPE@ occurs in FASTQ header (Illumina i5 or i7 read) and is inline with sequence on single-end read (if single read data) or paired-end read (if paired data) (--index_inline)</option>
         </expand>

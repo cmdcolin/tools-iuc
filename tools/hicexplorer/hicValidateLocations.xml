@@ -68,7 +68,7 @@ Loops need to have format as follows:
 
 The protein peaks need to be in narrowPeaks or broadPeak format.
 
-A protein match is successfull if at the bin of the x and y location a protein peak is overlapped.
+A protein match is successful if at the bin of the x and y location a protein peak is overlapped.
 A bin is assumed to have a protein if one or more protein peaks falling within the bin region.
 The value of the protein is not considered, only match or non-match.
 

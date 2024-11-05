@@ -210,7 +210,7 @@
         </conditional>
 
         <param name="outputs" type="select" display="checkboxes" multiple="True" optional="True" label="Additional Outputs" help="PDF is only created when the model is built">
-            <option value="peaks_tabular">Peaks as tabular file (compatible wih MultiQC)</option>
+            <option value="peaks_tabular">Peaks as tabular file (compatible with MultiQC)</option>
             <option value="summits">Peak summits</option>
             <option value="bdg" >Scores in bedGraph files (--bdg)</option>
             <option value="html">Summary page (html)</option>
@@ -394,7 +394,7 @@ Or see the **deepTools** website for updated information on calculating `Effecti
 This tool produces a BED file of narrowPeaks as default output. It can also produce additional outputs, which can be selected under the **Additional Outputs** option above.
 
     * **a BED file of peaks** (default)
-    * a tabular file of peaks (compatible wih MultiQC)
+    * a tabular file of peaks (compatible with MultiQC)
     * a BED file of peak summits
     * two bedGraph files of scores, for treatment pileup and control lambda
     * a HTML summary page
@@ -594,7 +594,7 @@ MACS2 performs the following analysis steps:
 Check out these other MACS2 tools:
 
     * **MACS2 bdgcmp** can be used on the callpeak bedGraph files or bedGraph files from other resources to calculate score track.
-    * **MACS2 bdgpeakcall** can be used on the file generated from bdgcmp or bedGraph file from other resources to call peaks with given cutoff, maximum-gap between nearby mergable peaks and minimum length of peak. bdgbroadcall works similarly to bdgpeakcall, however it will output a broad peaks file in BED12 format.
+    * **MACS2 bdgpeakcall** can be used on the file generated from bdgcmp or bedGraph file from other resources to call peaks with given cutoff, maximum-gap between nearby mergeable peaks and minimum length of peak. bdgbroadcall works similarly to bdgpeakcall, however it will output a broad peaks file in BED12 format.
     * Differential calling tool **MACS2 bdgdiff**, can be used on 4 bedGraph files which are scores between treatment 1 and control 1, treatment 2 and control 2, treatment 1 and treatment 2, treatment 2 and treatment 1. It will output the consistent and unique sites according to parameter settings for minimum length, maximum gap and cutoff.
 
 .. class:: warningmark

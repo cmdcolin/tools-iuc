@@ -132,7 +132,7 @@ cp '$test_case_conf' circos/conf/galaxy_test_case.json ;
 
                      - picking for the user (will never be right)
                      - picking some N contigs (also never right)
-                     - regex (eww, and requires users to know thje names of things in the data table which is not exposed to user ever.)
+                     - regex (eww, and requires users to know the names of things in the data table which is not exposed to user ever.)
                      - built in custom filters we'd have to maintain
                      - some code files (see meme_chip.xml, doesn't work there.)
 

@@ -489,7 +489,7 @@ larger sample size. Due to the vast amount of data produced by the NovaSeq and t
 
 - HiSeq X is recommended for whole genome sequencing only (including whole bisulfite sequencing). This means that it is not adequate for RNA-seq, exome, ChIP-seq or small RNA-seq applications. 
 - Plant and animal samples can be sequenced on the HiSeq X.
-- Expect coverate is over 30x  or approximately 375 million reads per lane by loading one sample per lane.
+- Expect coverage is over 30x  or approximately 375 million reads per lane by loading one sample per lane.
 - Hiseq X Ten generates utilize 2x150 base pair read configurations and has slightly better GC coverage than the HiSeq 2500.
 
 **What are the differences between MiSeq and Nextseq?**
@@ -519,7 +519,7 @@ with 20 billion maximum reads per run. NovaSeq 6000 instruments have not applica
 
 - MiSeq: between 300 and 600 bp
 - NextSeq: 300 bp
-- HiSeq 2500: between 250 and 500 bp (depending of the sofware)
+- HiSeq 2500: between 250 and 500 bp (depending of the software)
 - HiSeq 4000: 150 bp
 - HiSeq X: 150 bp
 

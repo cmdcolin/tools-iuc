@@ -79,7 +79,7 @@
 RPKM_saturation.py
 ++++++++++++++++++
 
-The precision of any sample statitics (RPKM) is affected by sample size (sequencing depth);
+The precision of any sample statistics (RPKM) is affected by sample size (sequencing depth);
 \'resampling\' or \'jackknifing\' is a method to estimate the precision of sample statistics by
 using subsets of available data. This module will resample a series of subsets from total RNA
 reads and then calculate RPKM value using each subset. By doing this we are able to check if

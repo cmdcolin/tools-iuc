@@ -335,7 +335,7 @@ SARS-CoV-2 sequencing data. It maps reads against the SARS-CoV-2 viral genome (w
 and only keeps those that map well.
 
 **Note**: If the reference genome supplied contains a poly-A tail, reads that contain part of a poly-A tail will map
-to the refence, no matter what species they originate from. If you are not sure if the reference you are using has had
+to the reference, no matter what species they originate from. If you are not sure if the reference you are using has had
 trailing A's trimmed, enable the `Trim trailing As` option.
 
 Input can be either Illumina or Oxford Nanopore reads.

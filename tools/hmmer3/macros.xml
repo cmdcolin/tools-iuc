@@ -716,10 +716,10 @@ Mol. Biol. 235:1067, 1994].
 **--wblosum**
 
 Use the same clustering scheme that was used to weight data in calculating
-BLOSUM subsitution matrices [Henikoff and Henikoff, Proc. Natl. Acad. Sci
+BLOSUM substitution matrices [Henikoff and Henikoff, Proc. Natl. Acad. Sci
 89:10915, 1992]. Sequences are single-linkage clustered at an identity
 threshold (default 0.62; see --wid) and within each cluster of c sequences,
-each sequence gets rela- tive weight 1/c.
+each sequence gets relative weight 1/c.
 
 **--wnone**
 
@@ -1067,12 +1067,12 @@ to use bit score thresholds with hmmscan, because you don’t expect a single
 score threshold to work for different profiles; different profiles have
 slightly different expected score distributions.
 
-**domain E-value per target inclusion treshold**
+**domain E-value per target inclusion threshold**
 
 Use a conditional E-value of <= <x> as the per-domain inclusion threshold, in
 targets that have already satisfied the overall per-target inclusion threshold.
 
-**domain Bit score per target inclusion treshold**
+**domain Bit score per target inclusion threshold**
 
 Instead of using E-values, instead use a bit score of >= <x> as the per-domain
 inclusion threshold. As with --incT above, it would be unusual to use a single

@@ -89,7 +89,7 @@ def main():
                              'but make sure that the original output columns are not altered')
     parser.add_argument('-m', '--mode', required=True, choices=["degseq", "dexseq"],
                         default='degseq', help='Input file type')
-    parser.add_argument('-g', '--gff', required=True, help='The same annotation GFF/GTF file used for couting')
+    parser.add_argument('-g', '--gff', required=True, help='The same annotation GFF/GTF file used for counting')
     parser.add_argument('-t', '--type', default='exon', required=False,
                         help='feature type (3rd column in GFF file) to be used (default: exon)')
     parser.add_argument('-i', '--idattr', default='gene_id', required=False,
@@ -133,8 +133,8 @@ def main():
                 for line in bed_entries:
                     fh_annotation_bed.write(line + "\n")
 
-            # interset the DEXseq couting bins with exons in the GFF file
-            # overlaped positions can be later used to infer which bin corresponds to which exon
+            # interset the DEXseq counting bins with exons in the GFF file
+            # overlapped positions can be later used to infer which bin corresponds to which exon
             os.system("intersectBed -wo -s -a input.bed -b annotation.bed > overlap.txt")
 
             with open("overlap.txt") as fh_overlap:

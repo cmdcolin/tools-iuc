@@ -30,7 +30,7 @@ DESCRIPTION
 
     Note: Fasta sequences (chroms) are read in memory one at a time along with the
     matches for that chromosome.
-    The order of the output is: chroms as they are found in the inut fasta, matches
+    The order of the output is: chroms as they are found in the input fasta, matches
     sorted within chroms by positions.
 
 EXAMPLE:
@@ -160,7 +160,7 @@ def sort_table(table, cols):
 def trimMatch(x, n):
     """Trim the string x to be at most length n. Trimmed matches will be reported
     with the syntax ACTG[a,b] where Ns are the beginning of x, a is the length of
-    the trimmed strng (e.g 4 here) and b is the full length of the match
+    the trimmed string (e.g 4 here) and b is the full length of the match
     EXAMPLE:
         trimMatch('ACTGNNNN', 4)
         >>>'ACTG[4,8]'

@@ -109,7 +109,7 @@
         <conditional name="mode_conditional">
             <param name="mode_option" type="select" label="Operation mode">
                 <option value="correct">Correct: homology-based missasembly correction</option>
-                <option value="scaffold">Scaffold: homology-based assebly scaffolding</option>
+                <option value="scaffold">Scaffold: homology-based assembly scaffolding</option>
                 <option value="patch">Patch: homology-based assembly patching</option>
                 <option value="merge">Merge: scaffolding merging</option>
             </param>
@@ -183,7 +183,7 @@
                             <option value="false">Disabled</option>
                         </param>
                         <when value="true">
-                            <param argument="-g" type="integer" min="0" value="100" label="Minimum infered gap size" />
+                            <param argument="-g" type="integer" min="0" value="100" label="Minimum inferred gap size" />
                             <param argument="-m" type="integer" min="0" value="100000" label="Maximum inferred gap size"/>
                         </when>
                         <when value="false"/>
@@ -200,7 +200,7 @@
                     </conditional>
                 </section>
                 <param name="output_scaffold" type="select"  multiple="true" label="Output files">
-                    <option value="fasta" selected="true">The scaffolds in FASTA format, defined by the ordering and orientations of the sequences containted in the AGP file</option>
+                    <option value="fasta" selected="true">The scaffolds in FASTA format, defined by the ordering and orientations of the sequences contained in the AGP file</option>
                     <option value="agp" selected="true">The ordering and orientations of query sequences in AGP format</option>
                     <option value="paf">The description of the approximate mapping positions between two set of sequences in PAF format</option>
                     <option value="confidence">Confidence score values</option>
@@ -243,7 +243,7 @@
                         help="Assembly sequences shorter than -l will also be left unplaced."/>
                     <param argument="-e" type="float" min="0" value="0" label="Minimum edge weight" 
                         help="The edges in the merging graph represent scaffolding adjacencies. If an AGP file supports a particular adjacency, 
-                            its weight is added to the edge weight. Any edges with a weight lower than the minimum edge weigth will be removed from the graph"/>
+                            its weight is added to the edge weight. Any edges with a weight lower than the minimum edge weight will be removed from the graph"/>
                     <param name="function_merging" type="select" label="Function for merging gap lengths" 
                         help="Scaffold gaps can differ between input AGP files. For example, a Hi-C derived AGP file might place 100 bp gaps between sequences 
                             while a reference-guided AGP file might infer gap sizes based on a reference genome. Use this parameter to specify how gap sizes 
@@ -255,7 +255,7 @@
                 </section>
                 <section name="hic_options" title="HI-C options">
                     <param argument="-b" type="data" format="bam" optional="true" label="Hi-C alignments" help="Sorted by read name"/>
-                    <param argument="-r" type="text" value="" optional="true" label="Restriction enzymes/sites or 'DNase'" help="List of restrction enzimes/sites or 'DNase', separated by comma. E.g. GATC,GACC">
+                    <param argument="-r" type="text" value="" optional="true" label="Restriction enzymes/sites or 'DNase'" help="List of restriction enzimes/sites or 'DNase', separated by comma. E.g. GATC,GACC">
                         <sanitizer invalid_char="">
                             <valid initial="string.letters,string.digits">
                                 <add value="," />

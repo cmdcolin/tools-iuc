@@ -51,7 +51,7 @@ sub write_record($);
 sub usage();
 
 # Global flags and arguments,
-# Set by command line argumens
+# Set by command line arguments
 my $barcode_file ;
 my $barcodes_at_eol = 0 ;
 my $barcodes_at_bol = 0 ;
@@ -378,7 +378,7 @@ sub open_and_detect_input_format
     $input_file_io = new IO::Handle;
     die "Failed to open STDIN " unless $input_file_io->fdopen(fileno(STDIN),"r");
 
-    # Get the first characeter, and push it back
+    # Get the first character, and push it back
     my $first_char = $input_file_io->getc();
     $input_file_io->ungetc(ord $first_char);
 
@@ -446,7 +446,7 @@ Barcode Splitter, by Assaf Gordon (gordon\@cshl.edu), 11sep2008
 This program reads FASTA/FASTQ file and splits it into several smaller files,
 Based on barcode matching.
 FASTA/FASTQ data is read from STDIN (format is auto-detected.)
-Output files will be writen to disk.
+Output files will be written to disk.
 Summary will be printed to STDOUT.
 
 usage: $0 --bcfile FILE --prefix PREFIX [--suffix SUFFIX] [--bol|--eol|--idxfile]
@@ -563,7 +563,7 @@ GATCT (1 mismatch)
 Note: scoring counts a missing base as a mismatch, so the final
 mismatch count is 2 (1 'real' mismatch, 1 'missing base' mismatch).
 If running with '--mismatches 2' (meaning allowing upto 2 mismatches) - this
-seqeunce will be classified as BC1.
+sequence will be classified as BC1.
 
 EOF
 

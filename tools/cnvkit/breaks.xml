@@ -1,5 +1,5 @@
 <tool id="cnvkit_breaks" name="CNVkit Breaks" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="21.05">
-    <description>List the targeted genes with segmentaion breakpoint</description>
+    <description>List the targeted genes with segmentation breakpoint</description>
     <macros>
         <import>macros.xml</import>
     </macros>
@@ -38,7 +38,7 @@
     <help><![CDATA[
         
        Identify genes in which: 
-       (I) an unbalanced fusion or other structural rearrangement breakpoint occured
+       (I) an unbalanced fusion or other structural rearrangement breakpoint occurred
        (II) CNV calling is simply difficult due to an inconsistent copy number signal
        
        The breaks output is a text table of tab-separated values, which is amenable to further processing by 

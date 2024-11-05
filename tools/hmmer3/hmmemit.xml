@@ -41,8 +41,8 @@ hmmemit
         <param name="oformat_select" type="select" label="Output Format">
             <option value="fasta" selected="true">Fasta</option>
             <option value="aln">Alignment</option>
-            <option value="mrcs">Majority-Rule Concensus Sequence</option>
-            <option value="mrcsf">Fancier Concensus Sequence</option>
+            <option value="mrcs">Majority-Rule Consensus Sequence</option>
+            <option value="mrcsf">Fancier Consensus Sequence</option>
             <option value="sample">Sample sequences from profile, not core model</option>
         </param>
         <when value="fasta">
@@ -149,13 +149,13 @@ Fasta option is the easiest to understand, given an input model, it will produce
 
 Produces a stockholm alignment, of what the Fasta output would have produced.
 
-**Majority-Rule Concensus Sequence**
+**Majority-Rule Consensus Sequence**
 
 Emit a plurality-rule consensus sequence, instead of sampling a sequence from
 the profile HMM’s probability distribution. The consensus sequence is formed by
 selecting the maximum probability residue at each match state.
 
-**Fancier Concensus Sequence**
+**Fancier Consensus Sequence**
 
 Emit a fancier plurality-rule consensus sequence than the -c option. If the
 maximum probability residue has p < minl show it as a lower case ’any’ residue

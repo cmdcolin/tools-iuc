@@ -57,7 +57,7 @@ $advanced.force
         <collection name="output_align" type="list" format="fasta.gz" label="${tool.name} on ${on_string} (align)">
             <discover_datasets pattern="(?P&lt;designation&gt;.+)\.fasta.gz" ext="fasta.gz" directory="output_dir/align"/>
         </collection>
-        <collection name="output_identfy" type="list" format="tsv" label="${tool.name} on ${on_string} (identify)">
+        <collection name="output_identify" type="list" format="tsv" label="${tool.name} on ${on_string} (identify)">
             <discover_datasets pattern="(?P&lt;designation&gt;.+)\.tsv" ext="tsv" directory="output_dir/identify"/>
         </collection>
         <collection name="output_classify" type="list" format="newick" label="${tool.name} on ${on_string} (classify)">
@@ -80,7 +80,7 @@ $advanced.force
                     </assert_contents>
                 </element>
             </output_collection>
-            <output_collection name="output_identfy" type="list" count="4">
+            <output_collection name="output_identify" type="list" count="4">
                 <element name="gtdbtk.ar53.markers_summary" ftype="tsv">
                     <assert_contents>
                         <has_text text="number_unique_genes"/>

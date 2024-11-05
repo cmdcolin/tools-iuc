@@ -215,7 +215,7 @@ with open(infile) as data_in:
                     for allele in cols[gt_idx].partition(gt_sep)
                 ]
                 # follow cBioportal recommendation to leave allele1 empty
-                # when information is not avaliable
+                # when information is not available
                 if not allele2:
                     gts[n] = [allele2, allele1]
                 else:

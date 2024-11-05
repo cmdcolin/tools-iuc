@@ -302,7 +302,7 @@
             </when>
         </conditional>
 
-        <param name="gff" argument="--gff3" type="boolean" label="GFF formated output"
+        <param name="gff" argument="--gff3" type="boolean" label="GFF formatted output"
             help="Standard output is GTF."
             truevalue="--gff3=on" falsevalue="--gff3=off" checked="false" />
 

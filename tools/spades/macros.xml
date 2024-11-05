@@ -551,7 +551,7 @@ export OMP_THREAD_LIMIT=\${GALAXY_SLOTS:-4} &&
     </xml>
     <xml name="nanopore_pacbio">
         <param argument="--nanopore" type="data" format="fastq,fastq.gz" multiple="true" optional="true" label="Nanopore reads" help="SPAdes will use Oxford Nanopore reads for gap closure and repeat resolution"/>
-        <param argument="--pacbio" type="data" format="fastq,fastq.gz" multiple="true" optional="true" label="PacBio CLR reads" help="It is not recommended to run SPAdes on PacBio reads with low coverage (less than 5). In addition, SPAdes develpers suggest not to run SPAdes on PacBio reads for large genomes. SPAdes will use PacBio CLR reads for gap closure and repeat resolution"/>
+        <param argument="--pacbio" type="data" format="fastq,fastq.gz" multiple="true" optional="true" label="PacBio CLR reads" help="It is not recommended to run SPAdes on PacBio reads with low coverage (less than 5). In addition, SPAdes developers suggest not to run SPAdes on PacBio reads for large genomes. SPAdes will use PacBio CLR reads for gap closure and repeat resolution"/>
     </xml>
     <xml name="flrna">
         <param argument="--fl-rna" name="flrna" type="data" format="fastq,fastq.gz,fasta,fasta.gz,fastqsanger,fastqsanger.gz" multiple="true" optional="true" label="PacBio/Nanopore/contigs that capture full-length transcripts" help="In addition to long reads, you may also provide a separate file with reads capturing the entire transcript sequences using this option. Full-length transcripts in such reads can be typically detected using the adapters. Note, that FL reads should be trimmed so that the adapters are excluded."/>

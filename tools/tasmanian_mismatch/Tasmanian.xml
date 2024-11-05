@@ -35,7 +35,7 @@
   ]]></command>
   <inputs>
     <!-- Bam alignment file -->
-    <param type="data" name="bam_input" label="Bam/Sam alignemnt file" format="bam" help="Specify BAM/SAM dataset. If not using a bed file, this file MUST BE SORTED"/>
+    <param type="data" name="bam_input" label="Bam/Sam alignment file" format="bam" help="Specify BAM/SAM dataset. If not using a bed file, this file MUST BE SORTED"/>
     <!-- reference genome upload -->
     <conditional name="reference_source">
       <param name="reference_source_selector" type="select" label="Reference genome" help="You can select a reference genome from your history or use a built-in index (Local cache)">
@@ -62,10 +62,10 @@
     <param name="confidence" label="Boundary" type="integer" value="20" min="0" max="100"
         help="Number of bases in boundary region, from 0 to length of the read (read help below). Default=20"/> 
     <param name="softclips" label="Choose an action with softclips" type="select" display="radio"
-        help="How sofclips whould be treated. Values include 0,1 or 2 (read the help below). Default=0">
+        help="How sofclips would be treated. Values include 0,1 or 2 (read the help below). Default=0">
       <option value="1">Never use softcliped bases</option>
       <option value="2">Always use softcliped bases</option>
-      <option value="0" selected="True">Automatic desicion (Default)</option>
+      <option value="0" selected="True">Automatic decision (Default)</option>
     </param>
     <param name="mapquality" label="Map quality" type="integer" min="0" max="70" value="20" help="Exclude reads with lower mapQ than this number. Default=20"/>
     <param name="basequality" label="Base quality" type="integer" min="0" max="70" value="20" help="Exclude bases with lower Base quality than this number. Default=20"/>

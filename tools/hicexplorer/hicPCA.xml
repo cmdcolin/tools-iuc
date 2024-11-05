@@ -227,7 +227,7 @@ _________________
 
 Output
 ------
-Two files are outputed by **hicPCA**, one with the first (pca1) and one with the second (pca2) eigenvector as bigwig or bedgraph. These files can be plotted alongside Hi-C heatmaps, gene density or external datasets such as open chromatin or histone marks enrichment using ``pyGenomeTracks`` or ``hicPlotMatrix``.
+Two files are outputted by **hicPCA**, one with the first (pca1) and one with the second (pca2) eigenvector as bigwig or bedgraph. These files can be plotted alongside Hi-C heatmaps, gene density or external datasets such as open chromatin or histone marks enrichment using ``pyGenomeTracks`` or ``hicPlotMatrix``.
 
 For example, below you can find a ``hicPlotMatrix`` of the Pearson correlation matrix derived from a contact matrix for chromosome 6 in mouse computed with ``hicTransform`` (which is part of A/B compartments computation). The optional data track at the bottom shows the first eigenvector for A/B compartment obtained using **hicPCA**.
 

@@ -72,13 +72,13 @@
 
 A DNA metabarcoding experiment can be considered as a set a PCR products mixed together and sequenced using a next generation sequencer ({i.e.} a solexa or a 454).
 To distinguish between this different PCR products, pairs of small DNA sequences (call tags, see the oligoTag command and its associated paper for more
-informations on the design of such tags) unique for each PCR products are concatenated to the PCR primers.
+information on the design of such tags) unique for each PCR products are concatenated to the PCR primers.
 As they are amplified during the PCR, these tags should be recognizable, together with their respective primers, at the beginning and the end of the reads.
 The first step in data analysis is thus to demultiplex the large resulting sequence file by identifying these DNA tags and the primers.
 
 Usually the results of sequencing are stored in one or more files formatted according to the fasta or fastq format. ngsfilter take as input such sequence file and an extra file describing the DNA tags and primers sequences used for each sample.
 
-The results consist of sequences trimmed of the primers and tags and annotated with the corresponding sample (and possibly some extra informations).
+The results consist of sequences trimmed of the primers and tags and annotated with the corresponding sample (and possibly some extra information).
 Sequences for which the tags and primers have not been well identified, and which are thus unassigned to any sample, are tagged as erroneous sequences
 by ngsfilter. Such erroneous sequences are not reported by the program unless specified by the appropriate option.
 

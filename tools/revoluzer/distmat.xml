@@ -32,7 +32,7 @@
             <option value="">Inversion</option>
             <option value="-b">Breakpoint</option>
             <option value="-i -m">Common Intervals</option>
-            <option value="-i -m --lw">Length weigthed common intervals</option>
+            <option value="-i -m --lw">Length weighted common intervals</option>
         </param>
         <param name="duplicates" type="select" label="Remove duplicate gene orders">
             <option value="">No</option>

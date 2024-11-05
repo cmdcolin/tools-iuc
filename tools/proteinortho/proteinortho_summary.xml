@@ -98,7 +98,7 @@
 
 proteinortho_summary : Summaries the (orthology-pairs/RBH) file(s) to determine how well the species are connected to each other.
 
- * **Protein-Group distribution** (for orthology-pairs) : This report contains overal statistics about the output. (i) Number of groups that contains at least p% input species (with p ranging between 0 and 100). (ii) number of groups for each input species.
+ * **Protein-Group distribution** (for orthology-pairs) : This report contains overall statistics about the output. (i) Number of groups that contains at least p% input species (with p ranging between 0 and 100). (ii) number of groups for each input species.
 
  * **Adjacency Matrix** : How well are the species connected to each other directly.
 

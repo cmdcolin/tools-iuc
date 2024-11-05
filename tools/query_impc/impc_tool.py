@@ -425,7 +425,7 @@ def genes_in_pipeline(inp, g_out):
 
 
 # 14- Extract all genes and corresponding phenotypes related to a
-# particular organ system (eg: significatMPTerm)
+# particular organ system (eg: significantMPTerm)
 def sign_mp(inp, g_out):
     head = sys.argv[4]
     mp_term = inp  # ["MP:0005391"]

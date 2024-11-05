@@ -17,7 +17,7 @@ Rscript '$__tool_directory__/upset.R' '$n_int' '$x_lab' '$y_lab' '$width' '$heig
 ]]></command>
 	<inputs>
 		<param name="input" type="data" format="txt,tabular" multiple="true" label="Gene List files" />
-		<param name="n_int" type="integer"  min="1" max="100" value="40" label="Numer of interactions to show"/>
+		<param name="n_int" type="integer"  min="1" max="100" value="40" label="Number of interactions to show"/>
 		<param name="x_lab" type="text"  value="Shared output across results" label="x-axis label"/>
 		<param name="y_lab" type="text"  value="Number of shared results" label="y-axis label"/>
 

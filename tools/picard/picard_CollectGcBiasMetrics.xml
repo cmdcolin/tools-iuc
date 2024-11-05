@@ -46,7 +46,7 @@
                 </param>
             </when>
             <when value="history">
-                <param name="ref_file" type="data" format="fasta" label="Use the folloing dataset as the reference sequence" help="REFERENCE_SEQUENCE; You can upload a FASTA sequence to the history and use it as reference"/>
+                <param name="ref_file" type="data" format="fasta" label="Use the following dataset as the reference sequence" help="REFERENCE_SEQUENCE; You can upload a FASTA sequence to the history and use it as reference"/>
             </when>
         </conditional>
         <param name="window_size" type="integer" value="100" label="The size of windows on the genome that are used to bin reads" help="WINDOW_SIZE; default=100"/>

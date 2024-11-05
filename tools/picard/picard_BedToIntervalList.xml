@@ -87,7 +87,7 @@ Convert coordinate data (such as BED or Galaxy Interval) into Picard Interval Fo
 
   SEQUENCE_DICTIONARY=File
   SD=File                       The sequence dictionary. You can either use dictionary pre-cached
-                                on this instance of Galaxy, or create one on teh fly from a FASTA
+                                on this instance of Galaxy, or create one on the fly from a FASTA
                                 file uploaded to history (right pane of the interface).
 
 

@@ -9,10 +9,10 @@
     <command detect_errors="exit_code"><![CDATA[   
         ln -s '$CNV_reference.input_sample_file' ./tumor.bam &&
         ln -s '$CNV_reference.input_sample_file.metadata.bam_index' ./tumor.bam.bai &&
-        #if str($CNV_reference.CNV_reference_availabel) == "yes":
+        #if str($CNV_reference.CNV_reference_available) == "yes":
             ln -s '$CNV_reference.reference' ./reference.cnn &&
         #end if 
-        #if str($CNV_reference.CNV_reference_availabel) == "no":
+        #if str($CNV_reference.CNV_reference_available) == "no":
             ln -s '$CNV_reference.normal' ./normal.bam &&
             ln -s '$CNV_reference.normal.metadata.bam_index' ./normal.bam.bai &&
             #if $CNV_reference.advanced_settings.antitargets
@@ -36,7 +36,7 @@
         #import os
         cnvkit.py batch
             ./tumor.bam
-            #if str($CNV_reference.CNV_reference_availabel) == "no":
+            #if str($CNV_reference.CNV_reference_available) == "no":
                 --normal ./normal.bam
                 --targets ./capture.bed
                 --fasta ./genome.fa
@@ -50,7 +50,7 @@
                     --access ./access.bed
                 #end if
             #end if
-            #if str($CNV_reference.CNV_reference_availabel) == "yes":
+            #if str($CNV_reference.CNV_reference_available) == "yes":
                 --reference ./reference.cnn
             #end if
             $output_section.scatter
@@ -73,7 +73,7 @@
             $CNV_reference.advanced_settings.countreads
             $CNV_reference.advanced_settings.drop_low_coverage
             
-            #if str($CNV_reference.CNV_reference_availabel) == "no":
+            #if str($CNV_reference.CNV_reference_available) == "no":
                 $CNV_reference.advanced_settings.short_names
                 #if str($CNV_reference.advanced_settings.target_avg_size)
                     --target-avg-size $CNV_reference.advanced_settings.target_avg_size
@@ -89,7 +89,7 @@
     ]]></command>
     <inputs>
         <conditional name="CNV_reference">
-            <param name="CNV_reference_availabel" type="select" label="Build or reuse a copy number reference file (.cnn)?" help="">
+            <param name="CNV_reference_available" type="select" label="Build or reuse a copy number reference file (.cnn)?" help="">
                 <option value="no" selected="True">Build a new copy number reference file</option>
                 <option value="yes">Reuse a copy number reference file</option>
             </param>
@@ -118,25 +118,25 @@
         <data name="out_sample_cns" format="tabular" label="${tool.name} on ${on_string}: CN segmentation calls" from_work_dir="tumor.cns" />
         <data name="out_sample_cnr" format="tabular" label="${tool.name} on ${on_string}: Bin-Level log2 Ratios/Coverages" from_work_dir="tumor.cnr" />
         <data name="out_capture_antitarget" format="bed" label="${tool.name} on ${on_string}: Capture Antitarget" from_work_dir="capture.antitarget.bed">
-            <filter>(CNV_reference['CNV_reference_availabel']) == 'no'</filter>
+            <filter>(CNV_reference['CNV_reference_available']) == 'no'</filter>
         </data>
         <data name="out_control_targetcoverage" format="tabular" label="${tool.name} on ${on_string}: Normal Sample Target Coverage" from_work_dir="normal.targetcoverage.cnn">
-            <filter>(CNV_reference['CNV_reference_availabel']) == 'no'</filter>
+            <filter>(CNV_reference['CNV_reference_available']) == 'no'</filter>
         </data>
         <data name="out_control_antitargetcoverage" format="tabular" label="${tool.name} on ${on_string}: Normal Sample Antitarget Coverage" from_work_dir="normal.antitargetcoverage.cnn">
-            <filter>(CNV_reference['CNV_reference_availabel']) == 'no'</filter>
+            <filter>(CNV_reference['CNV_reference_available']) == 'no'</filter>
         </data>
         <data name="out_reference_cnn" format="tabular" label="${tool.name} on ${on_string}: Copy Number Reference Profile" from_work_dir="reference.cnn">
-            <filter>(CNV_reference['CNV_reference_availabel']) == 'no'</filter>
+            <filter>(CNV_reference['CNV_reference_available']) == 'no'</filter>
         </data>
         <data name="out_capture_target" format="bed" label="${tool.name} on ${on_string}: Capture Target" from_work_dir="capture.target.bed">
-            <filter>(CNV_reference['CNV_reference_availabel']) == 'no'</filter>
+            <filter>(CNV_reference['CNV_reference_available']) == 'no'</filter>
         </data>
         <data name="out_reference_target_bed" format="tabular" label="${tool.name} on ${on_string}: Reference Target" from_work_dir="reference.target-tmp.bed">
-            <filter>(CNV_reference['CNV_reference_availabel']) == 'yes'</filter>
+            <filter>(CNV_reference['CNV_reference_available']) == 'yes'</filter>
         </data>
         <data name="out_reference_antitarget_bed" format="bed" label="${tool.name} on ${on_string}: Reference Antitarget" from_work_dir="reference.antitarget-tmp.bed">
-            <filter>(CNV_reference['CNV_reference_availabel']) == 'yes'</filter>
+            <filter>(CNV_reference['CNV_reference_available']) == 'yes'</filter>
         </data>
         <data name="out_sample_diagram_pdf" format="pdf" label="${tool.name} on ${on_string}: Sample Diagram" from_work_dir="tumor-diagram.pdf">
             <filter>output_section['diagram']</filter>
@@ -151,7 +151,7 @@
                 <param name="ref_selector" value="history"/>
                 <param name="fasta" ftype="fasta" value="genome.fasta" />
             </conditional>
-            <param name="CNV_reference_availabel" value="no" />
+            <param name="CNV_reference_available" value="no" />
             <param name="input_sample_file" ftype="bam" value="tumor.bam" />
             <param name="normal" ftype="bam" value="normal.bam" />
             <param name="targets" ftype="bed" value="capture.bed" />
@@ -194,7 +194,7 @@
                 <param name="ref_selector" value="cached"/>
                 <param name="fasta" value="test_buildid"/>
             </conditional>
-            <param name="CNV_reference_availabel" value="no" />
+            <param name="CNV_reference_available" value="no" />
             <param name="input_sample_file" ftype="bam" value="tumor.bam" />
             <param name="normal" ftype="bam" value="normal.bam" />
             <param name="targets" ftype="bed" value="capture.bed" />
@@ -233,7 +233,7 @@
             </output>
         </test>
         <test expect_num_outputs="10">
-            <param name="CNV_reference_availabel" value="yes" />
+            <param name="CNV_reference_available" value="yes" />
             <param name="input_sample_file" ftype="bam" value="tumor.bam" />
             <param name="reference" ftype="tabular" value="reference.cnn" />
             <param name="scatter" value="1"/>

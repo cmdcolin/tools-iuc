@@ -37,13 +37,13 @@
         </param>
         <section name="opt_args" title="Optional Arguments">
             <param name="filtered_reads" type="boolean" truevalue="true" falsevalue="" checked="false" label="Save filtered reads ?"/>
-            <param argument="--max_gap" type="integer" min="1" value="4" label="Maximum gap for blocks to be contigous, measured in
+            <param argument="--max_gap" type="integer" min="1" value="4" label="Maximum gap for blocks to be contiguous, measured in
                         multiples of the k-mer size" help="Default:4" />
             <param argument="--margin" type="integer" min="1" value="10" label="Flanking region around a block to use for mapping" help="Default:10" />
             <param argument="--min_block_size" type="integer" min="1" value="150" label="Minimum block size in bases" help="Default:150" />
             <param argument="--min_fasta_hits" type="integer" min="1" value="10" label="Minimum No. of kmers matching a read" help="Default:10" />
             <param argument="--min_kmers_for_onex_pass" type="integer" min="2" value="5" label="Minimum No. of kmers matching a read in 1st pass" help="Default:5" />
-            <param argument="--max_kmers" type="integer" min="1" value="10" label="Dont count kmers occuring more than this many times" help="Default:10" />
+            <param argument="--max_kmers" type="integer" min="1" value="10" label="Dont count kmers occurring more than this many times" help="Default:10" />
             <param argument="--print_interval" type="integer" min="1" value="10" label="Print ST every this number of reads" help="(Default:500)" />
             <param argument="--kmer" type="integer" min="2" value="10" label="k-mer size" help="(Default:11)" />
             <param argument="--divisible_by_3" type="boolean" truevalue="--divisible_by_3" falsevalue="" checked="false" label="Genes which are not divisible by 3 are excluded" help="(Default:No)" />

@@ -97,7 +97,7 @@ def url_download(url):
             os.remove(file_name)
             file_name = uncompressed_file_name
     except IOError as e:
-        sys.stderr.write('Error occured downloading reference file: %s' % e)
+        sys.stderr.write('Error occurred downloading reference file: %s' % e)
         os.remove(file_name)
     return file_name
 

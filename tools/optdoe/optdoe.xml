@@ -28,7 +28,7 @@
         <section name="adv" title="Advanced Options" expanded="false">
             <param name="genes_sbol_file" type="data" format="xml" optional="true" label="Optimised Genes" help="SBOL file with genes associated with different RBS. Provided by the tool PartsGenie"/>
             <param argument="--ref_parts_file" type="data" format="csv" value="None" optional="true" label="Ref Parts (default: E. coli compliant)" help="Provide fixed parts"/>
-            <param argument="--libsize" type="integer" value="32" min="32" label="Maximal library size" help="Maximal number of contructs in the output"/>
+            <param argument="--libsize" type="integer" value="32" min="32" label="Maximal library size" help="Maximal number of constructs in the output"/>
             <param argument="--get_sequences" type="boolean" truevalue="--get_sequences true" falsevalue="--get_sequences false" checked="true" label="Get sequences" help="Grab the sequence for each part of the SBOL output"/>
             <param argument="--backtranslate" type="boolean" truevalue="--backtranslate true" falsevalue="--backtranslate false" checked="true" label="Back translate" help="Translate the protein sequence given by its Uniprot ID to a DNA sequence"/>
             <param argument="--codon_table" type="select" label="Codon Table">

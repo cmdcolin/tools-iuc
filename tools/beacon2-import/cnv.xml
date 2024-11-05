@@ -1,5 +1,5 @@
 <tool id="beacon2_cnv" name="Beacon2 CNV" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="21.05">
-    <description>Retrieve the copy number varients from genomicVariations collection from the beacon database</description>
+    <description>Retrieve the copy number variants from genomicVariations collection from the beacon database</description>
     <macros>
         <import>macros.xml</import>
     </macros>

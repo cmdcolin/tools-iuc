@@ -69,7 +69,7 @@ $io
 
         <conditional name="addition2">
             <param name="addition2_select" argument="-D" type="select"
-                label="Add additional columns to report distance to upstream feature. Distance defintion"
+                label="Add additional columns to report distance to upstream feature. Distance definition"
                 help="Like -d, report the closest feature in B, and its distance to A as an extra column. However unlike -d, use negative distances to report upstream features">
                 <option value="" selected="true">Do not report the distance et all.</option>
                 <option value="ref">Report distance with respect to the reference genome. B features with a lower (start, stop) are upstream. (-ref)</option>

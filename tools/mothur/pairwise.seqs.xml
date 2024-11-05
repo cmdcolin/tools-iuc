@@ -45,7 +45,7 @@ echo 'pairwise.seqs(
             <option value="gotoh">gotoh</option>
             <option value="blast">blast</option>
         </param>
-        <param name="calc" type="select" label="calc - Calc Method - Gap Penality" help="">
+        <param name="calc" type="select" label="calc - Calc Method - Gap Penalty" help="">
             <option value="" selected="true">use default</option>
             <option value="onegap">onegap - counts a string of gaps as a single gap</option>
             <option value="nogaps">nogaps - ignores gaps</option>

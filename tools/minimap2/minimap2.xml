@@ -76,8 +76,8 @@
     #if str($mapping_options.mask_len):
         --mask-len $mapping_options.mask_len
     #end if
-    #if str($mapping_options.kmer_ocurrence_interval.interval):
-        -U $mapping_options.kmer_ocurrence_interval.lower_limit,$mapping_options.kmer_ocurrence_interval.upper_limit
+    #if str($mapping_options.kmer_occurrence_interval.interval):
+        -U $mapping_options.kmer_occurrence_interval.lower_limit,$mapping_options.kmer_occurrence_interval.upper_limit
     #end if
     ## Alignment options
     #if str($alignment_options.splicing.splice_mode) == '--splice':
@@ -225,15 +225,15 @@
             <when value="paired">
                 <param name="fastq_input1" type="data" format="fastqsanger,fastqsanger.gz,fasta" label="Select first set of reads" help="Specify dataset with forward reads"/>
                 <param name="fastq_input2" type="data" format="fastqsanger,fastqsanger.gz,fasta" label="Select second set of reads" help="Specify dataset with reverse reads"/>
-                <expand macro="pe_anaylsis_fixed_selector" />
+                <expand macro="pe_analysis_fixed_selector" />
             </when>
             <when value="paired_collection">
                 <param name="fastq_input1" format="fastqsanger,fastqsanger.gz,fasta" type="data_collection" collection_type="paired" label="Select a paired collection" help="See help section for an explanation of dataset collections"/>
-                <expand macro="pe_anaylsis_fixed_selector" />
+                <expand macro="pe_analysis_fixed_selector" />
             </when>
             <when value="paired_iv">
                 <param name="fastq_input1" type="data" format="fastqsanger,fastqsanger.gz,fasta" label="Select fastq dataset" help="Specify dataset with interleaved reads"/>
-                <expand macro="pe_anaylsis_fixed_selector" />
+                <expand macro="pe_analysis_fixed_selector" />
             </when>
         </conditional>
         <section name="indexing_options" title="Indexing options">
@@ -248,19 +248,19 @@
             label="Max fragment length for PE alignment"
             help="The maximum apparent fragment length up to which paired-end reads are aligned together; at higher fragment lengths the mates will be aligned independent of each other; effective only for paired-end data and when spliced alignment mode is turned off; default=800" />
             <param argument="-f" type="float" value="" optional="true" label="Filter out top FLOAT fraction of repetitive minimizers" help="default=0.0002"/>
-            <conditional name="kmer_ocurrence_interval">
+            <conditional name="kmer_occurrence_interval">
                 <param name="interval" argument="-U" type="select" label="Specify an interval of k-mer occurrences" help="Allows to specify an interval of k-mer occurrences with -U. For repeat-rich genomes, the automatic k-mer occurrence threshold determined by -f may be too large and makes alignment impractically slow. The new option protects against such cases. Enabled for asm* and map-hifi.">
                     <option value="enabled">Enabled</option>
                     <option value="" selected="true">Disabled</option>
                 </param>
                 <when value="enabled">
-                    <param name="lower_limit" type="integer" min="0" max="10000" value="" label="K-mer ocurrence lower limit"/>
-                    <param name="upper_limit" type="integer" min="0" max="10000" value="" label="K-mer ocurrence upper limit"/>
+                    <param name="lower_limit" type="integer" min="0" max="10000" value="" label="K-mer occurrence lower limit"/>
+                    <param name="upper_limit" type="integer" min="0" max="10000" value="" label="K-mer occurrence upper limit"/>
                 </when>
                 <when value="">
                 </when>
             </conditional>
-            <param argument="--min-occ-floor" type="integer" label="Force minimap2 to always use k-mers occuring this many times or fewer" help="Maximum occurence is the number of repetitive minimizers determined by '-f' or this value, whichever is higher." optional="true" />
+            <param argument="--min-occ-floor" type="integer" label="Force minimap2 to always use k-mers occurring this many times or fewer" help="Maximum occurrence is the number of repetitive minimizers determined by '-f' or this value, whichever is higher." optional="true" />
             <param argument="--q-occ-frac" type="float" value="0.01" label="Discard a query minimizer"
                 help="Discard a query minimizer if its occurrence is higher than this fraction of query minimizers and than the reference occurrence threshold. It allows to avoid extremely long mapping time for pathologic reads with highly repeated k-mers not in the reference. Set to 0 to disable the new heuristic." />
 
@@ -465,7 +465,7 @@
             <param name="fastq_input1" ftype="fastqsanger" value="bwa-mem-fasta1.fa"/>
             <param name="analysis_type_selector" value="sr"/>
             <section name="alignment_options">
-                <!-- the folowing settings correspond to the defaults for "sr"
+                <!-- the following settings correspond to the defaults for "sr"
                 mode. The purpose is to check that all alignment params get
                 parsed correctly. -->
                 <param name="A" value="2" />
@@ -534,18 +534,18 @@
             <output name="alignment_output" ftype="bam" file="minimap2-test_hifi-2-fasta.bam" lines_diff="4" />
         </test>
         <test expect_num_outputs="1">
-            <!-- test kmer ocurrence interval option -->
+            <!-- test kmer occurrence interval option -->
             <param name="reference_source_selector" value="history" />
             <param name="ref_file" ftype="fasta" value="bwa-mem-mt-genome.fa"/>
             <param name="fastq_input_selector" value="single"/>
             <param name="fastq_input1" ftype="fastqsanger" value="bwa-mem-fasta1.fa"/>
             <param name="analysis_type_selector" value="sr"/>
-            <conditional name="kmer_ocurrence_interval">
+            <conditional name="kmer_occurrence_interval">
                 <param name="interval" value="enabled"/>
                 <param name="lower_limit" value="10"/>
                 <param name="upper_limit" value="30"/>
             </conditional>
-            <output name="alignment_output" ftype="bam" file="minimap2-test-kmer_ocurrence.bam" lines_diff="4" />
+            <output name="alignment_output" ftype="bam" file="minimap2-test-kmer_occurrence.bam" lines_diff="4" />
         </test>
     </tests>
     <help>
@@ -606,7 +606,7 @@ Map long noisy genomic reads
 
 The difference between ``map-pb`` and ``map-ont`` is that ``map-pb``
 uses homopolymer-compressed (HPC) minimizers as seeds, while ``map-ont``
-uses ordinary minimizers as seeds. Emperical evaluation suggests HPC
+uses ordinary minimizers as seeds. Empirical evaluation suggests HPC
 minimizers improve performance and sensitivity when aligning PacBio
 reads, but hurt when aligning Nanopore reads.
 
@@ -614,12 +614,12 @@ Map long mRNA/cDNA reads
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 There are different long-read RNA-seq technologies, including
-tranditional full-length cDNA, EST, PacBio Iso-seq, Nanopore 2D cDNA-seq
+traditional full-length cDNA, EST, PacBio Iso-seq, Nanopore 2D cDNA-seq
 and Direct RNA-seq. They produce data of varying quality and properties.
 By default, ``-x splice`` assumes the read orientation relative to the
 transcript strand is unknown. It tries two rounds of alignment to infer
 the orientation and write the strand to the ``ts`` SAM/PAF tag if
-possible. For Iso-seq, Direct RNA-seq and tranditional full-length
+possible. For Iso-seq, Direct RNA-seq and traditional full-length
 cDNAs, it would be desired to apply ``-u f`` to force minimap2 to
 consider the forward transcript strand only. This speeds up alignment
 with slight improvement to accuracy. For noisy Nanopore Direct RNA-seq
@@ -711,7 +711,7 @@ alignment, for example:
     CGATCG---AATAGAGTAGGTCGAATtGCA
 
 is represented as ``:6-ata:10+gtc:4*at:3``, where ``:[0-9]+`` represents
-an identical block, ``-ata`` represents a deltion, ``+gtc`` an insertion
+an identical block, ``-ata`` represents a deletion, ``+gtc`` an insertion
 and ``*at`` indicates reference base ``a`` is substituted with a query
 base ``t``. It is similar to the ``MD`` SAM tag but is standalone and
 easier to parse.

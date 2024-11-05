@@ -75,7 +75,7 @@
                         <option value="manual">Manually set MLST scheme</option>
                     </param>
                     <when value="auto">
-                        <param argument="--minscore" type="integer" label="Minimum score to match scheme" value="50" min="0" max="100" help="Minumum score out of 100 to match a scheme" optional="true" />
+                        <param argument="--minscore" type="integer" label="Minimum score to match scheme" value="50" min="0" max="100" help="Minimum score out of 100 to match a scheme" optional="true" />
                         <param argument="--exclude" type="text" area="false" label="Exclude these schemes" help="Ignore these schemes from auto detection (comma sep. list) (default 'ecoli_2,abaumannii')" optional="true" />
                     </when>
                     <when value="list">
@@ -325,7 +325,7 @@ Given a genome file in FASTA or Genbank format, MLST will scan the file against 
 
 **Output**
 
-MLST will produce a tab-seperated output file which contains:
+MLST will produce a tab-separated output file which contains:
 - the filename
 - the closest PubMLST scheme name
 - the ST (sequence type)

@@ -27,7 +27,7 @@ python '$__tool_directory__/customizemetadata.py'
         </param>
     </inputs>
     <outputs>
-        <data name="sequences" format="fasta" label="${tool.name} on ${on_string}: Marker seqeunces from MetaPhlAn database"/>
+        <data name="sequences" format="fasta" label="${tool.name} on ${on_string}: Marker sequences from MetaPhlAn database"/>
         <data name="metadata" format="json" label="${tool.name} on ${on_string}: Marker metadata from MetaPhlAn database"/>
     </outputs>
     <tests>

@@ -11,7 +11,7 @@
 # "del:22029:6", i.e. a deletion of 6 bases given in base coordinates
 # The current version of the script makes no attempt to convert such lines to
 # amino acid coordinates, but simply drops them.
-# 2. In other cases, constellations lists deletions in amino acid poisitions like
+# 2. In other cases, constellations lists deletions in amino acid positions like
 # this:
 # "s:HV69-"
 # While this notation could be parsed such lines are currently *also* dropped
@@ -126,7 +126,7 @@ def read_lineage_variants(x, lineage_name):
                 for pos, ref_alt in muts.items():
                     if pos in sites[gene]:
                         # exotic case of a parent site being affected in the child
-                        # lineage again. Kepp the child site unaltered.
+                        # lineage again. Keep the child site unaltered.
                         continue
                     sites[gene][pos] = ref_alt
             else:

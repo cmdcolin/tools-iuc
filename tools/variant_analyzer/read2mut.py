@@ -48,7 +48,7 @@ def make_argparser():
     parser.add_argument('--outputFile',
                         help='Output xlsx file of mutation details.')
     parser.add_argument('--thresh', type=int, default=0,
-                        help='Integer threshold for displaying mutations. Only mutations occuring less than thresh times are displayed. Default of 0 displays all.')
+                        help='Integer threshold for displaying mutations. Only mutations occurring less than thresh times are displayed. Default of 0 displays all.')
     parser.add_argument('--phred', type=int, default=20,
                         help='Integer threshold for Phred score. Only reads higher than this threshold are considered. Default 20.')
     parser.add_argument('--trim', type=int, default=10,
@@ -700,12 +700,12 @@ def read2mut(argv):
 
     # sheet 2
     if chimera_correction:
-        header_line2 = ('variant ID', 'cvrg', 'AC alt (all tiers)', 'AF (all tiers)', 'chimeras in AC alt (all tiers)', 'chimera-corrected cvrg', 'chimera-corrected AF (all tiers)', 'cvrg (tiers 1.1-2.4)', 'AC alt (tiers 1.1-2.4)', 'AF (tiers 1.1-2.4)', 'chimeras in AC alt (tiers 1.1-2.4)', 'chimera-corrected cvrg (tiers 1.1-2.4)', 'chimera-corrected AF (tiers 1.1-2.4)', 'AC alt (orginal DCS)', 'AF (original DCS)',
+        header_line2 = ('variant ID', 'cvrg', 'AC alt (all tiers)', 'AF (all tiers)', 'chimeras in AC alt (all tiers)', 'chimera-corrected cvrg', 'chimera-corrected AF (all tiers)', 'cvrg (tiers 1.1-2.4)', 'AC alt (tiers 1.1-2.4)', 'AF (tiers 1.1-2.4)', 'chimeras in AC alt (tiers 1.1-2.4)', 'chimera-corrected cvrg (tiers 1.1-2.4)', 'chimera-corrected AF (tiers 1.1-2.4)', 'AC alt (original DCS)', 'AF (original DCS)',
                         'tier 1.1', 'tier 1.2', 'tier 2.1', 'tier 2.2', 'tier 2.3', 'tier 2.4',
                         'tier 3.1', 'tier 3.2', 'tier 4.1', 'tier 4.2', 'tier 5', 'AF 1.1-1.2', 'AF 1.1-2.1', 'AF 1.1-2.2',
                         'AF 1.1-2.3', 'AF 1.1-2.4', 'AF 1.1-3.1', 'AF 1.1-3.2', 'AF 1.1-4.1', 'AF 1.1-4.2', 'AF 1.1-5')
     else:
-        header_line2 = ('variant ID', 'cvrg', 'AC alt (all tiers)', 'AF (all tiers)', 'cvrg (tiers 1.1-2.4)', 'AC alt (tiers 1.1-2.4)', 'AF (tiers 1.1-2.4)', 'AC alt (orginal DCS)', 'AF (original DCS)',
+        header_line2 = ('variant ID', 'cvrg', 'AC alt (all tiers)', 'AF (all tiers)', 'cvrg (tiers 1.1-2.4)', 'AC alt (tiers 1.1-2.4)', 'AF (tiers 1.1-2.4)', 'AC alt (original DCS)', 'AF (original DCS)',
                         'tier 1.1', 'tier 1.2', 'tier 2.1', 'tier 2.2', 'tier 2.3', 'tier 2.4',
                         'tier 3.1', 'tier 3.2', 'tier 4.1', 'tier 4.2', 'tier 5', 'AF 1.1-1.2', 'AF 1.1-2.1', 'AF 1.1-2.2',
                         'AF 1.1-2.3', 'AF 1.1-2.4', 'AF 1.1-3.1', 'AF 1.1-3.2', 'AF 1.1-4.1', 'AF 1.1-4.2', 'AF 1.1-5')
@@ -729,7 +729,7 @@ def read2mut(argv):
             used_tiers = []
             cum_af = []
             for key2, value2 in sorted(value1.items()):
-                # calculate cummulative AF
+                # calculate cumulative AF
                 used_tiers.append(value2)
                 if len(used_tiers) > 1:
                     cum = safe_div(sum(used_tiers), cvrg)

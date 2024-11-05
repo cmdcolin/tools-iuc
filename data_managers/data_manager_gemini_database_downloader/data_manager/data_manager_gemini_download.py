@@ -32,7 +32,7 @@ def main():
 
     # The name of the database should reflect whether it was built with or
     # without the optional GERP-bp data, the CADD scores, or both.
-    # This builds up the correpsonding part of the name:
+    # This builds up the corresponding part of the name:
     anno_extras = []
     if params['param_dict']['gerp_bp']:
         anno_extras.append('GERP')

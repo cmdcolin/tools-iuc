@@ -116,7 +116,7 @@
             <when value="clean">
                 <param argument="--input" type="data" format="fasta" label="Input file (Fasta file)" help="To detect contamination from foreign organisms, a genome assembly in a fasta file."/>
                 <param argument="--action-report" type="data" format="tabular" label="Select Action report"/>
-                <param argument="--min-seq-len" type="integer" value="200" label="Minimumm sequence length to keep"/>
+                <param argument="--min-seq-len" type="integer" value="200" label="Minimum sequence length to keep"/>
             </when>
         </conditional>
     </inputs>

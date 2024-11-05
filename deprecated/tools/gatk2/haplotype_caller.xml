@@ -70,7 +70,7 @@
             #end for
         #end if
 
-        ## value setings
+        ## value settings
         #if $analysis_param_type.contamination_fraction_to_filter.__str__.strip() != '':
             --contamination_fraction_to_filter $analysis_param_type.contamination_fraction_to_filter
         #end if

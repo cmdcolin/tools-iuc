@@ -38,7 +38,7 @@ The following VCF line::
  #CHROM POS     ID        REF ALT QUAL FILTER INFO                              FORMAT      NA00001        NA00002      NA00003
  20     1110696 rs6040355 A   G,T 67   PASS   NS=2;DP=10;AF=0.333,0.667;AA=T;DB GT:GQ:DP:HQ 1|2:21:6:23,27 2|1:2:0:18,2 2/2:35:4:.,.
 
-will appear as the follwing after intersectuion with BED records uc010zpo.2, uc002wel.4, uc010zpp.2, and uc002wen::
+will appear as the following after intersection with BED records uc010zpo.2, uc002well.4, uc010zpp.2, and uc002wen::
 
  #CHROM POS     ID        REF ALT QUAL FILTER INFO                                                                                       FORMAT      NA00001        NA00002      NA00003                                                  
  20     1110696 rs6040355 A   G,T 67   PASS   AA=T;AF=0.333,0.667;BED-features=uc010zpo.2:uc002wel.4:uc010zpp.2:uc002wen.4;DP=10;NS=2;DB GT:GQ:DP:HQ 1|2:21:6:23,27 2|1:2:0:18,2 2/2:35:4:.,.

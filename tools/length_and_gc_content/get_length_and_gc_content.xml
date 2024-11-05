@@ -12,11 +12,11 @@
         <regex match="Error in"
                source="both"
                level="fatal"
-               description="An undefined error occured, please check your input carefully and contact your administrator." />
+               description="An undefined error occurred, please check your input carefully and contact your administrator." />
         <regex match="Fatal error"
                source="both"
                level="fatal"
-               description="An undefined error occured, please check your input carefully and contact your administrator." />
+               description="An undefined error occurred, please check your input carefully and contact your administrator." />
     </stdio>
     <version_command><![CDATA[
         echo $(R --version | grep version | grep -v GNU)", optparse version" $(R --vanilla --slave -e "library(optparse); cat(sessionInfo()\$otherPkgs\$optparse\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", rtracklayer version" $(R --vanilla --slave -e "library(rtracklayer); cat(sessionInfo()\$otherPkgs\$rtracklayer\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", data.table version" $(R --vanilla --slave -e "library(data.table); cat(sessionInfo()\$otherPkgs\$data.table\$Version)" 2> /dev/null | grep -v -i "WARNING: ")

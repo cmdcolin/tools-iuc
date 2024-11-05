@@ -68,7 +68,7 @@
         <param argument="--tssTesQuantile" type="float" min="0" max="1" value="0.5" label="Quantile for transcription start/end sites in subexon graph"/>
     </inputs>
     <outputs>
-        <data name="meta_anotation" format="gtf"  from_work_dir="psiclass_vote.gtf" label="${tool.name} on ${on_string}: meta-annotation" />
+        <data name="meta_annotation" format="gtf"  from_work_dir="psiclass_vote.gtf" label="${tool.name} on ${on_string}: meta-annotation" />
         <collection name="annotation_collection" type="list" label="${tool.name} on ${on_string}: per-sample annotations">
             <discover_datasets pattern="__designation_and_ext__" format="gtf" directory="annotation_files"/>
         </collection>
@@ -90,7 +90,7 @@
                 <param name="selector" value="true"/>
                 <param name="splice_file" value="splice_sites.interval"/>
             </conditional>
-            <output name="meta_anotation" ftype="gtf" file="test01_meta_annotation.gtf" lines_diff="2"/>
+            <output name="meta_annotation" ftype="gtf" file="test01_meta_annotation.gtf" lines_diff="2"/>
             <output_collection name="annotation_collection" type="list" count="2">
                 <element name="psiclass_sample_0" ftype="gtf" file="test01_annotation_sample0.gtf" lines_diff="2"/>
                 <element name="psiclass_sample_1" ftype="gtf" file="test01_annotation_sample1.gtf" lines_diff="2"/>
@@ -108,7 +108,7 @@
             <conditional name="splice_conditional">
                 <param name="selector" value="false"/>
             </conditional>
-            <output name="meta_anotation" ftype="gtf" file="test02_meta_annotation.gtf"/>
+            <output name="meta_annotation" ftype="gtf" file="test02_meta_annotation.gtf"/>
             <output_collection name="annotation_collection" type="list" count="2">
                 <element name="psiclass_sample_0" ftype="gtf" file="test02_annotation_sample0.gtf" lines_diff="2"/>
                 <element name="psiclass_sample_1" ftype="gtf" file="test02_annotation_sample1.gtf" lines_diff="2"/>
@@ -117,7 +117,7 @@
         </test>
         <test expect_num_outputs="3">
             <param name="bam_files" value="reads1.bam"/>
-            <output name="meta_anotation" ftype="gtf" file="test03_meta_annotation.gtf"/>
+            <output name="meta_annotation" ftype="gtf" file="test03_meta_annotation.gtf"/>
             <output_collection name="annotation_collection" type="list" count="1">
                 <element name="psiclass_sample_0" ftype="gtf" file="test03_annotation_sample0.gtf" lines_diff="2"/>
             </output_collection>

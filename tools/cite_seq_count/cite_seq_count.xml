@@ -135,7 +135,7 @@ $dense
         <param argument="--whitelist" type="data" format="txt,csv,tsv" label="Whitelist of cell barcodes" optional="true"/>
         <param name="max_error" type="integer" min="0" value="2" label="Maximum Levenshtein distance allowed for CMO/HTO."/>
         <param name="start_trim" type="integer" min="0" value="0" label="How many bases should be trimmed on CMO/HTO read before starting to map"/>
-        <param name="sliding_window" type="boolean" truevalue="--sliding-window" falsevalue="" checked="false" label="Activate sliding window alignement."/>
+        <param name="sliding_window" type="boolean" truevalue="--sliding-window" falsevalue="" checked="false" label="Activate sliding window alignment."/>
         <param argument="--dense" type="boolean" truevalue="--dense" falsevalue="" checked="false" label="Output in tsv format (in addition to the dense format)"/>
         <param argument="--first_n" type="integer" value="0" label="Select N reads to run on instead of all." />
         <conditional name="unmapped">

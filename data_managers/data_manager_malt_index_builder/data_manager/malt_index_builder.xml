@@ -122,7 +122,7 @@ sequences to taxonomic or functional classes or to locate genes in DNA reference
  * **Specify seed settings** - specify the settings for controlling how MALT uses its seed-and-extend approach based on “spaced seeds”.
 
   * **Shapes** - specify the seed shapes used. For DNA sequences, the default seed shape is: 111110111011110110111111. For protein sequences, by default MALT uses the following four shapes: 111101101110111, 1111000101011001111, 11101001001000100101111 and 11101001000010100010100111.
-  * **Maximim hits per seed** - specify the maximum number of hits per seed - MALT uses this to calculate a maximum number of hits per hash value.
+  * **Maximum hits per seed** - specify the maximum number of hits per seed - MALT uses this to calculate a maximum number of hits per hash value.
 
     </help>
     <citations>

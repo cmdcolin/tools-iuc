@@ -100,7 +100,7 @@ ln -s '$elem' inputs/${i}.${elem.ext} &&
         of amplicon sequencing Nanopore reads, where a size-based filter can
         be used to remove possibly-chimeric reads.
         
-        The default paramters of the tool (minimum length of 400 and maximum of 700)
+        The default parameters of the tool (minimum length of 400 and maximum of 700)
         are based on the ARTIC amplicon scheme. If used with a different amplicon
         scheme they should be adjusted to use the minimum length of an amplicon as
         the minimum length and the maximum length of an amplicon plus 200 as the

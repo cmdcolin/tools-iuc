@@ -604,7 +604,7 @@ cp '$outReport.files_path'/*.tsv output_dir/
                 </element>
             </output_collection>
         </test>
-        <!-- Ensure filtering on Count in Minmum Samples works -->
+        <!-- Ensure filtering on Count in Minimum Samples works -->
         <test expect_num_outputs="2">
             <param name="format" value="matrix"/>
             <param name="counts" value="matrix.txt"/>
@@ -799,7 +799,7 @@ Example:
 
 **Formula:**
 By default the tool will construct a formula for modelling counts based on the contents of the factors files or the factors given.
-This can be overriden by directly providing the EdgeR formula in section named Formula.
+This can be overridden by directly providing the EdgeR formula in section named Formula.
 
 **Contrasts of Interest:**
 The contrasts you wish to make between levels.
@@ -881,7 +881,7 @@ This commonly becomes important when a small number of genes are very highly exp
 in one sample, but not in another. The highly expressed genes can consume a substantial
 proportion of the total library size, causing the remaining genes to be under-sampled in that
 sample. Unless this RNA composition effect is adjusted for, the remaining genes may falsely
-appear to be down-regulated in that sample . The edgeR `calcNormFactors` function normalizes for RNA composition by finding a set of scaling factors for the library sizes that minimize the log-fold changes between the samples for most genes. The default method for computing these scale factors uses a trimmed mean of M values (TMM) between each pair of samples. We call the product of the original library size and the scaling factor the *effective library size*. The effective library size replaces the original library size in all downsteam analyses. TMM is the recommended method for most RNA-Seq data where the majority (more than half) of the genes are believed not differentially expressed between any pair of the samples. You can change the normalisation method under **Advanced Options** above. For more information, see the `calcNormFactors` section in the `edgeR User's Guide`_.
+appear to be down-regulated in that sample . The edgeR `calcNormFactors` function normalizes for RNA composition by finding a set of scaling factors for the library sizes that minimize the log-fold changes between the samples for most genes. The default method for computing these scale factors uses a trimmed mean of M values (TMM) between each pair of samples. We call the product of the original library size and the scaling factor the *effective library size*. The effective library size replaces the original library size in all downstream analyses. TMM is the recommended method for most RNA-Seq data where the majority (more than half) of the genes are believed not differentially expressed between any pair of the samples. You can change the normalisation method under **Advanced Options** above. For more information, see the `calcNormFactors` section in the `edgeR User's Guide`_.
 
 **Robust Settings**
 Option to use robust settings. Using robust settings (robust=TRUE) with the edgeR estimateDisp and glmQLFit functions is usually recommended to protect against outlier genes. This is turned on by default. Note that it is only used with the quasi-likelihood F test method. For more information, see the `edgeR workflow article`_.

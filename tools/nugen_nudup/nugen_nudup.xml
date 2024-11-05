@@ -55,7 +55,7 @@
         <param type="boolean" argument="--rmdup-only"
             label="Only output BAM with duplicates removed"
             truevalue="--rmdup-only" falsevalue="" checked="false"
-            help="Do not ouput BAM with duplicates marked. Default is to ouput
+            help="Do not output BAM with duplicates marked. Default is to output
             both marked duplicates and removed duplicates BAM files." />
     </inputs>
     <outputs>

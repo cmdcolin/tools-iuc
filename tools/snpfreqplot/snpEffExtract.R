@@ -46,7 +46,7 @@ tsv_eff_from_vcf <- function(input_vcf, output_tab) {
     ## EFF columns are defined here:
     ## https://pcingola.github.io/SnpEff/se_inputoutput/
     options(warn = -1) ## suppress warnings
-    seperated_info <- united_exploderows %>%
+    separated_info <- united_exploderows %>%
         separate(EFF,
             sep = "[(|)]",
             extra = "merge", ## extra values merged into "extra" column
@@ -61,7 +61,7 @@ tsv_eff_from_vcf <- function(input_vcf, output_tab) {
     options(warn = 0)
     ## If there is data that has been dropped or filled-in, we will see it in
     ## the "extra" column if it isn't NA or an empty quote.
-    test_missing <- seperated_info %>%
+    test_missing <- separated_info %>%
         dplyr::select("CHROM", "POS", "extra") %>%
         replace_na(list(extra = "")) %>%
         filter(extra != "")
@@ -71,7 +71,7 @@ tsv_eff_from_vcf <- function(input_vcf, output_tab) {
         stop("Extra values were not parsed")
     }
 
-    vcf_info <- seperated_info %>%
+    vcf_info <- separated_info %>%
         dplyr::select(
             "CHROM", "POS", "REF", "ALT", "FILTER", "DP", "AF",
             "EFF[*].EFFECT", "EFF[*].IMPACT", "EFF[*].FUNCLASS",

@@ -20,9 +20,9 @@
         <regex match="htseq-count: (command ){0,1}not found" source="stderr" level="fatal" description="The HTSeq python package is not properly installed, contact Galaxy administrators" />
         <regex match="samtools: (command ){0,1}not found" source="stderr" level="fatal" description="The samtools package is not properly installed, contact Galaxy administrators" />
         <regex match="Error: Feature (.+) does not contain a '(.+)' attribute" source="both" level="fatal" description="Error parsing the GFF file, at least one feature of the specified 'Feature type' does not have a value for the specified 'ID Attribute'" />
-        <regex match="Error occured in line (\d+) of file" source="stderr" level="fatal" description="Unknown error parsing the GFF file" />
+        <regex match="Error occurred in line (\d+) of file" source="stderr" level="fatal" description="Unknown error parsing the GFF file" />
         <regex match="no SQ lines present" source="stderr" level="fatal" description="Input SAM dataset is missing header or SQ header lines. Please provide a FASTA reference sequence as additional input." />
-        <regex match="Error" source="stderr" level="fatal" description="Unknown error occured" />
+        <regex match="Error" source="stderr" level="fatal" description="Unknown error occurred" />
     </stdio>
 
     <version_command>htseq-count --version</version_command>
@@ -126,7 +126,7 @@
                     <option value="none" selected="true">None - do not count nonuniquely or ambiguously mapped reads for any features</option>
                     <option value="all">All - count nonuniquely or ambiguously mapped reads in BOTH in the nonunique or ambiguous category AND for any features they overlap</option>
                 </param>
-                <param argument="--secondary-alignments" type="boolean" truevalue="ignore" falsevalue="score" checked="false" label="Ignore seconday alignments (0x100 flag)" />
+                <param argument="--secondary-alignments" type="boolean" truevalue="ignore" falsevalue="score" checked="false" label="Ignore secondary alignments (0x100 flag)" />
                 <param argument="--supplementary-alignments" type="boolean" truevalue="ignore" falsevalue="score" checked="false" label="Ignore supplementary alignments (0x800 flag)" />
                 <param argument="--samout" type="boolean" label="Additional BAM Output" help="Write out all SAM alignment records into an output BAM file, annotating each line with its assignment to a feature or a special counter (as an optional field with tag ‘XF’)." />
             </when>
@@ -308,7 +308,7 @@ The script outputs a table with counts for each feature, followed by the special
 
 - *no_feature*: reads which could not be assigned to any feature (set S as described above was empty).
 
-- *ambiguous*: reads which could have been assigned to more than one feature and hence were not counted for any of these (set S had mroe than one element).
+- *ambiguous*: reads which could have been assigned to more than one feature and hence were not counted for any of these (set S had more than one element).
 
 - *too_low_aQual*: reads which were not counted due to the -a option, see below
 

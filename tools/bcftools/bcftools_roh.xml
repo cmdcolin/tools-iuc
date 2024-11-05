@@ -85,7 +85,7 @@ ${section.viterbi_training}
         <section name="sec_general" expanded="true" title="Roh General Options">
             <expand macro="macro_sample" />
             <param name="AF_tag" type="text" value="" label="AF TAG"  optional="True" 
-                   help="Use the specified INFO tag TAG as an allele frequency estimate instead of the defaul AC and AN tags. Sites which do not have TAG will be skipped." />
+                   help="Use the specified INFO tag TAG as an allele frequency estimate instead of the default AC and AN tags. Sites which do not have TAG will be skipped." />
             <param name="AF_dflt" type="float" value="" min="0." max="1." label="AF Default" optional="True" help="If AF is not known, use this allele frequency" />
             <expand macro="macro_AF_file" />
             <expand macro="macro_estimate_AF" />

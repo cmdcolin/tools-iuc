@@ -26,8 +26,8 @@ option_list <- list(
     make_option(c("--plot_test"), action = "store", dest = "plot_test", default = NULL, help = "The method of calculating significance"),
     make_option(c("--plot_type"), action = "store", dest = "plot_type", default = NULL, help = "The type of plot to be produced"),
     make_option(c("--reads"), action = "store", dest = "reads", help = "Input reads table"),
-    make_option(c("--xlab"), action = "store", dest = "xlab", default = NULL, help = "x lable for the plot"),
-    make_option(c("--ylab"), action = "store", dest = "ylab", default = NULL, help = "y lable for the plot")
+    make_option(c("--xlab"), action = "store", dest = "xlab", default = NULL, help = "x label for the plot"),
+    make_option(c("--ylab"), action = "store", dest = "ylab", default = NULL, help = "y label for the plot")
 )
 
 parser <- OptionParser(usage = "%prog [options] file", option_list = option_list)

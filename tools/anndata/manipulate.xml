@@ -637,11 +637,11 @@ The possible manipulations are:
 
 - Makes the obs index unique by appending '1', '2', etc (`obs_names_make_unique method <https://anndata.readthedocs.io/en/latest/generated/anndata.AnnData.obs_names_make_unique.html>`__)
 
-    The first occurance of a non-unique value is ignored.
+    The first occurrence of a non-unique value is ignored.
 
 - Makes the var index unique by appending '1', '2', etc (`var_names_make_unique method <https://anndata.readthedocs.io/en/latest/generated/anndata.AnnData.var_names_make_unique.html>`__)
 
-    The first occurance of a non-unique value is ignored.
+    The first occurrence of a non-unique value is ignored.
 
 - Rename categories of annotation `key` in `obs`, `var` and `uns` (`rename_categories method <https://anndata.readthedocs.io/en/latest/generated/anndata.AnnData.rename_categories.html>`__)
 
@@ -649,7 +649,7 @@ The possible manipulations are:
 
 - Remove keys from obs or var annotations
 
-    Helps in cleaning up andata with many annotations. For example, helps in removing qc metrics calculated during the preprocesing or already existing cluster annotations.
+    Helps in cleaning up andata with many annotations. For example, helps in removing qc metrics calculated during the preprocessing or already existing cluster annotations.
 
 - Flag genes start with a pattern
 

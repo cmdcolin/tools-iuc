@@ -140,7 +140,7 @@
 Public Reference databases maintained by the DADA2 project
 ..........................................................
 
-The following refrence databases which are describes as maintained by the DADA2 project (https://benjjneb.github.io/dada2/training.html) are available
+The following reference databases which are describes as maintained by the DADA2 project (https://benjjneb.github.io/dada2/training.html) are available
 
 - Silva (https://www.arb-silva.de/)
 - RDP
@@ -153,7 +153,7 @@ For the Silva databases check the license information: http://www.arb-silva.de/s
 
 Except for UNITE all reference databases are downloaded from the corresponding zenodo links that are listed on the DADA2 website. The UNITE databases are taken from the links provided on the UNITE website
 
-More detailed informations in the reference data bases can be found on the DADA2 website and contained links: https://benjjneb.github.io/dada2/training.html.
+More detailed information in the reference data bases can be found on the DADA2 website and contained links: https://benjjneb.github.io/dada2/training.html.
 
 Further public Reference databases listed by the DADA2 project
 ..............................................................
@@ -169,7 +169,7 @@ Several contributed reference databases are listed of the DADA2 project website 
 
 Except for PR2, all reference databases are downloaded from the corresponding zenodo links that are listed on the DADA2 website. The PR2 database is taken from their github page.
 
-More detailed informations in the reference data bases can be found on the DADA2 website and contained links: https://benjjneb.github.io/dada2/training.html.
+More detailed information in the reference data bases can be found on the DADA2 website and contained links: https://benjjneb.github.io/dada2/training.html.
     ]]></help>
     <citations>
         <!-- silva -->

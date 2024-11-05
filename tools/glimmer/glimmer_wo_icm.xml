@@ -1,5 +1,5 @@
 <tool id="glimmer_not_knowledge_based" name="Glimmer3" version="@WRAPPER_VERSION@">
-    <description>Predict ORFs in prokaryotic genomes (not knowlegde-based)</description>
+    <description>Predict ORFs in prokaryotic genomes (not knowledge-based)</description>
     <expand macro="bio_tools"/>
     <macros>
         <import>macros.xml</import>
@@ -60,9 +60,9 @@
 
 **What it does**
 
-This tool predicts open reading frames (ORFs) from a given DNA Sequence. That tool is not knowlegde-based.
+This tool predicts open reading frames (ORFs) from a given DNA Sequence. That tool is not knowledge-based.
 
-The recommended way is to use a trained Glimmer3 with ICM model. Use the knowlegde-based version for that and insert/generate a training set.
+The recommended way is to use a trained Glimmer3 with ICM model. Use the knowledge-based version for that and insert/generate a training set.
 
 -----
 

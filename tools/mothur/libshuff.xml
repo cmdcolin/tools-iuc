@@ -42,7 +42,7 @@ echo 'libshuff(
             </options>
         </param>
         <param name="iters" type="integer" value="10000" label="iters - Number of iterations to try (default 10000)"/>
-        <param name="sim" type="boolean" checked="false" truevalue="true" falsevalue="false" label="sim - Matrix values are Similary instead of Distance"/>
+        <param name="sim" type="boolean" checked="false" truevalue="true" falsevalue="false" label="sim - Matrix values are Similarly instead of Distance"/>
         <conditional name="form">
             <param name="form2" type="select" label="form - Select a Clustering Method" help="">
                 <option value="integral" selected="true">Integral</option>

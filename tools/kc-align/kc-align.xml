@@ -40,7 +40,7 @@
     ]]></command>
     <inputs>
         <param name="ref" type="data" format="fasta" label="Reference Sequence" help="Single FASTA reference sequence to be aligned" />
-        <param name="seqs" type="data" format="fasta" label="Reads" help="Multi-FASTA of seqeunces to be aligned with the reference" />
+        <param name="seqs" type="data" format="fasta" label="Reads" help="Multi-FASTA of sequences to be aligned with the reference" />
         <conditional name="position" >
             <param name="mode" type="select" label="Mode" >
                 <option value="genome">Genome</option>
@@ -91,11 +91,11 @@
 Kc-Align
 ============
 
-Kc-Algin is a codon-aware multiple aligner that uses Kalgin2 to produce in-frame gapped codon alignments for selection analysis of small genomes (mostly viral and some smaller bacterial genomes). Takes nucleotide seqeunces as inputs, converts them to their in-frame amino acid sequences, performs multiple alignment with Kalign, and then converts the alignments back to their original codon sequence while preserving the gaps. Produces two outputs: the gapped nucleotide alignments in FASTA format and in CLUSTAL format.
+Kc-Algin is a codon-aware multiple aligner that uses Kalgin2 to produce in-frame gapped codon alignments for selection analysis of small genomes (mostly viral and some smaller bacterial genomes). Takes nucleotide sequences as inputs, converts them to their in-frame amino acid sequences, performs multiple alignment with Kalign, and then converts the alignments back to their original codon sequence while preserving the gaps. Produces two outputs: the gapped nucleotide alignments in FASTA format and in CLUSTAL format.
 
 Kc-Align will also attempt to detect any frameshift mutations in the input reads. If a frameshift is detected, that sequence will not be included in the multiple alignment and its ID will be printed to stdout.
 
-Kc-Align also has functionality for genes that are are composed of more than one continuous sequence (currently only support for two segments). This can be achieved by entering each segments start coordinate in the Start Position parameter separated by a comma and then doing the same for each segments end coordinate in the End Position parameter (Ex: Start Postion: 12562,12591 End Position: 12592,13905) 
+Kc-Align also has functionality for genes that are are composed of more than one continuous sequence (currently only support for two segments). This can be achieved by entering each segments start coordinate in the Start Position parameter separated by a comma and then doing the same for each segments end coordinate in the End Position parameter (Ex: Start Position: 12562,12591 End Position: 12592,13905) 
 
 Modes:
 ------

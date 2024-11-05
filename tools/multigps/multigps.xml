@@ -310,7 +310,7 @@ ${control_items.control}	Control	${control_items.control.ext.upper()}	${conditio
                     <option value="no" selected="True">No</option>
                     <option value="yes">Yes</option>
                 </param>
-                <param  name="fixedmodelrange" type="select" label="Keep binding model range fixed to inital size?" help="Select No to vary automatically">
+                <param  name="fixedmodelrange" type="select" label="Keep binding model range fixed to initial size?" help="Select No to vary automatically">
                     <option value="no" selected="True">No</option>
                     <option value="yes">Yes</option>
                 </param>
@@ -499,7 +499,7 @@ exists for time and memory intensive analyses if running over many conditions or
  - **Spline smoothing parameter** - Smoothing parameter for smoothing cubic spline.
  - **Perform Gaussian model smoothing?** - Select "Yes" to use Gaussian model smoothing using a specified smoothing factor if binding model smoothing is not performed.
  - **Allow joint events in model updates?** - Specify whether to allow joint events in model updates.
- - **Keep binding model range fixed to inital size?** - Flag to keep binding model range fixed to inital size (default: vary automatically)
+ - **Keep binding model range fixed to initial size?** - Flag to keep binding model range fixed to initial size (default: vary automatically)
  - **Poisson log threshold for potential region scanning** - Poisson log threshold for potential region scanning.
  - **Alpha scaling factor** - Alpha scaling factor. Increasing this parameter results in stricter binding event calls. 
  - **Impose this alpha** - The alpha parameter is a sparse prior on binding events in the MultiGPS model. It can be interpreted as a minimum number of reads that each binding event must be responsible for in the model. Default: estimate alpha automatically.

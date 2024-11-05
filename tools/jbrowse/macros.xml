@@ -206,7 +206,7 @@ This Galaxy tool relies on the JBrowse, maintained by the GMOD Community. The Ga
       >
     <section name="jbcolor_scale" title="JBrowse Feature Score Scaling &amp; Coloring Options [Advanced]" expanded="false">
       <conditional name="color_score" label="JBrowse style.color &amp; Score relationship">
-        <param type="select" label="Color Score Algorithm" name="color_score_select" help="How to color the features. If it is based on score, then features with a score attribute anywhere in their hierachy will have their color affected by the score. If you choose to ignore the score, then you'll be able to select a single solid color for every feature in the track">
+        <param type="select" label="Color Score Algorithm" name="color_score_select" help="How to color the features. If it is based on score, then features with a score attribute anywhere in their hierarchy will have their color affected by the score. If you choose to ignore the score, then you'll be able to select a single solid color for every feature in the track">
           <option value="score">Based on score</option>
           <option value="none" selected="true">Ignore score</option>
         </param>

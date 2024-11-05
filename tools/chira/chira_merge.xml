@@ -191,7 +191,7 @@ This tool merges the overlapping aligned positions to define the read concentrat
 **Inputs**
 
 * Alignments in BED format
-* An annotation GTF file contaning reference genomic positions.
+* An annotation GTF file containing reference genomic positions.
 
 **Output**
 

@@ -217,7 +217,7 @@
     <help>
 .. class:: warningmark
 
-Back-translate a protein sequence to the nucleic acid sequence it is most likely to have come from. ``backtranseq`` uses a codon usage table which gives the frequency of usage of each codon for each amino acid. For each amino acid in the input sequence, the corresponding most frequently occuring codon is used in the nucleic acid sequence that is output.
+Back-translate a protein sequence to the nucleic acid sequence it is most likely to have come from. ``backtranseq`` uses a codon usage table which gives the frequency of usage of each codon for each amino acid. For each amino acid in the input sequence, the corresponding most frequently occurring codon is used in the nucleic acid sequence that is output.
 
 -----
 

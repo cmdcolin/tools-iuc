@@ -538,7 +538,7 @@ with Cufflinks if your sequences come from an unstranded library preparation.">
         </section>
         <section name="perf" title="Performance tweaks / Troubleshooting" expanded="false">
             <param argument="--outBAMsortingBinsN" type="integer" value="50" min="1" label="Number of genome bins for coordinate-sorting" help="Higher values result in lower RAM requirements during the sorting step. The default value is 50. Tweak this if you are facing memory-related errors." />
-            <param argument="--winAnchorMultimapNmax" type="integer" value="50" min="50" label="Maximum number of loci anchors are allowed to map to" help="Higher value can increase the runtime singificantly. This value should be set greater or equal to --outFilterMultimapNmax" />
+            <param argument="--winAnchorMultimapNmax" type="integer" value="50" min="50" label="Maximum number of loci anchors are allowed to map to" help="Higher value can increase the runtime significantly. This value should be set greater or equal to --outFilterMultimapNmax" />
         </section>
         <expand macro="outWig"/>
     </inputs>

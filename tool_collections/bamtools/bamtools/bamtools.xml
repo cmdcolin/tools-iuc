@@ -74,7 +74,7 @@
                 <option value="merge">Merge</option>
                 <option value="random">Random</option>
                 <option value="revert">Revert</option>
-                <!-- The sort option below is commented out as BAM files in Galaxy are reference sorted by dafault. -->
+                <!-- The sort option below is commented out as BAM files in Galaxy are reference sorted by default. -->
                 <!-- Allowing users for sort files may break donstream functionality. -->
                 <!-- To enable sort option simply uncomment the line below: -->
                 <!--  <option value="sort">Sort</option> -->
@@ -125,7 +125,7 @@
             <when value="header" />
             <when value="merge" />
             <when value="random">
-                <param name="count" type="integer" value="10000" label="Number of random alignments to grab" help="No duplicate checking is perfomed" />
+                <param name="count" type="integer" value="10000" label="Number of random alignments to grab" help="No duplicate checking is performed" />
                 <param name="seed" type="integer" value="1024" label="Random number generator seed" help="Use the same seed for reproducible results" />
             </when>
             <when value="revert">
@@ -188,7 +188,7 @@
 **What is does**
 
 BAMTools is a collection of utilities for manipulation on BAM files. It is based on BAMtools suite of tools by Derek Barnett (https://github.com/pezmaster31/bamtools).
-This Galaxy implementation of BAMTools utilities includes seven utilities - Convert, Count, Coverage, Header, Merge, Random, and Revert - decsribed in detail below.
+This Galaxy implementation of BAMTools utilities includes seven utilities - Convert, Count, Coverage, Header, Merge, Random, and Revert - described in detail below.
 
 -----
 

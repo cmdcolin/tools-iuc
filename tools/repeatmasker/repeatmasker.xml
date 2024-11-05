@@ -136,7 +136,7 @@
       <param argument="-norna" type="boolean" truevalue="-norna" falsevalue="" checked="false" label="No repeat-like-RNA masking" help="Skip masking of small pol III transcribed RNA (these are masked by default because they resemble SINEs)" />
       <param argument="-alu" type="boolean" truevalue="-alu" falsevalue="" checked="false" label="Limit masking to (primate) Alu repeats" />
       <param argument="-div" type="boolean" truevalue="-div" falsevalue="" checked="false" label="Limit masking to less diverged (younger) repeats" />
-      <param type="select" name="search_speed" label="Search speed vs sensitiviy trade-off">
+      <param type="select" name="search_speed" label="Search speed vs sensitivity trade-off">
         <option value="">Default</option>
         <option value="-q">Quick (5-10% less sensitive, 3-4 times speedup)</option>
         <option value="-qq">Rush (10% less sensitive)</option>

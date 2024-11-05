@@ -125,7 +125,7 @@
         <param name="run_date" optional="True" type="text" label="Run date" help="RGDT; Optional; Format=YYYY-MM-DD (eg 1997-07-16)"/>
         <param name="min_q" type="integer" value="0" min="0" max="100" label="Minimum quality allowed in the input fastq" help="MIN_Q; An exception will be thrown if a quality is less than this value; default=0"/>
         <param name="max_q" type="integer" value="93" min="0" max="100" label="Minimum quality allowed in the input fastq" help="MAX_Q; An exception will be thrown if a quality is greater than this value; default=93"/>
-        <param name="strip_unpairied_mate_number" type="boolean" truevalue="true" falsevalue="false" label="If true and this is an unpaired fastq any occurance of '/1' will be removed from the end of a read name" help="STRIP_UNPAIRED_MATE_NUMBER; default=false"/>
+        <param name="strip_unpairied_mate_number" type="boolean" truevalue="true" falsevalue="false" label="If true and this is an unpaired fastq any occurrence of '/1' will be removed from the end of a read name" help="STRIP_UNPAIRED_MATE_NUMBER; default=false"/>
         <param name="allow_and_ignore_empty_lines" type="boolean" truevalue="true" falsevalue="false" label="Allow (and ignore) empty lines" help="ALLOW_AND_IGNORE_EMPTY_LINES; default=false"/>
         <expand macro="VS"/>
     </inputs>
@@ -220,7 +220,7 @@ Computes a number of metrics that are useful for evaluating coverage and perform
                                 greater than this value.  Default value: 93.
 
   STRIP_UNPAIRED_MATE_NUMBER=Boolean
-                                If true and this is an unpaired fastq any occurance of '/1' will be removed from the end
+                                If true and this is an unpaired fastq any occurrence of '/1' will be removed from the end
                                 of a read name.  Default value: false.  Possible values: {true, false}
 
   ALLOW_AND_IGNORE_EMPTY_LINES=Boolean

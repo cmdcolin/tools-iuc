@@ -120,7 +120,7 @@ SEACR requires files in UCSC bedgraph format from paired-end sequencing as input
 
 **Output**
 
-Results are stored in BED files with the folowing format.
+Results are stored in BED files with the following format.
 
 ::
 

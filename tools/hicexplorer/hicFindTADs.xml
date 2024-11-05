@@ -174,14 +174,14 @@
 Calculate Topologic Associated Domains
 ======================================
 
-Toplogical domains (TADs) are large mainly self-interacting domains. Chromatin interactions occur with higher frequency within a TAD as between TADs. More information_.
+Topological domains (TADs) are large mainly self-interacting domains. Chromatin interactions occur with higher frequency within a TAD as between TADs. More information_.
 
 _________________
 
 Usage
 -----
 
-This tool must be used on unmerged matrices (restiction enzyme resolution) produced by ``hicBuildMatrix`` and corrected by ``hicCorrectMatrix``.
+This tool must be used on unmerged matrices (restriction enzyme resolution) produced by ``hicBuildMatrix`` and corrected by ``hicCorrectMatrix``.
 
 _________________
 
@@ -211,7 +211,7 @@ Output
 - TAD boundaries positions as a BED file and TAD separation score.
 - TAD boundaries positions with delta, p-value and TAD separation score as GFF.
 - TAD domains as a BED file.
-- TAD seperation score as bigwig (bw), bedgraph and numpy array (npz) format. These files can be used to plot the so-called TAD insulation score or TAD separation score along the genome or at specific regions. This score is much more reliable across samples than the number of TADs or the TADs width that can vary depending on the sequencing depth because of the lack of information at certain bins, and depending on the parameters used with this tool.
+- TAD separation score as bigwig (bw), bedgraph and numpy array (npz) format. These files can be used to plot the so-called TAD insulation score or TAD separation score along the genome or at specific regions. This score is much more reliable across samples than the number of TADs or the TADs width that can vary depending on the sequencing depth because of the lack of information at certain bins, and depending on the parameters used with this tool.
 - Matrix with multi-scale TAD scores as a bed-matrix (bm) file that can be plotted inside ``pyGenomeTracks`` to nicely display TAD insulation score alongside Hi-C heatmap and other datasets.
 - Z-score matrix in h5 format that is useful to quickly test the --thresholdComparisons, --delta and --correctForMultipleTesting parameters by using the --TAD_sep_score_prefix option pointing to this zscore_matrix.h5 file (will be added in a future update).
 

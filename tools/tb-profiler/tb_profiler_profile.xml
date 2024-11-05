@@ -138,9 +138,9 @@
                         help="Minimum allele frequency to call variants (default: 0)" />
                     <param name="min_af_soft" argument="--af" type="float" value="0.1" label="Minimum allele frequency to call variants (soft cutoff)" min="0.0" max="1.0"
                         help="Variants with an allele frequency lower than this (and higher than the hard cutoff) will be marked as QC fail (default 0.1)" />
-                    <param name="min_read_hard" argument="--strand" type="integer" value="0" label="Mininum read number per strand (hard cutoff)" min="0"
+                    <param name="min_read_hard" argument="--strand" type="integer" value="0" label="Minimum read number per strand (hard cutoff)" min="0"
                         help="Minimum read number per strand to call variants (default: 0)" />
-                    <param name="min_read_soft" argument="--strand" type="integer" value="3" label="Mininum read number per strand (soft cutoff)" min="0"
+                    <param name="min_read_soft" argument="--strand" type="integer" value="3" label="Minimum read number per strand (soft cutoff)" min="0"
                         help="Minimum read number per strand to report variants (default: 3). Variants with number of reads on each strand below this (and above the hard cutoff) will be marked as QC fail" />
                     <param name="min_sv_depth_hard" argument="--sv-depth" type="integer" value="0" label="Min Depth for SV (hard cutoff)" min="0"
                         help="Minimum depth required to call structural variants (default: 0)" />

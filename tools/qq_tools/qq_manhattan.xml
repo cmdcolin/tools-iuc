@@ -24,7 +24,7 @@
         </test>
     </tests>
     <help><![CDATA[
-        Simple manhattan plot wrapper usinng the qqman bioconductor package.
+        Simple manhattan plot wrapper using the qqman bioconductor package.
     ]]></help>
     <citations>
         <citation type="doi">https://doi.org/10.1101/005165</citation>

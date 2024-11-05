@@ -18,7 +18,7 @@
         <regex match="Error in"
             source="both"
             level="fatal"
-            description="An undefined error occured, please check your input carefully and contact your administrator." />
+            description="An undefined error occurred, please check your input carefully and contact your administrator." />
         <regex match="Error:"
             source="both"
             level="fatal"
@@ -212,7 +212,7 @@ Gender    Female         Male
 
 **Output**
 
-DEXSeq_ generates a tabular file containing the different columns and an optional html report. It can also ouput the DEXSeqResults R object that can be used with the plotDEXSeq tool to visualise individual genes.
+DEXSeq_ generates a tabular file containing the different columns and an optional html report. It can also output the DEXSeqResults R object that can be used with the plotDEXSeq tool to visualise individual genes.
 
 ====== ==========================================================
 Column Description

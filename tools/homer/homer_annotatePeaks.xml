@@ -127,7 +127,7 @@ annotatePeaks.pl
 This wrapper allow to annotate peaks with simple annotations with annotatePeaks.pl from HOMER.
 The annotation file and the GTF file may seem redundant but:
 - the use of gtf file only misses the UTR annotations and does not allow to set the desired offsets for TSS and TTS.
-- the use of annotation file only misses the distance to tss and the correspondance between id and classical gene name.
+- the use of annotation file only misses the distance to tss and the correspondence between id and classical gene name.
         ]]></help>
     <expand macro="citation"/>
 </tool>

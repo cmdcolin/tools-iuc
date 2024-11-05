@@ -85,7 +85,7 @@ use_row_color_col = no
 # - col_major (col segments first, then row)
 # - ascii     (asciibetic order)
 # - row_size  (total of rows for the segment - useful if the segment has both row and column contributions)
-# - col_size  (total of colums for the segment - useful if the segment has both row and column contributions)
+# - col_size  (total of columns for the segment - useful if the segment has both row and column contributions)
 # - row_to_col_ratio (ratio of total of rows to columns for the segment)
 # - col_to_row_ratio (ratio of total of rows to columns for the segment)
 # - size_asc  (size, in ascending order)

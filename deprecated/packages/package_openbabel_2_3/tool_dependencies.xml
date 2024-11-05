@@ -13,7 +13,7 @@
                     </repository>
                 </action>
 
-                <!-- Huge hack, to point to the actual python lib path. Cmake gets confused with mixed python versions (2.x and 3.x) and we need to point explicitely to the recent version. -->
+                <!-- Huge hack, to point to the actual python lib path. Cmake gets confused with mixed python versions (2.x and 3.x) and we need to point explicitly to the recent version. -->
                 <action type="shell_command">cmake . -DPYTHON_BINDINGS=ON -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DEIGEN3_INCLUDE_DIR=$EIGEN3_SOURCE_PATH -DPYTHON_LIBRARY=`python -c 'import distutils.sysconfig; print "%s/libpython%s.so" % (distutils.sysconfig.get_config_var("LIBPL"), distutils.sysconfig.get_python_version())'`</action>
                 <action type="make_install"/>
                 <action type="set_environment">

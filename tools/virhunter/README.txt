@@ -14,7 +14,7 @@ Otherwise, you can use pip for the dependencies' installation.
          
 ## Installation 
 
-To install VirHunter, you need to download it from github and then to install the dependancies.
+To install VirHunter, you need to download it from github and then to install the dependencies.
 
 First, clone the repository from [github](https://github.com/cbib/virhunter)
 

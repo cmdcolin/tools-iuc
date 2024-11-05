@@ -18,7 +18,7 @@ $bed12
         <param name="input" argument="-i" type="data" format="bed" label="Convert the following BED file to BAM"/>
         <param argument="-bed12" type="boolean" truevalue="-bed12" falsevalue="" checked="false"
             label="Indicate that the input BED file is in BED12 (a.k.a 'blocked' BED) format"
-            help="If Selected, bedToBam will convert blocked BED features (e.g., gene annotaions) into 'spliced' BAM alignments by creating an appropriate CIGAR string"/>
+            help="If Selected, bedToBam will convert blocked BED features (e.g., gene annotations) into 'spliced' BAM alignments by creating an appropriate CIGAR string"/>
         <expand macro="input_conditional_genome_file" />
         <param argument="-mapq" type="integer" value="255"
             label="Set a mapping quality (SAM MAPQ field) value for all BED entries" />

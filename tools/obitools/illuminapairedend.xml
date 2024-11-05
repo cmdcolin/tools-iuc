@@ -41,7 +41,7 @@
     <inputs>
         <param name="inputfastq3p" type="data" format="fastq,fastq.gz" label="Read from file" help="file of 3p (1:) Illumina pair-end reads to assemble in sanger fastq nucleic format (standard fastq)" />
         <param name="inputfastq5p" type="data" format="fastq,fastq.gz" label="Read from file" help="file of 5p (2:) Illumina pair-end reads to assemble in sanger fastq nucleic format (standard fastq)" />
-        <param name="score" type="float" value="40.0" label="minimum score for keeping aligment"/>
+        <param name="score" type="float" value="40.0" label="minimum score for keeping alignment"/>
     </inputs>
     <outputs>
         <data name="output" format_source="inputfastq3p" label="${tool.name} on ${on_string}: assembly results" />

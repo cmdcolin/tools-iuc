@@ -50,7 +50,7 @@
                 </param>
             </when>
             <when value="history">
-                <param name="ref_file" type="data" format="fasta" label="Use the folloing dataset as the reference sequence" help="REFERENCE_SEQUENCE; You can upload a FASTA sequence to the history and use it as reference"/>
+                <param name="ref_file" type="data" format="fasta" label="Use the following dataset as the reference sequence" help="REFERENCE_SEQUENCE; You can upload a FASTA sequence to the history and use it as reference"/>
             </when>
         </conditional>
         <param name="deviations" type="float" value="10.0" label="Generate mean, sd and plots by trimming the data down to MEDIAN + DEVIATIONS*MEDIAN_ABSOLUTE_DEVIATION" help="DEVIATIONS; This option is offered because insert size data typically includes enough anomalous values from chimeras and other artifacts to make the mean and SD grossly misleading regarding the real distribution. default=10.0"/>

@@ -248,7 +248,7 @@ def prepare_seq_lists(in_paths, n_fragments, weights=None,):
     n_fragments_list - number of fragments to be sampled
     lists are zipped to work with ray iterators
     """
-    # case when we recieve a single sequence file
+    # case when we receive a single sequence file
     if type(in_paths) is str and in_paths.endswith(('.fna', '.fasta')):
         return [[in_paths, n_fragments]]
     else:

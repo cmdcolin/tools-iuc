@@ -1,5 +1,5 @@
 <tool id="virAnnot_rps2tsv" name="virAnnot Rps2tsv" version="1.1.0+galaxy0" profile="21.05">
-    <description>Convert xml rpstblast results to tab file with taxonomic informations</description>
+    <description>Convert xml rpstblast results to tab file with taxonomic information</description>
     <macros>
         <import>macros.xml</import>
     </macros>

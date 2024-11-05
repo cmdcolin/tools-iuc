@@ -31,7 +31,7 @@
   <!-- Filter option of polypolish -->
   <xml name="filter_option">
       <conditional name="insert_filter">
-          <param name="filter_select" type="select" label="Filter by insert size ? [recommanded]"
+          <param name="filter_select" type="select" label="Filter by insert size ? [recommended]"
                  help="Exclude some alignments based on their insert size. It reduce the number of excessive alignments,
                  particularly near the edges of repeat sequences">
               <option value="filter" selected="true">Filter by insert size</option>

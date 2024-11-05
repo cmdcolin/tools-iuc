@@ -6,7 +6,7 @@
      <option value="t">tab</option>
      <option value="s">single space</option>
      <option value=",">Comma</option>
-     <option value=";">Semicolumn</option>
+     <option value=";">Semicolon</option>
     </param>
    </xml>
    <xml name="inputType">
@@ -145,7 +145,7 @@
      <expand macro="header" />
     </when>
     <when value="7">
-     <param name="input" type="boolean" checked="true" truevalue="True" falsevalue="False" label="Include genes without identified phenotypes?" help="Choose if include in the output table also those genes that have no registred phenotypes. By default they are excluded."/>
+     <param name="input" type="boolean" checked="true" truevalue="True" falsevalue="False" label="Include genes without identified phenotypes?" help="Choose if include in the output table also those genes that have no registered phenotypes. By default they are excluded."/>
      <expand macro="header" />
      <expand macro="outputType" />
     </when>
@@ -254,7 +254,7 @@
    For both genes and phenotypes mapping, check the "View details" section of the job to check if some of them were not mapped (typo errors/ID not present in the database).
    For queries requiring an IMPReSS pipeline ID, here_ is possible to find a complete list with details about each pipeline.
    For query 7 no inputs are required and you can choose if including genes without identified phenotypes or not.
-   In query number 9, a top level phenotype category is required as input. On IMPC, phenotypes are divided into 20 categories to summarize wich systems are mainly influenced by the phenotype. In the database they are 24, since some of them are splitted into different groups:
+   In query number 9, a top level phenotype category is required as input. On IMPC, phenotypes are divided into 20 categories to summarize which systems are mainly influenced by the phenotype. In the database they are 24, since some of them are split into different groups:
  
  
    +-----------------------------------------+---------------------------------------+
@@ -312,7 +312,7 @@
    |
    |
  
-   Moreover, the when the output of a query is a list of genes, the user can choose if the output will be MGI IDs or gene symbols. Please note that it is not possible to map a gene, it will had the same ID as the beggining.
+   Moreover, the when the output of a query is a list of genes, the user can choose if the output will be MGI IDs or gene symbols. Please note that it is not possible to map a gene, it will had the same ID as the beginning.
    For each query is possible to choose if include or not an header row. Note that not all tools have an option to remove it automatically. In this case the user will have to remove it using the tool "Remove beginning of a file".
  
  

@@ -34,7 +34,7 @@
         <param argument="--remove-small" type="boolean" truevalue="--remove-small" 
             falsevalue="" checked="false" label="Remove unique alignments" 
             help="Remove unique alignments shorter than the minimum unique alignment length" />
-        <param argument="-q" type="integer" min="0" value="10" label="Minimum mappping quality" 
+        <param argument="-q" type="integer" min="0" value="10" label="Minimum mapping quality" 
             help="Mapping quality scores quantify the probability that a read is misplaced" />
         <param argument="-d" type="integer" min="0" value="100000" label="Maximum alignment merge distance" 
             help="For each query sequence, syntenic alignments within -d bp of each other are merged into longer alignments"/>        
@@ -52,7 +52,7 @@
                     <option value="--mumreference">Use anchor matches that are unique in in the reference but not necessarily unique in the query (--mumreference)</option>
                     <option value="--maxmatch" selected="true">Use all anchor matches regardless of their uniqueness (--maxmatch)</option>
                 </param>
-                <param argument="-l" type="integer" min="0" value="100" label="Minimun length of a single match"/>
+                <param argument="-l" type="integer" min="0" value="100" label="Minimum length of a single match"/>
                 <param argument="-c" type="integer" min="0" value="500" label="Minimum length of a cluster of matches"/>
             </when>
             <when value="minimap2">

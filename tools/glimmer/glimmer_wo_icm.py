@@ -20,7 +20,7 @@ def main():
     outfile_ext_path = sys.argv[3]
     oufile_genes = sys.argv[8]
 
-    tag = 'glimmer_non_knowlegde_based_prediction'
+    tag = 'glimmer_non_knowledge_based_prediction'
     tempdir = tempfile.gettempdir()
 
     trainingset = os.path.join(tempdir, tag + ".train")

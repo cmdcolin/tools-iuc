@@ -704,7 +704,7 @@ IQ-TREE also works for codon, binary and morphological data.
             <filter>tree_parameters['constructing_consensus']['contree']</filter>
         </data>
         <data name="mldist" format="mldist" from_work_dir="*.mldist" label="${tool.name} on ${on_string}: MaxLikelihood Distance Matrix"/>
-        <data name="splits" format="nex" from_work_dir="*.splits.nex" label="${tool.name} on ${on_string}: Occurence Frequencies in Bootstrap Trees" />
+        <data name="splits" format="nex" from_work_dir="*.splits.nex" label="${tool.name} on ${on_string}: Occurrence Frequencies in Bootstrap Trees" />
         <data name="iqtree" format="iqtree" from_work_dir="*.iqtree" label="${tool.name} on ${on_string}: Report and Final Tree" />
         <data name="mlrate" format="data" from_work_dir="*.mlrate" label="${tool.name} on ${on_string}: ML Rates">
             <filter>modelling_parameters['rate_heterogeneity']['mlrate']</filter>
@@ -1019,7 +1019,7 @@ For this example data the resulting maximum-likelihood tree may look like this (
     +-------------Opossum
 
 
-This makes sense as the mammals (**Human** to **Opossum**) form a clade, whereas the reptiles **Turtle** to **Crocodile**) and **Bird** form a separate sister clade. Here the tree is drawn at the *outgroup* Lungfish which is more accient than other species in this example. However, please note that IQ-TREE always produces an **unrooted tree** as it knows nothing about this biological background; IQ-TREE simply draws the tree this way as **LngfishAu** is the first sequence occuring in the alignment.
+This makes sense as the mammals (**Human** to **Opossum**) form a clade, whereas the reptiles **Turtle** to **Crocodile**) and **Bird** form a separate sister clade. Here the tree is drawn at the *outgroup* Lungfish which is more ancient than other species in this example. However, please note that IQ-TREE always produces an **unrooted tree** as it knows nothing about this biological background; IQ-TREE simply draws the tree this way as **LngfishAu** is the first sequence occurring in the alignment.
 
 Choosing the right substitution model
 -------------------------------------
@@ -1069,7 +1069,7 @@ To overcome the computational burden required by the nonparametric bootstrap, IQ
 
 * **example.phy.contree**: the consensus tree with assigned branch supports where branch lengths are optimized  on the original alignment.
 
-* **example.phy.splits**: support values in percentage for all splits (bipartitions), computed as the occurence frequencies in the bootstrap trees. This file is in "star-dot" format.
+* **example.phy.splits**: support values in percentage for all splits (bipartitions), computed as the occurrence frequencies in the bootstrap trees. This file is in "star-dot" format.
 
 * **example.phy.splits.nex**: has the same information as **example.phy.splits** but in NEXUS format, which can be viewed with the program IcyTree_ to explore the conflicting signals in the data. So it is more informative than consensus tree, e.g. you can see how highly supported the second best conflicting split is, which had no chance to enter the consensus tree.
 

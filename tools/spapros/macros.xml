@@ -48,7 +48,7 @@ show=False
     ]]>
     </token>
     <xml name="set_ids">
-        <param name="set_ids" type="text" value="all" optional="true" label="List of probeset ids (comma seperated, e.g., DE,HVG,random)" help="Kepp it with all or empty to select all probeset ids."/>
+        <param name="set_ids" type="text" value="all" optional="true" label="List of probeset ids (comma separated, e.g., DE,HVG,random)" help="Keep it with all or empty to select all probeset ids."/>
     </xml>
     <xml name="sanitize_query" token_validinitial="string.printable">
         <sanitizer>

@@ -30,7 +30,7 @@ echo 'chimera.bellerophon(
 | tee mothur.out.log
     ]]></command>
     <inputs>
-        <param argument="fasta" type="data" format="fasta" label="fasta - Candiate Sequences"/>
+        <param argument="fasta" type="data" format="fasta" label="fasta - Candidate Sequences"/>
         <param argument="filter" type="boolean" falsevalue="False" truevalue="True" checked="false" label="filter - Apply a 50% soft vertical filter"/>
         <param argument="correction" type="boolean" falsevalue="False" truevalue="True" checked="true" label="correction - Use the square root of the distances instead of the distance value"/>
         <param argument="window" type="integer" value="0" label="window - Length of sequence you want in each window analyzed"

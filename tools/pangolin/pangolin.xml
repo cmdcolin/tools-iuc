@@ -432,7 +432,7 @@ package at job runtime.
 
 1. Using latest downloaded data package versions renders results hard to
    reproduce (e.g. rerunning a corresponding job will cause also a fresh
-   data download, which may yield different data versions as in the intial
+   data download, which may yield different data versions as in the initial
    run).
 
 2. Downloaded latest versions of the data packages may be incompatible
@@ -540,7 +540,7 @@ constellation_version:
 
 is_designated:
     A boolean (True/False) column indicating whether that particular sequence
-    has been offically designated a lineage (via pango-designation).
+    has been officially designated a lineage (via pango-designation).
 
 qc_status:
     Indicates whether the sequence passed the QC thresholds for minimum length

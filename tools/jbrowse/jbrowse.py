@@ -113,7 +113,7 @@ class ColorScaling(object):
         (255, 127, 0),
     ]
 
-    BREWER_DIVERGING_PALLETES = {
+    BREWER_DIVERGING_PALETTES = {
         'BrBg': ("#543005", "#003c30"),
         'PiYg': ("#8e0152", "#276419"),
         'PRGn': ("#40004b", "#00441b"),
@@ -185,7 +185,7 @@ class ColorScaling(object):
         return trackConfig
 
     def parse_colours(self, track, trackFormat, gff3=None):
-        # Wiggle tracks have a bicolor pallete
+        # Wiggle tracks have a bicolor palette
         trackConfig = {'style': {}}
         if trackFormat == 'wiggle':
 

@@ -246,7 +246,7 @@ $getVarCond("metagenome_pipeline_section", "skip_norm")
             </when>
             <when value="ASV">
                 <param argument="--min_reads" type="integer" min="1" value="1" label="Minimum number of reads across all samples for each input ASV" help="ASVs below this cut-off will be counted as part of the RARE category in the stratified output"/>
-                <param argument="--min_samples" type="integer" min="1" value="1" label="Minimum number of samples that an ASV needs to be identfied within" help="ASVs below this cut-off will be counted as part of the RARE category in the stratified output"/>
+                <param argument="--min_samples" type="integer" min="1" value="1" label="Minimum number of samples that an ASV needs to be identified within" help="ASVs below this cut-off will be counted as part of the RARE category in the stratified output"/>
             </when>
         </conditional>
         <yield/>

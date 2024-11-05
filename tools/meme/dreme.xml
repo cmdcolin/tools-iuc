@@ -153,7 +153,7 @@ dreme
     <help><![CDATA[
     DREME (Discriminative Regular Expression Motif Elicitation) discovers short, ungapped motifs (recurring, fixed-length patterns) that are relatively enriched in your sequences compared with shuffled sequences or given control sequences.
 
-    DREME finds relatively short motifs (up to 8 positions) fast. The input to DREME is one or two sets of sequences. The control (-n parameter) sequences should be approximately the same length as the primary (-p parameter) sequences. If you do not provide a control set, the program shuffles the primary set to provide a control set. The program uses Fisher's Exact Test to determine significance of each motif found in the postive set as compared with its representation in the control set, using a significance threshold that may be set (-e parameter).
+    DREME finds relatively short motifs (up to 8 positions) fast. The input to DREME is one or two sets of sequences. The control (-n parameter) sequences should be approximately the same length as the primary (-p parameter) sequences. If you do not provide a control set, the program shuffles the primary set to provide a control set. The program uses Fisher's Exact Test to determine significance of each motif found in the positive set as compared with its representation in the control set, using a significance threshold that may be set (-e parameter).
 
     DREME achieves its high speed by restricting its search to regular expressions based on the IUPAC alphabet representing bases and ambiguous characters, and by using a heuristic estimate of generalised motifs' statistical significance.
 

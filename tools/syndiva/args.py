@@ -39,7 +39,7 @@ class Args:
 
     def __init__(self):
         """
-        Instanciate Files object
+        Instantiate Files object
         """
         self.input = None
         self.output_dir = None
@@ -81,7 +81,7 @@ class Args:
     def getargs(self):
         """
         Determine the files provided as arguments
-        @return: Choosen options
+        @return: Chosen options
         """
         # Sans argument
         if len(sys.argv) <= 1:

@@ -19,10 +19,10 @@ __email__ = "esr@tamu.edu"
 def feature_lambda(feature_list, test, test_kwargs, subfeatures=True):
     """Recursively search through features, testing each with a test function, yielding matches.
 
-    GFF3 is a hierachical data structure, so we need to be able to recursively
+    GFF3 is a hierarchical data structure, so we need to be able to recursively
     search through features. E.g. if you're looking for a feature with
     ID='bob.42', you can't just do a simple list comprehension with a test
-    case. You don't know how deeply burried bob.42 will be in the feature tree. This is where feature_lambda steps in.
+    case. You don't know how deeply buried bob.42 will be in the feature tree. This is where feature_lambda steps in.
 
     :type feature_list: list
     :param feature_list: an iterable of features
@@ -72,7 +72,7 @@ def feature_test_qual_value(feature, **kwargs):
     """Test qualifier values.
 
     For every feature, check that at least one value in
-    feature.quailfiers(kwargs['qualifier']) is in kwargs['attribute_list']
+    feature.qualifiers(kwargs['qualifier']) is in kwargs['attribute_list']
     """
     for attribute_value in feature.qualifiers.get(kwargs['qualifier'], []):
         if attribute_value in kwargs['attribute_list']:

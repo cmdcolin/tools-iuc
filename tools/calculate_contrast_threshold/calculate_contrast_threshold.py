@@ -120,7 +120,7 @@ usage = """
 Usage:
 This script calculates the contrast thresholds from Tag pile up heatmap data. Outputs a text file that contains the parameters for the heatmap script.
 
-python calculateThreshold.py -i <input file> -q <quantile> -m <min upper thresold after quantile calculation> -t <absolute tag threshold> -d <header T/F> -s <start column> -r <row num after compress> -l <col num after compress>'
+python calculateThreshold.py -i <input file> -q <quantile> -m <min upper threshold after quantile calculation> -t <absolute tag threshold> -d <header T/F> -s <start column> -r <row num after compress> -l <col num after compress>'
 
 Example:
 python calculateThreshold.py -i test.tabular.split_line -q 90 -m 5 -d T -s 2 -r 600 -l 300

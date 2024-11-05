@@ -171,7 +171,7 @@ An example FASTA header produced by selecting this option is:
 
     &gt;chr7:127475281-127475310(+)
 
-Selecing the **character delimited field values** option allows selection of a character delimiter that is used
+Selecting the **character delimited field values** option allows selection of a character delimiter that is used
 when generating the FASTA header with fields genome, chrom, start, end, strand (name) delimited by the
 selected character.  For example, selecting an underscore will produce a FASTA header like this:
 

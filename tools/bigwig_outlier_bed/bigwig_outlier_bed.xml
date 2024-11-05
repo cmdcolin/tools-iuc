@@ -173,9 +173,9 @@
  
  *Combine bigwig outlier regions into bed files*
  
- Bigwigs allow quantative tracks to be viewed in an interactive genome browser like JBrowse2. 
+ Bigwigs allow quantitative tracks to be viewed in an interactive genome browser like JBrowse2. 
  Peaks are easy to see. Unusually low regions can be harder to spot, even if they are relatively large, unless the view is zoomed right in.
- Automated methods for combining evidence from multiple bigwigs can be useful for constructing browseable *issues* or other kinds of summary bed format tracks.
+ Automated methods for combining evidence from multiple bigwigs can be useful for constructing browsable *issues* or other kinds of summary bed format tracks.
  For example, combining coverage outlier regions, with the frequency of specific dicnucleotide short tandem repeats,
  for evaluating technical sequencing technology effects in the evaluation of a genome assembly described at https://github.com/arangrhie/T2T-Polish
 

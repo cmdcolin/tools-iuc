@@ -373,7 +373,7 @@ metaquast
                             </when>
                             <when value=""/>
                         </conditional>
-                        <param argument="--circos" type="boolean" truevalue="--circos" falsevalue="" checked="false" label="Generage Circos plot" help="Plot Circos version of Icarus contig alignment viewer"/>
+                        <param argument="--circos" type="boolean" truevalue="--circos" falsevalue="" checked="false" label="Generate Circos plot" help="Plot Circos version of Icarus contig alignment viewer"/>
                     </when>
                     <when value="false">
                         <param argument="--est-ref-size" type="integer" optional="true" label="Estimated reference genome size (in bp) for computing NGx statistics" help=""/>

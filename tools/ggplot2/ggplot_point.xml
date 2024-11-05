@@ -270,7 +270,7 @@ Multiple groups can be plotted on the same or multiple plots by providing a colu
 
 Feel free to explore the (many) advanced options to customize your plot. Galaxy makes this type optimization easy for the user!
 
-The ouput is a pdf file with your scatterplot. The dimensions of this file can be modified under "advanced - output dimensions"
+The output is a pdf file with your scatterplot. The dimensions of this file can be modified under "advanced - output dimensions"
     ]]></help>
     <expand macro="citations"/>
 </tool>

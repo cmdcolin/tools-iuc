@@ -108,7 +108,7 @@
     </command>
     <inputs>
         <!-- INPUT FILES -->
-        <param name="input_file" type="data" format="tabular" multiple="true" optional="false" label="Select taxonomy file tabular formated"/>
+        <param name="input_file" type="data" format="tabular" multiple="true" optional="false" label="Select taxonomy file tabular formatted"/>
         <conditional name="file_type">
             <param name="filetype" type="select" display="radio" label="Type of input file (Centrifuge, CLARK, Generic, Kraken, LMAT)" help="(-f, -r, -g, -k, -l)">
                 <option value="centrifuge">Centrifuge</option>
@@ -334,7 +334,7 @@ With Recentrifuge, researchers can interactively explore what organisms are in t
 **Input option**
 Recentrifuge can deal with some different taxonomic output files.
 Input files can come from centrifuge, kraken, clark of lmat software.
-A generic fonction to accept other files is available but need to add information of the file content.
+A generic function to accept other files is available but need to add information of the file content.
 If generic is choose, the option format need a string like : 'TYP:csv,TID:1,LEN:3,SCO:6,UNC:0'.
 Where TYP are csv/tsv/ssv, and the rest of fields indicate the number of column used (starting in 1)
 for the TaxIDs assigned,the LENgth of the read, the SCOre given to the assignment"

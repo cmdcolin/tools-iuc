@@ -172,7 +172,7 @@ try:
     )
 except Exception as err:
     sys.exit(
-        'While parsing column types, the following problem occured: "%s"'
+        'While parsing column types, the following problem occurred: "%s"'
         % err
     )
 
@@ -246,7 +246,7 @@ for ac in actions:
             )
         else:
             sys.exit(
-                'While parsing expression "%s" the following problem occured: '
+                'While parsing expression "%s" the following problem occurred: '
                 '"%s"' % (expr_string, str(e))
             )
     try:
@@ -366,7 +366,7 @@ with open(args.input, encoding='utf-8') as fh, \
                     # general problem with the user-supplied expression.
                     sys.exit(
                         'While parsing expression "%s" the following '
-                        'problem occured: "%s"' % (ex, str(e))
+                        'problem occurred: "%s"' % (ex, str(e))
                     )
             except Exception as e:
                 if args.skip_non_computable:

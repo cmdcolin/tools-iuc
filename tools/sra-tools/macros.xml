@@ -211,7 +211,7 @@ If an SRA dataset is already present in the history, the sequencing data can be 
  5. On the page that would open you will see **Accession List** button
  6. Clicking of this button will produce a file that you will need to upload into Galaxy and use as the input to this tool.
     </token>
-    <token name="@SRATOOLS_ATTRRIBUTION@">
+    <token name="@SRATOOLS_ATTRIBUTION@">
 For credits, information, support and bug reports, please refer ato https://github.com/galaxyproject/tools-iuc.
     </token>
 </macros>

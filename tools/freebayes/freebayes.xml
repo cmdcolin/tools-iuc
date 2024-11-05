@@ -61,7 +61,7 @@
     #end if
 
     sort -u regions_all.bed > regions_uniq.bed &&
-    ## split into even small chunks, this has some disatvantages and will not be used for the moment
+    ## split into even small chunks, this has some disadvantages and will not be used for the moment
     ## bedtools makewindows -b regions_uniq.bed -w 10000000 -s 9990000 > regions.bed &&
 
     mkdir vcf_output failed_alleles trace &&
@@ -419,7 +419,7 @@
                                label="Assume that samples result from pooled sequencing"
                                help="Model pooled samples using discrete genotypes across pools. When using this flag, set --ploidy to the number of alleles in each sample or use the --cnv-map to define per-sample ploidy" />
                         <param name="K" argument="--poled-continuous" type="boolean" truevalue="-K" falsevalue="" checked="false"
-                               label="Output all alleles which pass input filters, regardles of genotyping outcome or model" />
+                               label="Output all alleles which pass input filters, regardless of genotyping outcome or model" />
                     </when>
                     <when value="do_not_set" />
                 </conditional>
@@ -807,7 +807,7 @@ Galaxy allows five levels of control over FreeBayes options, provided by the **C
                                         When using this flag, set --ploidy to the number of
                                         alleles in each sample or use the --cnv-map to define
                                         per-sample ploidy.
-    --pooled-continuous                 Output all alleles which pass input filters, regardles of
+    --pooled-continuous                 Output all alleles which pass input filters, regardless of
                                         genotyping outcome or model.
 
 **Reference allele**::

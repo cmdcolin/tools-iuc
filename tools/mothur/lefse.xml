@@ -53,7 +53,7 @@ echo 'lefse(
         <param name="sets" type="text" label="sets - Which of the sets in your design file you would like to analyze?" help="separate sets by dashes or commas, e.g. set1,set2 or set1-set2-set3"/>
         <!-- TODO: update galaxy datatypes to set metadata for design files, then can switch to a select box
         <param argument="sets" type="select" multiple="true" label="sets - Which of the sets in your design file you would like to analyze."
-            help="The set names are separated by dashes. The defualt is all sets in designfile">
+            help="The set names are separated by dashes. The default is all sets in designfile">
             <options>
                 <filter type="data_meta" ref="design" key="sets"/>
             </options>

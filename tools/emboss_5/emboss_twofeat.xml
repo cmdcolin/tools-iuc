@@ -13,7 +13,7 @@
     <param name="input1" type="data" format="data" label="Sequences" />
     <param name="atype" type="text" value="*" label="Feature type you wish to allow. Feature 1" />
     <param name="btype" type="text" value="*" label="Feature type you wish to allow. Feature 2" />
-    <param name="minrange" type="integer" value="0" label="Minimun range" />
+    <param name="minrange" type="integer" value="0" label="Minimum range" />
     <param name="maxrange" type="integer" value="0" label="Maximum range" />
     <param name="asource" type="text" value="*" label="Feature source 1" />
     <param name="asense" type="select" label="Feature sense 1">

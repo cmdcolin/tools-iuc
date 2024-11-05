@@ -196,7 +196,7 @@ k=$k
         <param argument="t" type="integer" value="" optional="true" label="Maximum length of blunt contigs to trim" help="Defaults to the value of k" />
         <param argument="c" type="float" value="" optional="true" label="Minimum mean k-mer coverage of a unitig" help="Defaults to sqrt(median)" />
         <param argument="b" type="integer" value="" optional="true" label="Maximum length of a bubble (in bp)" help="abyss-pe has two bubble popping stages. The default limits are 3*k bp for ABYSS and 10000 bp for PopBubbles" />
-        <param argument="SS" type="boolean" label="Assemble in strand-specific mode" help="Requires that all libraries are strand-specific RNA-Seq libraries. Assumes that the first read in a read pair is reveresed with respect to the transcripts sequenced" />
+        <param argument="SS" type="boolean" label="Assemble in strand-specific mode" help="Requires that all libraries are strand-specific RNA-Seq libraries. Assumes that the first read in a read pair is reversed with respect to the transcripts sequenced" />
         <param argument="m" type="integer" value="" min="0" optional="true" label="Minimum overlap of two unitigs (in bp)" help="Defaults to 0 (interpreted as k - 1) if mate-pair libraries are provided or if k&lt;=50, otherwise 50" />
         <param argument="p" type="float" value="0.9" optional="true" label="Minimum sequence identity of a bubble" />
         <param argument="a" type="integer" value="2" min="0" optional="true" label="Maximum number of branches of a bubble" />

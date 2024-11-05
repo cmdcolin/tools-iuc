@@ -34,7 +34,7 @@
             <param name="yaml" value="false"/>
             <output name="pairs_output" ftype="tabular" file="pairs_output.stats"/>
         </test>
-        <!--Test 02 with multipe input pair files as input and default parameters-->
+        <!--Test 02 with multiple input pair files as input and default parameters-->
         <test expect_num_outputs="1">
             <param name="input_file" value="pairs_output.stats,pairs_output2.stats"/>
             <param name="merge" value="true"/>

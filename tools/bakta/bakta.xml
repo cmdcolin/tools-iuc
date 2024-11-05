@@ -554,7 +554,7 @@ Bakta is a tool for the rapid & standardized annotation of bacterial genomes and
     Bakta includes & merges different expert annotation systems.
     Currently, Bakta uses NCBI's AMRFinderPlus for AMR gene annotations
     as well as an generalized protein sequence expert system with distinct
-    coverage, identity and priority values for each sequence, currenlty comprising the VFDB as well as NCBI's BlastRules.
+    coverage, identity and priority values for each sequence, currently comprising the VFDB as well as NCBI's BlastRules.
 
 *Comprehensive workflow*
     Bakta annotates ncRNA cis-regulatory regions, oriC/oriV/oriT
@@ -574,7 +574,7 @@ Bakta is a tool for the rapid & standardized annotation of bacterial genomes and
 2. Choose A version of the Bakta database
 
 **Organism options**
-You can specify informations about analysed fasta as text input for:
+You can specify information about analysed fasta as text input for:
 - genus
 - species
 - strain
@@ -584,7 +584,7 @@ You can specify informations about analysed fasta as text input for:
 1. You can specify if all sequences (chromosome or plasmids) are complete or not
 2. You can add your own prodigal training file for CDS predictionœ
 3. The translation table could be modified, default is the 11th for bacteria
-4. You can specify if bacteria is gram -/+ or unknonw (default value is unknow)
+4. You can specify if bacteria is gram -/+ or unknown (default value is unknow)
 5. You can keep the name of contig present in the input file
 6. You can specify your own replicon table as a TSV/CSV file
 7. The compliance option is for ready to submit annotation file to Public database

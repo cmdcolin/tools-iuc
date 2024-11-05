@@ -25,7 +25,7 @@
             <option value="-g">1-to-1 global alignment not allowing rearrangements (-g)</option>
         </param>
         <param name="min_identity" type="float" argument="-i" value="0" min="0" max="100" label="Minimum Identity" help="Set the minimum alignment identity. (-i)" />
-        <param name="min_length" type="integer" argument="-l" value="0" label="Minumum Legnth" help="Set the minimum alignment length. (-l)" />
+        <param name="min_length" type="integer" argument="-l" value="0" label="Minimum Length" help="Set the minimum alignment length. (-l)" />
         <param name="overlap" type="select" label="Overlaps"
             help=" Maps each position of each query/reference to its best hit in the reference/query, allowing for reference/query overlaps." >
             <option value="-q">Reference overlaps (-q)</option>

@@ -199,7 +199,7 @@ TraceGroomer is a solution for formatting and normalising Tracer metabolomics gi
 
 Currently, the following input formats of Tracer (or Isotope-labeled) metabolomics measurements files are accepted:
 
-   - IsoCor results (.tsv measurments file).
+   - IsoCor results (.tsv measurements file).
    - The dataMatrix with variableMetadata ("rule" format for TraceGroomer).
    - A 'generic' .xlsx measurements file, manually set by the user.
    - Results provided by the VIB Metabolomics Expertise Center.
@@ -215,7 +215,7 @@ Note : this script does not correct for naturally occurring isotopologues. Your 
 
 A typical IsoCor results file is described in: https://isocor.readthedocs.io/en/latest/tutorials.html#output-files It consists of a .tsv file which has in columns the sample, metabolite, isotopologue and all quantifications, and the rows are in piled version (the samples are repeated vertically).
 
-Our script transforms specific columns of that file into tables. As the total metabolite abundance column is not present in the input data, the total abundance per metabolite is the automatic result of the sum, per metabolite, of Isotopologues' absolute values (see AbundanceCorrected below). So here the correspondances:
+Our script transforms specific columns of that file into tables. As the total metabolite abundance column is not present in the input data, the total abundance per metabolite is the automatic result of the sum, per metabolite, of Isotopologues' absolute values (see AbundanceCorrected below). So here the correspondences:
 
 ================================ ========================================
 column in the IsoCor file        TraceGroomer output filename

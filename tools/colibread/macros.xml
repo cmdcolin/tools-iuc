@@ -158,7 +158,7 @@
 
 .. class:: warningmark
 
-**Ouput parameters**
+**Output parameters**
 
 -VCF file with coordinates on the higher branch sequences or on a reference genome if provided
 

@@ -137,7 +137,7 @@ $header
             <filter>ruv_ncounts == True</filter>
             <discover_datasets pattern="ruv_(?P&lt;designation&gt;.+)\.tabular" format="tabular" directory="." visible="false"/>
         </collection>
-        <data format="pdf" name="plots" label="RUVSeq diagonstic plots on ${on_string}">
+        <data format="pdf" name="plots" label="RUVSeq diagnostic plots on ${on_string}">
             <filter>pdf == True</filter>
         </data>
     </outputs>
@@ -330,7 +330,7 @@ RUVs estimates the factors of unwanted variation using replicate samples
 RUVr estimating the factors of unwanted variation using residuals.
 
 This tool runs all RUV methods and outputs diagnostic plots and tables with covariates that
-may be used for differential expression analsys.
+may be used for differential expression analysis.
 
 -----
 

@@ -52,7 +52,7 @@ The tool outputs a table containing the columns :
 -   start
 -   end
 -   strand
--   read_count : Numer of reads mapping on the feature
+-   read_count : Number of reads mapping on the feature
 -   ins_index : Insertion index, number of insertion divided by the gene length
 -   gene_length
 -   ins_count : Number of insertion within the feature.

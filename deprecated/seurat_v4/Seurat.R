@@ -88,7 +88,7 @@ if (end_step >= 5) {
 }
 
 
-if (showcode == TRUE) print("Read in data, generate inital Seurat object")
+if (showcode == TRUE) print("Read in data, generate initial Seurat object")
 #+ echo = `showcode`, warning = `warn`, message = F
 counts <- read.delim(params$counts, row.names = 1)
 seuset <- Seurat::CreateSeuratObject(counts = counts, min.cells = min_cells, min.features = min_genes)

@@ -44,7 +44,7 @@ clipping_profile.py
 +++++++++++++++++++
 
 This program is used to estimate clipping profile of RNA-seq reads from BAM or SAM file.
-Note that to use this funciton, CIGAR strings within SAM/BAM file should have 'S' operation
+Note that to use this function, CIGAR strings within SAM/BAM file should have 'S' operation
 (This means your reads aligner should support clipped mapping).
 
 Inputs

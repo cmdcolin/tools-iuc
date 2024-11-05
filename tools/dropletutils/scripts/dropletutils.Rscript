@@ -52,7 +52,7 @@ write_out <- function(object, fileout, typeout) {
 read_10x_files <- function(filein, typein) {
     sce <- NULL
     if (typein == "tsv") {
-        ## Exploding memory problems occured here
+        ## Exploding memory problems occurred here
         ## - solution is to use the readSparseCounts function from scater
         sce <- SingleCellExperiment(assays =
                                         list(counts = readSparseCounts(filein)))

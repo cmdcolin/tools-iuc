@@ -15,7 +15,7 @@
             </actions>
         </install>
         <readme>
-            Installation of cython requieres python. The installation can be accessed via CYTHON_PATH.
+            Installation of cython requires python. The installation can be accessed via CYTHON_PATH.
             http://cython.org
         </readme>
     </package>

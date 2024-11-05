@@ -44,10 +44,10 @@ $header
             <when value="lr">
                 <param argument="-l" type="integer" value="1000"
                     label="Base pairs added upstream (left) of each entry in A when searching for overlaps in B"
-                    help="Allows one to create assymetrical “windows”. Default is 1000bp." />
+                    help="Allows one to create asymmetrical “windows”. Default is 1000bp." />
                 <param argument="-r" type="integer" value="1000"
                     label="Base pairs added downstream (right) of each entry in A when searching for overlaps in B"
-                    help="Allows one to create assymetrical “windows”. Default is 1000bp." />
+                    help="Allows one to create asymmetrical “windows”. Default is 1000bp." />
             </when>
         </conditional>
         <param name="strandB" type="select" label="Calculation based on strandedness?">

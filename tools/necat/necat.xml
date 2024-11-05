@@ -408,7 +408,7 @@ NECAT
 --min_aligned_length=INT    minimum aligned length of overlaps default: 0
 --min_contig_length=INT     minimum length of contigs default: 500
 --select_branch=BOOL        select the most probable branch default: "no"
---max_spur_length=INT       branches less the threshod are treated as spurs default: 50000
+--max_spur_length=INT       branches less the threshold are treated as spurs default: 50000
 
 |
 |

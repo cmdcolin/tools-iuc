@@ -321,7 +321,7 @@ python '$__tool_directory__/formatoutput.py'
             <conditional name="analysis_type">
                 <param argument="-t" type="select" label="Type of analysis to perform">
                     <option value="rel_ab" selected="true">rel_ab: Profiling a microbiota in terms of relative abundances</option>
-                    <option value="rel_ab_w_read_stats">rel_ab_w_read_stats: Profiling a microbiota in terms of relative abundances and estimate the number of reads comming from each clade</option>
+                    <option value="rel_ab_w_read_stats">rel_ab_w_read_stats: Profiling a microbiota in terms of relative abundances and estimate the number of reads coming from each clade</option>
                     <option value="reads_map">reads_map: Mapping from reads to clades (only reads hitting a marker)</option>
                     <option value="clade_profiles">clade_profiles: Normalized marker counts for clades with at least a non-null marker</option>
                     <option value="clade_specific_strain_tracker">clade_specific_strain_tracker: List of markers present for a specific clade and all its subclades</option>

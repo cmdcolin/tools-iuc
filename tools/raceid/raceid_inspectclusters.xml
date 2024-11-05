@@ -100,7 +100,7 @@
                     </param>
                     <param name="plotmarkg_cluster_cols" type="boolean" checked="false" label="Cluster columns" />
                     <param name="plotmarkg_cluster_rows" type="boolean" checked="true" label="Cluster rows" />
-                    <param name="plotmarkg_cluster_set" type="boolean" checked="false" label="Order Clusters by Heirarchal Clustering of Cluster Medoids." />
+                    <param name="plotmarkg_cluster_set" type="boolean" checked="false" label="Order Clusters by Hierarchical Clustering of Cluster Medoids." />
                 </expand>
             </when>
         </conditional>

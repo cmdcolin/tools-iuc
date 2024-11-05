@@ -58,7 +58,7 @@
         <param name="anchoring" type="select" label="Anchoring" help="Choose a match anchoring strategy">
             <option value="">Maximal matches unique in only reference sequence (-mumreference) (Default)</option>
             <option value="-mum">Maximal matches unique in both sequences (-mum)</option>
-            <option value="-maxmatch">All matches reguardless of uniqueness (-maxmatch)</option>
+            <option value="-maxmatch">All matches regardless of uniqueness (-maxmatch)</option>
         </param>
         <param name="min" type="integer" argument="-l" value="20" label="Minimum Match Length" help="Minimum length of a match. (-l)" />
         <param name="direction" type="select" label="Direction" help="Direction of complement sequence to use">

@@ -179,7 +179,7 @@
             <param name="rl_type_choice" value="--ae" />
             <param name="dm" value="40" />
             <output_collection name="encoded_features" type="list">
-                <!-- output is non determinisitc -->
+                <!-- output is non deterministic -->
                 <element name="AE[40]_features" ftype="tabular" >
                     <assert_contents>
                         <has_n_lines n="20"/>
@@ -212,7 +212,7 @@
             <param name="dm" value="40" />
 
             <output_collection name="encoded_features" type="list">
-                <!-- output is non determinisitc -->
+                <!-- output is non deterministic -->
                 <element name="AE[40]_features" ftype="tabular" >
                     <assert_contents>
                         <has_n_lines n="20"/>
@@ -359,7 +359,7 @@ exported as output. To create the latent representation of the complete feature 
 with the same parameters using the `Only representation learning` option.
 The header of the result file is: 
 
-'{Encoding}_{classifier}, AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter'
+'{Encoding}_{classifier}, AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classification time(sec), best hyper-parameter'
 
 The overall schema of the tool is shown in:
 

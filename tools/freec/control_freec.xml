@@ -281,7 +281,7 @@ captureRegions = capture.bed
 Control-FREEC
 =============
 
-Control-FREEC is a tool for detection of copy-number changes and allelic imbalances (including loss of heterozygosity/LOH) using deep-sequencing data originally developed by the Bioinformatics Laboratory of Institut Curie (Paris). Nowdays, Control-FREEC is supported by the team of Valentina Boeva at Institut Cochin, Inserm (Paris).
+Control-FREEC is a tool for detection of copy-number changes and allelic imbalances (including loss of heterozygosity/LOH) using deep-sequencing data originally developed by the Bioinformatics Laboratory of Institut Curie (Paris). Nowadays, Control-FREEC is supported by the team of Valentina Boeva at Institut Cochin, Inserm (Paris).
 
 Control-FREEC automatically computes, normalizes, segments copy number and beta allele frequency (BAF) profiles, then calls copy number alterations and LOH. The control (matched normal) sample is optional for whole genome sequencing data but mandatory for whole exome or targeted sequencing data. For whole genome sequencing data analysis, the program can also use mappability data (files created by GEM).
 

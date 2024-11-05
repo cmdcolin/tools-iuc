@@ -20,7 +20,7 @@
         #end if
     ]]></command>
     <inputs>
-        <!-- selecting refernce source -->
+        <!-- selecting reference source -->
         <param name="vcf_input1" type="data" format="vcf" label="The first VCF dataset" />
         <param name="vcf_input2" type="data" format="vcf" label="The second VCF dataset"
             help="The second dataset will be instersected with the first"/>

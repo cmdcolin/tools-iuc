@@ -374,8 +374,8 @@ quality score is less than or equal to the minimum quality score N value for all
  * **Allele count threshold** - At least 1 position must have an allele count greater than this value for a SNP to be added to a group (2 is optimal).
  * **Map quality threshold** - At least 1 position must have a higher MQ value for a SNP to be added to a group (56 is optimal).
  * **Quality score threshold** -At least 1 position must have a higher quality score for a SNP to be added to a group (150 is optimal).
- * **Minimum quality score N value for alleles** - If none of the avove 3 requirements is met and the quality score is less than or equal to the minimum quality score N value for alleles, the allele is marked "N" (150 is optimal).
- * **Use Excel file for grouping and filtering?** - select Yes to filter desired SNP positions by group.  A cached Excel spreadsheet provides the most widely used SNP positions for grouping, but a custom spreadhseet can be selected from the current history.
+ * **Minimum quality score N value for alleles** - If none of the above 3 requirements is met and the quality score is less than or equal to the minimum quality score N value for alleles, the allele is marked "N" (150 is optimal).
+ * **Use Excel file for grouping and filtering?** - select Yes to filter desired SNP positions by group.  A cached Excel spreadsheet provides the most widely used SNP positions for grouping, but a custom spreadsheet can be selected from the current history.
  * **Create a group containing all isolates?** - select Yes to output an additional group containing of all isolates.
 </help>
     <expand macro="citations"/>

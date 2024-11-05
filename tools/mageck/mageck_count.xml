@@ -329,7 +329,7 @@ MAGeCK produces a **Count Summary** file containing the statistics of the input 
 For simple QC terms, you can just take a look at the sample statistics. Generally in a good negative selection sample:
 
 #. the mapped reads should be over 60 percent of the total number reads
-#. the number of zero-count sgRNAs should be few (<5%, and prefered <1%). One exception is in positive selection experiments, where the number of zero-count sgRNAs may be much higher, but the percentage of mapped reads should be reasonably high.
+#. the number of zero-count sgRNAs should be few (<5%, and preferred <1%). One exception is in positive selection experiments, where the number of zero-count sgRNAs may be much higher, but the percentage of mapped reads should be reasonably high.
 
 For more information on using MAGeCK, see the `MAGeCK website here`_.
 

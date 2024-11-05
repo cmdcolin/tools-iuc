@@ -529,7 +529,7 @@
                 <param name='autosome' type='select' label='Autosome/unplaced exclusion'>
                     <option value='none'>None</option>
                     <option value='--autosome'>Exclude all unplaced and non-autosomal variants</option>
-                    <option value='--autosome-par'>Excludes all unplaced and non-autosomal variants, but keep XY/PAR1/PAR2. Can be combined with exclude-chromosmes.</option>
+                    <option value='--autosome-par'>Excludes all unplaced and non-autosomal variants, but keep XY/PAR1/PAR2. Can be combined with exclude-chromosomes.</option>
                 </param>
                 <param name='snps_exclusives' type='select' label='SNP exclusive'>
                     <option value='No'>No</option>

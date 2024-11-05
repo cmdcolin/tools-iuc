@@ -1,5 +1,5 @@
 <tool id="scoary" name="Scoary" version="@TOOL_VERSION@+galaxy0" profile="20.01">
-    <description>calculates the assocations between all genes in the accessory genome and the traits</description>
+    <description>calculates the associations between all genes in the accessory genome and the traits</description>
     <macros>
         <token name="@TOOL_VERSION@">1.6.16</token>
     </macros>
@@ -144,7 +144,7 @@ mv *.nwk scoary_output.nwk
 
 **Scoary**
 
-Scoary is designed to take the csv file from Roary as well as a traits file created by the user and calculate the assocations between all genes in the accessory genome and the traits. It reports a list of genes sorted by strength of association per trait.
+Scoary is designed to take the csv file from Roary as well as a traits file created by the user and calculate the associations between all genes in the accessory genome and the traits. It reports a list of genes sorted by strength of association per trait.
 
 -------------------
 
@@ -154,7 +154,7 @@ Scoary is designed to take the csv file from Roary as well as a traits file crea
 
 Scoary requires two input files: csv file from Roary and a list of traits to test associations to.
 Traits can be anything as long as you can classify it into binary categories (e.g. antibiotic resistance, group membership (yes/no), MIC value higher/lower than 16).
-Make sure you your entires are separated by ','.
+Make sure you your entries are separated by ','.
 The traits file needs to be formatted in a specific way (please take a look into the (documentation)[https://github.com/AdmiralenOla/Scoary]).
 
 You can also use as input the pan-genome as called from Jason Sahl's program LS-BSR (Large-Scale Blast Score Ratio).

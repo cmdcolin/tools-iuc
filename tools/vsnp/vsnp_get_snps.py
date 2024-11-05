@@ -129,7 +129,7 @@ class SnpFinder:
                 if alt == "None":
                     sample_dict.update({record_position: "-"})
                 else:
-                    # On rare occassions MQM gets called "NaN", thus passing
+                    # On rare occasions MQM gets called "NaN", thus passing
                     # a string when a number is expected when calculating average.
                     mq_val = self.get_mq_val(record.INFO, filename)
                     if str(mq_val).lower() not in ["nan"]:
@@ -240,7 +240,7 @@ class SnpFinder:
             # Filter positions to be removed from all.
             xl = pandas.ExcelFile(self.input_excel)
             sheet_names = xl.sheet_names
-            # Use the first column to filter "all" postions.
+            # Use the first column to filter "all" positions.
             exclusion_list_all = self.get_position_list(sheet_names, 0)
             exclusion_list_group = self.get_position_list(sheet_names, group_dir)
             exclusion_list = exclusion_list_all + exclusion_list_group
@@ -469,7 +469,7 @@ if __name__ == '__main__':
     else:
         if args.all_isolates:
             vcf_dirs = setup_all_vcfs(vcf_files, vcf_dirs)
-        # Parse the Excel file to detemine groups for filtering.
+        # Parse the Excel file to determine groups for filtering.
         snp_finder.group_vcfs(vcf_files)
         # Append the list of group directories created by
         # the above call to the set of directories containing

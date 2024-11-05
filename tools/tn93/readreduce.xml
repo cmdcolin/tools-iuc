@@ -28,7 +28,7 @@
             </param>
             <when value="defaults" />
             <when value="advanced">
-                <param name="size" argument="-s" type="integer" min="0" value="18" label="Mimimum cluster size to report in output" />
+                <param name="size" argument="-s" type="integer" min="0" value="18" label="Minimum cluster size to report in output" />
                 <param name="ambigs" argument="-a" type="select" label="Strategy for ambiguous nucleotides">
                     <option value="handle">handle</option>
                     <option value="resolve">resolve</option>

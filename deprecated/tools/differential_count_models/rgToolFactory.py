@@ -9,7 +9,7 @@
 #
 # march 2014
 # added ghostscript and graphicsmagick as dependencies
-# fixed a wierd problem where gs was trying to use the new_files_path from universe (database/tmp) as ./database/tmp
+# fixed a weird problem where gs was trying to use the new_files_path from universe (database/tmp) as ./database/tmp
 # errors ensued
 #
 # august 2013

@@ -845,7 +845,7 @@ From documentation at glmnet_ ::
 
 Internal cross validation is used to optimise the choice of lambda based on CV AUC for logistic (binomial outcome) models, or CV mse for gaussian.
 
-**Warning about the tyrany of dimensionality**
+**Warning about the tyranny of dimensionality**
 
 Yes, this package will select 'optimal' models even when you (optimistically) supply more predictors than you have cases.
 The model returned is unlikely to represent the only informative regularisation path through your data - if you run repeatedly with

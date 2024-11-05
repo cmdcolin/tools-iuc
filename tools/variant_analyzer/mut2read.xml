@@ -56,7 +56,7 @@ tool `Map with BWA-MEM <https://arxiv.org/abs/1303.3997>`_.
 
 **Output**
 
-The output is a json file containing dictonaries of the tags of reads containing mutations 
+The output is a json file containing dictionaries of the tags of reads containing mutations 
 in the DCS and a fastq file of all reads of these tags.
 
     ]]> 

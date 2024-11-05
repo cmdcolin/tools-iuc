@@ -78,7 +78,7 @@ contains
 The reference data sets contain: 
 
 - protein data bases derived from the corresponding RefSeq release Donath et al. 2019
-- covariance models computed for the data in the RefSeq releas based on the MITOS1 models 
+- covariance models computed for the data in the RefSeq release based on the MITOS1 models 
 - in addition for Metazoa Release 63 also hidden markov models are available as described in Al Arab et al. 2017
 
 Data is downloaded from https://zenodo.org/record/4284483.

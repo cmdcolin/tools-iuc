@@ -68,7 +68,7 @@ def run(fasta, stats_output, gaps_output, genome_size):
             else:
                 gap_count += 1
 
-        # NOTE: Contigs, their lenths from scaffold and their N gap range
+        # NOTE: Contigs, their lengths from scaffold and their N gap range
         seq_id_Ngaprange[seq_record.id] = n_range
         n_range_len = len(n_range)
         if n_range_len > 0:

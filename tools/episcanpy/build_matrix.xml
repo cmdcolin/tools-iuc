@@ -55,7 +55,7 @@ esc.ct.bld_mtx_bed(
             <when value="human" />
             <when value="mouse" />
             <when value="custom">
-                <param name="chromosomes" value="" type="text" label="Enter comma seperated list of chromosome ids (without chr prefix)" >
+                <param name="chromosomes" value="" type="text" label="Enter comma separated list of chromosome ids (without chr prefix)" >
                     <expand macro="sanitize_query" />
                 </param>
             </when>

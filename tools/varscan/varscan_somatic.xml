@@ -603,7 +603,7 @@ change the ``FILTER`` field of variant records to indicate which variants
 failed to pass certain filters. You can use this information with downstream
 tools to exclude certain variants from further analysis steps or include only
 high confidence variants that passed all filters (those with ``PASS`` as their
-``INFO`` field value. You can accept the orignal filter defaults of the
+``INFO`` field value. You can accept the original filter defaults of the
 ``varscan fpfilter`` command line tool, use the settings established for the
 tool in the `DREAM3 challenge`_, or choose to customize the settings.
 Alternatively, you can also choose to skip posterior filtering entirely, in

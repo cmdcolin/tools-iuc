@@ -64,7 +64,7 @@ echo 'unique.seqs(
             <param name="savelog" value="true"/>
             <expand macro="logfile-test"/>
         </test>
-        <test><!-- test wth fasta only -->
+        <test><!-- test with fasta only -->
             <param name="fasta" value="amazon.fasta"/>
             <param name="format" value="name"/>
             <output name="out_fasta" file="amazon.unique.fasta" ftype="fasta"/>

@@ -78,7 +78,7 @@ ${section.homs_only}
         </section>
         <section name="sec_default" expanded="true" title="Default Options">
             <param name="genotypes" type="data" format="vcf,bcf" label="Genotypes to compare against" optional="True"
-                   help="(-g) Checks sample identity or wehn omitted a multi-sample cross-check is performed"/>
+                   help="(-g) Checks sample identity or when omitted a multi-sample cross-check is performed"/>
             <param name="target_sample" type="text" label="Target Sample" optional="True" help="Target sample in the -g file (used only for plotting)" />
             <param name="all_sites" type="boolean" truevalue="--all-sites" falsevalue="" label="All Sites" help="Output comparison for all sites" />
             <param name="homs_only" type="boolean" truevalue="--homs-only" falsevalue="" label="Homs Only" help="Homozygous genotypes only (useful for low coverage data)" />

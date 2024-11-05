@@ -200,7 +200,7 @@
         <conditional name="cond_region">
             <param name="select_region" type="select" label="Filter by regions" help="restricts output to only those alignments which overlap the specified region(s)">
                 <option value="no" selected="True">No</option>
-                <option value="text">Manualy specify regions</option>
+                <option value="text">Manually specify regions</option>
                 <option value="tab">Regions from tabular file</option>
             </param>
             <when value="no"/>

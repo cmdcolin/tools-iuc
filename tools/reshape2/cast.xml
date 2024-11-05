@@ -37,7 +37,7 @@ write.table(cinput, "output.tabular", sep="\t", quote=FALSE, row.names=FALSE)
     </tests>
     <help><![CDATA[
 This tool will apply the dcast function of the reshape2 R package. The input data should be in a 'long' format or molten by the melt tool. The output will be in a wide format.
-The cast function expands each unique variable:value combination on a single line to columnar format. Documantation on the reshape2 package can be found here: https://cran.r-project.org/web/packages/reshape2/reshape2.pdf
+The cast function expands each unique variable:value combination on a single line to columnar format. Documentation on the reshape2 package can be found here: https://cran.r-project.org/web/packages/reshape2/reshape2.pdf
     ]]></help>
     <citations>
         <citation type="bibtex">

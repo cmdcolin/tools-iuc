@@ -194,7 +194,7 @@
                     <option value="write-vcf-no-genotypes">Output VCF file representing selected subtree without including genotype column (--write-vcf --no-genotypes) </option>  
                     <option value="write-mat">Write the selected subtree as a mutation annotated tree (--write-math)</option>  
                     <option value="write-mat-collapsed">Write the selected subtree as a collapsed mutation annotated tree (--write-mat --collapsed)</option>  
-                    <option value="write-json">Write an Auspice-compatbile json representing the selected subtree (--write-json)</option>  
+                    <option value="write-json">Write an Auspice-compatible json representing the selected subtree (--write-json)</option>  
                     <option value="write-tree"> Write a newick string representing the selected subtree (--write-tree)</option>
                     <option value="write-tree-retain-branch"> Write a newick string representing the selected subtree without recalculating branch lengths (--write-tree --retain-branch)</option>  
                 </param>
@@ -489,7 +489,7 @@ matUtils is a suite of tools used to analyze, edit, and manipulate mutation anno
 **matUtils Common Options**
 
 **Extract**: matUtils extract serves as a flexible prebuilt pipeline, and serves as the primary tool for subsetting and converting a MAT pb to other file formats. 
-**Sumary**: matUtils summary is used to get basic statistics and attribute information about the mat. 
+**Summary**: matUtils summary is used to get basic statistics and attribute information about the mat. 
 **Annotate**: matUtils annotate is a function for adding clade annotation information to the pb.
 **Uncertainly**: matUtils uncertainty calculates two specific metrics for sample placement certainty. These metrics can be very important to support contact tracing and reliable identification of the origin of a newly placed sample.
 **Mask**: matUtils mask is used to mask specific samples out of the pb, removing their mutations from visibility.

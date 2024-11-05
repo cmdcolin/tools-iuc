@@ -28,7 +28,7 @@
         <!-- From source. -->
         <!--<actions>-->
             <!--
-                Golang compilation requires knowing what architecutre you're
+                Golang compilation requires knowing what architecture you're
                 building for. Unless this is available in an environment
                 variable... we aren't going to build a generic version.
 

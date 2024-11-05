@@ -95,7 +95,7 @@ bcftools @EXECUTABLE@
     </command>
     <inputs>
         <expand macro="macro_input" />
-        <param argument="-s" name="query_sample" type="text" label="Query Sample" optional="True" help="The name (as used in the input) of the query sample in the input. Can be ommitted if, and only if, there is only one sample in the input." />
+        <param argument="-s" name="query_sample" type="text" label="Query Sample" optional="True" help="The name (as used in the input) of the query sample in the input. Can be omitted if, and only if, there is only one sample in the input." />
         <param argument="-c" name="control_sample" type="text" label="Control Sample" optional="True" help="The name (as used in the input) of an optional control sample to compare against. Note: The pairwise calling mode represents the real strength of the tool as it helps to reduce the number of false calls and also allows one to distinguish between normal and novel copy number variation." />
         <expand macro="macro_AF_file" />
         <conditional name="plotting">

@@ -80,7 +80,7 @@ Usage
 
 **Output**
 
-Rearrangements in the 3rd column of the outbut table are listed as follows:
+Rearrangements in the 3rd column of the output table are listed as follows:
 
 - I(X): the genes listed in X are inverted
 - T(X ,Y ,): The order of the gene sets X and Y is transposed

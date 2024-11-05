@@ -43,10 +43,10 @@ site_res_5 = args.site_res_5
 site_res_3 = args.site_res_3
 tag = {'mut': [], 'ok_stop_ext': [], 'stop': [], 'no_restric': [], 'no_multiple': [], 'amber': []}
 all_seq = []
-all_seq_fasta = {}  # dictionnary that will store information about all the sequences
-good_seq = {}  # dictionnary that will store information about the valid sequences
+all_seq_fasta = {}  # dictionary that will store information about all the sequences
+good_seq = {}  # dictionary that will store information about the valid sequences
 identical_clones = {}
-var_seq_common = {}  # dictionnary that will store the number of sequences that share the same variable parts
+var_seq_common = {}  # dictionary that will store the number of sequences that share the same variable parts
 align_scores = []
 nb_var_part = 0
 
@@ -162,7 +162,7 @@ def report_html(_html_file, _tag, _all_seq, _good_seq, _all_seq_fasta, _identica
             len(line.split("\t")), float(len(line.split("\t"))) / float(len(good_ids)) * 100, '<br/>'.join(line.split("\t"))))
     # Statistics
     w.write('<div class="page-header"><a id="stat"></a><h2>Statistics</h2></div>')
-    w.write('<p>Here\'s some statistics about the valid sequences:</p><p>Mean for the pairwise alignement scores: %.2f<br/>Standard deviation: %.2f</p>' % (
+    w.write('<p>Here\'s some statistics about the valid sequences:</p><p>Mean for the pairwise alignment scores: %.2f<br/>Standard deviation: %.2f</p>' % (
         float(numpy.mean(_align_scores)), float(numpy.std(_align_scores))))
     w.write('<div class="row-fluid"><div class="span6"><img src="%s" alt="Distribution of the pairwise alignment score"></div>' % get_os_path_name(graph_pic))
     w.write('<div class="span6"><table class="table table-striped table-bordered"><thead><tr><th>Pairwise Alignment Score</th><th>Number of occurrences</th></tr></thead><tbody>')

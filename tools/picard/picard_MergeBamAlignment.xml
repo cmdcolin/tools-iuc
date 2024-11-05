@@ -134,7 +134,7 @@
             </when>
         </conditional>
         <param name="clip_adapters" type="boolean" checked="true" label="Whether to clip adapters where identified" help="CLIP_ADAPTERS; default=True"/>
-        <param name="is_bisulfite_sequence" type="boolean" label="Whether the data is from bisulfite sequencing (used when caculating the NM tag)" help="IS_BISULFITE_SEQUENCE; default=False"/>
+        <param name="is_bisulfite_sequence" type="boolean" label="Whether the data is from bisulfite sequencing (used when calculating the NM tag)" help="IS_BISULFITE_SEQUENCE; default=False"/>
         <param name="aligned_reads_only" type="boolean" label="Whether to output only aligned reads" help="ALIGNED_READS_ONLY; default=False"/>
         <param name="max_insertions_or_deletions" type="integer" value="1" label="The maximum number of insertions or deletions permitted for an alignment to be included" help="MAX_INSERTIONS_OR_DELETIONS; Alignments with more than this many insertions or deletions will be ignored. Set to -1 to allow any number of insertions or deletions. default=1"/>
         <repeat name="attributes_to_retain" title="Retain the following alignment attribute" min="0" help="You can provide multiple attributes">
@@ -204,17 +204,17 @@ Merges alignment data from a SAM or BAM dataset with additional data stored in a
 
   ALIGNED_BAM=File
   ALIGNED=File                  SAM or BAM file(s) with alignment data.  This option may be specified 0 or more times.
-                                Cannot be used in conjuction with option(s) READ1_ALIGNED_BAM (R1_ALIGNED)
+                                Cannot be used in conjunction with option(s) READ1_ALIGNED_BAM (R1_ALIGNED)
                                 READ2_ALIGNED_BAM (R2_ALIGNED)
 
   READ1_ALIGNED_BAM=File
   R1_ALIGNED=File               SAM or BAM file(s) with alignment data from the first read of a pair.  This option may be
-                                specified 0 or more times.  Cannot be used in conjuction with option(s) ALIGNED_BAM
+                                specified 0 or more times.  Cannot be used in conjunction with option(s) ALIGNED_BAM
                                 (ALIGNED)
 
   READ2_ALIGNED_BAM=File
   R2_ALIGNED=File               SAM or BAM file(s) with alignment data from the second read of a pair.  This option may
-                                be specified 0 or more times.  Cannot be used in conjuction with option(s) ALIGNED_BAM
+                                be specified 0 or more times.  Cannot be used in conjunction with option(s) ALIGNED_BAM
                                 (ALIGNED)
 
   PAIRED_RUN=Boolean
@@ -222,12 +222,12 @@ Merges alignment data from a SAM or BAM dataset with additional data stored in a
 
   JUMP_SIZE=Integer
   JUMP=Integer                  The expected jump size (required if this is a jumping library). Deprecated. Use
-                                EXPECTED_ORIENTATIONS instead  Default value: null.  Cannot be used in conjuction with
+                                EXPECTED_ORIENTATIONS instead  Default value: null.  Cannot be used in conjunction with
                                 option(s) EXPECTED_ORIENTATIONS (ORIENTATIONS)
 
   CLIP_ADAPTERS=Boolean         Whether to clip adapters where identified.  Default value: true. Possible values: {true, false}
 
-  IS_BISULFITE_SEQUENCE=Boolean Whether the lane is bisulfite sequence (used when caculating the NM tag).  Default value:
+  IS_BISULFITE_SEQUENCE=Boolean Whether the lane is bisulfite sequence (used when calculating the NM tag).  Default value:
                                 false. Possible values: {true, false}
 
   ALIGNED_READS_ONLY=Boolean    Whether to output only aligned reads. Default value: false. Possible values: {true, false}
@@ -254,7 +254,7 @@ Merges alignment data from a SAM or BAM dataset with additional data stored in a
 
   EXPECTED_ORIENTATIONS=PairOrientation
   ORIENTATIONS=PairOrientation  The expected orientation of proper read pairs. Replaces JUMP_SIZE  Possible values: {FR,
-                                RF, TANDEM} This option may be specified 0 or more times.  Cannot be used in conjuction
+                                RF, TANDEM} This option may be specified 0 or more times.  Cannot be used in conjunction
                                 with option(s) JUMP_SIZE (JUMP)
 
   ALIGNER_PROPER_PAIR_FLAGS=Boolean

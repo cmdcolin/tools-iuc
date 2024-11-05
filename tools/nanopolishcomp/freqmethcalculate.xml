@@ -31,7 +31,7 @@
         <param argument="-f" type="data" format="fai" optional="true" label="Select fasta index file" help="Obtained with samtools faidx. Required for coordinate sorting"/>
         <param argument="-s" type="text" value="" optional="true" label="Set sample ID" help="Used for bed track header."/>
         <param argument="--strand_specific" type="boolean" truevalue="--strand_specific" falsevalue="" label="Are sites strand specific?"/>
-        <param argument="--min_llr" type="integer" value="2" min="0" label="Set minimal log likelyhood ratio" help="To consider a site significantly methylated or unmethylated."/>
+        <param argument="--min_llr" type="integer" value="2" min="0" label="Set minimal log likelihood ratio" help="To consider a site significantly methylated or unmethylated."/>
         <param name="out" type="select" multiple="true" optional="false" label="Select output file(s)">
             <option value="bed" selected="true">Methylation frequency (BED)</option>
             <option value="tsv" selected="true">Methylation frequency (Tabular)</option>
@@ -115,7 +115,7 @@ The file contains the following fields:
 
 - chrom / start / end / strand: Genomic coordinates of the motif or group of motifs in case split_group was not selected.
 - site_id: Unique integer identifier of the genomic position.
-- methylated_reads / unmethylated_reads / ambiguous_reads: Number of reads at a given genomic location with a higher likelyhood of being methylated or unmethylated or with an ambiguous methylation call.
+- methylated_reads / unmethylated_reads / ambiguous_reads: Number of reads at a given genomic location with a higher likelihood of being methylated or unmethylated or with an ambiguous methylation call.
 - sequence: -5 to +5 sequence of the motif or group of motifs in case split_group was not selected.
 - num_motifs: Number of motif in the group.
 - meth_freq: Methylation frequency (out of non anbiguous calls).

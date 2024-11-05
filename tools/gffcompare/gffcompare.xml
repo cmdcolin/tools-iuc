@@ -551,7 +551,7 @@ transcripts* file, allowing annotate transcripts by using a reference annotation
 
 .. class:: infomark
 
-**Merging structually equivalent transcripts**
+**Merging structurally equivalent transcripts**
 
 When multiple input GTF/GFF files are provided, GffCompare reports a GTF file named *combined transcripts* that containing the union of all transfrags in each sample. If a transfrag with the same 
 exact intron chain is present in both samples, it is thus reported only once in the output file.

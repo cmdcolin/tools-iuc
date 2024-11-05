@@ -345,7 +345,7 @@ This Galaxy implementation :
 - handles incompatibilities between branch and sites models (the tool CANNOT be run with incompatible models).
 - warns the user in a help section when an advanced parameter has known incompatibilities (the tool CAN be run, but the output files will be empty).
 
-We recommand to have a look at the full paml manual before looking at the advanced parameters, in order to spot parameters incompatibilities and to know what each model does. If you choose by mistake incompatible parameters, the output files will be empty, except the log file ("run_codeml" output) which will normally explicit the error.
+We recommend to have a look at the full paml manual before looking at the advanced parameters, in order to spot parameters incompatibilities and to know what each model does. If you choose by mistake incompatible parameters, the output files will be empty, except the log file ("run_codeml" output) which will normally explicit the error.
 
 .. class:: infomark
 

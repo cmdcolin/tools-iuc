@@ -125,8 +125,8 @@
 
         <param argument="--largeRegionsOperation" type="select" label="Large regions operation" help="If a given coordinate in the bed file is larger than 
                            a bin of the input matrix, by default only the first bin 
-                           is taken into account. However there are more posibilities 
-                           to handel such a case. Users can ask for the last bin or 
+                           is taken into account. However there are more possibilities 
+                           to handle such a case. Users can ask for the last bin or 
                            for center of the region. As an example if a region falls into bins [4,5,6] 
                            and `--numberOfBins = 2` then if first, bins [3,4,5] are kept. 
                            If last: [5,6,7] and if center: [4,5,6].">

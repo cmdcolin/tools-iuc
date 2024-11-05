@@ -96,7 +96,7 @@ $atomize
             <validator type="regex">[0-9a-zA-Z_/]+</validator>
         </param>
         <param name="rm_dup" type="select" display="radio"
-        label="Perform deduplication for the folowing types of variant records">
+        label="Perform deduplication for the following types of variant records">
             <option value="">do not deduplicate any records</option>
             <option value="snps">snps</option>
             <option value="indels">indels</option>

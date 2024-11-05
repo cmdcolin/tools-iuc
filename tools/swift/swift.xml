@@ -61,7 +61,7 @@ swiftlink
             </param>
             <when value="yes" >
                 <param name="f" argument="-f" type="float" min="0" max="0.99" value="0.0001" label="Frequency" />
-                <param name="w" argument="-w" type="float" min="0" max="1" value="0.5" label="Seperation" />
+                <param name="w" argument="-w" type="float" min="0" max="1" value="0.5" label="Separation" />
                 <param name="k" argument="-k" type="text" value="0.00,0.00,1.00" label="Penetrance List" />
                 <param name="u" argument="-u" type="integer" min="1" value="1000000" label="Replicates" />
             </when>

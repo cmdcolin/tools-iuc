@@ -129,9 +129,9 @@
             <option value="otus_counts_and_taxonomic_assignments_tsv">OTUs, counts and taxonomic assignments (table)</option>
             <option value="otus_counts_and_taxonomic_assignments_biom1">OTUs, counts and taxonomic assignments (JSON)</option>
             <option value="otus_counts_and_taxonomic_assignments_biom2">OTUs, counts and taxonomic assignments (HDF5)</option>
-            <option value="reads_encoding_5s_rrna">Reads enconding 5S rRNA</option>
-            <option value="reads_encoding_16s_rrna">Reads enconding 16S rRNA</option>
-            <option value="reads_encoding_23s_rrna">Reads enconding 23S rRNA</option>
+            <option value="reads_encoding_5s_rrna">Reads encoding 5S rRNA</option>
+            <option value="reads_encoding_16s_rrna">Reads encoding 16S rRNA</option>
+            <option value="reads_encoding_23s_rrna">Reads encoding 23S rRNA</option>
         </param>
     </xml>
     <xml name="file_type_taxonomic_analysis_its">

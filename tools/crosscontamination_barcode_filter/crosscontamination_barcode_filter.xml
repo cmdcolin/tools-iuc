@@ -203,7 +203,7 @@ out.table = '$out_table'
 Cross-contamination Filter Plot
 ###################################
 
-For a set of barcodes and an experimental setup that uses a subset of these barcodes for each batch, this tool compares each batch against the full range of barcodes in order to determine whether any cross-contamination between batches has occured.
+For a set of barcodes and an experimental setup that uses a subset of these barcodes for each batch, this tool compares each batch against the full range of barcodes in order to determine whether any cross-contamination between batches has occurred.
 *Note -- Do not reuse batch numbering across plates!*
 
 If a significant number of transcripts are shown in a batch for cell barcodes that were not designed for that batch, then this tool will show that. In the below plot, we can see that there is no significant cross-contamination taking place (pre-filter), and so we can filter out the false barcodes (post-filter).

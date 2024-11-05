@@ -70,7 +70,7 @@ Following the header line, each subsequent line represents an RRI, with chromoso
     10,123136102,123136122,+,5,1245880,1245902,+
 
 The tool also additionally takes a genome FASTA file and a chromosome lengths file. User can select an in-built FASTA or a FASTA file from history.
-A chromosome legths file is tabular file where each line contains a tab separated chromosome name and its length. Followin is an example:
+A chromosome lengths file is tabular file where each line contains a tab separated chromosome name and its length. Following is an example:
 
     chr1    23200231
     chr2    12497572

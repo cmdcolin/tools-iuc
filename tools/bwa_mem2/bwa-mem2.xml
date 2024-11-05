@@ -377,7 +377,7 @@ If your genome of interest is not listed here you have two choices:
 
 Galaxy allows four levels of control over bwa-mem options provided by **Select analysis mode** menu option. These are:
 
-  1. *Simple Illumina mode*: The simplest possible bwa mem application in which it alignes single or paired-end data to reference using default parameters. It is equivalent to the following command: bwa mem <reference index> <fastq dataset1> [fastq dataset2]
+  1. *Simple Illumina mode*: The simplest possible bwa mem application in which it aligns single or paired-end data to reference using default parameters. It is equivalent to the following command: bwa mem <reference index> <fastq dataset1> [fastq dataset2]
   2. *PacBio mode*: The mode adjusted specifically for mapping of long PacBio subreads. Equivalent to the following command: bwa mem -k17 -W40 -r10 -A1 -B1 -O1 -E1 -L0  <reference index> <PacBio dataset in fastq format>
   3. *Full list of options*: Allows access to all options through Galaxy interface.
 

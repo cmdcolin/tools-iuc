@@ -209,7 +209,7 @@ parser$add_argument(
     "--asFractionTotal",
     action = "store_true",
     required = FALSE,
-    help = "Plot gene expresson as fraction of total"
+    help = "Plot gene expression as fraction of total"
 )
 parser$add_argument("--plotGenes",
     action = "store_true",
@@ -220,7 +220,7 @@ parser$add_argument(
     "--simplifyLocation",
     action = "store_true",
     required = FALSE,
-    help = "Simplify localtion"
+    help = "Simplify location"
 )
 parser$add_argument(
     "--removeEmptyConsequences",
@@ -302,7 +302,7 @@ parser$add_argument(
     "--minIdrBindingSize",
     required = FALSE,
     type = "integer",
-    help = "Minimun Idr binding size"
+    help = "Minimum Idr binding size"
 )
 parser$add_argument(
     "--minIdrBindingOverlapFrac",
@@ -406,7 +406,7 @@ if (args$modeSelector == "data_import") {
                 isoformRepExpression = quantificationData$abundance,
                 designMatrix = myDesign,
                 removeNonConvensionalChr = args$removeNonConvensionalChr,
-                isoformExonAnnoation = args$stringtieAnnotation,
+                isoformExonAnnotation = args$stringtieAnnotation,
                 isoformNtFasta = args$transcriptome,
                 addAnnotatedORFs = FALSE,
                 showProgress = TRUE,
@@ -426,7 +426,7 @@ if (args$modeSelector == "data_import") {
                 designMatrix = myDesign,
                 removeNonConvensionalChr = args$removeNonConvensionalChr,
                 isoformNtFasta = args$transcriptome,
-                isoformExonAnnoation = args$annotation,
+                isoformExonAnnotation = args$annotation,
                 showProgress = TRUE,
                 comparisonsToMake = comparisons,
                 fixStringTieAnnotationProblem = args$fixStringTieAnnotationProblem
@@ -438,7 +438,7 @@ if (args$modeSelector == "data_import") {
             isoformRepExpression = quantificationData$abundance,
             designMatrix = myDesign,
             removeNonConvensionalChr = args$removeNonConvensionalChr,
-            isoformExonAnnoation = args$annotation,
+            isoformExonAnnotation = args$annotation,
             isoformNtFasta = args$transcriptome,
             showProgress = TRUE,
             comparisonsToMake = comparisons
@@ -985,7 +985,7 @@ if (args$modeSelector == "second_step") {
             geom_vline(xintercept = c(-0.1, 0.1), linetype = "dashed") + # default cutoff
             facet_wrap(~condition_2) +
             # facet_grid(condition_1 ~ condition_2) + # alternative to facet_wrap if you have overlapping conditions
-            scale_color_manual("Signficant\nIsoform Switch", values = c("black", "red")) +
+            scale_color_manual("Significant\nIsoform Switch", values = c("black", "red")) +
             labs(x = "dIF", y = "-Log10 ( Isoform Switch Q Value )") +
             theme_bw()
         print(p)
@@ -1010,7 +1010,7 @@ if (args$modeSelector == "second_step") {
             facet_wrap(~condition_2) +
             geom_hline(yintercept = 0, linetype = "dashed") +
             geom_vline(xintercept = 0, linetype = "dashed") +
-            scale_color_manual("Signficant\nIsoform Switch", values = c("black", "red")) +
+            scale_color_manual("Significant\nIsoform Switch", values = c("black", "red")) +
             labs(x = "Gene log2 fold change", y = "dIF") +
             theme_bw()
         print(p)

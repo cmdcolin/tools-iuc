@@ -88,7 +88,7 @@ if (params$perplexity == "") {
 }
 
 #+ echo = FALSE
-if (showcode == TRUE) print("Read in data, generate inital Seurat object")
+if (showcode == TRUE) print("Read in data, generate initial Seurat object")
 #+ echo = `showcode`, warning = `warn`, message = F
 rna <- read.delim(params$rna, row.names = 1)
 rna <- Seurat::CollapseSpeciesExpressionMatrix(rna)

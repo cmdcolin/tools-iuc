@@ -132,7 +132,7 @@
         <!-- TODO I would like to set the default values of float and int parameters as on the samtools stats help page, but then the tests don't work. Hence I leave the optional and give the defaults in the help -->
         <param name="gc_depth" argument="--GC-depth" type="float" optional="True" label="Size of GC-depth bins" help="Decreasing bin size increases memory requirement. default=2e4" />
         <param argument="--insert-size" type="integer" optional="True" label="Maximum insert size" help="default=8000" />
-        <!-- TOOD https://github.com/samtools/samtools/issues/1489 -->    
+        <!-- TODO https://github.com/samtools/samtools/issues/1489 -->    
         <param name="read_group" argument="--id" type="select" optional="true" label="Limit to a specific read group name" >
             <options>
                 <filter type="data_meta" ref="input" key="read_groups" />

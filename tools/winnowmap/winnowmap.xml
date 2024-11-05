@@ -236,7 +236,7 @@
             label="Max fragment length for PE alignment"
             help="The maximum apparent fragment length up to which paired-end reads are aligned together; at higher fragment lengths the mates will be aligned independent of each other; effective only for paired-end data and when spliced alignment mode is turned off; default=800" />
             <param argument="-f" type="float" value="" optional="true" label="Filter out top FLOAT fraction of repetitive minimizers" help="default=0.0002"/>
-            <param argument="--min-occ-floor" name="min_occ_floor" type="integer" label="Force winnowmap to always use k-mers occuring this many times or fewer" help="Maximum occurence is the number of repetitive minimizers determined by '-f' or this value, whichever is higher." optional="true" />
+            <param argument="--min-occ-floor" name="min_occ_floor" type="integer" label="Force winnowmap to always use k-mers occurring this many times or fewer" help="Maximum occurrence is the number of repetitive minimizers determined by '-f' or this value, whichever is higher." optional="true" />
             <param argument="-g" type="integer" value="" optional="true" label="Stop chain enlongation if there are no minimizers in INT-bp" help="default=5000"/>
             <param argument="-r" type="integer" value="" optional="true" label="Bandwidth used in chaining and DP-based alignment" help="default=500" />
             <param argument="-n" type="integer" value="" optional="true" label="Minimal number of minimizers on a chain" help="default=3"/>
@@ -475,7 +475,7 @@
             <param name="highfreq_kmers" ftype="tabular" value="repetitive_k15.txt"/>
             <param name="analysis_type_selector" value="map-ont"/>
             <section name="alignment_options">
-                <!-- the folowing settings correspond to the defaults for "sr"
+                <!-- the following settings correspond to the defaults for "sr"
                 mode. The purpose is to check that all alignment params get
                 parsed correctly. -->
                 <param name="A" value="2" />
@@ -562,7 +562,7 @@ end-to-end to a reference with mapping quality score above a user-specified
 threshold. This approach treats each read mapping as a collection of 
 confident sub-alignments, which is more tolerant of structural variation 
 and more sensitive to paralog-specific variants (PSVs). Our most recent 
-paper desribes this concept and benchmarking results.
+paper describes this concept and benchmarking results.
 
 General usage
 ~~~~~~~~~~~~~
@@ -614,7 +614,7 @@ Map long noisy genomic reads
 
 The difference between ``map-pb`` and ``map-ont`` is that ``map-pb``
 uses homopolymer-compressed (HPC) minimizers as seeds, while ``map-ont``
-uses ordinary minimizers as seeds. Emperical evaluation suggests HPC
+uses ordinary minimizers as seeds. Empirical evaluation suggests HPC
 minimizers improve performance and sensitivity when aligning PacBio
 reads, but hurt when aligning Nanopore reads.
 
@@ -622,12 +622,12 @@ Map long mRNA/cDNA reads
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 There are different long-read RNA-seq technologies, including
-tranditional full-length cDNA, EST, PacBio Iso-seq, Nanopore 2D cDNA-seq
+traditional full-length cDNA, EST, PacBio Iso-seq, Nanopore 2D cDNA-seq
 and Direct RNA-seq. They produce data of varying quality and properties.
 By default, ``-x splice`` assumes the read orientation relative to the
 transcript strand is unknown. It tries two rounds of alignment to infer
 the orientation and write the strand to the ``ts`` SAM/PAF tag if
-possible. For Iso-seq, Direct RNA-seq and tranditional full-length
+possible. For Iso-seq, Direct RNA-seq and traditional full-length
 cDNAs, it would be desired to apply ``-u f`` to force Winnowmap to
 consider the forward transcript strand only. This speeds up alignment
 with slight improvement to accuracy. For noisy Nanopore Direct RNA-seq
@@ -711,7 +711,7 @@ alignment, for example:
     CGATCG---AATAGAGTAGGTCGAATtGCA
 
 is represented as ``:6-ata:10+gtc:4*at:3``, where ``:[0-9]+`` represents
-an identical block, ``-ata`` represents a deltion, ``+gtc`` an insertion
+an identical block, ``-ata`` represents a deletion, ``+gtc`` an insertion
 and ``*at`` indicates reference base ``a`` is substituted with a query
 base ``t``. It is similar to the ``MD`` SAM tag but is standalone and
 easier to parse.

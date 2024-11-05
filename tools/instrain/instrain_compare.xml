@@ -49,12 +49,12 @@ inStrain compare
     $other.skip_plot_generation
     --group_length $other.group_length
     --ani_threshold $genome_clustering.ani_threshold
-    --coverage_treshold $genome_clustering.coverage_treshold
+    --coverage_threshold $genome_clustering.coverage_threshold
     --clusterAlg '$genome_clustering.clusterAlg'
     ]]></command>    
     <inputs>
         <param name="input_is" type="data" format="zip" multiple="true" label="inStrain Profile IS folder" help=" The Zip files for the IS profiles outputs you want to compare"/>                    
-        <param argument="--stb" type="data" format="tabular" optional="true" label="Scaffold to bin" help="This can be a file with each line listing a scaffold and a bin name, tab-seperated. This can also be a space-seperated list of .fasta files, with one genome per .fasta file. If nothing is provided, all scaffolds will be treated as belonging to the same genome"/>
+        <param argument="--stb" type="data" format="tabular" optional="true" label="Scaffold to bin" help="This can be a file with each line listing a scaffold and a bin name, tab-separated. This can also be a space-separated list of .fasta files, with one genome per .fasta file. If nothing is provided, all scaffolds will be treated as belonging to the same genome"/>
         <section name="variant_calling" title="Variant Calling Options" expanded="true">
             <param argument="--min_cov" type="integer" value="5" label=" Minimum coverage to call an variant"/>
             <param argument="--min_freq" type="float" value="0.05" label="Minimum SNP frequency to confirm a SNV" help="Both this AND the FDR snp count cutoff must be true to call a SNP."/>
@@ -75,7 +75,7 @@ inStrain compare
         </section>
         <section name="genome_clustering" title="Genome Clustering Options" expanded="true">
             <param argument="--ani_threshold" type="float" value="0.99999" label="popANI threshold to cluster genomes at" help="Must provide .stb file to do so"/>
-            <param argument="--coverage_treshold" type="float" value="0.1" label="Minimum percent_genome_compared for a genome comparison to count" help="if below the popANI will be set to 0"/>
+            <param argument="--coverage_threshold" type="float" value="0.1" label="Minimum percent_genome_compared for a genome comparison to count" help="if below the popANI will be set to 0"/>
             <param argument="--clusterAlg" type="select" label="Algorithm used to cluster genomes">
                 <option value="average" selected="true">Average</option>
                 <option value="single">Single</option>
@@ -116,7 +116,7 @@ inStrain compare
         </section>
         <section name="genome_clustering">
             <param name="ani_threshold" value="0.99999"/>
-            <param name="coverage_treshold" value="0.1"/>
+            <param name="coverage_threshold" value="0.1"/>
             <param name="clusterAlg" value="average"/>
         </section>
         <output name="comparisonsTable">

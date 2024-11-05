@@ -1,5 +1,5 @@
 <tool id="concoct_merge_cut_up_clustering" name="CONCOCT: Merge cut clusters" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="@PROFILE@">
-    <description>and assign concensus clusters for the original contigs</description>
+    <description>and assign consensus clusters for the original contigs</description>
     <macros>
         <import>macros.xml</import>
     </macros>
@@ -31,7 +31,7 @@ merge_cutup_clustering.py
     <help><![CDATA[
 **What it does**
 
-This tool merges the clustering created by concoct by looking at cluster assignments per contig part and assigning a concensus cluster for the original contig. The output contains a header line and contig_id and cluster_id per line, separated by a comma.
+This tool merges the clustering created by concoct by looking at cluster assignments per contig part and assigning a consensus cluster for the original contig. The output contains a header line and contig_id and cluster_id per line, separated by a comma.
 
 @HELP_OVERVIEW@
     ]]></help>

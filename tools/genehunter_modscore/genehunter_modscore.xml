@@ -262,7 +262,7 @@ q
             <conditional name="npl_scoring" >
                 <param name="extra_mod_analysis" type="select" label="Type of linkage analysis" >
                     <option value="BOTH" selected="true" >Both</option>
-                    <option value="NPL" >Non-paremetric Linkage</option>
+                    <option value="NPL" >Non-parametric Linkage</option>
                     <option value="LOD" >Logarithm-of-the-Odds</option>
                 </param>
                 <when value="BOTH" ><expand macro="macro_npl_opts" /></when>

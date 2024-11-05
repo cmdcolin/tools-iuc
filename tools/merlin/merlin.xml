@@ -63,7 +63,7 @@
         <!-- Beginning of the optional parameters -->
         <param name="markerNames" type="boolean" truevalue="--markerNames" falsevalue="" optional="true" label="For Marker Serial Optional Parameter" help="Useful to eliminate numbers in positions and introduce serial of MRK Number instead." />
         <param name="minStep" type="float" optional="true" label="For Minimum Step Optional Parameter" help="Useful to find the minimum value" />
-        <param name="maxStep" type="float" optional="true" label="For Maximum Step Optional Paramter" help="Useful to find the maximum value" />
+        <param name="maxStep" type="float" optional="true" label="For Maximum Step Optional Parameter" help="Useful to find the maximum value" />
         <param name="steps" type="integer" min="0" optional="true" label="n equally spaced locations" help="Carry out analyses at n equally spaced locations to analyse between consecutive markers" />
         <param name="grid" type="integer" min="0" optional="true" label="n-cM grid of equally spaced locations" help="Carry out analysis along an n-cM grid of equally spaced locations" />
         <param name="start" type="integer" min="0" optional="true" label="Start analyses" help="Start analyses at pos centiMorgans." />
@@ -215,7 +215,7 @@
             </output>
         </test>
         <test>
-            <!--This test uses steps optinal parameter -->
+            <!--This test uses steps optional parameter -->
             <param name="pname" value="asp.ped"/>
             <param name="mname" value="asp.map"/>
             <param name="dname" value="asp.dat"/>
@@ -456,7 +456,7 @@
             </output>
         </test>
         <test>
-            <!-- This test uses all of the optional parameters along with a conditional paramter. -->
+            <!-- This test uses all of the optional parameters along with a conditional parameter. -->
             <param name="pname" value="snp-scan.ped"/>
             <param name="mname" value="snp-scan.map"/>
             <param name="dname" value="snp-scan.dat"/>

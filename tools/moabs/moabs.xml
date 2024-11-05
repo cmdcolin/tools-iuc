@@ -259,7 +259,7 @@
             <param argument="--minNominalDif" type="float" value="0.33333" min="0" max="1" label="Minimal nominal methylation difference for DMC and DMR calling" help="Minimal nominal methylation difference for DMC and DMR. Default=`0.3333`."/>
             <param argument="--minCredibleDif" type="float" value="0.2" min="0" max="1" label="Minimal credible methylation difference for DMC calling" help="Minimal CDIF for DMC calling. Default=`0.2`."/>
             <param argument="--minDmcsInDmr" type="integer" value="3" min="1" label="Minimum number of DMCs in a DMR" help="Minimum number of DMCs in a DMR. Default=3."/>
-            <param argument="--maxDistConsDmcs" type="integer" value="300" min="1" label="Maximum distance between two consective DMCs for a DMR" help="Maximum distance between two consective DMCs for a DMR. Default=300."/>
+            <param argument="--maxDistConsDmcs" type="integer" value="300" min="1" label="Maximum distance between two consecutive DMCs for a DMR" help="Maximum distance between two consecutive DMCs for a DMR. Default=300."/>
         </section>
         <param name="output_selector" type="select" multiple="true" optional="true" label="Select output files" help="">
             <option value="1" selected="true">dmc_M2_g1.G.bed_vs_g2.G.bed.txt</option>
@@ -484,7 +484,7 @@ Five output files can be selected to report, namely
 
     1. **DMC site file** - the major DMC result file
     2. **DMR region file** - the major DMR result file
-    3. **Comparison file between two groups** - the intermediate comparion result
+    3. **Comparison file between two groups** - the intermediate comparison result
     4. **BAM files** - intermediate BAM files
     5. **Methylation BED files** - intermediate methylation BED files
 
@@ -511,7 +511,7 @@ chrom<TAB>start<TAB>end<TAB>totalC_0<TAB>nominalRatio_0<TAB>ratioCI_0<TAB>totalC
     10. **nominalDif_1-0** - The nominal methylation difference between the group 1 and the group 0.
     11. **credibleDif_1-0** - The credible methylation difference (CDIF) between the group 1 and the group 0.
     12. **difCI_1-0** - The difference of ratio CIs between the group 1 and the group 0.
-    13. **p_sim_1_v_0** - P-value according to the similarity probablities.
+    13. **p_sim_1_v_0** - P-value according to the similarity probabilities.
     14. **p_fet_1_v_0** - P-value according to the Fisher exact test.
     15. **class** - 5-state class labels by methylation differences and p-values.
 
@@ -585,7 +585,7 @@ as below.
     4. **ratio** - Methylation ratio in the site
     5. **totalC** - Total number of reads in current Cs.
     6. **methC** - Methylated Cs.
-    7. **strand** - The strand information for prevous three columns.
+    7. **strand** - The strand information for previous three columns.
     8. **next** - The next base.
     9. **Plus** - Next two columns are for forward strand.
     10. **totalC** - Total number of Cs.

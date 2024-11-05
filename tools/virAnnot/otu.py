@@ -396,7 +396,7 @@ def _create_html(options, hits_collection):
     """
     Create HTML file with all results
     """
-    # create mapping file with all informations to use to create HTML report
+    # create mapping file with all information to use to create HTML report
     map_file_path = options.output + "/map.txt"
     if os.path.exists(map_file_path):
         os.remove(map_file_path)
@@ -427,7 +427,7 @@ def _set_options():
     parser.add_argument('-r', '--rps', help='TAB rpsblast file from rps2ecsv module.', action='append', required=True, dest='rps', nargs='+')
     parser.add_argument('-f', '--fasta', help='FASTA file with contigs', action='append', required=True, dest='fasta', nargs='+')
     parser.add_argument('-p', '--percentage', help='Percentage similarity threshold for OTUs cutoff.', action='store', type=int, default=90, dest='perc')
-    parser.add_argument('-vp', '--viral_portion', help='Minimun portion of viral sequences in RPS domain to be included.', action='store', type=float, default=0.3, dest='viral_portion')
+    parser.add_argument('-vp', '--viral_portion', help='Minimum portion of viral sequences in RPS domain to be included.', action='store', type=float, default=0.3, dest='viral_portion')
     parser.add_argument('-mpl', '--min_protein_length', help='Minimum query protein length.', action='store', type=int, default=100, dest='min_protein_length')
     parser.add_argument('-tp', '--tool_path', help='Path to otu_seek.R', action='store', type=str, default='./', dest='tool_path')
     parser.add_argument('-o', '--out', help='The output directory', action='store', type=str, default='./Rps2tree_OTU', dest='output')

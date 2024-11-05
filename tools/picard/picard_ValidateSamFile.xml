@@ -149,7 +149,7 @@
             <param name="mode" value="VERBOSE"/>
             <param name="ignore" value="INVALID_QUALITY_FORMAT,INVALID_FLAG_PROPER_PAIR"/>
             <param name="max_output" value="100"/>
-            <param name="ignore_warnings" value="Fasle"/>
+            <param name="ignore_warnings" value="False"/>
             <param name="validate_index" value="True"/>
             <param name="is_bisulfite_sequenced" value="False"/>
             <output name="outFile" file="picard_ValidateSamFile_test1.txt" ftype="txt"/>

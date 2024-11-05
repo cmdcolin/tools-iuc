@@ -1,4 +1,4 @@
-<tool id="qiime_extract_viz" name="QIIME vizualisation extractor" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="22.01" license="MIT">
+<tool id="qiime_extract_viz" name="QIIME visualisation extractor" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="22.01" license="MIT">
     <description></description>
     <macros>
         <token name="@TOOL_VERSION@">0.1.0</token>

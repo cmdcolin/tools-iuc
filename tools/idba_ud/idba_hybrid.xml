@@ -68,7 +68,7 @@
                 <has_text text="--max_gap 3" />
             </assert_command>
         </test>
-        <!-- chached reference test -->
+        <!-- cached reference test -->
         <test>
             <param name="ref_source|reference" value="test_id"/>
             <param name="ref_source|ref_source_sel" value="cached"/>

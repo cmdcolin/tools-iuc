@@ -195,7 +195,7 @@ class UniqueStart(object):
 
             start_pos = read.aend
 
-            # clean up hash if necesary
+            # clean up hash if necessary
             # Allow up to 100k over, to balance cleaning up the rev_pos hash
             # and memory
             if read.pos > (self.last_rev_pos + 100000):

@@ -43,7 +43,7 @@ filter_samples_from_otu_table.py
             <when value="metadata">
                 <param argument="--mapping_fp" type="data" format="txt" label="Mapping file" />
                 <param argument="--valid_states" type="text" label="Description of the valid states"/>
-                <param name="output_mapping" type="boolean" truevalue="true" falsevalue="false" checked="false" label="Extrat the filtered mapping file?"/>   
+                <param name="output_mapping" type="boolean" truevalue="true" falsevalue="false" checked="false" label="Extract the filtered mapping file?"/>   
             </when>
             <when value="id">
                 <param argument="--sample_id_fp" type="data" format="txt,tabular,tsv,csv" label="File listing sample ids to keep" help="Valid formats for the file are: 1) any white space, newline, or tab delimited list of samples, 2) a mapping file with samples in the first column"/>

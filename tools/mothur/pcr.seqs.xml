@@ -54,7 +54,7 @@ echo 'pcr.seqs(
 | tee mothur.out.log
     ]]></command>
     <inputs>
-        <param name="fasta" type="data" format="mothur.align,fasta" label="fasta - Candiate Sequences" help="sequences must be aligned"/>
+        <param name="fasta" type="data" format="mothur.align,fasta" label="fasta - Candidate Sequences" help="sequences must be aligned"/>
         <conditional name="trim">
             <param name="method" type="select" label="Trim with an oligos file?" help="">
                 <option value="oligos">oligos</option>

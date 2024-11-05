@@ -97,7 +97,7 @@ Minimum intron length (default=50)
     Minimum intron length (bp).
 
 Minimum coverage (default=1)
-    Minimum number of supportting reads to call a junction.
+    Minimum number of supporting reads to call a junction.
 
 Output
 ++++++++++++++

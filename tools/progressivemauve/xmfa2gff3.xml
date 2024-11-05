@@ -56,7 +56,7 @@ What it does
 
 XMFA Alignments are great, but now you need a way to visualize this data!
 
-This tool provides a conversion step to GFF3 formatted output consiting of
+This tool provides a conversion step to GFF3 formatted output consisting of
 ``match``es and ``match_part``s with scores indicating percent identity over
 that chunk of sequence.
 

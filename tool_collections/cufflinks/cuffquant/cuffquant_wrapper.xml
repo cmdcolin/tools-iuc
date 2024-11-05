@@ -126,7 +126,7 @@
                 <option value="transfrags">transfrags</option>
             </param>
             <param name="mask_file" type="data" format="gtf,gff3" label="Mask File" help="Ignore all alignment within transcripts in this file" optional="True" />
-            <param name="max_mle_iterations" value="5000" type="integer" label="Max MLE iterations" help="Maximum iterations allowed for Maximal Likelyhood Estimation calculations" />
+            <param name="max_mle_iterations" value="5000" type="integer" label="Max MLE iterations" help="Maximum iterations allowed for Maximal Likelihood Estimation calculations" />
             <param name="max_bundle_frags" type="integer" value="500000" label="Maximum number of fragments per locus"
                 help="Sets the maximum number of fragments a locus may have before being skipped. Default: 500,000" />
             </when>
@@ -201,7 +201,7 @@ All of the options have a default value. You can change any of them. Most of the
 This is a list of implemented Cuffdiff options::
 
   -m INT                         Average fragment length (SE reads); default 200
-  -s INT                         Fragment legnth standard deviation (SE reads); default 80
+  -s INT                         Fragment length standard deviation (SE reads); default 80
   --max-mle-iterations INT       Sets the number of iterations allowed during maximum likelihood estimation of abundances. Default: 5000
   -u                             Multi read correction tells Cufflinks to do an initial estimation procedure to more accurately weight reads mapping to multiple locations in the genome.
   -b ref.fasta             bias correction. Bias detection and correction can significantly improve accuracy of transcript abundance estimates.

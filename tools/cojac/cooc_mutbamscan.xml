@@ -32,7 +32,7 @@ sh arrange_samples.sh &&
 ## run cojac
 cojac cooc-mutbamscan
     ## use a sample list file to tell cojac to look for the inputs in the
-    ## V-pipe-style folder stucture we've created earlier.
+    ## V-pipe-style folder structure we've created earlier.
     -s samples_list.tsv
     -p inputs
     -b bed_cojac.bed

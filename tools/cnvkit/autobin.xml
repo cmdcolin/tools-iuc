@@ -116,7 +116,7 @@
             <param name="bams" ftype="bam" value="tumor.bam,tumor_1.bam" />
             <param name="targets" ftype="bed" value="capture.bed" />
             <output name="out_capture_target" file="capture.target.bed" /> 
-            <output name="out_capture_antitarget" file="multible_capture.antitarget.bed" /> 
+            <output name="out_capture_antitarget" file="multiple_capture.antitarget.bed" /> 
         </test>
     </tests>
     <help><![CDATA[

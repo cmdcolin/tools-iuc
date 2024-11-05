@@ -1230,7 +1230,7 @@ It updates the observation level metrics with
 - total_{var_type}_by_{expr_type} (e.g. "total_genes_by_counts", number of genes with positive counts in a cell)
 - total_{expr_type} (e.g. "total_counts", total number of counts for a cell)
 - pct_{expr_type}_in_top_{n}_{var_type} - for n in percent_top (e.g. "pct_counts_in_top_50_genes", cumulative percentage of counts for 50 most expressed genes in a cell)
-- total_{expr_type}_{qc_var} - for qc_var in qc_vars (e.g. "total_counts_mito", total number of counts for variabes in qc_vars)
+- total_{expr_type}_{qc_var} - for qc_var in qc_vars (e.g. "total_counts_mito", total number of counts for variables in qc_vars)
 - pct_{expr_type}_{qc_var} - for qc_var in qc_vars (e.g. "pct_counts_mito", proportion of total counts for a cell which are mitochondrial)
 
 And also the variable level metrics:
@@ -1294,7 +1294,7 @@ The returned AnnData object contains:
 - Z-score underlying the computation of a p-value for each gene for each group, prdered according to scores
 - Log2 fold change for each gene for each group, ordered according to scores. It is only provided if method is ‘t-test’ like. This is an approximation calculated from mean-log values.
 - P-values
-- Ajusted p-values
+- Adjusted p-values
 
 This data are stored in the unstructured annotation (uns) and can be accessed using the inspect tool for AnnData objects
 

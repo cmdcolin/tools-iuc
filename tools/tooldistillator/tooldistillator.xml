@@ -413,7 +413,7 @@ tooldistillator
                     <when value="shovill">
                         <param name="input" type="data" format="fasta" multiple="false" label="Contigs file" help="Contig fasta file from assembly"/>
                         <param argument="--contig_graph_path" type="data" format="txt" optional="true" multiple="false" label="Contig graph file" help="Graphic file assembly"/>
-                        <param argument="--bam_file_path" type="data" format="bam" optional="true" multiple="false" label="Bam file" help="Alignemnt file in bam format"/>
+                        <param argument="--bam_file_path" type="data" format="bam" optional="true" multiple="false" label="Bam file" help="Alignment file in bam format"/>
                         <expand macro="analysis_software_version"/>
                         <expand macro="reference_database_version"/>
                     </when>
@@ -422,7 +422,7 @@ tooldistillator
                         <param argument="--mlst_file_path" type="data" format="txt,tabular" optional="true" multiple="false" label="MLST results" help="mlst scheme file result from starAMR"/>
                         <param argument="--plasmidfinder_file_path" type="data" optional="true" format="txt,tabular" multiple="false" label="Plasmid results" help="Plasmidfinder result from starAMR"/>
                         <param argument="--pointfinder_file_path" type="data" optional="true" format="txt,tabular" multiple="false" label="Pointfinder results" help="PointFinder result from starAMR"/>
-                        <param argument="--setting_file_path" type="data" optional="true" format="txt,tabular" multiple="false" label="Setting informations" help="Settings file from starAMR"/>
+                        <param argument="--setting_file_path" type="data" optional="true" format="txt,tabular" multiple="false" label="Setting information" help="Settings file from starAMR"/>
                         <expand macro="analysis_software_version"/>
                         <expand macro="reference_database_version"/>
                     </when>

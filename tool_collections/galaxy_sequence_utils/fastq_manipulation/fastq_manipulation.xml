@@ -428,14 +428,14 @@ Only color space reads can have adapter bases substituted.
 
 **Example**
 
-Suppose you have a color space sanger formatted sequence (fastqcssanger) and you want to double-encode the color space into psuedo-nucleotide space (this is different from converting) to allow these reads to be used in tools which do not natively support it (using specially designed indexes). This tool can handle this manipulation, however, this is generally not recommended as results tend to be poorer than those produced from tools which are specially designed to handle color space data.
+Suppose you have a color space sanger formatted sequence (fastqcssanger) and you want to double-encode the color space into pseudo-nucleotide space (this is different from converting) to allow these reads to be used in tools which do not natively support it (using specially designed indexes). This tool can handle this manipulation, however, this is generally not recommended as results tend to be poorer than those produced from tools which are specially designed to handle color space data.
 
 Steps:
 
 1. Click **Add new Match Reads** and leave the matching options set to the default (Matching by sequence name/identifier using the regular expression "\*."; thereby matching all reads).
 2. Click **Add new Manipulate Reads**, change **Manipulate Reads on** to "Sequence Content", set **Sequence Manipulation Type** to "Change Adapter Base" and set **New Adapter** to "" (an empty text field).
 3. Click **Add new Manipulate Reads**, change **Manipulate Reads on** to "Sequence Content", set **Sequence Manipulation Type** to "String Translate" and set **From** to "0123." and **To** to "ACGTN".
-4. Click Execute. The new history item will contained double-encoded psuedo-nucleotide space reads.
+4. Click Execute. The new history item will contained double-encoded pseudo-nucleotide space reads.
     ]]></help>
     <citations>
         <citation type="doi">10.1093/bioinformatics/btq281</citation>

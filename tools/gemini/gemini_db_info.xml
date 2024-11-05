@@ -38,7 +38,7 @@
             <when value="samples">
                 <param name="format" type="select" display="radio"
                 label="Format of the pedigree file">
-                    <option value="">Allow extra columns to accomodate custom sample info</option>
+                    <option value="">Allow extra columns to accommodate custom sample info</option>
                     <option value="7">Restrict to 6 PED standard columns and drop additional info</option>
                 </param>
             </when>

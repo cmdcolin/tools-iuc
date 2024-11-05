@@ -39,7 +39,7 @@ insertion_profile.py
 ++++++++++++++++++++
 
 Calculate the distributions of inserted nucleotides across reads. Note that to
-use this funciton, CIGAR strings within SAM/BAM file should have ‘I’ operation.
+use this function, CIGAR strings within SAM/BAM file should have ‘I’ operation.
 
 Inputs
 ++++++

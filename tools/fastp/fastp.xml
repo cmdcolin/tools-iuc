@@ -354,7 +354,7 @@ $read_mod_options.base_correction_options.correction
             </conditional>
 
             <section name="umi_processing" title="UMI processing" expanded="True">
-                <param name="umi" argument="-U" type="boolean" truevalue="-U" falsevalue="" checked="false" label="Enable unique molecular identifer" help="Enable unique molecular identifer (UMI) preprocessing."/>
+                <param name="umi" argument="-U" type="boolean" truevalue="-U" falsevalue="" checked="false" label="Enable unique molecular identifier" help="Enable unique molecular identifier (UMI) preprocessing."/>
                 <param argument="--umi_loc" type="text" optional="true" label="UMI location" help="Specify the location of UMI, can be (index1/index2/read1/read2/per_index/per_read, default is none."/>
                 <param argument="--umi_len" type="integer" optional="true" label="UMI length" help="If the UMI is in read1/read2, its length should be provided."/>
                 <param argument="--umi_prefix" type="text" optional="true" label="UMI prefix" help="If specified, an underline will be used to connect prefix and UMI (i.e. prefix=UMI, UMI=AATTCG, final=UMI_AATTCG). No prefix by default."/>

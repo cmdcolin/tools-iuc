@@ -371,7 +371,7 @@
     <!--Required BAM input, GATK tool, may be specified multiple times.-->
     <!--BAM should be indexed on the fly.-->
     <!--Parameter is required, so is not contained within a section.-->
-    <!--Only decriptor that makes this unique for all input parameters is the summary field.-->
+    <!--Only descriptor that makes this unique for all input parameters is the summary field.-->
      <!--{'pre_chth': ['bam_index_pre_chth'],-->
                                                  <!--'main_chth': ['picard_bam_input'],-->
                                                  <!--'main_xml': ['gatk_bam_req_params']}},-->

@@ -157,7 +157,7 @@ lowthresh=$error_det_params.lowthresh
             <param argument="uselowerdepth" type="boolean" checked="true" label="For pairs, use the depth of the lower read as the depth proxy."/>
             <param argument="deterministic" type="boolean" checked="true" label="Generate random numbers deterministically" help="This would ensure identical output between multiple runs. May decrease speed with a huge number of threads."/>
             <param argument="fixspikes" type="boolean" checked="false" label="Do a slower, high-precision bloom filter lookup of kmers that appear to have an abnormally high depth due to collisions."/>
-            <param argument="passes" type="integer" value="2" label="Number of passes to perform" help=" pass is the basic mode. 2 passes allows greater accuracy, error detection, better contol of output depth."/>
+            <param argument="passes" type="integer" value="2" label="Number of passes to perform" help=" pass is the basic mode. 2 passes allows greater accuracy, error detection, better control of output depth."/>
         </section>
         <section name="hashing_params" title="Hashing parameters">
             <param argument="k" type="integer" min="1" value="31" label="kmer length" help="Values under 32 are most efficient, but arbitrarily high values are supported."/>

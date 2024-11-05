@@ -131,7 +131,7 @@ Rscript '${__tool_directory__}/tximport.R'
         <param name="counts_from_abundance" type="select" label="Summarization using the abundance (TPM) values?">
             <option value="no">No</option>
             <option value="scaledTPM">Scaled up to library size</option>
-            <option value="lengthScaledTPM">Scaled using the avg. transcript legth over samples and then the library size</option>
+            <option value="lengthScaledTPM">Scaled using the avg. transcript length over samples and then the library size</option>
             <option value="dtuScaledTPM">Scaled using the median transcript length among isoforms of a gene, and then the library size</option>
         </param>
     </inputs>

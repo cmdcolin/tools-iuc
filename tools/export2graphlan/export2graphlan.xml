@@ -126,9 +126,9 @@ export2graphlan.py -h | grep "ver."
         <param argument="--min_font_size" type="integer" optional="True" label="Minimum font size"/>
         <param argument="--max_font_size" type="integer" optional="True" label="Maximum font size"/>
         <param argument="--annotation_legend_font_size" type="integer" optional="True" label="Font size for the annotation legend"/>
-        <param argument="--abundance_threshold" type="float" optional="True" label="Minimun abundance value for a clade to be annotated"/>
+        <param argument="--abundance_threshold" type="float" optional="True" label="Minimum abundance value for a clade to be annotated"/>
         <param argument="--most_abundant" type="integer" optional="True" label="Number of clades to highlight"/>
-        <param argument="--least_biomarkers" type="integer" optional="True" label="Minimum number of biomarkers to extract" help=" The taxonomy is parsed, and the level is choosen in order to have at least the specified number of biomarkers"/>
+        <param argument="--least_biomarkers" type="integer" optional="True" label="Minimum number of biomarkers to extract" help=" The taxonomy is parsed, and the level is chosen in order to have at least the specified number of biomarkers"/>
         <param argument="--fname_row" type="integer" optional="True" label="Row number containing the names of the features" help="-1 specifies that no names are present in the matrix"/>
         <param argument="--sname_row" type="integer" optional="True" label="Row number containing the names of the samples" help="-1 specifies that no names are present in the matrix"/>
         <param argument="--metadata_rows" type="integer" optional="True" label="Row number to use as metadata"/>

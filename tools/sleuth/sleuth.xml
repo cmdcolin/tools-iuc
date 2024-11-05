@@ -65,7 +65,7 @@
     ]]></command>
     <inputs>
         <conditional name="experiment_design">
-            <param name="selector" type="select" label="Experiment design" help="If you have multiple experimental conditions, you should use propably the complex design mode. In the help section you can find more information.">
+            <param name="selector" type="select" label="Experiment design" help="If you have multiple experimental conditions, you should use probably use the complex design mode. In the help section you can find more information.">
                 <option value="single">Simple design mode (one experimental factor)</option>
                 <option value="complex">Complex design mode (two or more experimental factors)</option>
             </param>
@@ -226,7 +226,7 @@ The experimental design input should have this format:
 
 
 The tabular file **requires to have at least three columns with the same names as the previous example** (path, condition, sample). The path column correspond to original FASTQ filenames uploaded to Galaxy. 
-Condition includes the information about the first factor, and sample includes information about the second factor. **Only alphanumeric characters, undescores and dots are allowed**. 
+Condition includes the information about the first factor, and sample includes information about the second factor. **Only alphanumeric characters, underscores and dots are allowed**. 
 Additional factors can be included in the design table.
 
     ]]></help>

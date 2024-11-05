@@ -52,7 +52,7 @@
         <param argument="--inner_step" type="integer" value="5" label="Inner increment of k-mer"/>
         <param argument="--prefix" type="integer" value="3" label="Prefix length used to build sub k-mer table"/>
         <param argument="--min_count" type="integer" value="2" label="Minimum multiplicity for filtering k-mer when building the graph"/>
-        <param argument="--min_support" type="integer" value="1" label="Minimum supoort in each iteration"/>
+        <param argument="--min_support" type="integer" value="1" label="Minimum support in each iteration"/>
         <param argument="--seed_kmer" type="integer" value="30" label="Seed kmer size for alignment"/>
     </xml>
     <token name="@KMER_OPTIONS@">

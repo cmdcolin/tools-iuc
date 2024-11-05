@@ -130,7 +130,7 @@ def _get_allele_specific_pileup_column_stats(pileups, ref_fetch,
             #    other tools.
             #    If precalculated NM tag values are present on the aligned
             #    reads, these can be given preference through the use_nm flag.
-            #    Doing so will mimick the behavior of bam-readcount, which
+            #    Doing so will mimic the behavior of bam-readcount, which
             #    requires and always just looks at NM tags.
             # 2. For determining mismatch quality sums, a mismatch is defined
             #    differently and in accordance with the implementation in

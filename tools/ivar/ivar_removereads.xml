@@ -124,7 +124,7 @@ be TAB-separated with one line per amplicon.
 
    Preprocessing of the BAM input with ivar trim is essential for this tool to
    work because only ``ivar trim`` can add required primer information to the
-   BAM auxillary data of every read.
+   BAM auxiliary data of every read.
 
 ivar documentation can be found at `<https://andersen-lab.github.io/ivar/html/manualpage.html>`__.
     ]]></help>

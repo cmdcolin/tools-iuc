@@ -172,7 +172,7 @@
         </section>
         <section name="repeat" title="Repeat masking parameters" expanded="true">
             <expand macro="mask_cond" maskarg="mask" label="Mask out repeats" help="Alignments won't be started in masked region but may extend through it in nucleotide searches. Masked areas are ignored entirely in protein or translated searches. Default is no masking"/>
-            <expand macro="mask_cond" maskarg="qMask" label="Mask out repeats in query sequence" help="Analoguous to -mask, but for the query sequence"/>
+            <expand macro="mask_cond" maskarg="qMask" label="Mask out repeats in query sequence" help="Analogous to -mask, but for the query sequence"/>
             <expand macro="mask_cond" maskarg="repeats" label="Report matches in repeats separately" help="Repeat bases will not be masked in any way, but matches in repeat areas will be reported separately from matches in other areas in the output"/>
             <param argument="-minRepDivergence" type="integer" value=""  min="0" max="100" optional="true" label="Minimum divergence of repeats (percent)" help="to allow them to be unmasked.  Default is 15.  Only relevant for masking using RepeatMasker .out files" />
         </section>
@@ -335,7 +335,7 @@ BLAT is a bioinformatics software a tool which performs rapid sequence alignment
 It is designed to find sequences of high similarity and have a certain minimum length. With the default setting this is
 
 - >95% similarity and a minimum length of 25 bases for nucleotide sequences
-- >80% similarity and a minimum lenth of 20 amino acids for proteins
+- >80% similarity and a minimum length of 20 amino acids for proteins
 
 More divergent or shorter sequence alignments may be missed.
 The algorithm works in two phases: 
@@ -350,7 +350,7 @@ Builds an index of the reference containing the nonoverlapping K-mers and their
 positions (by default, can be changed using `-tileSize` and `-stepSize`).  Hits,
 i.e. exactly matching k-mers in query and reference, are then found by looking
 up each overlapping K-mer of the query sequence.  By enabling `-oneOff` the
-algorithm allows for a single substitition. Note that this increases the run
+algorithm allows for a single substitution. Note that this increases the run
 time of this phase significantly.
 
 The hits are then split into buckets of 64k (based on the database position)

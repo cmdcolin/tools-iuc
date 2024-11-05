@@ -27,7 +27,7 @@ $prepend
             </when>
             <when value="no"/>
         </conditional>
-        <param name="prepend" type="boolean" truevalue="--prepend" falsevalue="" checked="false" label="Prepend the colum" />
+        <param name="prepend" type="boolean" truevalue="--prepend" falsevalue="" checked="false" label="Prepend the column" />
     </inputs>
     <outputs>
         <data name="output" format="tabular" />

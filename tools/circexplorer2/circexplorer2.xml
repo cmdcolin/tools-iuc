@@ -158,7 +158,7 @@
                     </when>
                 </conditional>
                 <param argument="--no-fix" type="boolean" truevalue="--no-fix" falsevalue="" checked="false" label="No-fix mode" help="If enabled,  realignment step of fusion junction reads will be skipped. It is useful for species with                          poor gene annotations, but the accuracy of circular RNA prediction would decrease."/>
-                <param argument="--rpkm" type="boolean" truevalue="--rpkm" falsevalue="" checked="false" label="Calculate RPKM for cassete exons" help="If enabled, RPKM of cassette exons would be calculated"/>
+                <param argument="--rpkm" type="boolean" truevalue="--rpkm" falsevalue="" checked="false" label="Calculate RPKM for cassette exons" help="If enabled, RPKM of cassette exons would be calculated"/>
             </when>
         </conditional>
     </inputs>

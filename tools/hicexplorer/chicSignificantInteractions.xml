@@ -36,7 +36,7 @@
 
         <param name="pvalue" type="float" value="0.05" label="P-value of interaction to be accepted as significant" />
         <conditional name="filter_conditional">
-            <param name="filter_selector" type="select" label="List of chromosomes or a BED file containg regions">
+            <param name="filter_selector" type="select" label="List of chromosomes or a BED file containing regions">
                 <option value="optionXfold">x-fold over mean background</option>
                 <option value="optionLoosePvalue" selected="True">Loose p-value (NB background)</option>
             </param>

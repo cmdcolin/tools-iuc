@@ -201,7 +201,7 @@
         </conditional>
         <section name="options" expanded="false" title="Arriba Options">
             <param name="gtf_features" argument="-G" type="text" value="" optional="true" label="Names of features in the GTF annotation file">
-                <help>Commma or SPACE separated list, default: gene_name=gene_name|gene_id gene_id=gene_id transcript_id=transcript_id feature_exon=exon feature_CDS=CDS</help> 
+                <help>Comma or SPACE separated list, default: gene_name=gene_name|gene_id gene_id=gene_id transcript_id=transcript_id feature_exon=exon feature_CDS=CDS</help> 
                 <validator type="regex" message="">^(gene_name|gene_id|transcript_id|feature_exon|feature_CDS)=\w+(|\w+)?([ ,](gene_name|gene_id|transcript_id|feature_exon|feature_CDS)=\w+(|\w+)?)*$</validator>
             </param>
             <param name="strandedness" argument="-s" type="select" optional="true" label="Whether a strand-specific protocol was used for library preparation">
@@ -328,7 +328,7 @@
                 </help>
             </param>
 
-            <param name="max_mismatch_pvalue" argument="-V" type="float" value="" min="0." max="1." optional="true" label="Max mismatchrpvalue threahold">
+            <param name="max_mismatch_pvalue" argument="-V" type="float" value="" min="0." max="1." optional="true" label="Max mismatchrpvalue threshold">
                 <help>The 'mismatches' filter uses a binomial model to calculate a
                       p-value for observing a given number of mismatches in a read.
                       If the number of mismatches is too high, the read is discarded.
@@ -594,7 +594,7 @@ See:  https://arriba.readthedocs.io/en/latest/input-files/
 
   - Known fusions
 
-    Arriba can be instructed to be particularly sensitive towards events between certain gene pairs by supplying a list of gene pairs (parameter -k). A number of filters are not applied to these gene pairs. This is useful to improve the detection rate of expected or highly relevant events, such as recurrent fusions. Occassionally, this leads to false positive calls. But if high sensitivity is more important than specificity, this might be acceptable. Events which would be discarded by a filter and were recovered due to being listed in the known fusions list are usually assigned a low confidence.
+    Arriba can be instructed to be particularly sensitive towards events between certain gene pairs by supplying a list of gene pairs (parameter -k). A number of filters are not applied to these gene pairs. This is useful to improve the detection rate of expected or highly relevant events, such as recurrent fusions. Occasionally, this leads to false positive calls. But if high sensitivity is more important than specificity, this might be acceptable. Events which would be discarded by a filter and were recovered due to being listed in the known fusions list are usually assigned a low confidence.
 
     Known fusions files for all supported assemblies are shipped with the download package of Arriba. They can be found in the package as database/known_fusions_*.
 
@@ -687,7 +687,7 @@ See:  https://arriba.readthedocs.io/en/latest/output-files/
 
       * gene1 and gene2 : gene1 contains the gene which makes up the 5' end of the transcript and gene2 the gene which makes up the 3' end. The order is predicted on the basis of the strands that the supporting reads map to, how the reads are oriented, and splice patterns. Both columns may contain the same gene, if the event is intragenic. If a breakpoint is in an intergenic region, Arriba lists the closest genes upstream and downstream from the breakpoint, separated by a comma. The numbers in parentheses after the closest genes state the distance to the genes. If no genes are annotated for a contig (e.g., for viral genomes), the column contains a dot (.).
 
-      * strand1(gene/fusion) and strand2(gene/fusion) : Each of these columns contains two values seperated by a slash. The strand before the slash reflects the strand of the gene according to the gene annotation supplied to Arriba via the parameter -g. If the breakpoint is in an intergenic region, the value is .. The value after the slash reflects the strand that is transcribed. This does not necessarily match the strand of the gene, namely when the sense strand of a gene serves as the template for transcription. Occassionally, the strand that is transcribed cannot be predicted reliably. In this case, Arriba indicates the lack of information as a dot (.). Arriba uses splice-patterns of the alignments to assign a read to the appropriate originating gene. If a strand-specific library was used, Arriba also evaluates the strandedness in ambiguous situations, for example, when none of the supporting reads overlaps a splice-site.
+      * strand1(gene/fusion) and strand2(gene/fusion) : Each of these columns contains two values separated by a slash. The strand before the slash reflects the strand of the gene according to the gene annotation supplied to Arriba via the parameter -g. If the breakpoint is in an intergenic region, the value is .. The value after the slash reflects the strand that is transcribed. This does not necessarily match the strand of the gene, namely when the sense strand of a gene serves as the template for transcription. Occasionally, the strand that is transcribed cannot be predicted reliably. In this case, Arriba indicates the lack of information as a dot (.). Arriba uses splice-patterns of the alignments to assign a read to the appropriate originating gene. If a strand-specific library was used, Arriba also evaluates the strandedness in ambiguous situations, for example, when none of the supporting reads overlaps a splice-site.
 
       * breakpoint1 and breakpoint2 : The columns contain the coordinates of the breakpoints in gene1 and gene2, respectively. If an event is not supported by any split reads but only by discordant mates, the coordinates given here are those of the discordant mates which are closest to the true but unknown breakpoint.
 

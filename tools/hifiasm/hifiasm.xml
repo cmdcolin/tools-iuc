@@ -244,7 +244,7 @@
                 <param name="similarity_threshold" argument="-s" type="float" min="0" max="1" value="0.75" label="Similarity threshold for duplicate haplotigs"/>
                 <param name="minimum_overlap" argument="-O" type="integer" value="1" label="Minimum overlapped reads for duplicate haplotigs"/>
                 <param argument="--purge-max" type="integer" optional="true" label="Coverage upper bound" help="If not set, this will be determined automatically"/>
-                <param argument="--n-hap" type="integer" min="0" value="" optional="true" label="Assumtion of haplotype number" help="A haplotype is defined as the combination of alleles for different polymorphisms that occur on the same chromosome."/>
+                <param argument="--n-hap" type="integer" min="0" value="" optional="true" label="Assumption of haplotype number" help="A haplotype is defined as the combination of alleles for different polymorphisms that occur on the same chromosome."/>
             </when>
         </conditional>
         <conditional name="hic_partition">
@@ -288,9 +288,9 @@
                 <param name="max_overlaps" argument="-N" type="integer" value="100" label="Maximum overlaps to consider" help="The software selects the larger of this value and the k-mer count multiplied by coverage"/>
                 <param name="correction_rounds" argument="-r" type="integer" value="3" label="Correction rounds"/>
                 <param argument="--min-hist-cnt" type="integer" min="0" value="" optional="true" label="Minimum count threshold" help="When analyzing the k-mer spectrum, ignore counts below this value"/>
-                <param argument="--max-kocc" type="integer" min="0" value="20000" label="Maximum k-mer ocurrence" help="Employ k-mers occurring less than INT times to rescue repetitive overlaps"/>
+                <param argument="--max-kocc" type="integer" min="0" value="20000" label="Maximum k-mer occurrence" help="Employ k-mers occurring less than INT times to rescue repetitive overlaps"/>
                 <param argument="--hg-size" type="text" value="" optional="true" label="Estimated haploid genome size"
-                       help="Estimated haploid genome size used for inferring read coverage. If not provided, this parameter will be infered by hifism. Common suffices are required, for example, 100m or 3g">
+                       help="Estimated haploid genome size used for inferring read coverage. If not provided, this parameter will be inferred by hifism. Common suffices are required, for example, 100m or 3g">
                     <sanitizer invalid_char="">
                         <valid initial="string.digits">
                             <add value="k"/>
@@ -365,7 +365,7 @@
         <data name="hap1_contigs_hic" format="gfa1" from_work_dir="output.hic.bench.r_utg.gfa" label="${tool.name} on ${on_string}: raw unitig graph">
             <filter>mode['mode_selector'] == 'trio' and hic_partition['hic_partition_selector'] == 'set'</filter>
         </data>
-        <data name="hap2_contigs_hic" format="gfa1" from_work_dir="output.hic.bench.p_utg.gfa" label="${tool.name} on ${on_string}: processsed unitig graph">
+        <data name="hap2_contigs_hic" format="gfa1" from_work_dir="output.hic.bench.p_utg.gfa" label="${tool.name} on ${on_string}: processed unitig graph">
             <filter>mode['mode_selector'] == 'trio' and hic_partition['hic_partition_selector'] == 'set'</filter>
         </data>
         <!--Log, noseq, and bin output-->

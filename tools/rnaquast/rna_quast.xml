@@ -186,7 +186,7 @@
             <!-- GeneMarkST is not in Bioconda -->
             <!--param argument="-\-gene_mark" type="boolean" truevalue="-\-gene_mark" falsevalue="" checked="false" label="Run with GeneMarkS-T gene prediction tool?" 
                 help="GeneMarkS-T allows to predict genes in the assembled transcripts without reference genome"/-->
-            <param argument="--meta" type="boolean" truevalue="--meta" falsevalue="" checked="false" label="Meta Transcriptome" help="Run quality asessment for meta-transcriptome assemblies" />
+            <param argument="--meta" type="boolean" truevalue="--meta" falsevalue="" checked="false" label="Meta Transcriptome" help="Run quality assessment for meta-transcriptome assemblies" />
             <param argument="--lower_threshold" type="integer" value="50" label="Lower threshold for x-assembled/covered/matched metrics." />
             <param argument="--upper_threshold" type="integer" value="95" label="Upper threshold for x-assembled/covered/matched metrics." />
             <param argument="--prokaryote" type="boolean" truevalue="--prokaryote" falsevalue="" checked="false" label="Prokararyotic organism(s)" help="Use this option if the genome is prokaryotic"/>

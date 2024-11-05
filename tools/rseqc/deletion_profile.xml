@@ -49,7 +49,7 @@ Input BAM/SAM file
     Alignment file in BAM/SAM format.
 
 Alignment length of read
-    It is usually set to the orignial read length. For example, all these cigar
+    It is usually set to the original read length. For example, all these cigar
     strings ("101M", "68M140N33M", "53M1D48M") suggest the read alignment
     length is 101. [required]
 

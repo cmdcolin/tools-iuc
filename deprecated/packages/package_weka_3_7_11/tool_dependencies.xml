@@ -11,7 +11,7 @@
             </actions>
         </install>
         <readme>
-            Weka requires a JAVA (1.5+) runtime evironment.
+            Weka requires a JAVA (1.5+) runtime environment.
         </readme>
     </package>
 </tool_dependency>

@@ -122,7 +122,7 @@ _______
 .. image:: $PATH_TO_IMAGES/hicCorrelate_Dmel_heatmap.png
    :width: 45%
 
-This example is showing a heatmap that was calculated using the Pearson correlation of corrected Hi-C matrices with a bin size of 6000 bp at a range of 5000 to 200000. The dendrogram indicates which samples are most similar to each other. You can see that the wild-type samples are seperated from the knock-down samples. In that case, Spearman correlation gives very similar results (not shown).
+This example is showing a heatmap that was calculated using the Pearson correlation of corrected Hi-C matrices with a bin size of 6000 bp at a range of 5000 to 200000. The dendrogram indicates which samples are most similar to each other. You can see that the wild-type samples are separated from the knock-down samples. In that case, Spearman correlation gives very similar results (not shown).
 
 Scatterplot
 ___________

@@ -2,7 +2,7 @@ Trimmomatic: flexible read trimming tool for Illumina NGS data
 ==============================================================
 
 Galaxy tool wrapper for the Trimmomatic program, which provides various functions for
-manipluating Illumina FASTQ files (both single and paired-end).
+manipulating Illumina FASTQ files (both single and paired-end).
 
 Trimmomatic has been developed within Bjorn Usadel's group at RWTH Aachen university
 http://www.usadellab.org/cms/index.php?page=trimmomatic
@@ -15,7 +15,7 @@ The reference for Trimmomatic is:
 Controlling the available memory
 ================================
 
-The default amount of memory avilable to trimmomatic is set to 8GB.
+The default amount of memory available to trimmomatic is set to 8GB.
 To change the default amount of memory you can set the environment variable
 ``_JAVA_OPTIONS`` to ``-Xmx<amount_of_memory_in_GB>G``. The recommended way to
 set this is in the job_conf.xml file. To change the available memory to 6GB, a

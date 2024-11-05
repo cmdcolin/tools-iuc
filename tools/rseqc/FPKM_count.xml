@@ -74,7 +74,7 @@ read count, FPM (fragments per million), and FPKM (fragments per million
 mapped reads per kilobase exon) for each gene in a BED file. For strand
 specific RNA-seq data, program will assign read to its parental gene according
 to strand rule, if you don't know the strand rule, run infer_experiment.py.
-Please note that chromosome ID, genome cooridinates should be concordant
+Please note that chromosome ID, genome coordinates should be concordant
 between BAM and BED files.
 
 Inputs

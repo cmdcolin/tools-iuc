@@ -149,7 +149,7 @@ for i,g in enumerate(probe_genes):
 
     for c in recognized_celltypes:
         if c == '':
-           c = 'Unkown'
+           c = 'Unknown'
         if c not in marker_dict:
           marker_dict[c] = [g]
         else:
@@ -195,7 +195,7 @@ df.to_csv('marker.tsv', sep='\t', index=True)
         </conditional>
         <param argument="min_mean_difference" type="float" value="0.0" optional="false" label="Minimal difference of mean expression between at least one celltype and the background" help="This minimal difference is applied as an additional binary penalty in pca_penalties, DE_penalties and m_penalties_adata_celltypes."/>
         <param argument="n_min_markers" type="integer" value="2" min="1" optional="false" label="The minimal number of identified and added markers"/>
-        <param name="celltypes" type="text" value="all" optional="false" label="Cell types for which trees are trained" help="If not `all` then seperate the cell type with a comma (e.g., Glia,Neuron)"/>
+        <param name="celltypes" type="text" value="all" optional="false" label="Cell types for which trees are trained" help="If not `all` then separate the cell type with a comma (e.g., Glia,Neuron)"/>
         <conditional name="cond_markerset">
             <param name="select_markerset" type="select" label="Do you want to provide a set of marker genes?">
                 <option value="False">No</option>
@@ -212,10 +212,10 @@ df.to_csv('marker.tsv', sep='\t', index=True)
         </conditional>
         <param argument="n_list_markers" type="integer" value="2" min="1" optional="false" label="Minimal number of markers per celltype that are at least selected" help="Selected means either selecting genes from the marker list or having correlated genes in the already selected panel."/>
         <param argument="marker_corr_th" type="float" value="0.5" optional="false" label="Minimal correlation to consider a gene as captured"/>
-        <param name="pca_penalties" type="text" optional="true" label="List of keys for columns in adata.var containing penalty factors that are multiplied with the scores for PCA based gene selection" help="(comma separted)"/>
-        <param name="DE_penalties" type="text" optional="true" label="List of keys for columns in adata.var containing penalty factors that are multiplied with the scores for DE based gene selection (comma separted)" help="(comma separted)"/>
-        <param name="m_penalties_adata_celltypes" type="text" optional="true" label="List of keys for columns in adata.var containing penalty factors to filter out marker genes if a gene's penalty &lt; threshold for celltypes in adata" help="(comma separted)"/>
-        <param name="m_penalties_list_celltypes" type="text" optional="true" label="List of keys for columns in adata.var containing penalty factors to filter out marker genes if a gene's penalty &lt; threshold for celltypes **not** in adata" help="(comma separted)"/>
+        <param name="pca_penalties" type="text" optional="true" label="List of keys for columns in adata.var containing penalty factors that are multiplied with the scores for PCA based gene selection" help="(comma separated)"/>
+        <param name="DE_penalties" type="text" optional="true" label="List of keys for columns in adata.var containing penalty factors that are multiplied with the scores for DE based gene selection (comma separated)" help="(comma separated)"/>
+        <param name="m_penalties_adata_celltypes" type="text" optional="true" label="List of keys for columns in adata.var containing penalty factors to filter out marker genes if a gene's penalty &lt; threshold for celltypes in adata" help="(comma separated)"/>
+        <param name="m_penalties_list_celltypes" type="text" optional="true" label="List of keys for columns in adata.var containing penalty factors to filter out marker genes if a gene's penalty &lt; threshold for celltypes **not** in adata" help="(comma separated)"/>
         <param argument="seed" type="integer" value="123" min="0" optional="false" label="Random number seed"/>
 
         <section name="advanced_options" title="Advanced Options" expanded="false">

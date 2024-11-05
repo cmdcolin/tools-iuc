@@ -51,8 +51,8 @@
             <param argument="-M" type="float" value="7" label="Mean of ln[intron length]"/>
             <param argument="-S" type="float" value="1.7" label="Standard deviation of ln[intron length]"/>
             <param argument="-m" type="float" value="1" label="Maximum mismap probability"/>
-            <!--<param name="score" argument="-s" type="int" value="lastal e" label="Minimum alignement score"/>-->
-            <param name="no_split" argument="-n" type="boolean" truevalue="-n" falsevalue="" checked="false" label="Write original, not split, alignement."/>
+            <!--<param name="score" argument="-s" type="int" value="lastal e" label="Minimum alignment score"/>-->
+            <param name="no_split" argument="-n" type="boolean" truevalue="-n" falsevalue="" checked="false" label="Write original, not split, alignment."/>
         </section>
     </inputs>
 

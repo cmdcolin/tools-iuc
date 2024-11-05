@@ -119,7 +119,7 @@
     this  process, the exons that appear multiple times, once for each transcript are collapsed to so called
     *exon counting bins*. Counting bins for parts of exons arise when an exonic region appears with different
     boundaries in different transcripts. The resulting flattened GTF file contains pseudo exon ids per gene instead
-    of per transcript. This tool maps the DEXSeq couting bins back to the original exon ids. This mapping is only
+    of per transcript. This tool maps the DEXSeq counting bins back to the original exon ids. This mapping is only
     possible if the input GTF/GFF file contains transcript identifier attribute for the chosen features type.
 
 **Inputs**

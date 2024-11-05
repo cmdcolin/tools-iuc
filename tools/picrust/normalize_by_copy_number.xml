@@ -47,7 +47,7 @@
 <![CDATA[
 @PICRUST_OVERVIEW@
 
-**Command Documenation**
+**Command Documentation**
 
 This module corrects the abundance of each OTU to better reflect the true organism abundance by normalizing by PICRUSt's prediction of 16S copy number for each OTU.
 

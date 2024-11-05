@@ -62,7 +62,7 @@ mashmap
         <param argument="--seqLength" type="integer" value="5000" min="1" label="Minimum segment length"
             help="Default is 5,000 bp. Sequences below this length are ignored. Mashmap provides guarantees on reporting local alignments of length twice this value."/>
         <param argument="--sketchSize" type="integer" value="0" label="Sketch size - leave 0 for automatic setting based"
-            help="This parameter sets the seed density of the winnowing scheme, gauranteeing that the minhash will be calculated from a sample of sketchSize k-mers for each segment. It is set automatically based on --pi but can be manually set as well."/>
+            help="This parameter sets the seed density of the winnowing scheme, guaranteeing that the minhash will be calculated from a sample of sketchSize k-mers for each segment. It is set automatically based on --pi but can be manually set as well."/>
         <param argument="dense" type="boolean" truevalue="--dense" falsevalue="" label="Dense sketching"
             help="This flag will increase the seed density substantially, resulting in a density of roughly 0.02 * (1 + (1 - pi) / .05) where pi is the perc_identity threshold. This leads to longer runtimes and higher RAM usage, but significantly more accurate estimates of ANI."/>
         <param argument="--kmerThreshold" type="float" min="0.0" max="0.0" optional="true" label="Ignore the top % most-frequent kmer window" />

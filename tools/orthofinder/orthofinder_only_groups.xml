@@ -127,7 +127,7 @@
                 <conditional name="tree_method">
                     <param name="method" type="select" label="Method for gene tree inference">
                         <option value="dendroblast" selected="true">Dendroblast (faster)</option>
-                        <option value="msa">MSA (Multiple Sequence Aligments)</option>
+                        <option value="msa">MSA (Multiple Sequence Alignments)</option>
                     </param>
 
                     <when value="msa">

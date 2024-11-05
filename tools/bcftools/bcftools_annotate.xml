@@ -356,7 +356,7 @@ Examples:
 
     # Annotate from a tab-delimited file with regions (1-based coordinates, inclusive)
     tabix -s1 -b2 -e3 annots.tab.gz
-    bcftools annotate -a annots.tab.gz -h annots.hdr -c CHROM,FROM,TO,TAG inut.vcf
+    bcftools annotate -a annots.tab.gz -h annots.hdr -c CHROM,FROM,TO,TAG input.vcf
 
     # Annotate from a bed file (0-based coordinates, half-closed, half-open intervals)
     bcftools annotate -a annots.bed.gz -h annots.hdr -c CHROM,FROM,TO,TAG input.vcf

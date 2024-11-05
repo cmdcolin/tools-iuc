@@ -51,7 +51,7 @@
                     <!-- This will not work with bed files with old style metadata. However this  -->
                     <!-- Can be easily fixed by re-deceting metadata on a bam dataset by clicking -->
                     <!-- The pencil icon and settind datatype to "bam"                            -->
-                    <!-- This change has been commited in the following pull request:             -->
+                    <!-- This change has been committed in the following pull request:             -->
                     <!-- https://github.com/galaxyproject/galaxy/pull/107                         -->
 
                     <options>

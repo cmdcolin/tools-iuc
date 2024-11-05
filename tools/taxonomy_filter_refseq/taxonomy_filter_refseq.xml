@@ -73,7 +73,7 @@
         />
         <param argument="--no_predicted" type="boolean" truevalue="--no_predicted" falsevalue="" checked="false"
             label="Exclude predicted sequences from the dataset"
-            help="Computationally predicted (but not curated) sequences are identifed by their accession number prefix and excluded if this option is checked"
+            help="Computationally predicted (but not curated) sequences are identified by their accession number prefix and excluded if this option is checked"
         />
     </inputs>
     <outputs>

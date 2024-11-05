@@ -14,7 +14,7 @@
     <outputs>
         <data format="tabular" name="output" label="Relationship IDs and names of ${on_string}">
             <actions>
-                <action name="column_names" type="metadata" default="releationship ID,releationship name" />
+                <action name="column_names" type="metadata" default="relationship ID,relationship name" />
             </actions>
         </data>
     </outputs>

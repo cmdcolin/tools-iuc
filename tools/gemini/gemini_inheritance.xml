@@ -86,7 +86,7 @@
                 </expand>
                 <param argument="--pattern-only" name="by_pattern_only" type="boolean" truevalue="--pattern-only" falsevalue="" checked="false"
                 label="Ignore sample phenotypes during variant identification"
-                help="When turned on, the identification of compound heterozygous variant pairs gets based on the family tree only, i.e., the tool looks for heterozygous allele pairs in any kid that weren't occuring together in the parents (see the tool help below for the exact criteria used to detect compound heterozygosity)." />
+                help="When turned on, the identification of compound heterozygous variant pairs gets based on the family tree only, i.e., the tool looks for heterozygous allele pairs in any kid that weren't occurring together in the parents (see the tool help below for the exact criteria used to detect compound heterozygosity)." />
                 <expand macro="lenient" argument="--max-priority" truevalue="--max-priority 3"
                 help="When turned on, runs the tool with --max-priority 3 instead of the default value 1. This leads to inclusion of more ambiguous cases of compound heterozygosity." />
                 <expand macro="unaffected" />

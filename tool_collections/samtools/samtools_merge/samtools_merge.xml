@@ -38,7 +38,7 @@
 samtools merge
 -@ \$addthreads
 -s $seed
-## force overwrite seems necessay (but I do not understand why ...)
+## force overwrite seems necessary (but I do not understand why ...)
 -f
 ## Galaxy provides only default compression
 ## #if $compression == 'levelone'

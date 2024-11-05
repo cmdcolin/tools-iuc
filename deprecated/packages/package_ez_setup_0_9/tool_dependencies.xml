@@ -15,7 +15,7 @@
             </actions>
         </install>
         <readme>
-            Installation of ez_setup requieres python. The installation can be accessed via EZ_SETUP_PATH.
+            Installation of ez_setup requires python. The installation can be accessed via EZ_SETUP_PATH.
         </readme>
     </package>
 </tool_dependency>

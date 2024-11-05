@@ -169,7 +169,7 @@
       <option value="RankSumTest">RankSumTest</option>
     </param>
     <param name="family_string" type="text" value="" label="Family String" help="--family_string"/>
-    <param name="mendel_violation_genotype_quality_threshold" type="float" value="0.0" label="genotype quality treshold in order to annotate mendelian violation ratio." help="-mvq,--MendelViolationGenotypeQualityThreshold &amp;lt;MendelViolationGenotypeQualityThreshold&amp;gt;"/>
+    <param name="mendel_violation_genotype_quality_threshold" type="float" value="0.0" label="genotype quality threshold in order to annotate mendelian violation ratio." help="-mvq,--MendelViolationGenotypeQualityThreshold &amp;lt;MendelViolationGenotypeQualityThreshold&amp;gt;"/>
     <param name="exclude_annotations" type="select" multiple="True" display="checkboxes" label="Annotations to exclude" help="-XA,--excludeAnnotation &amp;lt;excludeAnnotation&amp;gt;" >
       <!-- load the available annotations from an external configuration file, since additional ones can be added to local installs -->
       <options from_data_table="gatk2_annotations">

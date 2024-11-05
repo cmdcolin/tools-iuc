@@ -235,8 +235,8 @@ shasta --threads \${GALAXY_SLOTS:-4}
 #if str($marker_graph.prune_iteration_count):
     --MarkerGraph.pruneIterationCount '${marker_graph.prune_iteration_count}'
 #end if
-#if str($marker_graph.simplifiy_max_length):
-    --MarkerGraph.simplifyMaxLength '${marker_graph.simplifiy_max_length}'
+#if str($marker_graph.simplify_max_length):
+    --MarkerGraph.simplifyMaxLength '${marker_graph.simplify_max_length}'
 #end if
 #if str($marker_graph.cross_edge_coverage_threshold):
     --MarkerGraph.crossEdgeCoverageThreshold '${marker_graph.cross_edge_coverage_threshold}'
@@ -436,13 +436,13 @@ ${assembly.write_reads_by_assembled_segment}
             <param argument="--Align.bandExtend" name="band_extend" optional="true" type="integer" label="Amount to extend the downsampled band" help="Only used for 'Banded SeqAn' alignment method"/>
             <param argument="--Align.maxBand" name="max_band" optional="true" type="integer" label="Maximum alignment band"  help="Only used for 'Banded SeqAn' alignment method"/>
             
-            <param argument="--Align.suppressContainments" name="suppress_containments" optional="true" type="select" label="Suppress containment alignments?" help="Containment alignments are alignments in which one read is entirely contained in another read, except possibly for up to maxTrim markers at the beggining and end">
+            <param argument="--Align.suppressContainments" name="suppress_containments" optional="true" type="select" label="Suppress containment alignments?" help="Containment alignments are alignments in which one read is entirely contained in another read, except possibly for up to maxTrim markers at the beginning and end">
                 <option value="">Do not suppress containment alignments, unless otherwise specified in provided config file</option>
                 <option value="--Align.suppressContainments">Suppress containment alignments</option>
             </param>
 
             <section name="same_channel_read_alignment" expanded="true" title="Same channel read alignment options">
-                <param argument="--Align.sameChannelReadAlignment.suppressDeltaThreshold" name="suppress_delta_threshold" optional="true" type="integer" label="Supress delta threshold" help="If not zero, alignments between reads from the same nanopore channel and close in time are suppressed. The 'read' meta data fields from the FASTA or FASTQ header are checked. If their difference, in absolute value, is less than the value of this option, the alignment is suppressed. This can help avoid assembly artifact. This check is only done if the two reads have identical meta data fields 'runid', 'sampleid', and 'ch'. If any of these metadata fields are missing this check is suppressed and this option has no effect."/>
+                <param argument="--Align.sameChannelReadAlignment.suppressDeltaThreshold" name="suppress_delta_threshold" optional="true" type="integer" label="Suppress delta threshold" help="If not zero, alignments between reads from the same nanopore channel and close in time are suppressed. The 'read' meta data fields from the FASTA or FASTQ header are checked. If their difference, in absolute value, is less than the value of this option, the alignment is suppressed. This can help avoid assembly artifact. This check is only done if the two reads have identical meta data fields 'runid', 'sampleid', and 'ch'. If any of these metadata fields are missing this check is suppressed and this option has no effect."/>
             </section>
         </section>
         <section name="read_graph" expanded="true" title="ReadGraph options">
@@ -475,7 +475,7 @@ ${assembly.write_reads_by_assembled_segment}
             <param argument="--MarkerGraph.maxDistance" name="max_distance" optional="true" type="integer" label="Max distance" help="Used during approximate transitive reduction"/>
             <param argument="--MarkerGraph.edgeMarkerSkipThreshold" name="edge_marker_skip_threshold" optional="true" type="integer" label="Edge marker skip threshold" help="Used during approximate transitive reduction"/>
             <param argument="--MarkerGraph.pruneIterationCount" name="prune_iteration_count" optional="true" type="integer" label="Number of prune iterations"/>
-            <param argument="--MarkerGraph.simplifyMaxLength" name="simplifiy_max_length" optional="true" type="text" label="Simplify max length" help="Maximum lengths (in markers) used at each iteration of simplifyMarkerGraph. Ex.) 10,100,1000">
+            <param argument="--MarkerGraph.simplifyMaxLength" name="simplify_max_length" optional="true" type="text" label="Simplify max length" help="Maximum lengths (in markers) used at each iteration of simplifyMarkerGraph. Ex.) 10,100,1000">
                 <validator type="regex" message="Must be a comma separated list of integers">^[0-9]+(,[0-9]+)*$</validator>
             </param>
             <param argument="--MarkerGraph.crossEdgeCoverageThreshold" name="cross_edge_coverage_threshold" optional="true" type="float" label="Cross edge coverage threshold" help="Experimental. If this is not zero, assembly graph cross-edges with average edge coverage less than this value are removed, together with the corresponding marker graph edges. A cross edge is defined as an edge v0=&gt;v1 with out-degree(v0)&gt;1, in-degree(v1)&gt;1"/>
@@ -547,7 +547,7 @@ ${assembly.write_reads_by_assembled_segment}
                 <param argument="--Assembly.iterative.pseudoPathAlignMismatchScore" name="pseudo_path_align_mismatch_score" optional="true" type="integer" label="Psuedopath alignment mismatch score for iterative assembly (experimental)"/>
                 <param argument="--Assembly.iterative.pseudoPathAlignGapScore" name="pseudo_path_align_gap_score" optional="true" type="integer" label="Psuedopath alignment gap score for iterative assembly (experimental)"/>
                 <param argument="--Assembly.iterative.mismatchSquareFactor" name="mismatch_square_factor" optional="true" type="float" label="Mismatch square factor for iterative assembly (experimental)"/>
-                <param argument="--Assembly.iterative.minScore" name="min_score" optional="true" type="float" label="Minimum psuedo-alignment score for iterative assembly (experimental)"/>
+                <param argument="--Assembly.iterative.minScore" name="min_score" optional="true" type="float" label="Minimum pseudo-alignment score for iterative assembly (experimental)"/>
                 <param argument="--Assembly.iterative.maxAlignmentCount" name="max_alignment_count" optional="true" type="integer" label="Maximum number of read graph neighbors for iterative assembly (experimental)"/>
                 <param argument="--Assembly.iterative.bridgeRemovalIterationCount" name="bridge_removal_iteration_count" optional="true" type="integer" label="Number of read graph bridge removal iterations for iterative assembly (experimental)"/>
                 <param argument="--Assembly.iterative.bridgeRemovalMaxDistance" name="bridge_removal_max_distance" optional="true" type="integer" label="Maximum distance for reag graph bridge removal for iterative assembly (experimental)"/>
@@ -750,7 +750,7 @@ ${assembly.write_reads_by_assembled_segment}
                 <param name="max_distance" value="30"/>
                 <param name="edge_marker_skip_threshold" value="100"/>
                 <param name="prune_iteration_count" value="6"/>
-                <param name="simplifiy_max_length" value="10,100,1000"/>
+                <param name="simplify_max_length" value="10,100,1000"/>
                 <param name="cross_edge_coverage_threshold" value="0"/>
                 <param name="refine_threshold" value="0"/>
                 <param name="reverse_transitive_reduction" value=""/>

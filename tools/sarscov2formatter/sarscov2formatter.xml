@@ -103,7 +103,7 @@ sarscov2formatter
 sarscov2formatter
 =================
 
-Custom sript that performs necessary formatting operations for the SARS-CoV2 Selection Analysis workflow.
+Custom script that performs necessary formatting operations for the SARS-CoV2 Selection Analysis workflow.
 
 If using NCBI as data source the file can be obtained from https://www.ncbi.nlm.nih.gov/projects/genome/sars-cov-2-seqs/ncov-sequences.yaml.
 If not given the tool will download it automatically.

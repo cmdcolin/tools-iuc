@@ -157,7 +157,7 @@
     </inputs>
     <outputs>
         <data name="polished_fasta" format="fasta" label="${tool.name} on ${on_string}: polished fasta"/>
-        <data name="debug_file" format="tabular" label="${tool.name} on ${on_string}: Per base informations">
+        <data name="debug_file" format="tabular" label="${tool.name} on ${on_string}: Per base information">
             <filter> options['debug'] == True </filter>
         </data>
         <data name="logfile" format="txt" from_work_dir="output" label="${tool.name} on ${on_string}: log report">
@@ -171,7 +171,7 @@
                 <param name="fasta_file" value="contigs.fa"/>
                 <conditional name="sam_data_type">
                     <param name="sam_selector" value="single"/>
-                    <param name="single_sam" value="aligned_test_file/alignement_R1.sam"/>
+                    <param name="single_sam" value="aligned_test_file/alignment_R1.sam"/>
                 </conditional>
             </section>
             <output name="polished_fasta" value="polished.fasta"/>
@@ -182,8 +182,8 @@
                 <param name="fasta_file" value="contigs.fa"/>
                 <conditional name="sam_data_type">
                     <param name="sam_selector" value="paired"/>
-                    <param name="R1_sam" value="aligned_test_file/alignement_R1.sam"/>
-                    <param name="R2_sam" value="aligned_test_file/alignement_R2.sam"/>
+                    <param name="R1_sam" value="aligned_test_file/alignment_R1.sam"/>
+                    <param name="R2_sam" value="aligned_test_file/alignment_R2.sam"/>
                 </conditional>
             </section>
             <section name="options">
@@ -201,9 +201,9 @@
                     <param name="sam_selector" value="multiple_single"/>
                     <param name="single_collection">
                         <collection type="list">
-                            <element name="R1_sam" value="aligned_test_file/alignement_R1.sam" ftype="sam"/>
-                            <element name="R1_bis_sam" value="aligned_test_file/alignement_R1_bis.sam" ftype="sam"/>
-                            <element name="R1_ter_sam" value="aligned_test_file/alignement_R1_ter.sam" ftype="sam"/>
+                            <element name="R1_sam" value="aligned_test_file/alignment_R1.sam" ftype="sam"/>
+                            <element name="R1_bis_sam" value="aligned_test_file/alignment_R1_bis.sam" ftype="sam"/>
+                            <element name="R1_ter_sam" value="aligned_test_file/alignment_R1_ter.sam" ftype="sam"/>
                         </collection>
                     </param>
                 </conditional>
@@ -225,20 +225,20 @@
                         <collection type="list:paired">
                             <element name="paired_1">
                                 <collection type="paired">
-                                    <element name="forward" value="aligned_test_file/alignement_R1.sam" ftype="sam"/>
-                                    <element name="reverse" value="aligned_test_file/alignement_R2.sam" ftype="sam"/>
+                                    <element name="forward" value="aligned_test_file/alignment_R1.sam" ftype="sam"/>
+                                    <element name="reverse" value="aligned_test_file/alignment_R2.sam" ftype="sam"/>
                                 </collection>
                             </element>
                             <element name="paired_2">
                                 <collection type="paired">
-                                    <element name="forward" value="aligned_test_file/alignement_R1_bis.sam" ftype="sam"/>
-                                    <element name="reverse" value="aligned_test_file/alignement_R2_bis.sam" ftype="sam"/>
+                                    <element name="forward" value="aligned_test_file/alignment_R1_bis.sam" ftype="sam"/>
+                                    <element name="reverse" value="aligned_test_file/alignment_R2_bis.sam" ftype="sam"/>
                                 </collection>
                             </element>
                             <element name="paired_3">
                                 <collection type="paired">
-                                    <element name="forward" value="aligned_test_file/alignement_R1_ter.sam" ftype="sam"/>
-                                    <element name="reverse" value="aligned_test_file/alignement_R2_ter.sam" ftype="sam"/>
+                                    <element name="forward" value="aligned_test_file/alignment_R1_ter.sam" ftype="sam"/>
+                                    <element name="reverse" value="aligned_test_file/alignment_R2_ter.sam" ftype="sam"/>
                                 </collection>
                             </element>
                         </collection>
@@ -253,8 +253,8 @@
                 <param name="fasta_file" value="contigs.fa"/>
                 <conditional name="sam_data_type">
                     <param name="sam_selector" value="paired"/>
-                    <param name="R1_sam" value="aligned_test_file/alignement_R1.sam"/>
-                    <param name="R2_sam" value="aligned_test_file/alignement_R2.sam"/>
+                    <param name="R1_sam" value="aligned_test_file/alignment_R1.sam"/>
+                    <param name="R2_sam" value="aligned_test_file/alignment_R2.sam"/>
                 </conditional>
             </section>
             <section name="options">
@@ -272,8 +272,8 @@
                 <param name="fasta_file" value="contigs.fa"/>
                 <conditional name="sam_data_type">
                     <param name="sam_selector" value="paired"/>
-                    <param name="R1_sam" value="aligned_test_file/alignement_R1.sam"/>
-                    <param name="R2_sam" value="aligned_test_file/alignement_R2.sam"/>
+                    <param name="R1_sam" value="aligned_test_file/alignment_R1.sam"/>
+                    <param name="R2_sam" value="aligned_test_file/alignment_R2.sam"/>
                     <conditional name="insert_filter">
                         <param name="filter_select" value="filter"/>
                         <param name="low" value="1"/>
@@ -293,8 +293,8 @@
                 <param name="fasta_file" value="contigs.fa"/>
                 <conditional name="sam_data_type">
                     <param name="sam_selector" value="paired"/>
-                    <param name="R1_sam" value="aligned_test_file/alignement_R1.sam"/>
-                    <param name="R2_sam" value="aligned_test_file/alignement_R2.sam"/>
+                    <param name="R1_sam" value="aligned_test_file/alignment_R1.sam"/>
+                    <param name="R2_sam" value="aligned_test_file/alignment_R2.sam"/>
                     <conditional name="insert_filter">
                         <param name="filter_select" value="filter"/>
                         <param name="low" value="1.4"/>
@@ -318,7 +318,7 @@
                 <param name="fasta_file" value="contigs.fa"/>
                 <conditional name="sam_data_type">
                     <param name="sam_selector" value="single"/>
-                    <param name="single_sam" value="aligned_test_file/alignement_R1.bam" ftype="unsorted.bam"/>
+                    <param name="single_sam" value="aligned_test_file/alignment_R1.bam" ftype="unsorted.bam"/>
                 </conditional>
             </section>
             <section name="options">
@@ -333,8 +333,8 @@
                 <param name="fasta_file" value="contigs.fa"/>
                 <conditional name="sam_data_type">
                     <param name="sam_selector" value="paired"/>
-                    <param name="R1_sam" value="aligned_test_file/alignement_R1.bam" ftype="unsorted.bam"/>
-                    <param name="R2_sam" value="aligned_test_file/alignement_R2.bam" ftype="unsorted.bam"/>
+                    <param name="R1_sam" value="aligned_test_file/alignment_R1.bam" ftype="unsorted.bam"/>
+                    <param name="R2_sam" value="aligned_test_file/alignment_R2.bam" ftype="unsorted.bam"/>
                 </conditional>
             </section>
             <section name="options">
@@ -351,9 +351,9 @@
                     <param name="sam_selector" value="multiple_single"/>
                     <param name="single_collection">
                         <collection type="list">
-                            <element name="R1_sam" value="aligned_test_file/alignement_R1.sam" ftype="sam"/>
-                            <element name="R1_bis_sam" value="aligned_test_file/alignement_R1_bis.sam" ftype="sam"/>
-                            <element name="R1_ter_sam" value="aligned_test_file/alignement_R1_ter.sam" ftype="sam"/>
+                            <element name="R1_sam" value="aligned_test_file/alignment_R1.sam" ftype="sam"/>
+                            <element name="R1_bis_sam" value="aligned_test_file/alignment_R1_bis.sam" ftype="sam"/>
+                            <element name="R1_ter_sam" value="aligned_test_file/alignment_R1_ter.sam" ftype="sam"/>
                         </collection>
                     </param>
                 </conditional>
@@ -374,20 +374,20 @@
                       <collection type="list:paired">
                           <element name="paired_1">
                               <collection type="paired">
-                                  <element name="forward" value="aligned_test_file/alignement_R1.bam" ftype="unsorted.bam"/>
-                                  <element name="reverse" value="aligned_test_file/alignement_R2.bam" ftype="unsorted.bam"/>
+                                  <element name="forward" value="aligned_test_file/alignment_R1.bam" ftype="unsorted.bam"/>
+                                  <element name="reverse" value="aligned_test_file/alignment_R2.bam" ftype="unsorted.bam"/>
                               </collection>
                           </element>
                           <element name="paired_2">
                               <collection type="paired">
-                                  <element name="forward" value="aligned_test_file/alignement_R1_bis.bam" ftype="unsorted.bam"/>
-                                  <element name="reverse" value="aligned_test_file/alignement_R2_bis.bam" ftype="unsorted.bam"/>
+                                  <element name="forward" value="aligned_test_file/alignment_R1_bis.bam" ftype="unsorted.bam"/>
+                                  <element name="reverse" value="aligned_test_file/alignment_R2_bis.bam" ftype="unsorted.bam"/>
                               </collection>
                           </element>
                           <element name="paired_3">
                               <collection type="paired">
-                                  <element name="forward" value="aligned_test_file/alignement_R1_ter.bam" ftype="unsorted.bam"/>
-                                  <element name="reverse" value="aligned_test_file/alignement_R2_ter.bam" ftype="unsorted.bam"/>
+                                  <element name="forward" value="aligned_test_file/alignment_R1_ter.bam" ftype="unsorted.bam"/>
+                                  <element name="reverse" value="aligned_test_file/alignment_R2_ter.bam" ftype="unsorted.bam"/>
                               </collection>
                           </element>
                       </collection>
@@ -406,7 +406,7 @@
                 <param name="fasta_file" value="contigs.fa"/>
                 <conditional name="sam_data_type">
                     <param name="sam_selector" value="single"/>
-                    <param name="single_sam" value="aligned_test_file/alignement_R1.bam"/>
+                    <param name="single_sam" value="aligned_test_file/alignment_R1.bam"/>
                 </conditional>
             </section>
             <output name="polished_fasta" value="polished.fasta"/>
@@ -417,8 +417,8 @@
                 <param name="fasta_file" value="contigs.fa"/>
                 <conditional name="sam_data_type">
                     <param name="sam_selector" value="paired"/>
-                    <param name="R1_sam" value="aligned_test_file/alignement_R1.bam"/>
-                    <param name="R2_sam" value="aligned_test_file/alignement_R2.bam"/>
+                    <param name="R1_sam" value="aligned_test_file/alignment_R1.bam"/>
+                    <param name="R2_sam" value="aligned_test_file/alignment_R2.bam"/>
                 </conditional>
             </section>
             <section name="options">
@@ -450,7 +450,7 @@
     You can use multiple aligned data to polish the same assembly.
     **WARNING It can only work if multiple location information is available in sam/bam files**
     For example using bwa mem to align raw data before use, you need :
-    1. To align each read data independantly (also for paired data)
+    1. To align each read data independently (also for paired data)
     2. Set the option "Output all alignments for single-ends or unpaired paired-ends" in Select analysis mode>Set input/output options
     This allow multiple ailgnemnt output need to use polypolish
   ]]></help>

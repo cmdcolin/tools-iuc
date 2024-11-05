@@ -46,8 +46,8 @@
         <param name="annotation" type="data" format="gff3,tabular" label="Input annotation" />
     </xml>
     <xml name="ignore_tas">
-        <param name="nterm" argument="-iN" type="float" value="0" min="0" max="1" label="Ignore TAs occuring at given fraction of the N terminus." />
-        <param name="cterm" argument="-iC" type="float" value="0" min="0" max="1" label="Ignore TAs occuring at given fraction of the C terminus." />
+        <param name="nterm" argument="-iN" type="float" value="0" min="0" max="1" label="Ignore TAs occurring at given fraction of the N terminus." />
+        <param name="cterm" argument="-iC" type="float" value="0" min="0" max="1" label="Ignore TAs occurring at given fraction of the C terminus." />
     </xml>
     <xml name="normal">
         <param name="normalization" argument="-n" type="select" label="Normalization method"  value="TTR">

@@ -46,7 +46,7 @@ echo 'bin.seqs(
         </param>
         <param argument="group" type="data" format="mothur.groups" optional="true" label="group - Sequences Name reference"/>
         <param argument="count" type="data" format="mothur.count_table" optional="true" label="count - Count Table"
-            help="Represents the number of duplicate sequences for a given representitive sequence"/>
+            help="Represents the number of duplicate sequences for a given representative sequence"/>
         <expand macro="param-savelog"/>
     </inputs>
     <outputs>

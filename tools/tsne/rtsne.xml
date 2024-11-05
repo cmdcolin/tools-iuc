@@ -108,7 +108,7 @@ for more information on the original implementation).
 
 Your data should be in tabular format. Objects in rows will be clustered according to the observations in columns.
 Labels for objects can be assigned in the tool form by providing the column number of the identifier you wish to use.
-Additionaly, the first column containing numeric data should be provided to the tool form. 
+Additionally, the first column containing numeric data should be provided to the tool form. 
 
     ]]></help>
     <citations>

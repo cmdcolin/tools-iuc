@@ -236,7 +236,7 @@ if user_mode == "single":
                 # - False: Give a row or column will match only elements in both those rows or columns
                 inclusive = params["element_inclusive"]
 
-                # Create a bool matrix (intialised to False) with selected
+                # Create a bool matrix (initialised to False) with selected
                 # rows and columns set to True
                 bool_mat = data.copy()
                 bool_mat[:] = False

@@ -511,7 +511,7 @@ ggsave('plot.eps',
                 <param argument="features" type="text" value="nFeature_RNA" label="Features to plot" help="as variables on y-axis, comma-separated list e.g. nCount_RNA, percent.mt">
                     <expand macro="valid_list"/>
                 </param>
-                <param argument="idents" type="text" optional="true" value="" label="Ident classes to display on plot" help="as category on x-axis, defauts to all">
+                <param argument="idents" type="text" optional="true" value="" label="Ident classes to display on plot" help="as category on x-axis, defaults to all">
                 <expand macro="valid_name"/>
                 </param>
                 <param argument="sort" type="boolean" truevalue="TRUE" falsevalue="FALSE" checked="false" label="Sort identity classes by average expression"/>

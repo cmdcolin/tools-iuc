@@ -37,7 +37,7 @@ echo 'list.otulabels(
         <param name="label" type="select" multiple="true" label="label - OTU Labels">
             <expand macro="labeloptions"/>
         </param>
-        <param name="groups" type="select" multiple="true" label="groups - Pairwise comparision groups">
+        <param name="groups" type="select" multiple="true" label="groups - Pairwise comparison groups">
             <options>
                 <filter type="data_meta" ref="otu" key="groups"/>
             </options>

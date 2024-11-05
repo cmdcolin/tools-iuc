@@ -50,7 +50,7 @@
     <inputs>
         <param name="genome" type="data" format="genbank" label="Input genomes to analyze in Genbank format" help="Multi-genbank files (i.e. gbff) are supported. Each record must include the ORIGIN nucleotide sequence at the end."/>
         <section name="taxonomy" title="Phylum of the genomes to analyse" expanded="True">
-            <param name="phylum" type="select" label="Bacillota is the defaut parameter">
+            <param name="phylum" type="select" label="Bacillota is the default parameter">
                 <option value="bacillota" selected="true">Bacillota</option>
             </param>
         </section>

@@ -111,7 +111,7 @@
            </when>
         </conditional>
         <param argument="--pinvname" name="prop_invar" type="text" value="e" label="Proportion of invariant sites" help="Can be a fixed value in the [0,1] range or 'e' to get the maximum likelihood estimate, 0 to ignore this parameter"/>
-        <param argument="-f" name="equi_freq" type="select" label="Equilibrium frequencies" help="Empirical: frequencies are estimated by counting the occurences in the alignment. ML/Model: frequencies are estimated using ML for nucleotides or defined by the proteic substitution model.">
+        <param argument="-f" name="equi_freq" type="select" label="Equilibrium frequencies" help="Empirical: frequencies are estimated by counting the occurrences in the alignment. ML/Model: frequencies are estimated using ML for nucleotides or defined by the proteic substitution model.">
             <option value="m">ML/Model</option>
             <option value="e">Empirical</option>
         </param>
@@ -198,7 +198,7 @@ It implements new algorithms to search the space of tree topologies with user-de
 -----
 
 
-For further informations, please visite the PhyML_ website.
+For further information, please visite the PhyML_ website.
 
 .. _PhyML: http://www.atgc-montpellier.fr/phyml/
 

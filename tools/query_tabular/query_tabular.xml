@@ -671,7 +671,7 @@ Query Tabular
   **Table Index**
 
     Queries on larger tables can be much faster if indexes are specified.  
-    In general, specifiy an index for table columns used in joins with other tables, 
+    In general, specify an index for table columns used in joins with other tables, 
     or on columns used in SQL query WHERE clauses or in GROUP BY clauses.
 
 
@@ -710,11 +710,11 @@ Query Tabular
 
 **Normalizing by Line Filtering into 2 Tables** 
 
-*Relational database opertions work with single-valued column entries.  
+*Relational database operations work with single-valued column entries.  
 To apply relational operations to tabular files that contain fields with lists of values,
 we need to "normalize" those fields, duplicating lines for each item in the list.  
 In this example we create 2 tables, one for single-valued fields and a second with list-valued fields normalized.  
-Becauce we add a line number first for each table, we can join the 2 tables on the line number column.*
+Because we add a line number first for each table, we can join the 2 tables on the line number column.*
 https://en.wikipedia.org/wiki/First_normal_form 
 
     *People Table*

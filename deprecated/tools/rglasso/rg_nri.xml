@@ -18,7 +18,7 @@
 ### http://www.researchgate.net/publication/264672640_R_function_for_Risk_Assessment_Plot__reclassification_metrics_NRI_IDI_cfNRI code
 ### http://cjasn.asnjournals.org/content/early/2012/05/24/CJN.09590911.full is the reference
 ### lots of little tweaks and but fixes. Using t as a variable name seems fraught to me.
-### Ross Lazarus october 2014 for a Galaxy tool wrapper using the toolfactory infrastucture
+### Ross Lazarus october 2014 for a Galaxy tool wrapper using the toolfactory infrastructure
 
 #############################################################################
 ###Functions to create risk assessment plots and associated summary statistics
@@ -59,7 +59,7 @@
 ###   x2 is calculated risk (eg from a glm) for the alternative model
 ###   y is the case-control indicator (0 for controls, 1 for cases)
 ### Optional argument
-###   t are the boundaries of the risks for each group (ie 0, 1 and the thresholds beteween.  eg c(0,0,3,0,7,1)). If missing, defaults to c(0, the incidence, 1)
+###   t are the boundaries of the risks for each group (ie 0, 1 and the thresholds between.  eg c(0,0,3,0,7,1)). If missing, defaults to c(0, the incidence, 1)
 
 
 ### risk assessment plot
@@ -497,7 +497,7 @@ sink()
     multiple='False' help="Observed and predicted status columns must be selected from this file below - NOTE both models must be in same order with exact matches in all observed outcomes" optional="False"/>
     <param name="input1_observed" label="Select column containing observed outcome (0 for no event, 1 for an event)" type="data_column" data_ref="input1" numerical="True"
          multiple="False" use_header_names="True" optional="False" help = "Observed outcomes are compared in the two files to check that the datasets are from the same data"/>
-    <param name="input1_predicted" label="Select column containing predicted event probabilies from baseline model" type="data_column" data_ref="input1" numerical="True"
+    <param name="input1_predicted" label="Select column containing predicted event probabilities from baseline model" type="data_column" data_ref="input1" numerical="True"
          multiple="False" use_header_names="True" optional="False"  help="Must be in range 0-1"/>
     <param name="input1_id" label="Select column containing subject ID from baseline model" type="data_column" data_ref="input1" numerical="True"
          multiple="False" use_header_names="True" optional="False" help="Subect IDs are needed to match subjects to compare predictions in the two inputs"/>
@@ -594,7 +594,7 @@ Copied from the documentation in pickering_code_ ::
        x2 is calculated risk (eg from a glm) for the alternative model
        y is the case-control indicator (0 for controls, 1 for cases)
      Optional argument
-       t are the boundaries of the risks for each group (ie 0, 1 and the thresholds beteween.  eg c(0,0,3,0,7,1)). If missing, defaults to c(0, the incidence, 1)
+       t are the boundaries of the risks for each group (ie 0, 1 and the thresholds between.  eg c(0,0,3,0,7,1)). If missing, defaults to c(0, the incidence, 1)
 
 
 **Input**
@@ -607,7 +607,7 @@ Lots'o'measures (TM) see pickering_paper_ for details
 
 **Attributions**
 
-pickering_paper_ is the paper the caclulations performed by this tool is based on
+pickering_paper_ is the paper the calculations performed by this tool is based on
 
 pickering_code_ is the R function from John Pickering exposed by this Galaxy tool with minor modifications and hacks by Ross Lazarus.
 

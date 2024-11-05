@@ -120,7 +120,7 @@ Rcorrector can also be applied to other type of sequencing data where the read c
 
 Uncorrectable paired-end reads can be removed using FilterUncorrectabledPEfastq.
 
-More informations, see citations.
+More information, see citations.
 
     ]]>
     </help>

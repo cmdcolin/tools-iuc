@@ -134,7 +134,7 @@ The graph is colored by p-value: terms with p-value above cut-off appear in whit
    :height: 315
 
 (see the scale at https://github.com/DanFaria/GOEnrichment/blob/master/Scale.png). In addition to the name of each GO term, the graph
-shows its frequency in the study set. Dashed edges indicate that one or more intermediate terms were ommited from the graph.
+shows its frequency in the study set. Dashed edges indicate that one or more intermediate terms were omitted from the graph.
 
 -----
 

@@ -487,7 +487,7 @@ pairing of reads (from R1 and R2) in the filtered output files:
 .. class:: warningmark
 
 If the input consists of a dataset collection with the R1/R2 FASTQ pair then
-the outputs will also inclue two dataset collections: one for the 'paired'
+the outputs will also include two dataset collections: one for the 'paired'
 outputs and one for the 'unpaired' (as described above)
 
 Retaining the same order and number of reads in the filtered output fastq files is

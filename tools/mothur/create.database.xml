@@ -95,7 +95,7 @@ The create.database_ command reads a list_ or shared_ file, .cons.taxonomy, .rep
 .. _shared: https://www.mothur.org/wiki/Shared_file
 .. _create.database: https://www.mothur.org/wiki/Create.database
 
-v.1.28.0: Updated to Mothur 1.33, added count paramter.
+v.1.28.0: Updated to Mothur 1.33, added count parameter.
 
     ]]></help>
     <expand macro="citations"/>

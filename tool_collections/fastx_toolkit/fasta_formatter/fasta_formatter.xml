@@ -34,7 +34,7 @@
             <output name="output" file="fasta_formatter1.out" />
         </test>
         <test>
-            <!-- Re-format a FASTA file into multiple lines wrapping at 60 charactes -->
+            <!-- Re-format a FASTA file into multiple lines wrapping at 60 characters -->
             <param name="input" value="fasta_formatter1.fasta" />
             <param name="width" value="60" />
             <output name="output" file="fasta_formatter2.out" />

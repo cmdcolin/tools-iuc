@@ -174,7 +174,7 @@ $lr_align.no_simple_bridges
             <param argument="--max_kmer_frac" type="float" min="0" max="1" value="0.95"
                 label="Highest k-mer size for SPAdes assembly, expressed as a fraction of the read length"/>
             <param argument="--kmers" type="text" value="" optional="true" label="Exact k-mers to use for SPAdes assembly, comma-separated">
-                <validator type="regex" message="Kmers must be comma-separated odd integers (no repitition) without space in the range of 11 to 127 (inclusive)">^(\d*[13579],)*(\d*[13579])$</validator>
+                <validator type="regex" message="Kmers must be comma-separated odd integers (no repetition) without space in the range of 11 to 127 (inclusive)">^(\d*[13579],)*(\d*[13579])$</validator>
             </param>
             <param argument="--kmer_count" type="integer" min="0" value="10" label="Number of k-mer steps to use in SPAdes assembly"/>
             <param argument="--depth_filter" type="float" min="0" max="1" value="0.25"
@@ -467,7 +467,7 @@ $lr_align.no_simple_bridges
                         <has_text text="TTGAATGCCACCGGAGGCGGCTTTTTGACCGCCTCCAAAC"/>
                     </assert_contents>
                 </element>
-                <!-- there are gfa files for more k that are not tested explicily
+                <!-- there are gfa files for more k that are not tested explicitly
                      Aim of testing these is to be sure about the names of the graphs,
                      since they are used for reuse. Hence if there is a change here
                      update reuse accordingly-->

@@ -148,7 +148,7 @@ taxonomic level"/>
             <param name="seed" value="42"/>
             <output name="output" value="assignTaxonomyAddspecies.tab" ftype="tabular" compare="sim_size" delta="0"/>
         </test>
-         <!-- test w default params, bulit in reference -->
+         <!-- test w default params, built in reference -->
         <test expect_num_outputs="2">
             <param name="seqs" ftype="dada2_sequencetable" value="removeBimeraDenovo.tab"/>
             <param name="reference_cond|reference_select" value="builtin"/>

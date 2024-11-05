@@ -111,7 +111,7 @@ def htseqMX(gff_filename, sam_filenames, colnames, sam_exts, sam_bais, opts):
                     features[ f.iv ] += feature_id
                     counts[ feature_id ] = [0 for x in colnames]  # we use sami as an index here to bump counts later
         except:
-            sys.stderr.write( "Error occured in %s.\n" % gff.get_line_number_string() )
+            sys.stderr.write( "Error occurred in %s.\n" % gff.get_line_number_string() )
             raise
 
         if not opts.quiet:
@@ -141,9 +141,9 @@ def htseqMX(gff_filename, sam_filenames, colnames, sam_exts, sam_bais, opts):
                 pe_mode = first_read.paired_end
             except:
                 if isbam:
-                    print >> sys.stderr, "Error occured when reading first line of bam file %s colname=%s \n" % (sam_filename, colname )
+                    print >> sys.stderr, "Error occurred when reading first line of bam file %s colname=%s \n" % (sam_filename, colname )
                 else:
-                    print >> sys.stderr, "Error occured when reading first line of sam file %s colname=%s \n" % (sam_filename, colname )
+                    print >> sys.stderr, "Error occurred when reading first line of sam file %s colname=%s \n" % (sam_filename, colname )
                 raise
 
             try:
@@ -244,9 +244,9 @@ def htseqMX(gff_filename, sam_filenames, colnames, sam_exts, sam_bais, opts):
                                               ( rr.read.name, iv.chrom ) )
             except:
                 if not pe_mode:
-                    sys.stderr.write( "Error occured in %s.\n" % read_seq.get_line_number_string() )
+                    sys.stderr.write( "Error occurred in %s.\n" % read_seq.get_line_number_string() )
                 else:
-                    sys.stderr.write( "Error occured in %s.\n" % read_seq_pe_file.get_line_number_string() )
+                    sys.stderr.write( "Error occurred in %s.\n" % read_seq_pe_file.get_line_number_string() )
                 raise
 
             if not opts.quiet:

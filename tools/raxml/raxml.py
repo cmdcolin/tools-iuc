@@ -25,7 +25,7 @@ def __main__():
     # (-q)
     parser.add_option("--multiple_model", action="store", type="string", dest="multiple_model", help="Multiple Model File")
     # (-x)
-    parser.add_option("--rapid_bootstrap_random_seed", action="store", type="int", dest="rapid_bootstrap_random_seed", help="Rapid Boostrap Random Seed")
+    parser.add_option("--rapid_bootstrap_random_seed", action="store", type="int", dest="rapid_bootstrap_random_seed", help="Rapid Bootstrap Random Seed")
 
     (options, args) = parser.parse_args()
 

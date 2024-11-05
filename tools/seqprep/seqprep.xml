@@ -268,7 +268,7 @@
             <output name="output2" file="output2_general_args.fq.gz" />
         </test>
 
-        <!-- Adapter/Primer Trimming Arguements Test #5 -->
+        <!-- Adapter/Primer Trimming Arguments Test #5 -->
         <test expect_num_outputs="2">
             <param name="input1" value="input1.fq" />
             <param name="input2" value="input2.fq" />

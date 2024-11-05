@@ -249,7 +249,7 @@
                     <expand macro="advanced_se_options"/>
                 </conditional>
             </when>
-            <!-- the difference between single and paired bams is in the <command> tag portion and realated to -0, -1, and -2 options -->
+            <!-- the difference between single and paired bams is in the <command> tag portion and related to -0, -1, and -2 options -->
             <when value="paired_bam">
                 <param name="bam_input" type="data" format="bam" label="Select BAM dataset"
                        help="Specify BAM dataset with paired reads"/>

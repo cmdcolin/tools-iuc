@@ -62,8 +62,8 @@ Input files for Tn5Gaps need to be:
 Optional Arguments:
        -m <integer>    :=  Smallest read-count to consider. Default: -m 1
        -r <string>     :=  How to handle replicates. Sum or Mean. Default: -r Mean
-       --iN <float>     :=  Ignore TAs occuring at given fraction of the N terminus. Default: -iN 0.0
-       --iC <float>     :=  Ignore TAs occuring at given fraction of the C terminus. Default: -iC 0.0
+       --iN <float>     :=  Ignore TAs occurring at given fraction of the N terminus. Default: -iN 0.0
+       --iC <float>     :=  Ignore TAs occurring at given fraction of the C terminus. Default: -iC 0.0
        -n <string>      := Determines which normalization method to use. Default -n TTR
 
 

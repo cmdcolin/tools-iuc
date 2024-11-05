@@ -435,7 +435,7 @@ Methods:
 
 “vst”: First, fits a line to the relationship of log(variance) and log(mean) using local polynomial regression (loess). Then standardizes the feature values using the observed mean and expected variance (given by the fitted line). Feature variance is then calculated on the standardized values after clipping to a maximum (see clip.max parameter).
 
-“mean.var.plot” (mvp): First, uses a function to calculate average expression (mean.function, using FastExpMean) and dispersion (dispersion.function, using FastLogVMR) for each feature. Next, divides features into num.bin (deafult 20) bins based on their average expression, and calculates z-scores for dispersion within each bin. The purpose of this is to identify variable features while controlling for the strong relationship between variability and average expression
+“mean.var.plot” (mvp): First, uses a function to calculate average expression (mean.function, using FastExpMean) and dispersion (dispersion.function, using FastLogVMR) for each feature. Next, divides features into num.bin (default 20) bins based on their average expression, and calculates z-scores for dispersion within each bin. The purpose of this is to identify variable features while controlling for the strong relationship between variability and average expression
 
 “dispersion” (disp): selects the genes with the highest dispersion values
 

@@ -57,7 +57,7 @@ adata = sa.read('anndata.h5ad', backed = None)
 ]]>
     </token>
 
-    <xml name="dimentions_plot">
+    <xml name="dimensions_plot">
         <param argument="width" type="integer" value="500" label="Width of the plot"/>
         <param argument="height" type="integer" value="400" label="Height of the plot"/>
     </xml>

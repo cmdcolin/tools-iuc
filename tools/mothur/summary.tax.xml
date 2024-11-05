@@ -57,7 +57,7 @@ echo 'summary.tax(
         <param name="relabund" type="boolean" falsevalue="false" truevalue="true" checked="false"
             label="relabund - allows you to indicate that you want the summary files to be relative abundances rather than raw abundances. default=f"/>
         <param name="threshold" type="integer" value="0" min="0" label="threshold- specify a cutoff for the taxonomy file"
-            help="Once the classification falls below the threshold the mothur will refer to it as unclassified when calculating the concensus.
+            help="Once the classification falls below the threshold the mothur will refer to it as unclassified when calculating the consensus.
             This feature is similar to adjusting the cutoff in classify.seqs"/>
         <expand macro="param-output"/>
         <expand macro="param-printlevel"/>

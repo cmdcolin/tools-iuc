@@ -120,7 +120,7 @@ pick_otus.py
             <when value="sortmerna">
                 <expand macro="pick_otus_reference_source"/>
                 <param argument="--sortmerna_e_value" type="float" value="1" label="Max E-value when clustering"/>
-                <param argument="--sortmerna_coverage" type="float" value="0.97" min="0" max="1" label="Mininum percent query coverage (of an alignment) to consider a hit"/>
+                <param argument="--sortmerna_coverage" type="float" value="0.97" min="0" max="1" label="Minimum percent query coverage (of an alignment) to consider a hit"/>
                 <conditional name="sortmerna_tabular">
                     <param argument="test" type="select" label="Output alignments in the Blast tabular format with two additional columns including the CIGAR string and the percent query coverage?">
                         <option value="yes">Yes</option>

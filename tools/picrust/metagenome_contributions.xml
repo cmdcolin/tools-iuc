@@ -38,7 +38,7 @@
 <![CDATA[
 @PICRUST_OVERVIEW@
 
-**Command Documenation**
+**Command Documentation**
 
 This module outputs the relative contribution of OTUs to the predicted abundances of functions in your samples. The input biom file should be the output of normalize_by_copy_number. One output text file will be generated.
 

@@ -95,7 +95,7 @@ ${section.compact_PS}
                            help="Ligate phased VCFs by matching phase at overlapping haplotypes" />
                     <param name="ligate_mode" type="select" optional="true" label="Ligate mode" help="It allows finer control of --ligate behavior">
                         <option value="--ligate-warn">Ligate warn: Drop sites that are present in one chunk but absent in the other (--ligate-warn)</option>
-                        <option value="--ligate-force">Ligate force: Kepp sites that are present only in one chunk (--ligate-force)</option>
+                        <option value="--ligate-force">Ligate force: Keep sites that are present only in one chunk (--ligate-force)</option>
                     </param>
                 </when>
             </conditional>

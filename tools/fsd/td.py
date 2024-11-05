@@ -8,7 +8,7 @@
 # Takes at least one TABULAR file with tags before the alignment to the SSCS and
 # optionally a second TABULAR file as input. The program produces a plot which shows a histogram of Hamming distances
 # separated after family sizes, a family size distribution separated after Hamming distances for all (sample_size=0)
-# or a given sample of SSCSs or SSCSs, which form a DCS. In additon, the tool produces HD and FSD plots for the
+# or a given sample of SSCSs or SSCSs, which form a DCS. In addition, the tool produces HD and FSD plots for the
 # difference between the HDs of both parts of the tags and for the chimeric reads and finally a CSV file with the
 # data of the plots. It is also possible to perform the HD analysis with shortened tags with given sizes as input.
 # The tool can run on a certain number of processors, which can be defined by the user.
@@ -625,7 +625,7 @@ def hamming_difference(array1, array2, mate_b):
         # all tags without identical tag
         array2_half_withoutSame = half1_mate2[index_withoutSame]
         array2_half2_withoutSame = half2_mate2[index_withoutSame]
-        array2_withoutSame = array2[index_withoutSame]  # whole tag (=not splitted into 2 halfs)
+        array2_withoutSame = array2[index_withoutSame]  # whole tag (=not split into 2 halves)
         # calculate HD of "a" in the tag to all "a's" or "b" in the tag to all "b's"
         dist = numpy.array([sum(map(operator.ne, a, c)) for c in
                             array2_half_withoutSame])
@@ -642,10 +642,10 @@ def hamming_difference(array1, array2, mate_b):
         max_tag = min_tag_array2[max_index]
 
         # for d, d2 in zip(min_value, max_value):
-        if mate_b is True:  # half2, corrects the variable of the HD from both halfs if it is a or b
+        if mate_b is True:  # half2, corrects the variable of the HD from both halves if it is a or b
             ham2.append(min_value)
             ham2min.append(max_value)
-        else:  # half1, corrects the variable of the HD from both halfs if it is a or b
+        else:  # half1, corrects the variable of the HD from both halves if it is a or b
             ham1.append(min_value)
             ham1min.append(max_value)
 
@@ -1152,7 +1152,7 @@ def Hamming_Distance_Analysis(argv):
         # histogram with absolute and relative difference between HDs of both parts of the tag
         listDifference1, maximumXDifference, minimumXDifference = hammingDistanceWithFS(lst_minHD_tags, diff)
         listRelDifference1, maximumXRelDifference, minimumXRelDifference = hammingDistanceWithFS(lst_minHD_tags, rel_Diff)
-        # chimeric read analysis: tags which have TD=0 in one of the halfs
+        # chimeric read analysis: tags which have TD=0 in one of the halves
         if len(minHD_tags_zeros) != 0:
             lst_minHD_tags_zeros = []
             for i in minHD_tags_zeros:
@@ -1258,7 +1258,7 @@ def Hamming_Distance_Analysis(argv):
 
         # HD within tags
         output_file.write(
-            "Chimera Analysis:\nThe tags are splitted into two halves (part a and b) for which the Tag distances (TD) are calculated seperately.\n"
+            "Chimera Analysis:\nThe tags are split into two halves (part a and b) for which the Tag distances (TD) are calculated separately.\n"
             "The tag distance of the first half (part a) is calculated by comparing part a of the tag in the sample against all a parts in the dataset and by selecting the minimum value (TD a.min).\n"
             "In the next step, we select those tags that showed the minimum TD and estimate the TD for the second half (part b) of the tag by comparing part b against the previously selected subset.\n"
             "The maximum value represents then TD b.max. Finally, these process is repeated but starting with part b instead and TD b.min and TD a.max are calculated.\n"

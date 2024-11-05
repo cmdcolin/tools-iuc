@@ -155,9 +155,9 @@ $sequence_alphabet
                 <param name="search_given_strand" type="boolean" truevalue="-norc" falsevalue="" checked="False" label="Search given strand only"/>
                 <param argument="-old_clustering" type="boolean" truevalue="-old_clustering" falsevalue="" checked="False" label="Pick cluster seed motifs based only on significance"/>
                 <param name="meme_mod" type="select" label="What is the expected motif site distribution?">
-                    <option value="oops" selected="True">One occurance per sequence</option>
-                    <option value="zoops">Zero or one occurances per sequence</option>
-                    <option value="anr">Any number of repititions</option>
+                    <option value="oops" selected="True">One occurrence per sequence</option>
+                    <option value="zoops">Zero or one occurrences per sequence</option>
+                    <option value="anr">Any number of repetitions</option>
                 </param>
                 <param name="meme_minw" type="integer" optional="true" value="0" min="0" label="Minimum motif width"/>
                 <param name="meme_maxw" type="integer" optional="true" value="0" min="0" label="Maximum motif width"/>

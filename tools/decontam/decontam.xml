@@ -95,7 +95,7 @@
             </when>
             <when value="feature_table">
                 <param name="otu" type="data" format="tabular" label="Feature table" help="OTU/ASV or other feature table. The first column must have corresponding IDs to the metadata table."/>
-                <param name="metadata" type="data" format="tabular" label="Metadata" help="Metadata that contains a column specifying weather a samples is a negativ control (0 for normal samples / 1 for control). The first column must have corresponding IDs to the feature table."/>
+                <param name="metadata" type="data" format="tabular" label="Metadata" help="Metadata that contains a column specifying weather a samples is a negative control (0 for normal samples / 1 for control). The first column must have corresponding IDs to the feature table."/>
                 <param name="control" type="data_column" data_ref="metadata" use_header_names="true" multiple="false" optional="false" label="Control column" help="Column specifying weather a sample is a negative control (0 for normal samples / 1 for control)."/>
             </when>
         </conditional>

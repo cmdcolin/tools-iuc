@@ -91,7 +91,7 @@ fetch_abstracts <- function(pmids, row) {
         if (!grepl("</PubmedArticle>$", x)) {
             x <- sub("(^.*</PubmedArticle>).*$", "\\1", x)
         }
-        # Rebuid XML structure and proceed
+        # Rebuild XML structure and proceed
         x <- paste("<PubmedArticle>", x)
         gsub("[[:space:]]{2,}", " ", x)
     },

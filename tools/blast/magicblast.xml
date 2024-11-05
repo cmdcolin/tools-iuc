@@ -187,7 +187,7 @@ $output_options.no_discordant
             <param argument="-negative_taxids" type="text" optional="true" label="Comma-separated list of taxonomy IDs to restrict database search to everything except the specified taxonomy IDs" help="Available only for database searches">
                 <expand macro="sanitize_query" validinitial="string.ascii_letters,string.digits,string.whitespace,string.punctuation"/>
             </param>
-            <param argument="-negative_taxidlist" type="data" format="tabular" optional="true" label="Tabular file containing list of taxonomy IDs to restrict database search to everythin except the specified taxonomy IDs" help="Available only for database searches"/>
+            <param argument="-negative_taxidlist" type="data" format="tabular" optional="true" label="Tabular file containing list of taxonomy IDs to restrict database search to everything except the specified taxonomy IDs" help="Available only for database searches"/>
         </section>
         <section name="mapping" title="Mapping">
             <param argument="-score" type="integer" value="0" min="0" label="Cutoff score for accepting alignments" help="Zero value ignores"/>
@@ -341,7 +341,7 @@ $output_options.no_discordant
 
 In addition to a BLAST database, you can also search against a fasta file of subject (target) sequences. However, this is not
 advised because it is slower (only one CPU is used), but more importantly gives e-values for pairwise searches (very small
-e-values which will look overly signficiant).  In most cases you should convert the fasta file into a blast database using
+e-values which will look overly significant).  In most cases you should convert the fasta file into a blast database using
 *makeblastdb* and search against that.
 
 Magic-BLAST is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.

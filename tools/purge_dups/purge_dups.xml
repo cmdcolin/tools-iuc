@@ -118,8 +118,8 @@
                 <param argument="-a" name="min_align" type="integer" 
                     min="0" value="70" label="Minimum alignment score" 
                     help="If its alignment score is larger than this parameter and max match score larger than 
-                    the 'mininum max match score' (-b), it is marked as a repeat; if the alignment score is larger than this parameter 
-                    and max match score no larger than the 'mininum max match score', it is marked as a haplotig. 
+                    the 'minimum max match score' (-b), it is marked as a repeat; if the alignment score is larger than this parameter 
+                    and max match score no larger than the 'minimum max match score', it is marked as a haplotig. 
                     Otherwise it is left as a candidate primary contig. If after purging, the complete genes reported by BUSCO are 
                     too low, you can try to increase this parameter"/>
                 <param argument="-b" name="min_match" type="integer" 
@@ -505,7 +505,7 @@ integrity, and can improve scaffolding.
 Given a primary assembly, and an alternative assembly (optional, if you have one), follow the steps shown below to build your 
 own purge_dups pipeline, steps with same number can be run simultaneously. Among all the steps, although step 5 is optional, 
 we highly recommend our users to do so, because assemblers may produce overrepresented sequences. In such a case, the final 
-step 5 can be applied to remove those seqeuences.
+step 5 can be applied to remove those sequences.
 
     - Step 1: Calculate the coverage cutoffs and base coverages.
     - Step 2: Split an assembly with the **split_fasfa** function and do a self-self alignment by using minimap2.
@@ -528,7 +528,7 @@ step 5 can be applied to remove those seqeuences.
 
 **Purged assembly validation**
 
-There are many ways to validate the purged assembly. One way is to make a coverage plot for it, the 2nd way is to run `BUSCO <https://busco.ezlab.org/>`_. A thid option is to use `Merqury <https://github.com/marbl/merqury>`_
+There are many ways to validate the purged assembly. One way is to make a coverage plot for it, the 2nd way is to run `BUSCO <https://busco.ezlab.org/>`_. A third option is to use `Merqury <https://github.com/marbl/merqury>`_
 
 
 

@@ -110,7 +110,7 @@
     ]]></command>
     <inputs>
         <param name="input_files" format="fasta" type="data" multiple="true" min="2" label="Select the input fasta files (>2)" help="The input fasta files. At least 2 are needed!"/>    
-        <param argument="--p" type="select" label="Similarity comparision algorithm" help="In the first step of proteinortho an all-versus-all reciprocal best hit graph is build from the input files (using this algorithm).">
+        <param argument="--p" type="select" label="Similarity comparison algorithm" help="In the first step of proteinortho an all-versus-all reciprocal best hit graph is build from the input files (using this algorithm).">
             <option value="diamond" selected="true">diamond (aminoacid sequences)</option>
             <option value="autoblast">auto detect NCBI-BLAST (protein and nucleotide sequences)</option>
             <option value="blastp">NCBI-BLASTP+ (protein sequences)</option>
@@ -128,7 +128,7 @@
             <param argument="--identity" type="integer" value="25" min="0" max="100" label="Minimal percent identity of best blast hits in %"/>
             <param argument="--selfblast" type="boolean" checked="false" truevalue="--selfblast" falsevalue="" label="Apply selfblast, detects paralogs without orthologs "/>
             <param argument="--singles" type="boolean" checked="false" truevalue="--singles" falsevalue="" label="Report singleton genes without any hit "/>
-            <param argument="--core" type="boolean" checked="false" truevalue="--core" falsevalue="" label="Stop clustering if a split would result in groups that do not span across all species of the inital connected component." help="Overrules the -conn threshold."/>
+            <param argument="--core" type="boolean" checked="false" truevalue="--core" falsevalue="" label="Stop clustering if a split would result in groups that do not span across all species of the initial connected component." help="Overrules the -conn threshold."/>
             <param argument="--isoform" type="select" label="Use isoform information" help="The reciprocal best hit graph is built using isoform information (isoforms are treated equivalent). For ncbi : simply add the additional files to the input (file names need to match). For Uniprot : the isoforms need to contain the word isoform and the corresponding identifier. For trinity simply use the trinity output format.">
                 <option value="no" selected="true">Don't use isoform information</option>
                 <option value="ncbi">ncbi style (..._additional.fasta)</option>

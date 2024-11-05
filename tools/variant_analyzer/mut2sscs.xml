@@ -46,7 +46,7 @@ reads. This file can be obtained by the tool `Map with BWA-MEM
 
 **Output**
 
-The output is a json file containing dictonaries with stats of tags that carry a mutation in the SSCS 
+The output is a json file containing dictionaries with stats of tags that carry a mutation in the SSCS 
 at the same position a mutation is called in the DCS.
 
     ]]> 

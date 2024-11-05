@@ -172,7 +172,7 @@ Options
   query    : <string>, the output from the MAPseq that assigns a taxonomy to a sequence.
   outfile  : <string>, the file storing the tsv file.
   krona    : <string>, output file name for the Krona text. (Optional).
-  label    : <string>, lable to add to the top of the outfile OTU table.
+  label    : <string>, label to add to the top of the outfile OTU table.
   h|help   : prints this message.
 
 EOF

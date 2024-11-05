@@ -272,10 +272,10 @@ $advanced_options.log_fst_comp
                 <when value="--bootstrap">
                 </when>
                 <when value="">
-                    <param argument="--bootstrap-pifis" type="boolean" checked="false" truevalue="--bootstrap-pifis" falsevalue="" label="Enable boostrap resampling for smoothed SNP-based Pi and Fis calculations"/>
-                    <param argument="--bootstrap-fst" type="boolean" checked="false" truevalue="--bootstrap-fst" falsevalue="" label="Enable boostrap resampling for smoothed Fst calculations based on pairwise population comparison of SNPs"/>
-                    <param argument="--bootstrap-div" type="boolean" checked="false" truevalue="--bootstrap-div" falsevalue="" label="Enable boostrap resampling for smoothed haplotype diveristy and gene diversity calculations based on haplotypes"/>
-                    <param argument="--bootstrap-phist" type="boolean" checked="false" truevalue="--bootstrap-phist" falsevalue="" label="Enable boostrap resampling for smoothed Phi_st calculations based on haplotypes."/>
+                    <param argument="--bootstrap-pifis" type="boolean" checked="false" truevalue="--bootstrap-pifis" falsevalue="" label="Enable bootstrap resampling for smoothed SNP-based Pi and Fis calculations"/>
+                    <param argument="--bootstrap-fst" type="boolean" checked="false" truevalue="--bootstrap-fst" falsevalue="" label="Enable bootstrap resampling for smoothed Fst calculations based on pairwise population comparison of SNPs"/>
+                    <param argument="--bootstrap-div" type="boolean" checked="false" truevalue="--bootstrap-div" falsevalue="" label="Enable bootstrap resampling for smoothed haplotype diversity and gene diversity calculations based on haplotypes"/>
+                    <param argument="--bootstrap-phist" type="boolean" checked="false" truevalue="--bootstrap-phist" falsevalue="" label="Enable bootstrap resampling for smoothed Phi_st calculations based on haplotypes."/>
                 </when>
             </conditional>
             <param argument="--bootstrap-reps" type="integer" value="100" optional="true" label="Number of bootstrap resamplings to calculate"/>
@@ -668,7 +668,7 @@ $advanced_options.log_fst_comp
 
 **What it does**
 
-This program will be executed in place of the genotypes program when a population is being processed through the pipeline. A map specifiying which individuals belong to which population is submitted to the program and the program will then calculate population genetics statistics, expected/observed heterzygosity, π, and FIS at each nucleotide position. The populations program will compare all populations pairwise to compute FST. If a set of data is reference aligned, then a kernel-smoothed FST will also be calculated.
+This program will be executed in place of the genotypes program when a population is being processed through the pipeline. A map specifying which individuals belong to which population is submitted to the program and the program will then calculate population genetics statistics, expected/observed heterzygosity, π, and FIS at each nucleotide position. The populations program will compare all populations pairwise to compute FST. If a set of data is reference aligned, then a kernel-smoothed FST will also be calculated.
 
 --------
 

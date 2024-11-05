@@ -53,7 +53,7 @@ echo 'heatmap.sim(
             <param name="source" type="select" label="Generate Heatmap for">
                 <option value="shared">shared - Sample Similarity - OTU Shared</option>
                 <option value="phylip">phylip - Phylip Distance Matrix</option>
-                <option value="column">colomn - Pairwise Column Distance Matrix</option>
+                <option value="column">column - Pairwise Column Distance Matrix</option>
             </param>
             <when value="shared">
                 <param name="otu" type="data" format="mothur.shared" label="shared - OTU Shared"/>

@@ -51,8 +51,8 @@
         <param argument="--bam-lr" type="data" format="bam" optional="true" label="BAM with ONT reads aligned"     
             help="Input file name containing the alignments of long reads against the draft (must have CIGAR information).
                 Optional (only Short reads polishing will be performed if this argument is not given)"/>
-        <param argument="--coverage-short" type="integer" value="" min="0" label="Aproximate mean coverage of the short reads"/>
-        <param argument="--size-ref" type="text" label="Aproximate size of the genome" help="A number can be followed by units k/m/g; e.g. 10m, 2.3g.">
+        <param argument="--coverage-short" type="integer" value="" min="0" label="Approximate mean coverage of the short reads"/>
+        <param argument="--size-ref" type="text" label="Approximate size of the genome" help="A number can be followed by units k/m/g; e.g. 10m, 2.3g.">
             <sanitizer invalid_char="">
                 <valid initial="string.letters,string.digits">
                     <add value="." />

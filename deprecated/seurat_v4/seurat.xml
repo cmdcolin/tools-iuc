@@ -107,7 +107,7 @@
                 <option value="cite">Cite-seq</option>
             </param>
             <when value="base">
-                <param name="input" type="data" format="tabular,tsv" label="Counts file" help="The should be a TAB-separated count matrix with gene identifers in the first column and a header row"/>
+                <param name="input" type="data" format="tabular,tsv" label="Counts file" help="The should be a TAB-separated count matrix with gene identifiers in the first column and a header row"/>
                 <param name="min_cells" type="integer" min="0" value="0" label="Minimum cells" help="Include genes with detected expression in at least this many cells" />
                 <param name="min_genes" type="integer" min="0"  value="0" label="Minimum genes" help="Include cells where at least this many genes are detected"/>
                 <expand macro="norm"/>
@@ -153,8 +153,8 @@
                 </conditional>
             </when>
             <when value="cite">
-                <param name="rna" type="data" format="tabular,tsv" label="RNA counts file" help="The should be a TAB-separated count matrix with gene identifers in the first column and a header row"/>
-                <param name="prot" type="data" format="tabular,tsv" label="Protein counts file" help="The should be a TAB-separated count matrix with gene identifers in the first column and a header row"/>
+                <param name="rna" type="data" format="tabular,tsv" label="RNA counts file" help="The should be a TAB-separated count matrix with gene identifiers in the first column and a header row"/>
+                <param name="prot" type="data" format="tabular,tsv" label="Protein counts file" help="The should be a TAB-separated count matrix with gene identifiers in the first column and a header row"/>
                 <param name="min_cells" type="integer" min="0" value="0" label="Minimum cells" help="Include genes with detected expression in at least this many cells" />
                 <param name="min_genes" type="integer" min="0"  value="0" label="Minimum genes" help="Include cells where at least this many genes are detected"/>
                 <expand macro="norm"/>

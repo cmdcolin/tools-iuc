@@ -199,7 +199,7 @@ of the table.
 .. image:: table_description.png
 
 SNPs are sorted according to their evolutionary age within the table.  The oldest SNPs (encompassing the most
-isolates) are furthest to the left.  This sorting is somewhat crude - the intent is to improve readibility or
+isolates) are furthest to the left.  This sorting is somewhat crude - the intent is to improve readability or
 more easily match a related tree.
 
 For a more detailed discussion, see the **Validating and correcting SNP calls** section of

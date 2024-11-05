@@ -96,7 +96,7 @@
             </param>
             <when value="yes">
                 <param name="mibig" type="select" optional="false" label="Version from the MIBiG database"
-                    help="Select which version of the MIBiG databse you want to use." >
+                    help="Select which version of the MIBiG database you want to use." >
                         <option value="--mibig">3.1</option>
                         <option value="--mibig21">2.1</option>
                         <option value="--mibig14">1.4</option>
@@ -229,7 +229,7 @@
         <collection name="tsv_collection_3" type="list:list" format="tabular" label="${tool.name}: CLUSTERING TABULAR FILES COLLECTION">
             <discover_datasets pattern="(?P&lt;identifier_0&gt;[^_]+)_clustering_(?P&lt;identifier_1&gt;.+)\.tsv" directory="result/network_files" recurse="true"/>
         </collection>
-        <collection name="newtwork_collection" type="list" format="network" label="${tool.name}: NETWORK FILES COLLECTION">
+        <collection name="network_collection" type="list" format="network" label="${tool.name}: NETWORK FILES COLLECTION">
             <discover_datasets pattern="(?P&lt;designation&gt;.+)\.network" directory="result/network_files" recurse="true"/>
         </collection>
         <data name="logfile" format="txt" label="${tool.name}: LOG FILE">
@@ -286,7 +286,7 @@
                     </element>
                 </element>
             </output_collection>
-            <output_collection name="newtwork_collection" type="list">
+            <output_collection name="network_collection" type="list">
                 <element name="NRPS_c0.30">
                     <assert_contents>
                         <has_text text="Raw distance" n="1"/>
@@ -323,7 +323,7 @@
 
         In principle, BiG-SCAPE can also be used on any other gene clusters, such as pathogenicity islands, secretion system-encoding gene clusters, or even whole viral genomes.
 
-        Here is a grapic how BiG-SCAPE works:
+        Here is a graphic how BiG-SCAPE works:
 
         .. image:: bigscape_corason.png
             :alt: BiG-SCAPE + CORASON workflow

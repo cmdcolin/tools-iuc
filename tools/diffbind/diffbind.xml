@@ -26,7 +26,7 @@
         <regex match="Error in"
            source="both"
            level="fatal"
-           description="An undefined error occured, please check your input carefully and contact your administrator." />
+           description="An undefined error occurred, please check your input carefully and contact your administrator." />
     </stdio>
     <version_command><![CDATA[
 echo $(R --version | grep version | grep -v GNU)", DiffBind version" $(R --vanilla --slave -e "library(DiffBind); cat(sessionInfo()\$otherPkgs\$DiffBind\$Version)" 2> /dev/null | grep -v -i "WARNING: ")", rjson version" $(R --vanilla --slave -e "library(rjson); cat(sessionInfo()\$otherPkgs\$rjson\$Version)" 2> /dev/null | grep -v -i "WARNING: ")
@@ -173,7 +173,7 @@ Rscript '$__tool_directory__/diffbind.R'
             <param name="binding_matrix" type="boolean" truevalue="True" falsevalue="" checked="False" label="Output binding affinity matrix?" help="Output a table of the binding scores" />
             <param name="rdata" type="boolean" truevalue="True" falsevalue="" checked="False" label="Output RData file?" help="Output all the data used by R to construct the plots and tables, can be loaded into R. Default: No"/>
             <param name="rscript" type="boolean" truevalue="True" falsevalue="False" checked="False" label="Output Rscript?" help="If this option is set to Yes, the Rscript used will be provided as a text file in the output. Default: No"/>
-            <param name="analysis_info" type="boolean" truevalue="True" falsevalue="False" checked="False" label="Output analysis info?" help="If this option is set to Yes, information from the dba.count and dba.analyze commmands will be output in a text file. Default: No"/>
+            <param name="analysis_info" type="boolean" truevalue="True" falsevalue="False" checked="False" label="Output analysis info?" help="If this option is set to Yes, information from the dba.count and dba.analyze commands will be output in a text file. Default: No"/>
         </section>
     </inputs>
 

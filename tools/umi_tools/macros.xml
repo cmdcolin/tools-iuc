@@ -296,7 +296,7 @@
     <xml name="barcode_options_macro">
         <conditional name="bc" >
             <param argument="--extract-umi-method" type="select" label="Umi Extract Method" help="How are the barcodes encoded in the read?" >
-                <option value="read_id" selected="true">Barcodes are contained at the end of the read seperated by a delimiter</option>
+                <option value="read_id" selected="true">Barcodes are contained at the end of the read separated by a delimiter</option>
                 <option value="tag" >Barcodes are contained in tags</option>
                 <option value="umis" >Barcodes were extracted using umis</option>
             </param>

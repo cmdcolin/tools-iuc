@@ -57,12 +57,12 @@ python '$__tool_directory__/frameshift_deletions_report_fixer.py' report.tsv '$r
                 <option value="mafft">Run MAFFT to obtain alignment</option>
             </param>
             <when value="chain">
-                <param argument="--chain" type="data" format="txt" optional="false" label="Chain file" help="Chain file describing how the consensus is aligned to the reference (e.g. ouput of `bcftools consensus --chain &#x2026;`)." />
+                <param argument="--chain" type="data" format="txt" optional="false" label="Chain file" help="Chain file describing how the consensus is aligned to the reference (e.g. output of `bcftools consensus --chain &#x2026;`)." />
             </when>
             <when value="mafft" />
         </conditional>
         <conditional name="ref_data">
-            <param name="choice" type="select" label="Reference data selection" help="Select built-in genome files to base reported positions and annotations on the SARS-CoV-2 reference sequence NC_045512.2. If you have mapped to a different reference, select custom genome files and provide the reference sequence and genomic feature annotations for it in fasta and gff format, repsectively.">
+            <param name="choice" type="select" label="Reference data selection" help="Select built-in genome files to base reported positions and annotations on the SARS-CoV-2 reference sequence NC_045512.2. If you have mapped to a different reference, select custom genome files and provide the reference sequence and genomic feature annotations for it in fasta and gff format, respectively.">
                 <option value="standard">Use built-in genome files</option>
                 <option value="custom">Provide custom genome files</option>
             </param>

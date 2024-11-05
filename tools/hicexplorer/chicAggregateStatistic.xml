@@ -24,7 +24,7 @@
 
     <param name="interactionFile" type="data" format="h5" label="The interaction data file created by chicViewpoint" />
      <conditional name="targetFormat_conditional">
-            <param name="targetFormat_selector" type="select" label="List of chromosomes or a BED file containg regions">
+            <param name="targetFormat_selector" type="select" label="List of chromosomes or a BED file containing regions">
                 <option value="hdf5">Target file from chicSignificantInteractions (h5 / hdf5)</option>
                 <option value="bed" selected="True">Regions of interest (bed)</option>
             </param>
@@ -32,7 +32,7 @@
                 <param name="targetFileHDF" type="data" format="h5" label="The target data file created by chicSignificantInteractions" />
             </when>
             <when value="bed">
-                <param name="targetFileBED" type="data" format="bed" label="Regions of interest" help="BED file which stores a list of regions that are used to aggregate the data for the differntial test." />
+                <param name="targetFileBED" type="data" format="bed" label="Regions of interest" help="BED file which stores a list of regions that are used to aggregate the data for the differential test." />
             </when>
         </conditional>
      </inputs>

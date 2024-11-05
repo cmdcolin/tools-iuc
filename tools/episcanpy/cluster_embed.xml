@@ -361,7 +361,7 @@ More details on the `episcanpy documentation
 Compute hierarchical clustering using X_pca fits (`tl.hc`)
 ===================================================================
 
-This function computes heirarchical clustering using X_pca fits using random_state=2019.
+This function computes hierarchical clustering using X_pca fits using random_state=2019.
 
 More details on the `episcanpy documentation
 <https://colomemaria.github.io/episcanpy_doc/api/episcanpy.api.tl.hc.html>`__

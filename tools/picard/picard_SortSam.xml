@@ -40,7 +40,7 @@
     <tests>
         <!-- This test fails when setting metadata on non-coordinate sorted bam files.
            This should be handled better in Galaxy (info as of release 16.0).
-           Workaroudn is to produce queryname sorted sam files.
+           Workaround is to produce queryname sorted sam files.
     <test>
       <param name="inputFile" ftype="bam" value="picard_SortSam.bam" />
       <param name="sort_order" value="queryname"/>

@@ -81,7 +81,7 @@ BAM file for reads, BED file for targets.
 **Outputs**
 
 The output files are a PDF report. 
-The output tables are (tab seperated txt files): 
+The output tables are (tab separated txt files): 
 
 **Targets.Global.Coverage** : Original BED file + following columns::
   - Total coverage in target

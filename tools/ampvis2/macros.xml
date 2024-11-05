@@ -258,7 +258,7 @@ echo $(R --version | grep "R version")", ampvis2 version" $(R --vanilla --slave 
     <token name="@HELP_METADATA_LIST_INPUT@">
         The metadata list output of the ``ampvis2: load`` tool (or ``ampvis2: mergereplicates`` or the
         ``ampvis2: subset sample`` tool).  This input is only used for providing
-        values to the parameters alowing to select metadata variables or values.
+        values to the parameters allowing to select metadata variables or values.
     </token>
 
     <token name="@HELP_RELATIVE_ABUNDANCES@">

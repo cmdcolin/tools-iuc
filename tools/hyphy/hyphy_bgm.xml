@@ -128,7 +128,7 @@ Tool options
                        Increasing this number scales complexity nonlinearly
 	                    default value: 1
 
-    --min-subs         The minium number of substitutions per site to include it in the analysis
+    --min-subs         The minimum number of substitutions per site to include it in the analysis
                        Filter low complexity (too few substitution) sites
 	                     default value: 1
 

@@ -50,7 +50,7 @@ $options_advanced.no_overhang
             <expand macro="common_advanced"/>
             <param argument="--no_read_trimming" type="boolean" checked="false" truevalue="--no_read_trimming" falsevalue="" label="Do not trim low quality reads, just discard them"/>
             <param argument="--mate-pair" name="mate_pair" type="boolean" checked="false" truevalue="--mate-pair" falsevalue="" label="Raw reads are circularized mate-pair data, first read will be reverse complemented"/>
-            <param argument="--no_overhang" type="boolean" checked="false" truevalue="--no_overhang" falsevalue="" label="Data does not contain an overhang nucleotide between barcode and seqeunce"/>
+            <param argument="--no_overhang" type="boolean" checked="false" truevalue="--no_overhang" falsevalue="" label="Data does not contain an overhang nucleotide between barcode and sequence"/>
             <expand macro="rescue_barcode"/>
             <expand macro="process_adapter"/>
         </section>

@@ -33,7 +33,7 @@ echo 'dist.seqs(
     ]]></command>
     <inputs>
         <param name="fasta" type="data" format="mothur.align,fasta" label="fasta - Alignment Fasta"/>
-        <param name="calc" type="select" label="calc - Calc Method - Gap Penality">
+        <param name="calc" type="select" label="calc - Calc Method - Gap Penalty">
             <option value="" selected="true">use default</option>
             <option value="onegap">onegap - counts a string of gaps as a single gap</option>
             <option value="nogaps">nogaps - ignores gaps</option>

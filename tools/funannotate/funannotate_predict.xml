@@ -134,7 +134,7 @@ mv output/predict_results/*.gff3 out.gff3 &&
 mv output/predict_results/*.proteins.fa out.proteins.fa &&
 mv output/predict_results/*.mrna-transcripts.fa out.mrna-transcripts.fa &&
 mv output/predict_results/*.cds-transcripts.fa out.cds-transcripts.fa &&
-mv output/predict_results/*.discrepency.report.txt out.discrepency.report.txt &&
+mv output/predict_results/*.discrepency.report.txt out.discrepancy.report.txt &&
 mv output/predict_results/*.error.summary.txt out.error.summary.txt &&
 mv output/predict_results/*.validation.txt out.validation.txt &&
 mv output/predict_results/*.stats.json out.stats.json
@@ -243,7 +243,7 @@ mv output/predict_results/*.stats.json out.stats.json
         <section name="evm" expanded="false" title="EVM settings (advanced)">
             <param argument="--repeats2evm" type="boolean" checked="false" truevalue="--repeats2evm" falsevalue="" label="Use repeats in EVM consensus model building" help="Not recommended for fungal genomes that have high gene density. You might want to turn this option on for larger genomes or those that have a high repeat content." />
             <conditional name="evm_partitioning">
-                <param name="evm_partition" type="select" label="Split contigs into partitions for EVM processing?" help="Splits big contigs in smaller overlaping chunks to reduce memory usage and parallelize">
+                <param name="evm_partition" type="select" label="Split contigs into partitions for EVM processing?" help="Splits big contigs in smaller overlapping chunks to reduce memory usage and parallelize">
                     <option value="yes" selected="True">Yes</option>
                     <option value="no">No</option>
                 </param>
@@ -292,7 +292,7 @@ mv output/predict_results/*.stats.json out.stats.json
         <data name='fasta_transcripts_cds' format='fasta' label="${tool.name} on ${on_string}: transcript CDS sequences" from_work_dir="out.cds-transcripts.fa">
             <filter>outputs and 'cds_transcripts_fa' in outputs</filter>
         </data>
-        <data name='tbl2asn_report' format='txt' label="${tool.name} on ${on_string}: tbl2asn summary report of annotated genome" from_work_dir="out.discrepency.report.txt">
+        <data name='tbl2asn_report' format='txt' label="${tool.name} on ${on_string}: tbl2asn summary report of annotated genome" from_work_dir="out.discrepancy.report.txt">
             <filter>outputs and 'tbl2asn_report' in outputs</filter>
         </data>
         <data name='tbl2asn_error' format='txt' label="${tool.name} on ${on_string}: tbl2asn error summary report" from_work_dir="out.error.summary.txt">
@@ -359,7 +359,7 @@ mv output/predict_results/*.stats.json out.stats.json
                 </assert_contents>
             </output>
             <!--output name="abinitio" file="predict_scratch/fly.parameters.json" compare="sim_size" /-->
-            <output name="tbl2asn_report" file="predict_scratch/Genus_species.discrepency.report.txt" compare="sim_size" />
+            <output name="tbl2asn_report" file="predict_scratch/Genus_species.discrepancy.report.txt" compare="sim_size" />
             <output name="tbl2asn_error" file="predict_scratch/Genus_species.error.summary.txt" compare="sim_size" delta="500" />
             <output name="tbl2asn_validation" file="predict_scratch/Genus_species.validation.txt" compare="sim_size" delta="500" />
             <output name="stats" file="predict_scratch/Genus_species.stats.json" compare="sim_size" />

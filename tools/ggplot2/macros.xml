@@ -98,23 +98,23 @@
                 <param name="row_names_index" type="hidden" value="0"/>
                 <param name="sample_name_orientation" type="select" display="radio" multiple="false" label="Sample names orientation" help="Default horizontal: header names are interpreted as sample names">
                     <option value="TRUE" selected="true">horizontal</option>
-                    <option value="FALSE">vertial</option>
+                    <option value="FALSE">vertical</option>
                 </param>
             </when>
             <when value="with_rownames">
                 <param name="header" type="hidden" value="FALSE"/>
                 <param name="row_names_index" type="data_column" data_ref="input1" label="Select column, for row names" help="WARNING: please consider that using row names might shift the grouping columns"/>
-                <param name="sample_name_orientation" type="select" display="radio" label="Sample names orientation" help="default vertial: row names are interpreted as sample names">
+                <param name="sample_name_orientation" type="select" display="radio" label="Sample names orientation" help="default vertical: row names are interpreted as sample names">
                     <option value="TRUE">horizontal</option>
-                    <option value="FALSE" selected="true">vertial</option>
+                    <option value="FALSE" selected="true">vertical</option>
                 </param>
             </when>
             <when value="with_header_rownames">
                 <param name="header" type="hidden" value="TRUE"/>
                 <param name="row_names_index" type="data_column" data_ref="input1" label="Select column, for row names" help="WARNING: please consider that using row names might shift the grouping columns"/>
-                <param name="sample_name_orientation" type="select" label="Sample names orientation" display="radio" multiple="false" help="deside whether header names or row names are interpreted as sample names">
+                <param name="sample_name_orientation" type="select" label="Sample names orientation" display="radio" multiple="false" help="decide whether header names or row names are interpreted as sample names">
                     <option value="TRUE" selected="true">horizontal</option>
-                    <option value="FALSE">vertial</option>
+                    <option value="FALSE">vertical</option>
                 </param>
             </when>
             <when value="no_header_rownames">
@@ -168,7 +168,7 @@
         </param>
     </xml>
     <xml name="theme">
-        <param name="theme" type="select" label="Backgound theme for plot">
+        <param name="theme" type="select" label="Background theme for plot">
             <option value="bw">Black and white</option>
             <option value="Default">Default (grey)</option>
         </param>
@@ -258,14 +258,14 @@
             <option value="BuPu">Blue to purple (discrete, max=9 colors)</option>
             <option value="BuGn">Blue to green (discrete, max=9 colors)</option>
             <option value="Blues">Shades of blue from light to dark (discrete, max=9 colors)</option>
-            <option value="Set1">Set 1 - predefined color pallete (discrete, max=9 colors)</option>
-            <option value="Set2">Set 2 - predefined color pallete (discrete, max=8 colors)</option>
-            <option value="Set3">Set 3 - predefined color pallete (discrete, max=12 colors)</option>
-            <option value="Pastel1">Pastel 1 - predefined pastel color pallete (discrete, max=9 colors)</option>
-            <option value="Pastel2">Pastel 2 - predefined pastel color pallete (discrete, max=8 colors)</option>
-            <option value="Paired">Paired - predefined color pallete (discrete, max=12 colors)</option>
-            <option value="Dark2">Dark 2 - predefined color pallete (discrete, max=12 colors)</option>
-            <option value="Accent">Accent - predefined color pallete (discrete, max=12 colors)</option>
+            <option value="Set1">Set 1 - predefined color palette (discrete, max=9 colors)</option>
+            <option value="Set2">Set 2 - predefined color palette (discrete, max=8 colors)</option>
+            <option value="Set3">Set 3 - predefined color palette (discrete, max=12 colors)</option>
+            <option value="Pastel1">Pastel 1 - predefined pastel color palette (discrete, max=9 colors)</option>
+            <option value="Pastel2">Pastel 2 - predefined pastel color palette (discrete, max=8 colors)</option>
+            <option value="Paired">Paired - predefined color palette (discrete, max=12 colors)</option>
+            <option value="Dark2">Dark 2 - predefined color palette (discrete, max=12 colors)</option>
+            <option value="Accent">Accent - predefined color palette (discrete, max=12 colors)</option>
             <option value="Spectral">Spectral - Red to yellow to purple (discrete, max=11 colors)</option>
             <option value="RdYlGn">Red to yellow to green (discrete, max=11 colors)</option>
             <option value="RdYlBu">Red to yellow to blue (discrete, max=11 colors)</option>

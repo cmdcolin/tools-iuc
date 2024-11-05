@@ -84,7 +84,7 @@ write.table(result, file='$out_tab', sep="\t", row.names=FALSE, quote=FALSE)
     </configfiles>
     <inputs>
         <param name="id_file" type="data" format="tabular" label="File with IDs" help="A tabular file with the first column containing one of the supported types of identifier, see Help below." />
-        <param name="file_has_header" type="boolean" truevalue="TRUE" falsevalue="FALSE" checked="False" label="File has header?" help="If this option is set to Yes, the tool will assume that the input file has a column header in the first row and the identifers commence on the second line. Default: No" />
+        <param name="file_has_header" type="boolean" truevalue="TRUE" falsevalue="FALSE" checked="False" label="File has header?" help="If this option is set to Yes, the tool will assume that the input file has a column header in the first row and the identifiers commence on the second line. Default: No" />
         <param name="organism" type="select" label="Organism" help="Select the organism the identifiers are from">
             <option value="Hs" selected="true">Human</option>
             <option value="Mm">Mouse</option>

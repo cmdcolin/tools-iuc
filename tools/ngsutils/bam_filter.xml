@@ -180,7 +180,7 @@ Note: this does not adjust tag values reflecting any filtering. (for example:
 Currently, the available filters are:
 
 +--------------------------------+-------------------------------------------------+
-| Agument                        | Description                                     |
+| Argument                        | Description                                     |
 +================================+=================================================+
 | -minlen val                    | Remove reads that are smaller than {val}        |
 +--------------------------------+-------------------------------------------------+

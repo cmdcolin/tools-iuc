@@ -138,11 +138,11 @@ $line
     <inputs>
         <conditional name="source">
             <param label="Choose data source" name="source_selector"
-                help="Choose if you want to provide seperate count files (e.g. from HTSeq-count or feature-seq) 
+                help="Choose if you want to provide separate count files (e.g. from HTSeq-count or feature-seq) 
                     and define your experiment design matrix here, or if you have maSigPro edesign and data input files already."
                 type="select">
                 <option value="defaults">Use maSigPro edesign and data files</option>
-                <option value="advanced">Seperate count data (e.g. from HTSeq-count or feature-count)</option>
+                <option value="advanced">Separate count data (e.g. from HTSeq-count or feature-count)</option>
             </param>
             <when value="defaults">
                 <param name="edesign" format="tabular,txt" type="data" label="Experiment matrix"
@@ -438,10 +438,10 @@ maSigPro_ is a regression based approach to find genes for which there are signi
 
 The maSigPro wrapper has two options for input data:
 
-    - directly through two seperate text files containing the experiment design (edesign) and the data or
+    - directly through two separate text files containing the experiment design (edesign) and the data or
     - count tables generated from HTSeq-count. Count tables must be generated for each sample individually.
       
-To set up an experimental design from seperate count files you first have to select which files belong to a certain time point.
+To set up an experimental design from separate count files you first have to select which files belong to a certain time point.
 Likewise you can specify which files are replicates. In a third step you have to create the experimental groups and select the related files.
 For a more comfortable setup in future analysis you have the option to output the generated edesign and data files.
 

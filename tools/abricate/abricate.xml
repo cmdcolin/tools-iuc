@@ -102,7 +102,7 @@ Given a FASTA contig file or a genbank file, ABRicate will perform a mass screen
 
 **Output**
 
-ABRicate will produce a tab-seperated output file with the following outputs:
+ABRicate will produce a tab-separated output file with the following outputs:
 
 +---------------+------------------------------------------------+
 |  Column       | Description                                    |
@@ -119,7 +119,7 @@ ABRicate will produce a tab-seperated output file with the following outputs:
 +---------------+------------------------------------------------+
 |  COVERAGE     | What proportion of the gene is in our sequence |
 +---------------+------------------------------------------------+
-|  COVERAGE_MAP | A visual represenation                         |
+|  COVERAGE_MAP | A visual representation                         |
 +---------------+------------------------------------------------+
 |  GAPS         | Was there any gaps in the                      |
 |               | alignment - possible pseudogene?               |

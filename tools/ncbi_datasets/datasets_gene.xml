@@ -145,7 +145,7 @@ dataformat
         </section>
         <section name="file_choices" title="Output options" expanded="true">
             <conditional name="kingdom_cond">
-                <param name="kingdom_sel" type="select" label="Kingdom" help="Prokaryotic: Accessions starting with WP_. Data report has a different format and the rna, cds, 3/5' UTR and gene-product report are not suported. ">
+                <param name="kingdom_sel" type="select" label="Kingdom" help="Prokaryotic: Accessions starting with WP_. Data report has a different format and the rna, cds, 3/5' UTR and gene-product report are not supported. ">
                     <option value="gene">Eukaryote</option>
                     <option value="prok-gene">Prokaryote</option>
                 </param>
@@ -530,7 +530,7 @@ dataformat
 <![CDATA[
 **Download Gene Datasets from NCBI**
 
-Download a gene dataset (gene sequence, transcipt, amino acid sequences, 
+Download a gene dataset (gene sequence, transcript, amino acid sequences, 
 nucleotide coding sequences, 5'-UTR, 3'-UTR) as well as gene and gene
 product reports. Genes can be referred by gene id, symbol, accession,
 or taxon.

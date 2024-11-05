@@ -48,7 +48,7 @@ $output_options.header
         <conditional name="cond_region">
             <param name="select_region" type="select" label="Filter by regions">
                 <option value="no" selected="True">No</option>
-                <option value="text">Manualy specify a region</option>
+                <option value="text">Manually specify a region</option>
                 <option value="bed">Regions from BED file</option>
             </param>
             <when value="no"/>

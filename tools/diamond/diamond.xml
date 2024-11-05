@@ -272,7 +272,7 @@
         <param argument="--algo" type="select" label="Algorithm for seed search" help="Double-indexed is the main algorithm of the program, designed for large input files but less efficient for small 
             query files. Query-indexed and improves performance for small query files. This mode will be automatically triggered based on the input. Contiguous-seed mode and further improves performance
             for small query files. The modes differ slightly in their sensitivity, so results are not guaranteed to be 100% identical for different settings of this option.">
-            <option value="0">Doble-indexed (0)</option>
+            <option value="0">Double-indexed (0)</option>
             <option value="1">Query-indexed (1)</option>
             <option value="ctg">Contiguous-seed mode (ctg)</option>
         </param>

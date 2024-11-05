@@ -206,7 +206,7 @@ sc.external.pp.scanorama_integrate(
                 <param argument="svd_dim" type="integer" value="" optional="true" label="Number of dimensions to use for summarizing biological substructure within each batch" help="If not set, biological components will not be removed from the correction vectors."/>
                 <param argument="var_adj" type="boolean" truevalue="True" falsevalue="False" checked="true" label="Adjust variance of the correction vectors?" help="This step takes most computing time."/>
                 <param argument="compute_angle" type="boolean" truevalue="True" falsevalue="False" checked="false" label="compute the angle between each cell’s correction vector and the biological subspace of the reference batch?"/>
-                <param argument="mnn_order" type="text" value="" optional="true" label="The order in which batches are to be corrected" help="List of comma-separated key. If not set, datas are corrected sequentially">
+                <param argument="mnn_order" type="text" value="" optional="true" label="The order in which batches are to be corrected" help="List of comma-separated key. If not set, data are corrected sequentially">
                     <expand macro="sanitize_query"/>
                 </param>
                 <param name="svd_mode" type="select" label="SVD mode">

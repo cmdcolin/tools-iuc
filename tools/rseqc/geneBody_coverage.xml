@@ -32,7 +32,7 @@
   </command>
     <inputs>
         <conditional name="batch_mode">
-            <param name="batch_mode_selector" type="select" label="Run each sample separately, or combine mutiple samples into one plot">
+            <param name="batch_mode_selector" type="select" label="Run each sample separately, or combine multiple samples into one plot">
                 <option value="batch" selected="true">Run each sample separately</option>
                 <option value="merge">Combine multiple samples into a single plot</option>
             </param>

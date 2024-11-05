@@ -186,14 +186,14 @@
 
     <xml name="input_format_options_macro">
         <section name="input_format_options" title="Input format options" expanded="false">
-            <param name="options_inputtype" type="select"  optional="true" label="Specify the input datatype" help="default: determine automatically (should only be necessay for non FASTA/FASTQ datasets)">
+            <param name="options_inputtype" type="select"  optional="true" label="Specify the input datatype" help="default: determine automatically (should only be necessary for non FASTA/FASTQ datasets)">
                 <option value="--genbank">genbank</option>
                 <option value="--embl">embl</option>
                 <option value="--sanger">sanger</option>
                 <option value="--solexa">solexa</option>
                 <option value="--ecopcr">ecopcr</option>
                 <option value="--ecopcrdb">ecopcrdb</option>
-                <option value="--fasta">fasta (including obitools fasta extentions)</option>
+                <option value="--fasta">fasta (including obitools fasta extensions)</option>
                 <option value="--raw-fasta">raw fasta (more tolerant format variant)</option>
             </param>
             <param name="options_seqtype" type="select" optional="true" label="Specify the sequence datatype" >

@@ -207,7 +207,7 @@ Indeed, **hicCorrectMatrix** works in two steps:
 
   - **Diagnostic plot**: First a histogram containing the sum of contact per bin (row sum) is produced. This plot needs to be inspected to decide the best threshold for removing bins with lower number of reads.
 
-  - **Correct**: The second step removes the bins outside of the defined thresholds and perfroms the iterative correction.
+  - **Correct**: The second step removes the bins outside of the defined thresholds and performs the iterative correction.
 
 _________________
 

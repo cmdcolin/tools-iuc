@@ -800,7 +800,7 @@ becomes evidence that it is not a germline variant.
 Caveats
 ~~~~~~~
 
-Although GATK4 Mutect2 accomodates varying coverage depths, further
+Although GATK4 Mutect2 accommodates varying coverage depths, further
 optimization of parameters may improve calling for extreme high depths,
 e.g. 1000X.
 ]]></help>

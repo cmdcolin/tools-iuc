@@ -4338,7 +4338,7 @@
                     <option value="EVIDENCE_ONTOLOGY" selected="true">EVIDENCE_ONTOLOGY</option>
                     <option value="FLANNOTATOR" selected="true">FLANNOTATOR</option>
                     <option value="FLYBASE" selected="true">FLYBASE</option>
-                    <option value="GENBANK_INDENTIFIER" selected="true">GENBANK_INDENTIFIER</option>
+                    <option value="GENBANK_IDENTIFIER" selected="true">GENBANK_IDENTIFIER</option>
                     <option value="GENBANK_NUCL_GI" selected="true">GENBANK_NUCL_GI</option>
                     <option value="GENBANK_PROTEIN_GI" selected="true">GENBANK_PROTEIN_GI</option>
                     <option value="GO" selected="true">GO</option>
@@ -4401,7 +4401,7 @@
                         <option value="EVIDENCE_ONTOLOGY">EVIDENCE_ONTOLOGY</option>
                         <option value="FLANNOTATOR">FLANNOTATOR</option>
                         <option value="FLYBASE">FLYBASE</option>
-                        <option value="GENBANK_INDENTIFIER">GENBANK_INDENTIFIER</option>
+                        <option value="GENBANK_IDENTIFIER">GENBANK_IDENTIFIER</option>
                         <option value="GENBANK_NUCL_GI">GENBANK_NUCL_GI</option>
                         <option value="GENBANK_PROTEIN_GI">GENBANK_PROTEIN_GI</option>
                         <option value="GO">GO</option>

@@ -45,7 +45,7 @@
                     help="Ignore groups that do not have exons, otherwise they will cause an error."
                     type="boolean" truevalue="-ignoreGroupsWithoutExons" falsevalue="" checked="false" />
                 <param argument="-simple" label="Skip hierarchy check"
-                    help="Only check column validity, not heirarchy, may result in invalid output."
+                    help="Only check column validity, not hierarchy, may result in invalid output."
                     type="boolean" truevalue="-simple" falsevalue="" checked="false" />
                 <param argument="-allErrors" label="Skip all errors"
                     help="Skip groups with errors rather than aborting. Useful for getting information

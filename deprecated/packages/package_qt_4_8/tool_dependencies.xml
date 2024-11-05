@@ -18,7 +18,7 @@
             </actions>
         </install>
         <readme>
-            Installing Qt libraries. A C++ compiler, usually g++, is requiered.
+            Installing Qt libraries. A C++ compiler, usually g++, is required.
             http://qt-project.org/
         </readme>
     </package>

@@ -85,7 +85,7 @@ mykrobe predict
             <validator type="in_range" min="0" max="100" message="Confidence percent cutoff should be between 0 and 100" />
         </param>
         <expand macro="options"/>
-        <param argument="--format" type="select" label="Select the prefered output format">
+        <param argument="--format" type="select" label="Select the preferred output format">
             <option value="csv" >csv</option>
             <option value="json">json</option>
         </param>

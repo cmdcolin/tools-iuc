@@ -35,7 +35,7 @@
 # added dependencies to a tool_dependencies.xml if html page generated so generated tool is properly portable
 #
 # added ghostscript and graphicsmagick as dependencies
-# fixed a wierd problem where gs was trying to use the new_files_path from universe (database/tmp) as ./database/tmp
+# fixed a weird problem where gs was trying to use the new_files_path from universe (database/tmp) as ./database/tmp
 # errors ensued
 #
 # august 2013
@@ -173,7 +173,7 @@ def parse_citations(citations_text):
 def shell_source(script):
     """need a way to source a Galaxy tool interpreter env.sh to point at the right dependency package
     This based on the idea in http://pythonwise.blogspot.fr/2010/04/sourcing-shell-script.html
-    Note that we have to finesse any wierdly quoted newlines in automagic exports using nulls (env -0) as newlines"""
+    Note that we have to finesse any weirdly quoted newlines in automagic exports using nulls (env -0) as newlines"""
     pipe = subprocess.Popen("env -i ; . %s ; env -0" % script, stdout=subprocess.PIPE, shell=True)
     output = pipe.communicate()[0]
     outl = output.split('\0')

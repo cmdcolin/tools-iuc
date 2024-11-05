@@ -354,7 +354,7 @@ variety of options let you control its exact behavior. These advanced options
 can be subdivided into those affecting variant calling and those affecting
 posterior filtering of the results.
 
-**Variant calling paramters**
+**Variant calling parameters**
 
 At the heart of LoFreq's variant caller is a **joint quality score** that is
 computed for every site in every read (that survives filtering) and that
@@ -415,7 +415,7 @@ These are the different filter settings supported by the tool:
 
 For variants to pass this filter, the following is required:
 
-- statistical signficance of the variant call with a pvalue < 0.01 based on the
+- statistical significance of the variant call with a pvalue < 0.01 based on the
   retransformed QUAL score of the variant and multiple-testing corrected using
   a dynamically determined Bonferroni factor (based on the number of overall
   variants considered during calling).

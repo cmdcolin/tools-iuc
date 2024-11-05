@@ -192,7 +192,7 @@
             <conditional name="shift_var">
                 <param name="shift_selector" type="select" label="Shift variants to the right">
                     <option value="" selected="true">No shift</option>
-                    <option value="--shift_hgvs 1">3' shift of HGVS notations, causing ambiguous insertions or deletions (typically in repetetive sequence tracts) to be "shifted" to their most 3' possible coordinates (relative to the transcript sequence and strand) before the HGVS notations are calculated (--shift_hgvs 1)</option>
+                    <option value="--shift_hgvs 1">3' shift of HGVS notations, causing ambiguous insertions or deletions (typically in repetitive sequence tracts) to be "shifted" to their most 3' possible coordinates (relative to the transcript sequence and strand) before the HGVS notations are calculated (--shift_hgvs 1)</option>
                     <option value="--shift_hgvs 0 --shift_3prime 1">Right align all variants relative to their associated transcripts prior to consequence calculation (--shift_3prime 1)</option>
                     <option value="--shift_hgvs 0 --shift_genomic 1">Right align all variants, including intergenic variants, before consequence calculation and update the Location field (--shift_genomic 1)</option>
                 </param>
@@ -204,7 +204,7 @@
                 <when value="--shift_hgvs 0 --shift_genomic 1" />
             </conditional>
             <param name="out_opt_checkboxes" type="select" optional="true" display="checkboxes" multiple="true" label="Output option flags">
-                <option value="--variant_class">Ouput variant class (--variant_class)</option>
+                <option value="--variant_class">Output variant class (--variant_class)</option>
                 <option value="--humdiv">Retrieve humDiv PolyPhen prediction instead of humVar (--humdiv)</option>
                 <option value="--overlaps">Output overlap between transcript and structural variant (--overlaps)</option>
                 <option value="--gene_phenotype">Indicate if the overlapped gene is associated with a phenotype, disease or trait (--gene_phenotype)</option>
@@ -222,13 +222,13 @@
         <section name="ident" title="Identifiers">
             <param type="data" optional="true" name="input_synonyms" format="tabular" label="Load a file of chromosome synonyms" help="File should be tab-delimited with the primary identifier in column 1 and the synonym in column 2. Synonyms allow different chromosome identifiers to be used in the input file and any annotation source. (--synonyms [file])"/>
             <param name="ident_checkboxes" type="select" optional="true" display="checkboxes" multiple="true" label="Identifier flags">
-                <option value="--hgvs">Add HGVS nomenclature, both coding and protein sequence names, to the ouput (requires FASTA) (--hgvs)</option>
+                <option value="--hgvs">Add HGVS nomenclature, both coding and protein sequence names, to the output (requires FASTA) (--hgvs)</option>
                 <option value="--hgvsg">Add genomic HGVS nomenclature based on the input chromosome name (requires FASTA) (--hgvsg)</option>
                 <option value="--spdi">Add genomic SPDI notation (requires FASTA) (--spdi)</option>
                 <option value="--transcript_version">Add version numbers to Ensembl transcript identifiers (--transcript_version)</option>
                 <option value="--protein">Add the Ensembl protein identifier to the output where appropriate (--protein)</option>
                 <option value="--symbol">Add the gene symbol (e.g. HGNC) (where available) to the output (--symbol)</option>
-                <option value="--ccds">Add the CCDS transcript identifer (where available) to the output (--ccds)</option>
+                <option value="--ccds">Add the CCDS transcript identifier (where available) to the output (--ccds)</option>
                 <option value="--uniprot">Add best match accessions for translated protein products from three UniProt-related databases (SWISSPROT, TREMBL and UniParc) to the output (--uniprot)</option>
                 <option value="--tsl">Add the transcript support level for this transcript to the output (only for hg38) (--tsl)</option>
                 <option value="--appris">Add the APPRIS isoform annotation for this transcript to the output (only for hg38) (--appris)</option>

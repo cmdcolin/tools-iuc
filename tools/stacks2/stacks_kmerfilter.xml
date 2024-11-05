@@ -88,9 +88,9 @@ $options_kmer_char.k_dist
             <param argument="--abundant" type="boolean" checked="false" truevalue="--abundant" falsevalue="" label="Turn on filtering based on abundant k-mers"/>
             <param argument="--k_len" type="integer" value="15" label="K-mer size"/>
         </section>
-        <section name="options_advanced_filtering" title="Advanced fitering options" expanded="False">
+        <section name="options_advanced_filtering" title="Advanced filtering options" expanded="False">
             <param argument="--max_k_freq" type="integer" value="20000" label="Number of times a kmer must occur to be considered abundant"/>
-            <param argument="--min_lim" type="integer" value="" optional="true" label="Number of rare kmers occuring in a row required to discard a read" help="(default: 80% of the k-mer length)."/>
+            <param argument="--min_lim" type="integer" value="" optional="true" label="Number of rare kmers occurring in a row required to discard a read" help="(default: 80% of the k-mer length)."/>
             <param argument="--max_lim" type="integer" value="" optional="true" label="Number of abundant kmers required to discard a read" help="(default: 80% of the k-mers in a read)"/>
         </section>
         <section name="options_normalization" title="Normalization options" expanded="False">

@@ -316,7 +316,7 @@ Input
 
 @HELP_METADATA_LIST_INPUT@
 
-Funtional data at genus level can be added to the plot. By default the
+Functional data at genus level can be added to the plot. By default the
 information is taken from `midasfieldguide <https://midasfieldguide.org/>`_ but
 it can also be given by a dataset (parameter function_data): 
 

@@ -45,7 +45,7 @@
                 </param>
             </when>
             <when value="history">
-                <param name="ref_file" type="data" format="fasta" label="Use the folloing dataset as the reference sequence" help="REFERENCE_SEQUENCE; You can upload a FASTA sequence to the history and use it as reference"/>
+                <param name="ref_file" type="data" format="fasta" label="Use the following dataset as the reference sequence" help="REFERENCE_SEQUENCE; You can upload a FASTA sequence to the history and use it as reference"/>
             </when>
         </conditional>
         <param name="aligned_reads_only" type="boolean" truevalue="true" falsevalue="false" label="If set to true, calculate mean quality over aligned reads only" help="ALIGNED_READS_ONLY; default=False"/>

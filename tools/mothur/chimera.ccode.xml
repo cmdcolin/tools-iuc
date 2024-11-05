@@ -39,7 +39,7 @@ echo 'chimera.ccode(
 | tee mothur.out.log
     ]]></command>
     <inputs>
-        <param argument="fasta" type="data" format="mothur.align" label="fasta - Candiate Aligned Sequences"/>
+        <param argument="fasta" type="data" format="mothur.align" label="fasta - Candidate Aligned Sequences"/>
         <conditional name="alignment">
             <param name="source" type="select" label="Select Reference Template from">
                 <option value="hist">History</option>

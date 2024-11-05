@@ -40,7 +40,7 @@ Immunobiology and Epigenetics`_.
     <!-- all input files-->
     <xml name="matrix_h5_cooler_multiple_macro">
         <param name="matrix_h5_cooler_multiple" type="data" format="h5,cool"
-            label="Matricies to plot" multiple="true"/>
+            label="Matrices to plot" multiple="true"/>
     </xml>
     <xml name="track_input_bed_macro">
         <param name="track_input_bed" type="data" format="bed" label="Track file(s) bed format" multiple="True"/>
@@ -213,7 +213,7 @@ Immunobiology and Epigenetics`_.
         <param name="max_labels" type="integer" value="60" label="Maximum number of gene labels to display" />
         <param name="line_width" type="float" value="0.5" label="width of lines" />
         <section name ="gtf" title="When using gtf as input" expanded="False">
-            <param name="prefered_name" type="text" value="transcript_name" label="attribute to use as label"
+            <param name="preferred_name" type="text" value="transcript_name" label="attribute to use as label"
                 help="Usually transcript_name or gene_name"/>
             <conditional name="merge_transcripts">
                 <param name="merge_transcripts_select" type="select" label="Merge all transcripts of each gene in a single entry">

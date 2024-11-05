@@ -41,7 +41,7 @@
 bctools - Extract barcodes according to pattern
 ===============================================
 
-Exract barcodes from a FASTQ file according to a user-specified pattern and write them to a separate FASTQ file.
+Extract barcodes from a FASTQ file according to a user-specified pattern and write them to a separate FASTQ file.
 
     ]]></help>
     <expand macro="citations"/>

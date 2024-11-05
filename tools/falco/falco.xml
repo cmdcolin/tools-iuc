@@ -56,8 +56,8 @@
     <inputs>
         <param format="fastq,fastq.gz,bam,sam" name="input_file" type="data" label="Raw read data from your current history"/>
         <param name="contaminants" type="data" format="tabular" optional="true" label="Contaminant list" help="tab delimited file with 2 columns: name and sequence.  For example: Illumina Small RNA RT Primer&#x9;CAAGCAGAAGACGGCATACGA"/>
-        <param argument="--adapters" type="data" format="tabular" optional="true" label="Adapter list" help="List of adapters adapter sequences which will be explicity searched against the library. It should be a tab-delimited file with 2 columns: name and sequence."/>
-        <param name="limits" type="data" format="txt" optional="true" label="Submodule and Limit specifing file" help="a file that specifies which submodules are to be executed (default=all) and also specifies the thresholds for the each submodules warning parameter."/>
+        <param argument="--adapters" type="data" format="tabular" optional="true" label="Adapter list" help="List of adapters adapter sequences which will be explicitly searched against the library. It should be a tab-delimited file with 2 columns: name and sequence."/>
+        <param name="limits" type="data" format="txt" optional="true" label="Submodule and Limit specifying file" help="a file that specifies which submodules are to be executed (default=all) and also specifies the thresholds for the each submodules warning parameter."/>
         <param argument="--nogroup" type="boolean" truevalue="--nogroup" falsevalue="" checked="False" label="Disable grouping of bases for reads &gt;50bp" help=" Using this option, your plots may end up a ridiculous size. You have been warned!"/>
         <!-- Not implemented in falco yet <param argument="-min_length" type="integer" value="" optional="true" label="Lower limit on the length of the sequence to be shown in the report" help=" [NOT YET IMPLEMENTED IN FALCO]. Sets an artificial lower limit on the length of the sequence to be shown in the report. As long as you set this to a value greater or equal to your longest read length then this will be the sequence length used to create your read groups. This can be useful for making  directly comaparable statistics from datasets with somewhat variable read length."/> -->
         <!-- Ignored by falco and always set to 7 <param argument="-kmers" type="integer" value="7" min="2" max="10" label="Length of Kmer to look for" help="IGNORED BY FALCO AND ALWAYS SET TO 7. Specifies the length of Kmer to look for in the Kmer content module. Specified Kmer length must be between 2 and 10. Default length is 7 if not specified." /> -->
@@ -93,7 +93,7 @@
                   <has_line_matching expression="&lt;html&gt;&lt;head&gt;.+&lt;title&gt;     1000trimmed_fastq_gz - report.+"/>
                 </assert_contents>
             </output>
-            <!-- four lines diff to allow for reported version to change; two more to accomodate changed input file name -->
+            <!-- four lines diff to allow for reported version to change; two more to accommodate changed input file name -->
             <output name="text_file" file="fastqc_data.txt" ftype="txt" lines_diff="4"/>
         </test>
         <!-- Test with BAM input -->
@@ -104,7 +104,7 @@
                   <has_line_matching expression="&lt;html&gt;&lt;head&gt;.+&lt;title&gt;     hisat_output_1_bam - report.+"/>
                 </assert_contents>
             </output>
-            <!-- four lines diff to allow for reported version to change; two more to accomodate changed input file name -->
+            <!-- four lines diff to allow for reported version to change; two more to accommodate changed input file name -->
             <output name="text_file" file="fastqc_data_hisat.txt" ftype="txt" lines_diff="4"/>
         </test>
         <!-- Test summary file option -->

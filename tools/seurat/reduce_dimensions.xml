@@ -257,7 +257,7 @@ seurat_obj<-RunUMAP(
                     <param name="min_dist" type="float" value="0.3" label="Control how tightly points are compressed in the embedding" help="sensible values are in the range 0.001 to 0.5 (min.dist)"/>
                     <param argument="spread" type="integer" value="1" label="Effective spread of embedded points"/>
                     <param name="set_op_mix_ratio" type="float" value="1.0" label="Interpolate between fuzzy union and intersection" help="(set.op.mix.ratio)"/>
-                    <param name="local_connectivity" type="integer" value="1" label="Set local connectivity" help="the number of nearest neighbors assummed to connect at local level (local.connectivity)"/>
+                    <param name="local_connectivity" type="integer" value="1" label="Set local connectivity" help="the number of nearest neighbors assumed to connect at local level (local.connectivity)"/>
                     <param name="repulsion_strength" type="integer" value="1" label="Apply weighting to negative values" help="(repulsion.strength)"/>
                     <param name="negative_sample_rate" type="integer" value="5" label="Number of negative samples to select per positive sample during optimization" help="(negative.sample.rate)"/>
                     <param argument="a" type="text" optional="true" value="" label="Parameter 'a' of differentiable approximation of right adjoint functor" help="automatically set if left empty"/>

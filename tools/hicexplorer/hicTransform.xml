@@ -79,7 +79,7 @@ Transformation of matrix for plotting
 - An **observed/expected norm matrix** which computes the expected matrix as EXP_i,j = sum(diagonal(i-j)) * sum(row(j)) * sum(row(i)) / sum(matrix)
 - An **observed/expected non-zero values matrix** which computes the expected matrix as the sum per genomic distance j divided by sum of non-zero contacts: sum(diagonal(j) / number of non-zero elements in diagonal(j)
 - A **Pearson correlation matrix** obtained by computing the Pearson correlation between each bin based on observed/expected values. This matrix transformation allows to better identify the bins that are entering in contact together, or not, at long ranges, and thus helps defining compartments in the nucleus (``hicPCA``).
-- A **covariance matrix**, which is used as a basis for the Principal Component Analysis (PCA) to compute the eigenvectors outputed by **hicTransform**.
+- A **covariance matrix**, which is used as a basis for the Principal Component Analysis (PCA) to compute the eigenvectors outputted by **hicTransform**.
 
 These matrices can be used with ``hicPlotMatrix`` or ``pyGenomeTracks`` for a visualization of the A / B compartment analysis.
 

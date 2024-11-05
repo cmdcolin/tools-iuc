@@ -81,11 +81,11 @@
     <help><![CDATA[
 @HELP_TITLE@
 
-This tool produces a phenotypic-phase-plane plot given these datas:
+This tool produces a phenotypic-phase-plane plot given these data:
 * model
 * reaction producing a target
 * biomass reaction
-These informations are optionals and will be adapted to your needs:
+These information are optionals and will be adapted to your needs:
 * an heterologous pathway
 * a carbon substrate
 * media composition

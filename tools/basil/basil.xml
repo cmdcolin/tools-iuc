@@ -87,7 +87,7 @@
         CLEFT Number of clipping signatures supporting the site from the left side.
         CRIGHT Number of clipping signatures supporting the site from the right side.
         OEALEFT Number of OEA alignments supporting the site from the left.
-        OEARIGHT Number of OEA alignmetns supproting the site from the right.
+        OEARIGHT Number of OEA alignmetns supporting the site from the right.
 
         Generally, one should filter for a minimum support of OEA records on each side, e.g. a value of 10 makes sense for a 30x coverage and showed good results on simulated data.
 

@@ -86,7 +86,7 @@
 			<when value="single">
 			</when>
         </conditional>
-        <param name="genes" type="text" value="PDHA1,ARHGAP8,RAI1,PLXNA1,SCN8A,SMARCA2" size="100x5" label="Genes of interest" help="Provide the genes as a comma seperated line. This line can be empty and genes can be selected interactively using gene.iobio."/>
+        <param name="genes" type="text" value="PDHA1,ARHGAP8,RAI1,PLXNA1,SCN8A,SMARCA2" size="100x5" label="Genes of interest" help="Provide the genes as a comma separated line. This line can be empty and genes can be selected interactively using gene.iobio."/>
         <param name="refgen_version" type="select" label="Select reference genome version">
             <option value="GRCh38" selected="true">GRCh38</option>
             <option value="GRCh37">GRCh37</option>

@@ -104,7 +104,7 @@ Tool options
 
     --method           Inference method to use
                             Variational-Bayes : 0-th order Variational Bayes approximation; fastest [default]
-                            Metropolis-Hastings : Full Metropolis-Hastings MCMC algorithm; orignal method [slowest]
+                            Metropolis-Hastings : Full Metropolis-Hastings MCMC algorithm; original method [slowest]
                             Collapsed-Gibbs  : Collapsed Gibbs sampler [intermediate speed]
 
 

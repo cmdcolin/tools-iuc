@@ -39,11 +39,11 @@
     <inputs>
         <param name="gtf_input" type="data" format="gtf" label="GTF input"/>
         <param name="gtf_file_param" type="select" label="Choose the analysis parameter for the gtf file">
-            <option value="GTF" selected="true">List of gene prediciton files</option>
+            <option value="GTF" selected="true">List of gene prediction files</option>
             <option value="KEEP_GTF">All transcripts from these gene sets will be included in the output</option>
         </param>
         <param name="hint_file" argument="-e" type="data" format="gff" optional="true" label="List of files containing extrinsic evidence"/>
-        <param name="cfg_file" argument="-c" type="data" format="txt" optional="true" label="Configuration file" help="Find the recommanded parameter at config/default.cfg"/>
+        <param name="cfg_file" argument="-c" type="data" format="txt" optional="true" label="Configuration file" help="Find the recommended parameter at config/default.cfg"/>
         <param name="score_tab" argument="-s" type="boolean" checked="false" label="Print the transcript scores as a table to the specified file"/>
         <param name="ignore_transcrpts" type="boolean" label="Ignore the phase transcripts while detecting clusters of overlapping transcripts"/>
         <param name="filter_exon" type="boolean" label="Filter out all single-exon genes"/>

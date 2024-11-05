@@ -102,7 +102,7 @@
             --outputFormat $outputSingleMultiple_conditional.outputFormat_conditional.outputFormat_selector
             --outFileName 'matrix.$outputSingleMultiple_conditional.outputFormat_conditional.outputFormat_selector'
             #if $outputSingleMultiple_conditional.outputFormat_conditional.outputFormat_selector == 'hicpro':
-                --bedFileHicpro intervalls.bed
+                --bedFileHicpro intervals.bed
             #end if
 
         ### Set up links to matrices to have correct ending
@@ -274,8 +274,8 @@
                         <option value="manyToOne_option">Create out of n matrices one multi matrix</option>
                     </param>
                     <when value="resolution_option">
-                        <param name="resolutions" type="text" label="To be stored resolutions" help="Resolutions can be specified seperated with a space, e.g. '10000 20000 50000'">
-                            <validator type="expression" message="Only numeric characters and a space as seperator are allowed.">value.replace(' ', '').isnumeric()</validator>
+                        <param name="resolutions" type="text" label="To be stored resolutions" help="Resolutions can be specified separated with a space, e.g. '10000 20000 50000'">
+                            <validator type="expression" message="Only numeric characters and a space as separator are allowed.">value.replace(' ', '').isnumeric()</validator>
                         </param>
                         <expand macro="convertFormat_single_macro" />
                     </when>
@@ -298,7 +298,7 @@
                 <when input="outputSingleMultiple_conditional.outputFormat_conditional.outputFormat_selector" value="hicpro" format="tabular" />
             </change_format>
         </data>
-        <data name="output_converted_matrix_bed" from_work_dir="intervalls.bed" format="tabular" label="Converted matrix in tabular format">
+        <data name="output_converted_matrix_bed" from_work_dir="intervals.bed" format="tabular" label="Converted matrix in tabular format">
             <filter>outputSingleMultiple_conditional['outputFormat_conditional']['outputFormat_selector'] == 'hicpro'</filter>
         </data>
         <data name="output_converted_matrix_multi" from_work_dir="matrix_out" format="mcool" label="Converted matrix in mcool format">

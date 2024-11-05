@@ -8,7 +8,7 @@
         <requirement type="package" version="@TOOL_VERSION@">rptools</requirement>
     </requirements>
     <stdio>
-        <regex match="Could not retreive any species in the compartment" level="fatal" />
+        <regex match="Could not retrieve any species in the compartment" level="fatal" />
     </stdio>
     <command detect_errors="exit_code"><![CDATA[
         python -m rptools.rpextractsink

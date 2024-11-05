@@ -93,7 +93,7 @@ $eap.fskmernorel
 #end if
     ]]></command>
     <inputs>
-        <!-- Included paramaters, sections and default values are based on https://www.arb-silva.de/aligner -->
+        <!-- Included parameters, sections and default values are based on https://www.arb-silva.de/aligner -->
         <param argument="--in" type="data" format="fasta" label="Select sequence file"/>
         <conditional name="db">
             <param name="select" type="select" label="Select reference library type">
@@ -136,7 +136,7 @@ $eap.fskmernorel
             </param>
             <param argument="--insertion" type="select" label="Insertions wider than available columns should be">
                 <option value="forbid">forbidden during alignment</option>
-                <option value="shift">accomodated by pushing out surrounding bases</option>
+                <option value="shift">accommodated by pushing out surrounding bases</option>
                 <option value="remove">removed</option>
             </param>
             <param argument="--turn" type="select" label="Enable turn check stage?" help="Sequences not oriented in accordance with the reference database will be reverse complemented as needed. If all is specified, sequences will also be tested for only reversal or only complemented (this should only be necessary if your data was mishandled).">

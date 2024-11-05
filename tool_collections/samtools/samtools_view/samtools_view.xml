@@ -52,7 +52,7 @@
         ## -c for count mode
         ## -b to produce BAM-formatted output
         ## -C to produce CRAM-formatted output
-        ## SAM is the default ouput format
+        ## SAM is the default output format
         #set $fmtopt = ''
         #if str($mode.output_options.reads_report_type) == 'count':
             #set $fmtopt = '-c'
@@ -248,7 +248,7 @@
         #end if
     ]]></command>
     <inputs>
-        <!-- note unsorted bam includes all derived bam types (inlcuding bam which is sorted) -->
+        <!-- note unsorted bam includes all derived bam types (including bam which is sorted) -->
         <param name="input" format="sam,unsorted.bam,cram" type="data" label="SAM/BAM/CRAM data set" />
         <conditional name="mode">
             <param name="outtype" type="select" label="What would you like to look at?">
@@ -277,7 +277,7 @@
                     <conditional name="cond_region">
                         <param name="select_region" type="select" label="Filter by regions">
                             <option value="no" selected="True">No</option>
-                            <option value="text">Manualy specify regions</option>
+                            <option value="text">Manually specify regions</option>
                             <option value="bed">Regions from BED file</option>
                         </param>
                         <when value="no"/>
@@ -451,7 +451,7 @@
         </test>
         <!-- 5) within bam operations expected to result in sorting or not -->
         <test expect_num_outputs="1">
-            <!-- sorted bam should always result in unmodifed output -->
+            <!-- sorted bam should always result in unmodified output -->
             <param name="input" ftype="bam" value="in_test_5.bam" />
             <assert_command>
                 <not_has_text text="samtools sort" />
@@ -460,7 +460,7 @@
         </test>
         <!-- 6) -->
         <test expect_num_outputs="1">
-            <!-- sorted bam should always result in unmodifed output -->
+            <!-- sorted bam should always result in unmodified output -->
             <param name="input" ftype="bam" value="in_test_5.bam" />
             <conditional name="mode">
                 <conditional name="output_options">
@@ -485,7 +485,7 @@
         </test>
         <!-- 8) -->
         <test expect_num_outputs="1">
-            <!-- ... but should be emitted unmodifed when using input format -->
+            <!-- ... but should be emitted unmodified when using input format -->
             <param name="input" ftype="qname_sorted.bam" value="in_test_7.bam" />
             <conditional name="mode">
                 <conditional name="output_options">
@@ -510,7 +510,7 @@
         </test>
         <!-- 10) -->
         <test expect_num_outputs="1">
-            <!-- ... ... but should be emitted unmodifed when using input format -->
+            <!-- ... ... but should be emitted unmodified when using input format -->
             <param name="input" ftype="unsorted.bam" value="in_test_7.bam" />
             <conditional name="mode">
                 <conditional name="output_options">
@@ -1001,11 +1001,11 @@ Inputs of type SAM, BAM, and CRAM are accepted and can be converted to each of t
 
 The tool allows you to specify a reference sequence. This is required for SAM input with missing @SQ headers (which include sequence names, length, md5, etc) and useful (and sometimes necessary) for CRAM input and output. In the following the use of the reference sequence in the CRAM format is detailed.
 CRAM is (primarily) a reference-based compressed format, i.e. only sequence differences between aligned reads and the reference are stored. As a consequence, the reference that was used during read mapping is needed in order to interpret the alignment records (a checksum stored in the CRAM file is used to verify that only the correct reference sequence can be used). This allows for more space-efficient storage than with BAM format, but such a CRAM file is not usable without its reference.
-It is also possible, however, to use CRAM without a reference with the disadvantage that the reference sequence gets stored then explicitely (as in SAM and BAM).
+It is also possible, however, to use CRAM without a reference with the disadvantage that the reference sequence gets stored then explicitly (as in SAM and BAM).
 
 The Galaxy tool **currently generates only CRAM without reference sequence**.
 
-For reference based CRAM input the correct refernce sequence needs to be specified.
+For reference based CRAM input the correct reference sequence needs to be specified.
 
 **Filtering alignments**
 
@@ -1056,7 +1056,7 @@ This filters based on the MAPQ column of the SAM format which gives an estimate 
 **Filtering by Tag**
 
 This filter allows to select reads based on tool or user specific tags, e.g., XS:i:-18 the alignment score tag of bowtie.
-Thus to filter for a specific value of the tag you need the format STR1:STR2, e.g., XS:-18 to filter reads with an aligment score of -18.
+Thus to filter for a specific value of the tag you need the format STR1:STR2, e.g., XS:-18 to filter reads with an alignment score of -18.
 You can also just write STR1 without the value STR2 hence the filter selects all reads with the tag STR1, e.g., XS.
 
 **Filtering by Expression**

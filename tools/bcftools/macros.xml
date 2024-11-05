@@ -560,7 +560,7 @@ Output Type
 
 Output compressed BCF (b), or uncompressed VCF (v).
 Use the BCF option when piping between bcftools subcommands to speed up
-performance by removing unecessary compression/decompression
+performance by removing unnecessary compression/decompression
 and VCF<->BCF conversion.
 
 This Galaxy tool recommends using the compressed BCF format

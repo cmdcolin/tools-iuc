@@ -48,11 +48,11 @@ pycoQC
         <param argument="--min_pass_qual" type="integer" value="7" min="0" label="Minimum quality to consider a read as 'pass'"  />
         <param argument="--min_pass_len" type="integer" value="0" min="0" label="Minimum read length to consider a read as 'pass'"/>
         <param argument="--filter_calibration" type="boolean" checked="false" truevalue="--filter_calibration" falsevalue="" label="Filter Calibration?" help="If yes, reads flagged as calibration strand by the basecaller are removed" />
-        <param argument="--filter_duplicated" type="boolean" checked="false" truevalue="--filter_duplicated" falsevalue="" label="Filter Duplicated?" help="If yes, duplicated read_ids are removed but the first occurence is kept (Guppy sometimes outputs the same read multiple times)" />
+        <param argument="--filter_duplicated" type="boolean" checked="false" truevalue="--filter_duplicated" falsevalue="" label="Filter Duplicated?" help="If yes, duplicated read_ids are removed but the first occurrence is kept (Guppy sometimes outputs the same read multiple times)" />
         <param argument="--min_barcode_percent" type="float" value="0.1" label="Minimal percent of total reads to retain barcode label" help="If below, the barcode value is set as unclassified" />
         <param argument="--report_title" type="text" value="PycoQC report" label="Title to use in the html report" />
         <param argument="--skip_coverage_plot" type="boolean" checked="false" truevalue="--skip_coverage_plot" falsevalue="" label="Skip the coverage plot in HTML report?" help="Useful when using a reference file containing many sequences, i.e. transcriptome" />
-        <param argument="--sample" type="integer" label="Number of reads will be randomly selected instead of the entire dataset for ploting function" help="(deterministic sampling)" value="100000"/>
+        <param argument="--sample" type="integer" label="Number of reads will be randomly selected instead of the entire dataset for plotting function" help="(deterministic sampling)" value="100000"/>
     </inputs>
     <outputs>
         <!-- standard -->

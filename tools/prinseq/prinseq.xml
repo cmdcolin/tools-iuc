@@ -625,7 +625,7 @@
                             <when value="false" />
                         </conditional>
                         <param name="type_quality_trimming_treatments" type="select" display="radio" label="Type of quality score calculation to use" help="By default, min is used. (-trim_qual_type)">
-                            <option value="min" selected="true">Mininum</option>
+                            <option value="min" selected="true">Minimum</option>
                             <option value="mean" >Mean</option>
                             <option value="max" >Max</option>
                             <option value="sum" >Sum</option>
@@ -648,7 +648,7 @@
             <option value="ld" selected="True">Length distribution</option>
             <option value="gc" selected="True">GC content distribution</option>
             <option value="qd" selected="True">Base quality distribution</option>
-            <option value="ns" selected="True">Occurence of N</option>
+            <option value="ns" selected="True">Occurrence of N</option>
             <option value="pt" selected="True">Poly-A/T tails</option>
             <option value="ts" selected="True">Tag sequence check</option>
             <option value="aq" selected="True">Assembly quality measure</option>

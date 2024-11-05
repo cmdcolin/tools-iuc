@@ -244,7 +244,7 @@
             <option value="-noLof">Do not add LOF and NMD annotations</option>
             <option value="-noInteraction">Disable interaction annotations</option>
         </param>
-        <!-- -cancerSamples <file>           : Two column TXT file defining 'oringinal \t derived' samples. -->
+        <!-- -cancerSamples <file>           : Two column TXT file defining 'original \t derived' samples. -->
         <param name="intervals" argument="-interval" type="data" format="bed" optional="true" label="Use custom interval file for annotation" />
         <param name="transcripts" type="data" format="tabular" optional="true" label="Only use the transcripts in this file" help="Format is one transcript ID per line"/>
         <param name="filterOut" type="select" display="checkboxes" multiple="true" label="Filter output">
@@ -271,7 +271,7 @@
                     <option value="DOWNSTREAM">DOWNSTREAM  (downstream_gene_variant) Downstream of a gene (default length: 5K bases)  MODIFIER</option>
                     <option value="EXON">EXON  (exon_variant) The variant hits an exon (from a non-coding transcript) or a retained intron.  MODIFIER</option>
                     <option value="EXON_DELETED">EXON_DELETED  (exon_loss_variant) A deletion removes the whole exon.  HIGH</option>
-                    <option value="FRAME_SHIFT">FRAME_SHIFT  (frameshift_variant) Insertion or deletion causes a frame shift e.g.: An indel size is not multple of 3  HIGH</option>
+                    <option value="FRAME_SHIFT">FRAME_SHIFT  (frameshift_variant) Insertion or deletion causes a frame shift e.g.: An indel size is not multiple of 3  HIGH</option>
                     <option value="GENE">GENE  (gene_variant) The variant hits a gene.  MODIFIER</option>
                     <option value="INTERGENIC">INTERGENIC  (intergenic_region) The variant is in an intergenic region  MODIFIER</option>
                     <option value="INTERGENIC_CONSERVED">INTERGENIC_CONSERVED  (conserved_intergenic_variant) The variant is in a highly conserved intergenic region  MODIFIER</option>
@@ -286,8 +286,8 @@
                     <option value="SPLICE_SITE_ACCEPTOR">SPLICE_SITE_ACCEPTOR  (splice_acceptor_variant) The variant hits a splice acceptor site (defined as two bases before exon start, except for the first exon).  HIGH</option>
                     <option value="SPLICE_SITE_DONOR">SPLICE_SITE_DONOR  (splice_donor_variant) The variant hits a Splice donor site (defined as two bases after coding exon end, except for the last exon).  HIGH</option>
                     <option value="SPLICE_SITE_REGION">SPLICE_SITE_REGION  (splice_region_variant) A sequence variant in which a change has occurred within the region of the splice site, either within 1-3 bases of the exon or 3-8 bases of the intron.  LOW</option>
-                    <option value="SPLICE_SITE_BRANCH">SPLICE_SITE_BRANCH  (splice_region_variant) A varaint affective putative (Lariat) branch point, located in the intron.  LOW</option>
-                    <option value="SPLICE_SITE_BRANCH_U12">SPLICE_SITE_BRANCH_U12  (splice_region_variant) A varaint affective putative (Lariat) branch point from U12 splicing machinery, located in the intron.  MODERATE</option>
+                    <option value="SPLICE_SITE_BRANCH">SPLICE_SITE_BRANCH  (splice_region_variant) A variant affective putative (Lariat) branch point, located in the intron.  LOW</option>
+                    <option value="SPLICE_SITE_BRANCH_U12">SPLICE_SITE_BRANCH_U12  (splice_region_variant) A variant affective putative (Lariat) branch point from U12 splicing machinery, located in the intron.  MODERATE</option>
                     <option value="STOP_LOST">STOP_LOST  (stop_lost) Variant causes stop codon to be mutated into a non-stop codon e.g.: Tga/Cga, */R  HIGH</option>
                     <option value="START_GAINED">START_GAINED  (5_prime_UTR_premature start_codon_gain_variant) A variant in 5'UTR region produces a three base sequence that can be a START codon.  LOW</option>
                     <option value="START_LOST">START_LOST  (start_lost) Variant causes start codon to be mutated into a non-start codon.  e.g.: aTg/aGg, M/R  HIGH</option>

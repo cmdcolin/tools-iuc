@@ -65,7 +65,7 @@
         <!-- Maker doesn't like indentation in its config file... -->
         <configfile name="ctl"><![CDATA[
 #-----Genome (these are always required)
-genome=${genome} # genome sequence (fasta file or fasta embeded in GFF3 file)
+genome=${genome} # genome sequence (fasta file or fasta embedded in GFF3 file)
 organism_type=${organism_type} # eukaryotic or prokaryotic. Default is eukaryotic
 
 #-----Re-annotation Using MAKER Derived GFF3
@@ -106,16 +106,16 @@ est_gff=${est_evidences.est_gff} # aligned ESTs or mRNA-seq from an external GFF
 est_gff= # aligned ESTs or mRNA-seq from an external GFF3 file
 #end if
 #if $est_evidences.altest_gff
-altest_gff=${est_evidences.altest_gff} # aligned ESTs from a closly relate species in GFF3 format
+altest_gff=${est_evidences.altest_gff} # aligned ESTs from a closely relate species in GFF3 format
 #else
-altest_gff= # aligned ESTs from a closly relate species in GFF3 format
+altest_gff= # aligned ESTs from a closely relate species in GFF3 format
 #end if
 
 #-----Protein Homology Evidence (for best results provide a file for at least one)
 #if $protein_evidences.protein
-protein=${protein_evidences.protein}  # protein sequence file in fasta format (i.e. from mutiple oransisms)
+protein=${protein_evidences.protein}  # protein sequence file in fasta format (i.e. from multiple oransisms)
 #else
-protein=  # protein sequence file in fasta format (i.e. from mutiple oransisms)
+protein=  # protein sequence file in fasta format (i.e. from multiple oransisms)
 #end if
 #if $protein_evidences.protein_gff
 protein_gff=${protein_evidences.protein_gff}  # aligned protein homology evidence from an external GFF3 file
@@ -285,8 +285,8 @@ TMP= # specify a directory other than the system default temporary directory for
 
         <section name="protein_evidences" title="Protein evidences (for best results provide at least one of these)" expanded="True">
             <param name="protein2genome" type="boolean" truevalue="1" falsevalue="0" checked="false" label="Infer gene predictions directly from all protein alignments" help="Maker will blindly trust protein alignments to create gene models. Use this only before training ab-initio predictors."/>
-            <param name="protein" type="data" format="fasta" label="Protein sequences" help="From mutiple organisms" optional="True"/>
-            <param name="protein_gff" type="data" format="gff" label="Aligned proteins" help="From mutiple organisms" optional="True"/>
+            <param name="protein" type="data" format="fasta" label="Protein sequences" help="From multiple organisms" optional="True"/>
+            <param name="protein_gff" type="data" format="gff" label="Aligned proteins" help="From multiple organisms" optional="True"/>
         </section>
 
         <section name="abinitio_gene_prediction" title="Ab-initio gene prediction" expanded="True">
@@ -466,7 +466,7 @@ TMP= # specify a directory other than the system default temporary directory for
             <param name="AED_threshold" type="float" min="0" max="1" value="1" label="Maximum Annotation Edit Distance allowed"/>
             <param name="min_protein" type="integer" value="0" label="Require at least this many amino acids in predicted proteins"/>
             <param name="alt_splice" type="boolean" truevalue="1" falsevalue="0" checked="false" label="Take extra steps to try and find alternative splicing" help="Will try to output gene isoforms when detected instead of a single consensus isoform.Use this if you have good EST evidences allowing to detect isoforms."/>
-            <param name="always_complete" type="boolean" truevalue="1" falsevalue="0" checked="false" label="Take extra steps to force the finding of a start and stop codons" help="Only cannonical gene structures will be reported, but it can lead to biologically incorrect seqences."/>
+            <param name="always_complete" type="boolean" truevalue="1" falsevalue="0" checked="false" label="Take extra steps to force the finding of a start and stop codons" help="Only canonical gene structures will be reported, but it can lead to biologically incorrect sequences."/>
             <param name="map_forward" type="boolean" truevalue="1" falsevalue="0" checked="false" label="Map names and attributes forward from old GFF3 genes"/>
             <param name="keep_preds" type="float" min="0" max="1" value="0" label="Concordance threshold to add unsupported gene prediction"/>
             <param name="split_hit" type="integer" value="10000" label="length for the splitting of hits" help="Expected max intron size for evidence alignments"/>
@@ -585,7 +585,7 @@ TMP= # specify a directory other than the system default temporary directory for
         </test>
     </tests>
     <help><![CDATA[
-        MAKER is a portable and easily configurable genome annotation pipeline. Its purpose is to allow smaller eukaryotic and prokaryotic genome projects to independently annotate their genomes and to create genome databases. MAKER identifies repeats, aligns ESTs and proteins to a genome, produces ab-initio gene predictions and automatically synthesizes these data into gene annotations having evidence-based quality values. MAKER is also easily trainable: outputs of preliminary runs can be used to automatically retrain its gene prediction algorithm, producing higher quality gene-models on seusequent runs. MAKER's inputs are minimal and its ouputs can be directly loaded into a GMOD database. They can also be viewed in the Apollo genome browser; this feature of MAKER provides an easy means to annotate, view and edit individual contigs and BACs without the overhead of a database. MAKER should prove especially useful for emerging model organism projects with minimal bioinformatics expertise and computer resources.
+        MAKER is a portable and easily configurable genome annotation pipeline. Its purpose is to allow smaller eukaryotic and prokaryotic genome projects to independently annotate their genomes and to create genome databases. MAKER identifies repeats, aligns ESTs and proteins to a genome, produces ab-initio gene predictions and automatically synthesizes these data into gene annotations having evidence-based quality values. MAKER is also easily trainable: outputs of preliminary runs can be used to automatically retrain its gene prediction algorithm, producing higher quality gene-models on seusequent runs. MAKER's inputs are minimal and its outputs can be directly loaded into a GMOD database. They can also be viewed in the Apollo genome browser; this feature of MAKER provides an easy means to annotate, view and edit individual contigs and BACs without the overhead of a database. MAKER should prove especially useful for emerging model organism projects with minimal bioinformatics expertise and computer resources.
 
         .. _Maker: http://www.yandell-lab.org/software/maker.html
     ]]></help>

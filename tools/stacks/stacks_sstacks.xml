@@ -128,7 +128,7 @@
 
             <output name="output_log">
                 <assert_contents>
-                    <has_text text="Outputing to file" />
+                    <has_text text="Outputting to file" />
                 </assert_contents>
             </output>
             <output name="output_summary">
@@ -171,7 +171,7 @@
 
             <output name="output_log">
                 <assert_contents>
-                    <has_text text="Outputing to file" />
+                    <has_text text="Outputting to file" />
                 </assert_contents>
             </output>
             <output name="output_summary">
@@ -214,7 +214,7 @@
 
             <output name="output_log">
                 <assert_contents>
-                    <has_text text="Outputing to file" />
+                    <has_text text="Outputting to file" />
                 </assert_contents>
             </output>
             <output name="output_summary">

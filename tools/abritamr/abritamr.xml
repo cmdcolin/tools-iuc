@@ -31,7 +31,7 @@ ${i.element_identifier}	${i}
     </configfiles>
     <inputs>
         <param name="contig" type="data" format="fasta" multiple="true" label="Input contigs"/>
-        <param argument="species" type="select" multiple="false" optional="true" label="Specify species to aquire resistance mechanisms as point mutations">
+        <param argument="species" type="select" multiple="false" optional="true" label="Specify species to acquire resistance mechanisms as point mutations">
             <option value="Neisseria">Neisseria</option>
             <option value="Clostridioides_difficile">Clostridioides difficile</option>
             <option value="Acinetobacter_baumannii">Acinetobacter baumannii</option>

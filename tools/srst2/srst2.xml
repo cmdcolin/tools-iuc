@@ -118,7 +118,7 @@ srst2
     ]]></command>
     <inputs>
         <conditional name="input">
-            <param name="selector" type="select" label="Reads files type for anaylsis">
+            <param name="selector" type="select" label="Reads files type for analysis">
                 <option value="single">Single-end</option>
                 <option value="paired">Paired-end</option>
                 <option value="only_compiling_previous_results">Only Compiling Previous SRST2 Results</option>
@@ -379,7 +379,7 @@ Read more about the tool: https://holtlab.net/2014/12/27/behind-the-paper-srst2-
 
 Input
 =====
-Learn more about all inputs and their formates: https://github.com/katholt/srst2#input-read-formats-and-options
+Learn more about all inputs and their formats: https://github.com/katholt/srst2#input-read-formats-and-options
 
 Output
 ======

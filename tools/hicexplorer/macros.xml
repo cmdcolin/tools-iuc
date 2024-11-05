@@ -348,7 +348,7 @@
         <param name='matrix_h5_cooler' type="data" format="h5,cool" label="Matrix to compute on" />
     </xml>
     <xml name='matrix_h5_cooler_multiple_macro'>
-        <param name='matrix_h5_cooler_multiple' type="data" format="h5,cool" multiple="true" label="Matricies to compute on" />
+        <param name='matrix_h5_cooler_multiple' type="data" format="h5,cool" multiple="true" label="Matrices to compute on" />
     </xml>
 
     <xml name='matrix_cooler_multiple_macro'>
@@ -377,8 +377,8 @@
             </when>
             <when value="optionHic">
                 <param name='matrixHic' type='data' format='hic' label='.hic matrix' />
-                <param name='resolutions' type='text' label='List of resolutions' help="Resolutions can be specified seperated with a space, e.g. '10000 20000 50000'">
-                    <validator type="expression" message="Only numeric characters and the a space as seperator are allowed.">value.replace(' ', '').isnumeric()</validator>
+                <param name='resolutions' type='text' label='List of resolutions' help="Resolutions can be specified separated with a space, e.g. '10000 20000 50000'">
+                    <validator type="expression" message="Only numeric characters and the a space as separator are allowed.">value.replace(' ', '').isnumeric()</validator>
                 </param>
             </when>
             <when value="optionHomer">
@@ -391,8 +391,8 @@
             <when value="option2Dtext">
                 <param name='matrix2Dtext' type='data' format='txt' label='A 2D text matrix' />
 
-                <param name='resolutions' type='text' label='List of resolutions' help="Resolutions can be specified seperated with a space, e.g. '10000 20000 50000'">
-                    <validator type="expression" message="Only numeric characters and the a space as seperator are allowed.">value.replace(' ', '').isnumeric()</validator>
+                <param name='resolutions' type='text' label='List of resolutions' help="Resolutions can be specified separated with a space, e.g. '10000 20000 50000'">
+                    <validator type="expression" message="Only numeric characters and the a space as separator are allowed.">value.replace(' ', '').isnumeric()</validator>
                 </param>
                 <param name='chromosomeSizes' type='data' format='txt' label='Chromosome sizes file' />
             </when>
@@ -430,8 +430,8 @@
             <when value="option2Dtext">
                 <param name='matrix2Dtext' type='data' format='txt' multiple="true" label='A 2D text matrix' />
 
-                <param name='resolutions' type='text' label='List of resolutions' help="Resolutions can be specified seperated with a space, e.g. '10000 20000 50000'">
-                    <validator type="expression" message="Only numeric characters and the a space as seperator are allowed.">value.replace(' ', '').isnumeric()</validator>
+                <param name='resolutions' type='text' label='List of resolutions' help="Resolutions can be specified separated with a space, e.g. '10000 20000 50000'">
+                    <validator type="expression" message="Only numeric characters and the a space as separator are allowed.">value.replace(' ', '').isnumeric()</validator>
                 </param>
                 <param name='chromosomeSizes' type='data' format='txt' label='Chromosome sizes file' />
             </when>

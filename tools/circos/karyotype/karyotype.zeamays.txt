@@ -10,5 +10,5 @@ chr - zm7 7 0 176764762 chr7
 chr - zm8 8 0 175793759 chr8
 chr - zm9 9 0 156750706 chr9
 chr - zm10 10 0 150189435 chr10
-# chromosome 11 is ChrUnkown - unanchored contigs with 100 n spacer
+# chromosome 11 is ChrUnknown - unanchored contigs with 100 n spacer
 chr - zm11 11 0 7140151 chr11

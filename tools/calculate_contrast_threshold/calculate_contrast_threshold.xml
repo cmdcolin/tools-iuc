@@ -30,7 +30,7 @@
 
 
         <conditional name="quantile_type">
-            <param name="quantile_type_selector" type="select" display="radio" label="Choose the Contrast paramter">
+            <param name="quantile_type_selector" type="select" display="radio" label="Choose the Contrast parameter">
                 <option value="b_option" selected="true">Calculate thresholds from data (-b)</option>
                 <option value="t_option">Enforce absolute thresholds (-t)
                 </option>

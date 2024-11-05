@@ -1065,12 +1065,12 @@ for details.
 
 HISAT does not "find" alignments in any specific order, so for reads
 that have more than N distinct, valid alignments, HISAT does not
-gaurantee that the N alignments reported are the best possible in terms
+guarantee that the N alignments reported are the best possible in terms
 of alignment score. Still, this mode can be effective and fast in
 situations where the user cares more about whether a read aligns (or
 aligns a certain number of times) than where exactly it originated.
 
-Alignment summmary
+Alignment summary
 ------------------
 
 When HISAT finishes running, it prints messages summarizing what happened. These messages are printed to the "standard error" ("stderr") filehandle and can be optionally printed to a file. Choose `--new-summary` under **Summary Options** for compatibility with `MultiQC <http://multiqc.info/docs/#hisat2>`_.

@@ -8,7 +8,7 @@
     <expand macro="requirements"/>
     <command detect_errors="exit_code"><![CDATA[  
         #import re
-        #if str($CNV_reference.CNV_reference_availabel) == "yes"
+        #if str($CNV_reference.CNV_reference_available) == "yes"
             #set $names = []
             #set $x=1
             #for $x, $input in enumerate($CNV_reference.input_cnn_file):
@@ -18,7 +18,7 @@
                 ln -s '$input' ${name}.cnn  &&
             #end for
         #end if
-        #if str($CNV_reference.CNV_reference_availabel) == "no"
+        #if str($CNV_reference.CNV_reference_available) == "no"
             #if $CNV_reference.antitargets
                 ln -s '$CNV_reference.antitargets' ./antitargets.bed &&
             #end if 
@@ -34,7 +34,7 @@
             #end if
         #end if
         cnvkit.py reference
-            #if str($CNV_reference.CNV_reference_availabel) == "yes"
+            #if str($CNV_reference.CNV_reference_available) == "yes"
                 #for $name in $names:
                     ${name}.cnn
                 #end for
@@ -53,7 +53,7 @@
                 #end if
             #end if
             $CNV_reference.advanced_settings.male_reference
-            #if str($CNV_reference.CNV_reference_availabel) == "no"
+            #if str($CNV_reference.CNV_reference_available) == "no"
                 --targets ./targets.bed
                 #if $CNV_reference.antitargets
                     --antitargets ./antitargets.bed
@@ -65,7 +65,7 @@
     ]]></command>
     <inputs>
         <conditional name="CNV_reference">
-            <param name="CNV_reference_availabel" type="select" label="Build or reuse a copy number reference file cnn?" help="">
+            <param name="CNV_reference_available" type="select" label="Build or reuse a copy number reference file cnn?" help="">
                 <option value="no" selected="True">Build a new copy number reference file</option>
                 <option value="yes">Reuse a copy number reference file</option>
             </param>
@@ -102,7 +102,7 @@
                 <param name="ref_selector" value="history"/>
                 <param name="fasta" ftype="fasta" value="genome.fasta" />
             </conditional>
-            <param name="CNV_reference_availabel" value="yes" />
+            <param name="CNV_reference_available" value="yes" />
             <param name="input_cnn_file" ftype="tabular" value="tumor.targetcoverage.cnn" />
             <param name="no_gc" value="1" />
             <output name="out_referene_tas" file="ref-tas.cnn" /> 
@@ -112,7 +112,7 @@
                 <param name="ref_selector" value="cached"/>
                 <param name="fasta" value="test_buildid"/>
             </conditional>
-            <param name="CNV_reference_availabel" value="yes" />
+            <param name="CNV_reference_available" value="yes" />
             <param name="input_cnn_file" ftype="tabular" value="tumor.targetcoverage.cnn" />
             <param name="no_gc" value="1" />
             <output name="out_referene_tas" file="ref-tas.cnn" />
@@ -122,7 +122,7 @@
                 <param name="ref_selector" value="cached"/>
                 <param name="fasta" value="test_buildid"/>
             </conditional>
-            <param name="CNV_reference_availabel" value="yes" />
+            <param name="CNV_reference_available" value="yes" />
             <param name="input_cnn_file" ftype="tabular" value="tumor.targetcoverage.cnn,test.targetcoverage.cnn" />
             <param name="no_gc" value="1" />
             <output name="out_referene_tas">
@@ -134,7 +134,7 @@
                 <param name="ref_selector" value="cached"/>
                 <param name="fasta" value="test_buildid"/>
             </conditional>
-            <param name="CNV_reference_availabel" value="no" />
+            <param name="CNV_reference_available" value="no" />
             <param name="targets" ftype="bed" value="capture.target.bed" />
             <param name="no_gc" value="1" />
             <output name="out_referene_tas">
@@ -149,7 +149,7 @@
             <conditional name="Sample_sex">
                 <param name="sex" value="no" />
             </conditional>
-            <param name="CNV_reference_availabel" value="no" />
+            <param name="CNV_reference_available" value="no" />
             <param name="targets" ftype="bed" value="capture.target.bed" />
             <param name="no_gc" value="1" />
             <output name="out_referene_tas">

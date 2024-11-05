@@ -42,7 +42,7 @@
         </param>
 
         <param name="output_format" type="select" label="Output format" 
-            help="By default, Cuffnorm reports expression levels in the 'simple-table' tab-delimted text files. The program also reports information about your samples and about the genes, transcripts, TSS groups, and CDS groups as tab delimited text files. Note that these files have a different format than the files used by Cuffdiff. However, you can direct Cuffnorm to report its output in the same format as used by Cuffdiff if you wish" >
+            help="By default, Cuffnorm reports expression levels in the 'simple-table' tab-delimited text files. The program also reports information about your samples and about the genes, transcripts, TSS groups, and CDS groups as tab delimited text files. Note that these files have a different format than the files used by Cuffdiff. However, you can direct Cuffnorm to report its output in the same format as used by Cuffdiff if you wish" >
                 <option value="simple-table" selected="True">Simple Table</option>
                 <option value="cuffdiff">Cuffdiff format</option>
         </param>
@@ -217,7 +217,7 @@ Cuffnorm takes Cufflinks or Cuffcompare GTF files as input along with two SAM fi
 **Outputs**
 
 Cuffnorm outputs a set of files containing normalized expression levels for each gene, transcript, TSS group, and CDS group in the experiment. It does not perform differential expression analysis. To assess the significance of changes in expression for genes and transcripts between conditions, use Cuffdiff. Cuffnorm's output files are useful when you have many samples and you simply want to cluster them or plot expression levels of genes important in your study.
-By default, Cuffnorm reports expression levels in the "simple-table" tab-delimted text files. The program also reports information about your samples and about the genes, transcripts, TSS groups, and CDS groups as tab delimited text files. Note that these files have a different format than the files used by Cuffdiff. However, you can direct Cuffnorm to report its output in the same format as used by Cuffdiff if you wish. Simply supply the option --output-format cuffdiff at the command line.
+By default, Cuffnorm reports expression levels in the "simple-table" tab-delimited text files. The program also reports information about your samples and about the genes, transcripts, TSS groups, and CDS groups as tab delimited text files. Note that these files have a different format than the files used by Cuffdiff. However, you can direct Cuffnorm to report its output in the same format as used by Cuffdiff if you wish. Simply supply the option --output-format cuffdiff at the command line.
 Cuffnorm will report both FPKM values and normalized, estimates for the number of fragments that originate from each gene, transcript, TSS group, and CDS group. Note that because these counts are already normalized to account for differences in library size, they should not be used with downstream differential expression tools that require raw counts as input.
 To see the details of the simple table format used by Cuffnorm, refer to the simple table expression format, simple table sample attribute format, and simple table feature (e.g. gene) attribute format sections below. 
     

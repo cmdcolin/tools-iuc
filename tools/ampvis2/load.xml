@@ -322,7 +322,7 @@ following requirements:
 
 - The rows are OTU IDs and the columns are samples.
 - The OTU IDs are by default expected to be in a column called "OTU", "ASV", or "#OTU ID".
-  For data using an empty header for the OTU/ASV colum enable the option *OTU/ASV column has empty header*
+  For data using an empty header for the OTU/ASV column enable the option *OTU/ASV column has empty header*
   (this allows to process data as produced e.g. by dada2).
 - The column names of the table are the sample IDs, exactly matching those in
   the metadata
@@ -357,7 +357,7 @@ By default the data types of metadata columns are guessed with
 ``readr::type_convert``. The guessed column types can be seen in the last (4th)
 column of the ``metadata list`` output and also stdout of the tool.  Guessing of
 data types can be disabled using the parameter ``Guess metadata column types``.
-If disabled matadata from separate tabular input is treated as character data,
+If disabled metadata from separate tabular input is treated as character data,
 and if loaded from biom files that data is used as is. Metadata types can be set
 manually using the tool ``ampvis2: set metadata``
 
@@ -381,7 +381,7 @@ Note that the taxonomic information can also be embedded in the OTU table.
 
 a tree with branch lengths in Newick format. 
 
-This is needed / usefull only if the data is used as input of: ``ampvis2:
+This is needed / useful only if the data is used as input of: ``ampvis2:
 ordination plot`` for ordination methods NNDS / MMDS with (un)weighted UniFrac
 distances. Note that the loaded tree is also filtered by the ``ampvis2: subset
 ...`` tools.
@@ -412,7 +412,7 @@ Summarize the metadata and taxonomy information:
   available metadata values (column 2), if the variable is the SampleID (column 3), and
   the data type of the corresponding metadata variable (column 4)
 
-These files are auxilliary files that are needed in downstream ``ampvis2`` Galaxy tools
+These files are auxiliary files that are needed in downstream ``ampvis2`` Galaxy tools
 to allow selecting metadata and taxonomy. They are not passed to the underlying R functions.
 
 Note that, if the no taxonomy (or metadata) is given then the underlying ``ampvis2`` R

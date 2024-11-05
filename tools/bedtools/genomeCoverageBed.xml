@@ -51,7 +51,7 @@ $three
         <conditional name="report">
             <param name="report_select" type="select" label="Output type">
                 <option value="bg" selected="true">BedGraph coverage file</option>
-                <option value="hist">Data suiteable for Histogram</option>
+                <option value="hist">Data suitable for Histogram</option>
             </param>
             <when value="bg">
                 <param name="zero_regions" argument="-bga" type="boolean" truevalue="-bga" falsevalue="" checked="false"
@@ -75,7 +75,7 @@ $three
         <param argument="-d" type="boolean" truevalue="-d" falsevalue="" checked="false"
             label="Report the depth at each genome position with 1-based coordinates" />
         <param argument="-dz" type="boolean" truevalue="-dz" falsevalue="" checked="false"
-            label="Report the depth at each genome position with 0-based coordinatess" />
+            label="Report the depth at each genome position with 0-based coordinates" />
         <param name="five" argument="-5" type="boolean" truevalue="-5" falsevalue="" checked="false"
             label="Calculate coverage of 5’ positions" help="Instead of entire interval" />
         <param name="three" argument="-3" type="boolean" truevalue="-3" falsevalue="" checked="false"

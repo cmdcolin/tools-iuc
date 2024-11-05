@@ -185,7 +185,7 @@ Nucleotide or protein alignment
  To specify the type of sequence alignment (nucleotide or protein) you are providing.
 
 Nucleotide evolution model
- Specify GTR+CAT (Generalized Time Reversable Model) or Jukes-Cantor + CAT.
+ Specify GTR+CAT (Generalized Time Reversible Model) or Jukes-Cantor + CAT.
 
 Protein evolution model
  Specify JTT (Jones-Taylor-Thornton 1992 model) + CAT, WAG (Whelan-And-Goldman 2001 model) + CAT, or LG (Le-Gascuel 2008 model) + CAT.

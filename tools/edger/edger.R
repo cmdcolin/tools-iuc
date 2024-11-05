@@ -29,7 +29,7 @@
 #       QL Plot
 #       MD Plot
 #       Expression Table
-#       HTML file linking to the ouputs
+#       HTML file linking to the outputs
 # Optional:
 #       Normalised counts Table
 #       RData file
@@ -59,7 +59,7 @@ library(scales, quietly = TRUE, warn.conflicts = FALSE)
 library(getopt, quietly = TRUE, warn.conflicts = FALSE)
 
 ################################################################################
-### Function Delcaration
+### Function Declaration
 ################################################################################
 # Function to sanitise contrast equations so there are no whitespaces
 # surrounding the arithmetic operators, leading or trailing whitespace
@@ -101,7 +101,7 @@ paste_listname <- function(string) {
     return(paste0("factors$", string))
 }
 
-# Create cata function: default path set, default seperator empty and appending
+# Create cata function: default path set, default separator empty and appending
 # true by default (Ripped straight from the cat function with altered argument
 # defaults)
 cata <- function(..., file = opt$htmlPath, sep = "", fill = FALSE, labels = NULL,

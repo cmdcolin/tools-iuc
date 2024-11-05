@@ -26,7 +26,7 @@
                 <column name="dbkey" index="1" />
                 <filter type="unique_value" column="value" />
                 <filter type="sort_by" column="name" />
-                <validator type="no_options" message="No annotation paackage available" />
+                <validator type="no_options" message="No annotation package available" />
             </options>
         </param>
         <param name="annotation" type="select" multiple="true" optional="false" label="Packaged annotations to load into collection">
@@ -41,7 +41,7 @@
         </param>
         <param name="retrieve_meta" type="select" label="Retrieve annotation sources metadata as separate dataset?">
             <option value="">No metadata</option>
-            <option value="yaml">Return the metadata in orignal yaml format</option>
+            <option value="yaml">Return the metadata in original yaml format</option>
             <option value="tab">Return tabular annotation source/version info</option>
         </param>
     </inputs>

@@ -375,7 +375,7 @@ control over how they should be handled:
    columns in line #X ...", a solution might be to turn off column type
    autodetection. The price you will have to pay for doing so is that now you
    will have to handle type conversions yourself. In the first example you would
-   now have to use the epression: "int(c4) * int(c5)".
+   now have to use the expression: "int(c4) * int(c5)".
 
 2. By default, if any expression references columns that are not existing before
    that expression gets computed, the tool will fail, but you can uncheck the

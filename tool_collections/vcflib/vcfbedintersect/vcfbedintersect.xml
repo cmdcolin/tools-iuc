@@ -13,7 +13,7 @@
         #end if
     </command>
     <inputs>
-        <!-- selecting refernce source -->
+        <!-- selecting reference source -->
         <param name="vcf_input" type="data" format="vcf" label="Select VCF dataset" />
         <conditional name="bed_vs_interval">
             <param name="bed_vs_interval_selector" type="select" label="BED dataset or an interval to intersect with">

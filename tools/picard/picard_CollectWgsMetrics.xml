@@ -43,7 +43,7 @@
                 </param>
             </when>
             <when value="history">
-                <param name="ref_file" type="data" format="fasta" label="Use the folloing dataset as the reference sequence" help="REFERENCE_SEQUENCE; You can upload a FASTA sequence to the history and use it as reference"/>
+                <param name="ref_file" type="data" format="fasta" label="Use the following dataset as the reference sequence" help="REFERENCE_SEQUENCE; You can upload a FASTA sequence to the history and use it as reference"/>
             </when>
         </conditional>
         <param name="minimum_mapping_quality" type="integer" value="20" label="Minimum mapping quality for a read to contribute coverage" help="MINIMUM_MAPPING_QUALITY; default=20"/>

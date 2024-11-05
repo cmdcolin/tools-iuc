@@ -131,7 +131,7 @@
 rpbasicdesign
 ================
 
-rpbasicdesign extracts enzyme IDs from rpSBML (System Biology Markup Language) files containing additionnal annotations (e.g. reaction rules ID) and produced by the RP (RetroPath) suite available in `SynBioCAD Galaxy platform <https://galaxy-synbiocad.org/>`_, to generate genetic constructs compliant with the BASIC (Biopart Assembly Standard for Idempotent Cloning) assembly approach. CSV files produced are ready to be used with DNA-Bot to generate instructions for automated build of the genetic constructs using OpenTrons liquid handling robots.
+rpbasicdesign extracts enzyme IDs from rpSBML (System Biology Markup Language) files containing additional annotations (e.g. reaction rules ID) and produced by the RP (RetroPath) suite available in `SynBioCAD Galaxy platform <https://galaxy-synbiocad.org/>`_, to generate genetic constructs compliant with the BASIC (Biopart Assembly Standard for Idempotent Cloning) assembly approach. CSV files produced are ready to be used with DNA-Bot to generate instructions for automated build of the genetic constructs using OpenTrons liquid handling robots.
 
 Input
 -----

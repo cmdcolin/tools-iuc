@@ -75,7 +75,7 @@ def validate_map_version(infile, file_type):
     Check conformity of a user-provided pkl file to Metaphlan SGB (>= v4.0).
 
     :param infile: Path to input Pickle/JSON file
-    :param file_type: String definining file type, pkl or JSON. Case-insensitive
+    :param file_type: String defining file type, pkl or JSON. Case-insensitive
     '''
     file_type = file_type.lower()
     if file_type == 'pkl' or file_type == 'pickle':

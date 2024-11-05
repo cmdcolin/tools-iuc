@@ -22,7 +22,7 @@ variables. Models are reported as the coefficients for terms in an 'optimal' mod
 These optimal predictors are selected by repeatedly setting
 aside a random subsample, building a model in the remainder and estimating AUC or deviance 
 using  k (default 10) fold internal cross validation. For each of these steps, a random 1/k 
-of the samples are set aside and used to estiamte performance of an optimal model estimated 
+of the samples are set aside and used to estimate performance of an optimal model estimated 
 from the remaining samples. Plots are provided showing the range of these (eg 10) internal validation 
 estimates and mean model AUC (binomial) or residual deviance plots at each penalty increment step.
 

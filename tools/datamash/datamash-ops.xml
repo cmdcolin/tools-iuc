@@ -151,7 +151,7 @@
 
 **Syntax**
 
-This tools performs common operations (such as summing, counting, mean, standard-deviation) on input file, based on tabular data. The tool can also optionaly group the input based on a given field.
+This tools performs common operations (such as summing, counting, mean, standard-deviation) on input file, based on tabular data. The tool can also optionally group the input based on a given field.
 
 -----
 

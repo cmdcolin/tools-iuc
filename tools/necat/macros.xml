@@ -101,7 +101,7 @@
         <section name="ovs" title="Overlap sensitive options (for oc2pmov subprogram)" expanded="false" help="OVLP_SENSITIVE_OPTIONS. Passed to oc2pmov in the first round of error correction.">
             <param argument="-n" type="integer" min="1" max="100000" value="500" label="number of candidates" help="" />
             <param argument="-k" type="integer" min="1" max="100" value="15" label="kmer size" help="" />
-            <param argument="-q" type="integer" min="1" max="100000" value="500" label="max kmer occurances" help="" />
+            <param argument="-q" type="integer" min="1" max="100000" value="500" label="max kmer occurrences" help="" />
             <param argument="-z" type="integer" min="1" max="100" value="10" label="scan window size" help="" />
             <param argument="-b" type="integer" min="1" max="100000" value="2000" label="block size" help="" />
             <param argument="-a" type="integer" min="1" max="100000" value="1000" label="min align length" help="" />
@@ -132,7 +132,7 @@
         <section name="ovf" title="Overlap fast options (for oc2pmov subprogram)" expanded="false" help="OVLP_FAST_OPTIONS. Passed to oc2pmov in the second round of error correction.">
             <param argument="-n" type="integer" min="1" max="100000" value="500" label="number of candidates" help="" />
             <param argument="-k" type="integer" min="1" max="100" value="15" label="kmer size" help="" />
-            <param argument="-q" type="integer" min="1" max="100000" value="500" label="max kmer occurances" help="" />
+            <param argument="-q" type="integer" min="1" max="100000" value="500" label="max kmer occurrences" help="" />
             <param argument="-z" type="integer" min="1" max="100" value="20" label="scan window size" help="" />
             <param argument="-b" type="integer" min="1" max="100000" value="2000" label="block size" help="" />
             <param argument="-a" type="integer" min="1" max="100000" value="1000" label="min align length" help="" />
@@ -213,7 +213,7 @@
             <param argument="--min_length" type="integer" min="0" value="0" label="min read length" help="minimum length of reads" />
             <param argument="--min_identity" type="float" min="0" max="100" value="0" label="min overlap identity" help="minimum identity of overlaps" />
             <param argument="--min_contig_length" type="integer" min="1" value="500" label="min contig length" help="minimum length of contigs" />
-            <param argument="--max_spur_length" type="integer" min="1" value="50000" label="max spur length" help="branches less the threshod are treated as spurs" />
+            <param argument="--max_spur_length" type="integer" min="1" value="50000" label="max spur length" help="branches less the threshold are treated as spurs" />
             <param argument="--select_branch" type="boolean" truevalue="best" falsevalue="no" label="select branch" help="select the most probable branch. default is no." />
         </section>
     </xml>

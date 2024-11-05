@@ -68,7 +68,7 @@
 
         <section name="ap" title="Advanced parameters">
             <param argument="--bed" type="data" format="bed" optional="true" label="Select mapping file with annotation of transcriptome"/>
-            <param argument="--max_invalid_kmers_freq" type="float" value="0.1" min="0.0" max="1.0" label="Set max fequency of invalid kmers"/>
+            <param argument="--max_invalid_kmers_freq" type="float" value="0.1" min="0.0" max="1.0" label="Set max frequency of invalid kmers"/>
             <param argument="--min_coverage" type="integer" value="30" min="0" label="Set minimum coverage required in each condition to do the comparison"/>
             <param argument="--min_ref_length" type="integer" value="100" min="0" label="Set minimum length of a reference transcript to include it in the analysis"/>
             <param argument="--comparison_methods" type="select" multiple="true" label="Select comparison methods">

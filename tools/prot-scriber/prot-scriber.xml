@@ -109,7 +109,7 @@
                         </sanitizer>
                     </param>
                     <param name="center_inverse_word_information_content_at_quantile" argument="-q" type="integer" optional="true" label="Center inverse word-information-content at quantile (-q)" help="The quantile (percentile) to be subtracted from calculated inverse word information             content to center these values. Value between 0 and 1."/>
-                    <param name="polish_capture_replace_pairs" argument="-d" type="data" format="txt" optional="true" label="Polishing capture replace pairs (-d)" help="A file with pairs of lines. Defines pairs of regex / replace             pairs for post polishing of annotation results. Set to 'none' or provide an empty file to supress polishing."/>
+                    <param name="polish_capture_replace_pairs" argument="-d" type="data" format="txt" optional="true" label="Polishing capture replace pairs (-d)" help="A file with pairs of lines. Defines pairs of regex / replace             pairs for post polishing of annotation results. Set to 'none' or provide an empty file to suppress polishing."/>
                 </section>
             </when>
         </conditional>
@@ -189,7 +189,7 @@ For more information, examples and how to use the prot-scriber commandline tool 
 
 **Input**
 
-The input file is one or multiple tabular output(s) of a sequence similarity search (Blast, Diamon or similar).
+The input file is one or multiple tabular output(s) of a sequence similarity search (Blast, Diamond or similar).
 Required columns are: 'qacc sacc stitle' (Blast) or 'qseqid sseqid stitle' (Diamond). The input is done via the -s parameter::
 
     -s, --seq-sim-table
@@ -282,7 +282,7 @@ Some additional optional configuration. Only use when you know what you are doin
 
     -w, --non-informative-words-regexs
             A file in which regular expressions (regexs) are stored, one per line. These
-            regexs are used to recognize non-informative words, which will only receive a minimun
+            regexs are used to recognize non-informative words, which will only receive a minimum
             score in the prot-scriber process that generates human readable description. There is a
             default list hard-coded into prot-scriber. An example file can be downloaded here:
             https://raw.githubusercontent.com/usadellab/prot-scriber/master/misc/non_informative_words_regexs.txt.
@@ -321,7 +321,7 @@ prot-scriber outputs a single tab-separated text file with the annotated sequenc
     Soltu.DM.03G011280.1	increased dna methylation
     ...
 
-If you want to supress results from the output table that could not be annotated, i.e. 'unknown protein' or 'unknown sequence family' respectively use the '-x' parameter::
+If you want to suppress results from the output table that could not be annotated, i.e. 'unknown protein' or 'unknown sequence family' respectively use the '-x' parameter::
 
     -x, --exclude-not-annotated-queries
             Exclude results from the output table that could not be annotated, i.e. 'unknown

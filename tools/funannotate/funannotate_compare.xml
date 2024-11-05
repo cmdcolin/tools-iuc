@@ -85,7 +85,7 @@ cp output/index.html '$output'
             </param>
             <when value="iqtree" />
             <when value="raxml">
-                <param argument="--bootstrap" type="integer" value="100" label="Number of boostrap replicates to run with RAxML" />
+                <param argument="--bootstrap" type="integer" value="100" label="Number of bootstrap replicates to run with RAxML" />
             </when>
         </conditional>
     </inputs>

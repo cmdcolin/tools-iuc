@@ -1087,7 +1087,7 @@ header=None
         </param>
     </xml>
     <xml name="param_color_map">
-        <param argument="color_map" type="select" optional="true" label="Color map to use for continous variables">
+        <param argument="color_map" type="select" optional="true" label="Color map to use for continuous variables">
             <expand macro="matplotlib_pyplot_colormap"/>
         </param>
     </xml>
@@ -1207,11 +1207,11 @@ header=None
         <param argument="pos" type="data" format="tabular,csv,tsv" optional="true" label="Two-column tabular file storing the x and y coordinates for drawing"/>
         <expand macro="param_layout"/>
         <param argument="init_pos" type="data" format="tabular,csv,tsv" optional="true" label="Two-column tabular file storing the x and y coordinates for initializing the layout"/>
-        <param argument="random_state" type="integer" value="0" label="For layouts with random initialization like 'fr', change this to use different intial states for the optimization. If 'None', the initial state is not reproducible."/>
+        <param argument="random_state" type="integer" value="0" label="For layouts with random initialization like 'fr', change this to use different initial states for the optimization. If 'None', the initial state is not reproducible."/>
         <param argument="root" type="text" value="0" label="Comma-separated roots" help="If choosing a tree layout, this is the index of the root node or a list of root node indices. If this is a non-empty vector then the supplied node IDs are used as the roots of the trees (or a single tree if the graph is connected). If this is 'None' or an empty list, the root vertices are automatically calculated based on topological sorting.">
             <expand macro="sanitize_query"/>
         </param>
-        <param argument="transitions" type="text" value="" label="Key corresponding to the matrix storing the arrows" help="Key for '.uns['paga']', e.g. 'transistions_confidence'">
+        <param argument="transitions" type="text" value="" label="Key corresponding to the matrix storing the arrows" help="Key for '.uns['paga']', e.g. 'transitions_confidence'">
             <expand macro="sanitize_query"/>
         </param>
         <param argument="solid_edges" type="text" value="connectivities" label="Key corresponding to the matrix storing the edges to be drawn solid black" help="Key for uns/paga">
@@ -1330,7 +1330,7 @@ header=None
     </token>
 
     <xml name="values_to_plot">
-        <param argument="values_to_plot" type="select" optional="true" label="Values to plot" help="Defualt: plots mean expression. When plotting logfoldchanges a divergent colormap is recommended.">
+        <param argument="values_to_plot" type="select" optional="true" label="Values to plot" help="Default: plots mean expression. When plotting logfoldchanges a divergent colormap is recommended.">
             <option value="scores">Scores</option>
             <option value="logfoldchanges">Log foldchanges</option>
             <option value="pvals">P-values</option>

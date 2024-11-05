@@ -91,7 +91,7 @@
                 <option value="false">Write original decoded VCF with minimal INFO field</option>
             </param>
             <when value="true">
-                <param name="in_bam" type="data" format="bam" optional="false" label="BAM to caclulate additional INFO fields from"/>
+                <param name="in_bam" type="data" format="bam" optional="false" label="BAM to calculate additional INFO fields from"/>
                 <param name="pad" type="integer" min="1" value="25"
                 label="Padding width on either side of SNP for realignment"
                 help="To calculate the additional INFO fields the tool will run medaka tools anntotate, which performs local realignment of the region +- this width around each SNP. All calculated new fields will depend on the width chosen, so only change this value if you know what you are doing." />

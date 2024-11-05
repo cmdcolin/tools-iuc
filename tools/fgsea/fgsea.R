@@ -20,7 +20,7 @@ option_list <- list(
     make_option(c("-out_tab", "--out_tab"), type = "character", help = "Path to output file"),
     make_option(c("-min_size", "--min_size"), type = "integer", help = "Minimal size of a gene set to test. All pathways below the threshold are excluded."),
     make_option(c("-max_size", "--max_size"), type = "integer", help = "Maximal size of a gene set to test. All pathways above the threshold are excluded."),
-    make_option(c("-n_perm", "--n_perm"), type = "integer", help = "Number of permutations to do. Minimial possible nominal p-value is about 1/nperm"),
+    make_option(c("-n_perm", "--n_perm"), type = "integer", help = "Number of permutations to do. Minimal possible nominal p-value is about 1/nperm"),
     make_option(c("-rda_opt", "--rda_opt"), type = "logical", help = "Output RData file"),
     make_option(c("-plot_opt", "--plot_opt"), type = "logical", help = "Output plot"),
     make_option(c("-top_num", "--top_num"), type = "integer", help = "Top number of pathways to plot")

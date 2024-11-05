@@ -38,7 +38,7 @@
     </command>
     <inputs>
         <param name="inputs" type="data" label="Read sequences in fasta or fastq format" format="fasta,fastq,fastqsanger,fastq.gz,fastqsanger.gz" help="(--input)" multiple="true"/>
-        <param name="refgenome" type="data" label="Reference genome seqeunce (fasta)" format="fasta" optional="true" help="(--refgenome)"/>
+        <param name="refgenome" type="data" label="Reference genome sequence (fasta)" format="fasta" optional="true" help="(--refgenome)"/>
         <param name="refgene" type="data" label="Reference mRNA sequence (fasta)" format="fasta" optional="true" help="(--refgene)"/>
     </inputs>
     <outputs>
@@ -117,7 +117,7 @@ Reference Gene
 Outputs
 ++++++++++++++
 
-Tabular file of hexamer frequences in for each input.
+Tabular file of hexamer frequencies in for each input.
 
 @ABOUT@
 

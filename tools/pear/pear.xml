@@ -56,7 +56,7 @@
         #end if
         --min-asm-length $min_assembly_length
         --min-trim-length $min_trim_length
-        --quality-theshold $quality_threshold
+        --quality-threshold $quality_threshold
         --max-uncalled-base $max_uncalled_base
         --test-method $test_method
         --threads "\${GALAXY_SLOTS:-8}"

@@ -32,9 +32,9 @@
         <expand macro="rds_metadata_input_macro"/>
         <!-- TODO if no metadata_list is given that the color/facet_by selects
             give a warnings in the logs:
-            WARNI [galaxy.tools.parameters.dynamic_options] could not create dynamic options from_dataset: metadata_list not a data or collection paramete
+            WARNI [galaxy.tools.parameters.dynamic_options] could not create dynamic options from_dataset: metadata_list not a data or collection parameter
 
-            - introduce a conditional color_facet_cond wich optionally shows these options
+            - introduce a conditional color_facet_cond which optionally shows these options
               and make metadata_list required?
             - or use a filter + proper message instead of from_datatable ?  
             

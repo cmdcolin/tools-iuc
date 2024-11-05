@@ -235,7 +235,7 @@ Can deal with paired end reads and UMIs
 split across the paired ends. Can also optionally extract cell
 barcodes and append these to the read name also. See the section below
 for an explanation for how to encode the barcode pattern(s) to
-specficy the position of the UMI +/- cell barcode.
+specify the position of the UMI +/- cell barcode.
 
 
 Filtering and correcting cell barcodes

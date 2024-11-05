@@ -240,7 +240,7 @@ def download_image_data(
     Args:
         image_ids_or_dataset_id (list[str]): Can be either a list with a single id (int) of a dataset or a list with images ids (int) or images ids prefixed by 'image-'
         dataset (bool, optional): Whether the image_ids_or_dataset_id is a dataset id and all images from this dataset should be retrieved (true) or image_ids_or_dataset_id are individual image ids (false). Defaults to False.
-        download_original (bool, optional): Whether the original file uploded to omero should be downloaded (ignored if `download_full` is set to True). Defaults to False.
+        download_original (bool, optional): Whether the original file uploaded to omero should be downloaded (ignored if `download_full` is set to True). Defaults to False.
         download_full (bool, optional): Whether the full image (hyperstack) on omero should be written to TIFF. Defaults to False.
         channel (string, optional): Channel name (ignored if `download_full` or `download_original` is set to True). Defaults to None.
         z_stack (int, optional): Z stack (plane) index (ignored if `download_full` or `download_original` is set to True). Defaults to 0.
@@ -633,7 +633,7 @@ if __name__ == "__main__":
         "--frame",
         type=int,
         default=0,
-        help="index of the frame to retrive data for (first frame is 0),"
+        help="index of the frame to retrieve data for (first frame is 0),"
         " ignored with `--download-original` and `--download-full`",
     )
     p.add_argument(
@@ -641,7 +641,7 @@ if __name__ == "__main__":
         "--z-stack",
         type=int,
         default=0,
-        help="index of the slice to retrive data for (first slice is 0),"
+        help="index of the slice to retrieve data for (first slice is 0),"
         " ignored with `--download-original` and `--download-full`",
     )
     p.add_argument("--skip-failed", action="store_true")

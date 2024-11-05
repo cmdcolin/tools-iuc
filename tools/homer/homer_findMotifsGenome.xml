@@ -29,7 +29,7 @@ findMotifsGenome.pl
 '${input_name}'
 ## Genome:
 '$genome_file'
-## Ouptut folder:
+## Output folder:
 '${output}'
 ## Options
 #if str( $genome.source ) == "preparsed":

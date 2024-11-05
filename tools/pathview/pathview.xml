@@ -151,7 +151,7 @@ ls .
             </when>
             <when value="false"/>
         </conditional>
-        <param name="multi_state" type="boolean" checked="true" label="Should multiple states of gene or compond data be intergrated and plotted in the same graph?" help="Gene or compound nodes will be sliced into multiple pieces corresponding to the number of states in the data" />
+        <param name="multi_state" type="boolean" checked="true" label="Should multiple states of gene or compond data be integrated and plotted in the same graph?" help="Gene or compound nodes will be sliced into multiple pieces corresponding to the number of states in the data" />
         <param name="match_data" type="boolean" checked="true" label="Are the gene and compound data paired?" help="When let sample sizes of gene and compound be m and n, when m>n, extra columns of NA's (mapped to no color) will be added to make the sample size the same" />
         <section name="out" title="Output Options" expanded="true">
             <conditional name="kegg_native">
@@ -165,7 +165,7 @@ ls .
                 </when>
                 <when value="FALSE">
                     <param name="same_layer" type="boolean" checked="true" label="Plot on same layer?" help="If yes, edge/node type legend will be plotted in the same page." />
-                    <param name="split_group" type="boolean" checked="false" label="Split node groups into individual nodes?" help="Each split member nodes inherits all edges from the node group. This option also effects most metabolic pathways even without group nodes defined orginally. For these pathways, genes involved in the same reaction are grouped automatically when converting reactions to edges unless split.group is true." />
+                    <param name="split_group" type="boolean" checked="false" label="Split node groups into individual nodes?" help="Each split member nodes inherits all edges from the node group. This option also effects most metabolic pathways even without group nodes defined originally. For these pathways, genes involved in the same reaction are grouped automatically when converting reactions to edges unless split.group is true." />
                     <param name="expand_node" type="boolean" checked="false" label="Expand multiple-gene nodes into single-gene nodes?" help="Each expanded single-gene nodes inherits all edges from the original multiple-gene node. This option is not effective for most metabolic pathways where it conflits with converting reactions to edges." />
                     <param name="sign_pos" type="select" label="Position of pathview signature">
                         <option value="bottomright" selected="true">Bottom right</option>
@@ -330,7 +330,7 @@ This package can be divided into four functional modules: the Downloader, Parser
 Mostly importantly, pathview maps and renders user data on relevant pathway graphs. 
 
 Notice that KEGG requires subscription for FTP access since May 2011. 
-However,Pathview downloads individual pathway graphs and data files through API or HTTP access, which is freely available (for academic and non-commerical uses).
+However,Pathview downloads individual pathway graphs and data files through API or HTTP access, which is freely available (for academic and non-commercial uses).
 Pathview uses KEGGgraph (Zhang and Wiemann, 2009) when parsing KEGG xml data files. 
 
 

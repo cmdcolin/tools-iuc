@@ -48,7 +48,7 @@ class GetBaktaDatabaseInfo:
     def get_data_table_format(self):
         """
         Skeleton of a data_table format
-        return: a data table formated for json output
+        return: a data table formatted for json output
         """
         self.data_table_entry = {"data_tables": {self.data_table_name: {}}}
         return self.data_table_entry

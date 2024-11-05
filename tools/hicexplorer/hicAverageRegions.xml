@@ -27,7 +27,7 @@
         <param argument="--regions" type="data" format="bed" label="Regions to average" help="BED file which stores a list of regions that are summed and averaged." />
 
         <conditional name="rangeFormat_conditional">
-            <param name="rangeFormat_selector" type="select" label="List of chromosomes or a BED file containg regions">
+            <param name="rangeFormat_selector" type="select" label="List of chromosomes or a BED file containing regions">
                 <option value="optionGenomicUnits">Range in genomic units</option>
                 <option value="optionBinUnits" selected="True">Range in bin (matrix indices) units</option>
             </param>

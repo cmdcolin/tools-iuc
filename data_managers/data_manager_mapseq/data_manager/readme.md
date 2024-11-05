@@ -1,11 +1,11 @@
 # test data explained
 
-## the tool will expect one file each with the corresponing endings in the DB folder
+## the tool will expect one file each with the corresponding endings in the DB folder
 
 Trimmed version of: 
 * OTU table (id for each taxon) (*.otu)
 * Ref. fasta DB (*.fasta)
-* Taxan assignemnt of each ref. DB sequence (*.txt)
+* Taxan assignment of each ref. DB sequence (*.txt)
 * clustering of the ref. sequences (starting with 0) corresponding to the ref. sequences (*.mscluster)
 
 ## Command to get DBs

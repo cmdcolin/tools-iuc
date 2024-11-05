@@ -26,8 +26,8 @@
             $advanced.convert_to_nexus
             $advanced.convert_values_to_ints
             $advanced.no_minimum_branch_length
-            $advanced.supress_tree_filter
-            $advanced.supress_table_filter
+            $advanced.suppress_tree_filter
+            $advanced.suppress_table_filter
             $advanced.add_branch_length_to_root
     ]]></command>
     <inputs>
@@ -59,10 +59,10 @@
                    label="Convert character state to integers" help="Convert the values for each character state to integers"/>
             <param argument="--no_minimum_branch_length" type="boolean" truevalue="--no_minimum_branch_length" falsevalue="" checked="false"
                    label="No minimum branch length" help="If set, don’t ensure all branches have at least a small but non-zero branch length"/>
-            <param argument="--supress_tree_filter" type="boolean" truevalue="--supress_tree_filter" falsevalue="" checked="false"
-                   label="Supress tree filter" help="If set, don’t filter out tree tips that aren’t listed in the trait table"/>
-            <param argument="--supress_table_filter" type="boolean" truevalue="--supress_table_filter" falsevalue="" checked="false"
-                   label="Supress table filter" help="If set, don’t filter out trait table entries that aren’t listed in the tree"/>
+            <param argument="--suppress_tree_filter" type="boolean" truevalue="--suppress_tree_filter" falsevalue="" checked="false"
+                   label="Suppress tree filter" help="If set, don’t filter out tree tips that aren’t listed in the trait table"/>
+            <param argument="--suppress_table_filter" type="boolean" truevalue="--suppress_table_filter" falsevalue="" checked="false"
+                   label="Suppress table filter" help="If set, don’t filter out trait table entries that aren’t listed in the tree"/>
             <param argument="--add_branch_length_to_root" type="boolean" truevalue="--add_branch_length_to_root" falsevalue="" checked="false"
                    label="Add branch to root" help="Add a short branch to the root node (this is required by some phylogeny programs). The length of the branch is determined by the min_branch_length option"/>
         </section>
@@ -97,7 +97,7 @@
 <![CDATA[
 @PICRUST_OVERVIEW@
 
-**Command Documenation**
+**Command Documentation**
 
 This module does numerous formatting and checks to the reference tree and the trait tables. The following steps are done for both the marker gene copy number table and functional trait copy number table:
 

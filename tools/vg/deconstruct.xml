@@ -57,7 +57,7 @@ $path_traversals  ## -e
             help="from `vg snarls` to avoid recomputing" />
 
         <param argument="--path-traversals" type="boolean" truevalue="--path-traversals" falsevalue="" checked="false"
-            label="Only consider traversals that correspond to paths in the grpah" />
+            label="Only consider traversals that correspond to paths in the graph" />
     </inputs>
     <outputs>
         <data name="output" format="vcf" />

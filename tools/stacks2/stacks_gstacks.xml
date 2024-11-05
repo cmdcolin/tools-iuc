@@ -353,7 +353,7 @@ reads to the locus, and call SNPs.
 
 For reference-aligned analyses, this program will build loci from the single
 and/or paired-end reads before calling SNPs. The single- and paired-end reads
-must be aligned and stored together in the intput BAM or SAM files and the
+must be aligned and stored together in the input BAM or SAM files and the
 reads must be sorted. The gstacks program will detect if single- or paired-end
 reads are present.
 

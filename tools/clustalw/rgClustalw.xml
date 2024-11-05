@@ -118,7 +118,7 @@ $tree_calculation.TOSSGAPS
     </outputs>
     <tests>
         <test>
-            <param name="input" value="rgClustal_testin.fasta" />
+            <param name="input" value="rgClustal_testing.fasta" />
             <param name="outform" value="fasta" />
             <conditional name="type_conditional">
                 <param name="dnarna" value="DNA"/>
@@ -126,11 +126,11 @@ $tree_calculation.TOSSGAPS
             <param name="mode" value="complete" />
             <param name="out_order" value="ALIGNED" />
             <output name="output" file="rgClustal_testout.fasta" ftype="fasta" />
-            <output name="dnd" file="rgClustal_testin.dnd" ftype="nhx" />
+            <output name="dnd" file="rgClustal_testing.dnd" ftype="nhx" />
         </test>
         <!-- Test DNA options-->
         <test expect_num_outputs="2">
-            <param name="input" value="rgClustal_testin.fasta"/>
+            <param name="input" value="rgClustal_testing.fasta"/>
             <param name="out_order" value="ALIGNED"/>
             <section name="tree_calculation">
                 <param name="OUTPUTTREE" value="PHYLIP"/>
@@ -164,7 +164,7 @@ $tree_calculation.TOSSGAPS
         </test>
         <!-- Test protein options and fast algorithm-->
         <test expect_num_outputs="2">
-            <param name="input" value="rgClustal_testin_prot.fasta"/>
+            <param name="input" value="rgClustal_testing_prot.fasta"/>
             <param name="out_order" value="ALIGNED"/>
             <section name="tree_calculation">
                 <param name="OUTPUTTREE" value="PHYLIP"/>

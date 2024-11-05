@@ -32,7 +32,7 @@ def get_dbkey(dnaprints_dict, key, s):
 
 
 def get_dnaprints_dict(dnaprint_fields):
-    # A dndprint_fields entry looks something liek this.
+    # A dndprint_fields entry looks something like this.
     # [['AF2122', '/galaxy/tool-data/vsnp/AF2122/dnaprints/NC_002945v4.yml']]
     dnaprints_dict = {}
     for item in dnaprint_fields:

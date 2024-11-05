@@ -65,7 +65,7 @@
                 <param name="files" format="tabular" type="data" multiple="true" label="Input bacteria and archaea meatdata files here" help="When using this please input the metadata files uncompressed!"/>
             </when>
         </conditional>
-        <param name="mode" type="select" label="Select the type of mapping" help="Choose if you want to map NCBI agaisnt GTDB or the other way around">
+        <param name="mode" type="select" label="Select the type of mapping" help="Choose if you want to map NCBI against GTDB or the other way around">
             <option value="ncbi">NCBI to GTDB</option>
             <option value="gtdb">GTDB to NCBI</option>
         </param>
@@ -167,12 +167,12 @@
 
             **What does this tool**
 
-            This tool was desinged to map the GTDB taxonomy to the NCBI taxonomy since both are using different ID systems.
+            This tool was designed to map the GTDB taxonomy to the NCBI taxonomy since both are using different ID systems.
             This means this tool map either GTDB names to the NCBI names or the other way around. If the names contain prefixes like *s__* the mapped name also will contain there corresponded prefix. If you use the names without prefix then the mapped names also don't contain the prefixes.
 
             **Prefixes**
 
-            The prefixes stand for the taxonomic rank for example s__Bacteroides thetaiotaomicron. If you use them directly with in the file where you list the names which should be queried then you dont need the prefix option but if you use names without them you can either manully include them with the prefix option (read the help section there too) or you can use the tool without them but then you have to check the no-prefix option! This means when you use the no-prefix option s__Bacteroides thetaiotaomicron will not be used in this tool but Bacteroides thetaiotaomicron will work fine!
+            The prefixes stand for the taxonomic rank for example s__Bacteroides thetaiotaomicron. If you use them directly with in the file where you list the names which should be queried then you dont need the prefix option but if you use names without them you can either manually include them with the prefix option (read the help section there too) or you can use the tool without them but then you have to check the no-prefix option! This means when you use the no-prefix option s__Bacteroides thetaiotaomicron will not be used in this tool but Bacteroides thetaiotaomicron will work fine!
             
         ]]>
     </help>

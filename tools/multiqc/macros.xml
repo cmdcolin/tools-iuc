@@ -156,13 +156,13 @@ sp:
                 </conditional>
             </repeat>
             <param name="title" value="Title of the report"/>
-            <param name="comment" value="Commment for the report"/>
+            <param name="comment" value="Comment for the report"/>
             <param name="flat" value="true"/>
             <param name="export" value="true"/>
             <output name="html_report">
                 <assert_contents>
                     <has_text text="Title of the report"/>
-                    <has_text text="Commment for the report"/>
+                    <has_text text="Comment for the report"/>
                     <has_text text="cutadapt_trimmed_sequences_plot"/>
                     <has_text text="All-in-one FASTQ preprocessor"/>
                     <has_text text="fastqc_seq_heatmap_key_t"/>
@@ -547,13 +547,13 @@ sp:
                 </conditional>
             </repeat>
             <param name="title" value="Title of the report"/>
-            <param name="comment" value="Commment for the report"/>
+            <param name="comment" value="Comment for the report"/>
             <param name="flat" value="true"/>
             <param name="export" value="true"/>
             <output name="html_report">
                 <assert_contents>
                     <has_text text="Title of the report"/>
-                    <has_text text="Commment for the report"/>
+                    <has_text text="Comment for the report"/>
                     <has_text text="fastqc_seq_heatmap_key_t"/>
                 </assert_contents>
             </output>
@@ -582,12 +582,12 @@ sp:
                 </conditional>
             </repeat>
             <param name="title" value="Title of the report"/>
-            <param name="comment" value="Commment for the report"/>
+            <param name="comment" value="Comment for the report"/>
             <!-- <param name="flat" value="true"/> -->
             <output name="html_report">
                 <assert_contents>
                     <has_text text="Title of the report"/>
-                    <has_text text="Commment for the report"/>
+                    <has_text text="Comment for the report"/>
                     <has_text text="General Statistics"/>
                     <has_text text="pycoqc_count_plot"/>
                     <has_text text="pycoqc_read_len_plot"/>

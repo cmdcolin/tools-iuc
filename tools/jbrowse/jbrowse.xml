@@ -411,7 +411,7 @@ $trackxml &&
     <conditional name="action">
         <param type="select" label="JBrowse-in-Galaxy Action" name="action_select">
             <option value="create">New JBrowse Instance</option>
-            <option value="update">Update exising JBrowse Instance</option>
+            <option value="update">Update existing JBrowse Instance</option>
         </param>
         <when value="create" />
         <when value="update">

@@ -52,7 +52,7 @@ Rscript '${__tool_directory__}/brew3r.r_script.R'
              </valid>
             </sanitizer>
         </param>
-        <param argument="--filter_unstranded" type="boolean" truevalue="--filter_unstranded" falsevalue="" checked="false" label="Filter unstranded intervals that overlaps genes of both strands" help="Recommanded if you used StringTie on unstranded libraries." />
+        <param argument="--filter_unstranded" type="boolean" truevalue="--filter_unstranded" falsevalue="" checked="false" label="Filter unstranded intervals that overlaps genes of both strands" help="Recommended if you used StringTie on unstranded libraries." />
     </inputs>
     <outputs>
         <data name="output" format="gtf" from_work_dir="output.gtf" label="${tool.name} on ${gtf_to_extend.name} and ${gtf_to_overlap.name}: GTF" />

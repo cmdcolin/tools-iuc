@@ -1,5 +1,5 @@
 <tool id="dexseq_count" name="DEXSeq-Count" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="@PROFILE@">
-    <description>Prepare and count exon abundancies from RNA-seq data</description>
+    <description>Prepare and count exon abundances from RNA-seq data</description>
     <macros>
         <import>macros.xml</import>
     </macros>
@@ -45,7 +45,7 @@
                 <param name="gtffile" type="data" format="gff" label="GTF file"/>
                 <param name="aggregate" type="boolean" checked="True" truevalue="yes" falsevalue="no"
                     label="Aggregate genes with exons?"
-                    help="Indicates whether two or more genes sharing an exon should be merged into an 'aggregate gene'. If 'no', the exons that can not be assiged to a single gene are ignored."/>
+                    help="Indicates whether two or more genes sharing an exon should be merged into an 'aggregate gene'. If 'no', the exons that can not be assigned to a single gene are ignored."/>
             </when>
             <when value="count">
                 <param name="bamfile" type="data" format="bam" label="Input bam file"/>
@@ -101,7 +101,7 @@ The main goal of this tool is to count the number of reads/fragments per exon of
 
 **Inputs**
 
-Mode-preprare: Takes a normal GTF file as input. For example from Ensembl database.
+Mode-prepare: Takes a normal GTF file as input. For example from Ensembl database.
 Mode-count: Inputs are flattened GTF file and BAM file. The flattened GTF file can be generated from 'prepare' mode of this tool.
 
 **Output**

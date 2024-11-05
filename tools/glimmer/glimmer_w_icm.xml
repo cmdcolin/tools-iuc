@@ -1,5 +1,5 @@
 <tool id="glimmer_knowledge_based" name="Glimmer3" version="@WRAPPER_VERSION@">
-    <description>Predict ORFs in prokaryotic genomes (knowlegde-based)</description>
+    <description>Predict ORFs in prokaryotic genomes (knowledge-based)</description>
     <expand macro="bio_tools"/>
     <macros>
         <import>macros.xml</import>
@@ -124,7 +124,7 @@
 
 This is the main program that makes gene predictions based on an interpolated context model (ICM).
 
-The ICM can be generated with extracted CDS from related organisms (ICM builder). If you can't generate an ICM model you can use the non knowlegde-based Glimmer with a de novo prediction.
+The ICM can be generated with extracted CDS from related organisms (ICM builder). If you can't generate an ICM model you can use the non knowledge-based Glimmer with a de novo prediction.
 
 
 **Input**

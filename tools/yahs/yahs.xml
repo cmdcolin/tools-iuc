@@ -218,7 +218,7 @@
             <output name="final_agp_out" file="test_04_scaffolds_final.agp" ftype="agp"/>
             <output name="final_fasta_out" file="test_04_scaffolds_final.fa" ftype="fasta"/>
             <output_collection name="initial_agp_break">
-                <element name="yahs_out_inital_break_01" file="test_04_initial_break.agp" ftype="agp"/>
+                <element name="yahs_out_initial_break_01" file="test_04_initial_break.agp" ftype="agp"/>
             </output_collection>
         </test>
         <!-- TEST 5 -->
@@ -271,7 +271,7 @@
         </test>
     </tests>
     <help><![CDATA[
-        YaHS is scaffolding tool using Hi-C data. It relies on a new algothrim for contig joining detection which considers the topological distribution of Hi-C signals aiming to distingush real interaction signals from mapping nosies. YaHS has been tested in a wide range of genome assemblies. Compared to other Hi-C scaffolding tools, it usually generates more contiguous scaffolds - especially with a higher N90 and L90 statistics. It is also super fast - takes less than 5 minutes to reconstruct the human genome from an assembly of 5,483 contigs with ~45X Hi-C data.
+        YaHS is scaffolding tool using Hi-C data. It relies on a new algothrim for contig joining detection which considers the topological distribution of Hi-C signals aiming to distinguish real interaction signals from mapping nosies. YaHS has been tested in a wide range of genome assemblies. Compared to other Hi-C scaffolding tools, it usually generates more contiguous scaffolds - especially with a higher N90 and L90 statistics. It is also super fast - takes less than 5 minutes to reconstruct the human genome from an assembly of 5,483 contigs with ~45X Hi-C data.
     ]]></help>
     <citations>
         <citation type="doi">10.5281/zenodo.5848772</citation>

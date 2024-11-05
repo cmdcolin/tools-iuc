@@ -40,7 +40,7 @@
       <expand macro="discosnp_inputs" />
       <param argument="-b" type="select" label="Branching strategy">
           <option value="0">variants for which any of the two paths is branching are discarded</option>
-          <option value="1">forbid SNPs for wich the two paths are branching</option>
+          <option value="1">forbid SNPs for which the two paths are branching</option>
           <option value="2">No limitation on branching</option>
       </param>
       <expand macro="discosnp_options" />

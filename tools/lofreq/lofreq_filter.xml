@@ -191,7 +191,7 @@
     </outputs>
     <tests>
         <test>
-            <!-- Mimick lofreq call default filtering -->
+            <!-- Mimic lofreq call default filtering -->
             <param name="invcf" ftype="vcf" value="call-out2.vcf" />
             <conditional name="filter_by_type">
                 <section name="qual">

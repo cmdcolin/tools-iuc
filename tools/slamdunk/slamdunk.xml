@@ -205,7 +205,7 @@ Multimapper recovery
 --------------------
 
 To utilize multimapper recovery, modify the following parameters. You must either choose a separate 3' UTR file or activate filtering
-on the supplied reference file. Will only yield different results than a unique-mapping run by specifying a number > 1 as maximum number of multimapper aligments to consider.
+on the supplied reference file. Will only yield different results than a unique-mapping run by specifying a number > 1 as maximum number of multimapper alignments to consider.
 
 ===================================================  =========================================================
 Parameter  Description

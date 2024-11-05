@@ -40,7 +40,7 @@
             <option value="mask">mask</option>
         </param>
         <conditional name="chromosomeOrRegionFile_conditional">
-            <param name="chromosomeOrRegionFile_selector" type="select" label="List of chromosomes or a BED file containg regions">
+            <param name="chromosomeOrRegionFile_selector" type="select" label="List of chromosomes or a BED file containing regions">
                 <option value="optionChromosomes">Chromosomes</option>
                 <option value="optionRegionFile" selected="True">Region BED file</option>
             </param>

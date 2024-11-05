@@ -78,9 +78,9 @@
                 <param name="seed_length2" type="integer" value="16" label="Seed length 2" min="1"
                       help="Seed length for 2nd mapping iteration. bwa-mem parameter -k"/>
                 <param name="align_score1" type="integer" value="18" min="1"
-                       label="Minimum alignmnet score for 1st mapping iteration" help="bwa-mem parameter '-T'"/>
+                       label="Minimum alignment score for 1st mapping iteration" help="bwa-mem parameter '-T'"/>
                 <param name="align_score2" type="integer" value="16" min="1"
-                       label="Minimum alignmnet score for 2nd mapping iteration" help="bwa-mem parameter '-T'"/>
+                       label="Minimum alignment score for 2nd mapping iteration" help="bwa-mem parameter '-T'"/>
                 <param name="match1" type="integer" value="1" label="Matching score for 1st mapping iteration"/>
                 <param name="mismatch1" type="integer" value="4" label="Mismatch penalty for 1st mapping iteration"/>
                 <param name="match2" type="integer" value="1" label="Matching score for 2nd mapping iteration"/>

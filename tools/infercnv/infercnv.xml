@@ -43,11 +43,11 @@
                                                 #end if
                                                 annotations_file='$cell_annotations', # a description of the cells, indicating the cell type classifications
                                                 #if '$ref_group':
-                                                    ref_group_names=c($ref_group), # a vector containing the classifications of the reference (normal) cells to use for infering cnv
+                                                    ref_group_names=c($ref_group), # a vector containing the classifications of the reference (normal) cells to use for inferring cnv
                                                 #end if
                                                 delim="\t",
                                                 #if $max_cell:
-                                                    max_cells_per_group = $max_cell, #maximun number of cells to use per group. Default=NULL, using all cells defined in the annotations_file. 
+                                                    max_cells_per_group = $max_cell, #maximum number of cells to use per group. Default=NULL, using all cells defined in the annotations_file. 
                                                 #end if
                                                 #if $max_count:
                                                     min_max_counts_per_cell = c($min_count, $max_count), # minimum and maximum counts allowed per cell. Any cells outside this range will be removed from the counts matrix. 
@@ -225,13 +225,13 @@
             </when>
         </conditional>
         <param name="cell_annotations" type="data" format="tabular" label="Cell annotations file" help="A description of the cells, indicating the cell type classifications" />
-        <param name="ref_group" type="text" label="Reference group names" optional="true" help="A vector containing the classifications of the reference (normal) cells to use for infering cnv">
+        <param name="ref_group" type="text" label="Reference group names" optional="true" help="A vector containing the classifications of the reference (normal) cells to use for inferring cnv">
         <sanitizer>
             <valid initial="string.printable"></valid>
         </sanitizer>
         </param>
         <section name="advanced" title="Advanced parameters">
-            <param name="max_cell" type="integer" min="0" optional="true" label="Maximun number of cells to use per group."/>
+            <param name="max_cell" type="integer" min="0" optional="true" label="Maximum number of cells to use per group."/>
             <param name="min_count" type="integer" min="0" value="100" optional="true" label="Minimum counts allowed per cell."/>
             <param name="max_count" type="integer" min="0" optional="true" label="Maximum counts allowed per cell."/>
             <param name="chr_exclude" type="text" value="&quot;chrX&quot;, &quot;chrY&quot;, &quot;chrM&quot;" label="Chromosomes to exclude" optional="true" help="Chromosomes to exclude from the analysis">
@@ -309,7 +309,7 @@
                 <param name="leiden_resolution_per_chr" type="integer" min="0" value="1" label="Leiden resolution per chr" help="esolution parameter for the Leiden algorithm for the per chromosome subclustering." />
                 <param name="per_chr_hmm_subclusters" type="boolean" truevalue="TRUE" falsevalue="FALSE" checked="false" label="Per chr HMM subclusters" help="Run subclustering per chromosome over all cells combined to run the HMM on those subclusters instead. Only applicable when using leiden subclustering." />
                 <param name="per_chr_hmm_subclusters_references" type="boolean" truevalue="TRUE" falsevalue="FALSE" checked="false" label="Per chr HMM subclusters references" help="Whether the per chromosome subclustering should also be done on references" />
-                <param name="z_score_filter" type="float" min="0" max="1" value="0.8" label="Z score treshold" help="Z-score used as a treshold to filter genes used for subclustering. Applied to remove genes with high expression variability such as MHC genes. " />
+                <param name="z_score_filter" type="float" min="0" max="1" value="0.8" label="Z score threshold" help="Z-score used as a threshold to filter genes used for subclustering. Applied to remove genes with high expression variability such as MHC genes. " />
             </section>
             <section name="denoise" title="Denoising parameters">
                 <param name="denoise" type="boolean" truevalue="TRUE" falsevalue="FALSE" checked="false" label="Denoise" help="Whether to denoise the data" />

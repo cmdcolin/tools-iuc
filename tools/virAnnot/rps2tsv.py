@@ -55,7 +55,7 @@ def _read_xml(options):
             hsp["description"] = aln.hit_def
             hsp["accession"] = aln.accession
             hsp["pfam_id"] = hsp["description"].split(",")[0].replace("pfam", "PF")
-            log.info("Requeting Interpro for " + hsp["pfam_id"])
+            log.info("Requesting Interpro for " + hsp["pfam_id"])
             url = "https://www.ebi.ac.uk/interpro/api/taxonomy/uniprot/entry/pfam/" + hsp["pfam_id"]
             req = request.Request(url)
             try:
@@ -76,7 +76,7 @@ def _read_xml(options):
                         names = list(translation.values())
                         if len(names) > 0:
                             if names[0] == "root":
-                                taxonomy = names[1:]  # remove 'root' at the begining
+                                taxonomy = names[1:]  # remove 'root' at the beginning
                             else:
                                 taxonomy = names
                         else:

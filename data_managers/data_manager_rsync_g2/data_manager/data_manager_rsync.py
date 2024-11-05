@@ -123,7 +123,7 @@ def galaxy_code_get_available_data_tables_entries(trans, dbkey, data_table_names
 
 def rsync_urljoin(base, url):
     # urlparse.urljoin doesn't work correctly for our use-case
-    # probably because it doesn't recognize rhe rsync scheme
+    # probably because it doesn't recognize the rsync scheme
     base = base.rstrip('/')
     url = url.lstrip('/')
     return "%s/%s" % (base, url)
@@ -214,7 +214,7 @@ def load_data_tables_from_url(url=None, site='main', data_table_class=None):
         rsync_sync_to_dir(rsync_urljoin(RSYNC_SERVER, LOCATION_DIR), os.path.abspath(tmp_loc_dir))
 
         new_data_table_text = data_table_text.replace(TOOL_DATA_TABLE_CONF_XML_REPLACE_SOURCE, TOOL_DATA_TABLE_CONF_XML_REPLACE_TARGET % (tmp_loc_dir))
-        data_table_fh = tempfile.NamedTemporaryFile(dir=tmp_dir, prefix='rysnc_data_manager_data_table_conf_', mode="w")
+        data_table_fh = tempfile.NamedTemporaryFile(dir=tmp_dir, prefix='rsync_data_manager_data_table_conf_', mode="w")
         data_table_fh.write(new_data_table_text)
         data_table_fh.flush()
         tmp_data_dir = os.path.join(tmp_dir, 'tool-data')
@@ -277,7 +277,7 @@ def get_available_tables_for_dbkey(trans, dbkey, data_table_names):
     rval = {}
     for name, data_table in data_tables.get('data_tables').get_tables().items():
         if (not data_table_names or name in data_table_names):
-            # TODO: check that columns are similiar
+            # TODO: check that columns are similar
             if not dbkey:
                 entry_getter = data_table.get_named_fields_list()
             else:

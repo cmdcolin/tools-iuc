@@ -69,7 +69,7 @@
             <expand macro="region"/>
             <expand macro="matepairDist"/>
             <param name="primary" type="select" value="no">
-                <label>only primary aligments</label>
+                <label>only primary alignments</label>
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
             </param>
@@ -121,7 +121,7 @@ This tool extracts data (in BAM_ format) from the Short Read Archive (SRA) at th
 .. _collection: https://galaxyproject.org/tutorials/collections/
 .. _link: https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&display=reads
 
-@SRATOOLS_ATTRRIBUTION@
+@SRATOOLS_ATTRIBUTION@
     ]]></help>
     <expand macro="citation"/>
 </tool>
