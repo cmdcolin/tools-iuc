@@ -247,7 +247,7 @@
             </section>
             <output name="polished_fasta" value="polished.fasta"/>
         </test>
-        <!-- Test_5 paired-end without filtering and whitout log file -->
+        <!-- Test_5 paired-end without filtering and without log file -->
         <test expect_num_outputs="1">
             <section name="input">
                 <param name="fasta_file" value="contigs.fa"/>
@@ -266,7 +266,7 @@
             </section>
             <output name="polished_fasta" value="polished.fasta"/>
         </test>
-        <!-- Test_6 paired-end with filter, user defined values and whitout log file -->
+        <!-- Test_6 paired-end with filter, user defined values and without log file -->
         <test expect_num_outputs="1">
             <section name="input">
                 <param name="fasta_file" value="contigs.fa"/>

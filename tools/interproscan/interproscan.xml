@@ -90,7 +90,7 @@ $iprlookup
             </param>
             <when value="false" />
             <when value="true">
-                <param name="applications_licensed" type="select" multiple="True" label="Applications to run" help="Select your programm.">
+                <param name="applications_licensed" type="select" multiple="True" label="Applications to run" help="Select your program.">
                     <option value="Phobius" selected="true">Phobius: combined transmembrane topology and signal peptide predictor</option>
                     <option value="SignalP_GRAM_NEGATIVE" selected="false">SignalP (gram-negative): signal peptide cleavage sites in amino acid sequences for gram-negative prokaryotes</option>
                     <option value="SignalP_EUK" selected="true">SignalP (eukaryotes): signal peptide cleavage sites in amino acid sequences for eukaryotes</option>

@@ -247,8 +247,8 @@ save='plot.$format'
                     </param>
                     <when value="True">
                         <expand macro="param_markerset"/>
-                        <param name="per_celltype" type="boolean" truevalue="True" falsevalue="False" label="Wether to return columns with per cell type max correlations" checked="true"/>
-                        <param name="per_marker" type="boolean" truevalue="True" falsevalue="False" label="Wether to return columns with per marker max correlations" checked="true"/>
+                        <param name="per_celltype" type="boolean" truevalue="True" falsevalue="False" label="Whether to return columns with per cell type max correlations" checked="true"/>
+                        <param name="per_marker" type="boolean" truevalue="True" falsevalue="False" label="Whether to return columns with per marker max correlations" checked="true"/>
                         <conditional name="select_per_celltype_min_mean">
                             <param name="use_per_celltype_min_mean" type="select" label="Add a column for correlation per cell type that only takes into accounts markers with mean expression > per_celltype_min_mean">
                                 <option value="False">No</option>
@@ -297,8 +297,8 @@ save='plot.$format'
             <when value="plot_marker_corr">
                 <expand macro="param_markerset"/>
                 <expand macro="set_ids"/>
-                <param name="per_celltype" type="boolean" truevalue="True" falsevalue="False" label="Wether to return columns with per cell type max correlations" checked="true"/>
-                <param name="per_marker" type="boolean" truevalue="True" falsevalue="False" label="Wether to return columns with per marker max correlations" checked="true"/>
+                <param name="per_celltype" type="boolean" truevalue="True" falsevalue="False" label="Whether to return columns with per cell type max correlations" checked="true"/>
+                <param name="per_marker" type="boolean" truevalue="True" falsevalue="False" label="Whether to return columns with per marker max correlations" checked="true"/>
                 <conditional name="select_per_celltype_min_mean">
                     <param name="use_per_celltype_min_mean" type="select" label="Add a column for correlation per cell type that only takes into accounts markers with mean expression > per_celltype_min_mean">
                         <option value="False">No</option>

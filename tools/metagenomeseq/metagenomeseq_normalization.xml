@@ -125,7 +125,7 @@ Info
 
 ::
   
-  Cumulative sum scaling based upon percentile selection. You can manually specificy the percentile or calculate it using cumNormStat or cumNormStatFast.
+  Cumulative sum scaling based upon percentile selection. You can manually specify the percentile or calculate it using cumNormStat or cumNormStatFast.
 
 Inputs
 ------

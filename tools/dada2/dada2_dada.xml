@@ -167,7 +167,7 @@ Usage
 You can decide to compute the data jointly or in batches.
 
 - Jointly (Process "samples in batches"=no): A single Galaxy job is started that processes all fastq data sets jointly. You may chose different pooling strategies: if the started dada job processes the samples individually, pooled, or pseudo pooled.
-- In batches (Process "samples in batches"=yes): A separate Galaxy job is started for earch fastq data set. This is equivalent to joint processing and choosing to process samples individually.
+- In batches (Process "samples in batches"=yes): A separate Galaxy job is started for each fastq data set. This is equivalent to joint processing and choosing to process samples individually.
 
 While the single dada job (in case of joint processing) can use multiple cores on one compute node, batched processing distributes the work on a number of jobs (equal to the number of input fastq data sets) where each can use multiple cores. Hence, if you intend to or need to process the data sets individually, batched processing is more efficient -- in particular if Galaxy has access to a larger number of compute resources.
 

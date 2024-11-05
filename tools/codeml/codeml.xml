@@ -167,7 +167,7 @@ codeml '$codeml_ctl'
                 <option value="4">4 : both different rate ratio parameters and different frequency parameters for different genes </option>
             </param>
 
-            <param argument="fix_kappa" type="select" label="Specifies wether kappa in  K80, F84, or HKY85 is fixed or estimated">
+            <param argument="fix_kappa" type="select" label="Specifies whether kappa in  K80, F84, or HKY85 is fixed or estimated">
                 <option value="0" selected="true">0 : estimated</option>
                 <option value="1">1 : fixed (the next parameter below)</option>
             </param>

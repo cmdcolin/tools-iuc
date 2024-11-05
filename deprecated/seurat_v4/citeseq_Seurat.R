@@ -108,7 +108,7 @@ if (showcode == TRUE) print("zxcv")
 #+ echo = `showcode`, warning = `warn`, message = F
 Seurat::DefaultAssay(seuset) <- "RNA"
 
-if (showcode == TRUE && vlnfeat == TRUE) print("Raw data vizualization")
+if (showcode == TRUE && vlnfeat == TRUE) print("Raw data visualization")
 #+ echo = `showcode`, warning = `warn`, include=`vlnfeat`
 if (vlnfeat == TRUE) {
     print(Seurat::VlnPlot(object = seuset, features = c("nFeature_RNA", "nCount_RNA")))

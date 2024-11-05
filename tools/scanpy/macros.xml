@@ -726,7 +726,7 @@ header=None
         <param argument="use_raw" type="boolean" truevalue="True" falsevalue="@FALSEVALUE@" checked="false" label="Use 'raw' attribute of input if present"/>
     </xml>
     <xml name="param_dendrogram">
-        <param argument="dendrogram" type="boolean" truevalue="True" falsevalue="False" checked="false" label="Compute and plot a dendrogram?" help="groupby categories are reordered accoring to the dendrogram order. If groups of var_names are set and those groups correspond to the groupby categories, those groups are also reordered. The ‘person’ method is used to compute the pairwise correlation between categories using all var_names in raw if use_raw is None, otherwise all adata.var_names are used. The linkage method used is complete."/>
+        <param argument="dendrogram" type="boolean" truevalue="True" falsevalue="False" checked="false" label="Compute and plot a dendrogram?" help="groupby categories are reordered according to the dendrogram order. If groups of var_names are set and those groups correspond to the groupby categories, those groups are also reordered. The ‘person’ method is used to compute the pairwise correlation between categories using all var_names in raw if use_raw is None, otherwise all adata.var_names are used. The linkage method used is complete."/>
     </xml>
     <xml name="pl_var_group_positions">
         <repeat name="var_group_positions" title="Group of variables to highlight" help="This will draw a 'bracket' on top of the plot between the given start and end positions. If a label is given, it will be added on top of the bracket. ">

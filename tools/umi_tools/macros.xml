@@ -431,7 +431,7 @@ count for the gene.
     Cluster UMIs as above. For each cluster, select the node (UMI)
     with the highest counts. Visit all nodes one edge away. If all
     nodes have been visited, stop. Otherwise, repeat with remaining
-    nodes until all nodes have been visted. Each step
+    nodes until all nodes have been visited. Each step
     defines a read group.
 
 - directional (default)

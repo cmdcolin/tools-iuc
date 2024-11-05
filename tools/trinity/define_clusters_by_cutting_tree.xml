@@ -75,7 +75,7 @@
     <help>
 <![CDATA[
 Trinity_ assembles transcript sequences from Illumina RNA-Seq data.
-This tool partitions the differentially expressed genes into gene clusters with similar expression patterns by one of several available methods, once differential expression analyses have been runned. It is a companion tool for the tool 'Extract and cluster differentially expressed transcripts from a Trinity assembly'.
+This tool partitions the differentially expressed genes into gene clusters with similar expression patterns by one of several available methods, once differential expression analyses have been run. It is a companion tool for the tool 'Extract and cluster differentially expressed transcripts from a Trinity assembly'.
 
 **Inputs**
 

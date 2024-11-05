@@ -9,7 +9,7 @@
         <!-- Anything other than zero is an error -->
         <exit_code range="1:" />
         <exit_code range=":-1" />
-        <!-- In case the return code has not been set propery check stderr too -->
+        <!-- In case the return code has not been set property check stderr too -->
         <regex match="Error:" />
         <regex match="Exception:" />
     </stdio>

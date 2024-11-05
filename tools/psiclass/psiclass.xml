@@ -52,7 +52,7 @@
         </conditional>
         <param argument="-c" type="float" name="subexonClassifier" min="0" max="1" value="0.05" label="Subexon classifier score threshold" 
             help="Only use the subexons with classifier score minor or equal than the given number" />
-        <param argument="--sa" name="intronCoverage" type="float" min="0" value="0.5" label="Minimum retained intron converage" 
+        <param argument="--sa" name="intronCoverage" type="float" min="0" value="0.5" label="Minimum retained intron coverage" 
             help="Minimum average number of supported read for retained introns" />
         <param argument="--vd" name="transcriptCoverage" type="float" min="0" value="1" label="Minimum transcript coverage" 
             help="Minimum average coverage depth of a transcript to be reported" />

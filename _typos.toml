@@ -5,6 +5,7 @@ binary = false
 check-filename = false
 
 [default.extend-words]
+predicat = "predicat"
 clen = "clen"
 nd = "nd"
 fo = "fo"

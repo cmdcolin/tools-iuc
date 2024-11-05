@@ -15,7 +15,7 @@ gx-fastq-to-tabular '$input_file' '$output_file' $descr_columns '${input_file.ex
     ]]></command>
     <inputs>
         <param name="input_file" type="data" format="fastqsanger,fastqcssanger,fastqillumina,fastqsolexa,fastqsanger.gz,fastqcssanger.gz,fastqillumina.gz,fastqsolexa.gz,fastqsanger.bz2,fastqcssanger.bz2,fastqillumina.bz2,fastqsolexa.bz2" label="FASTQ file to convert" />
-        <param name="descr_columns" type="integer" min="1" value="1" label="How many columns to divide title string into?" help="Typically 2 to take the ID (first word) and decription (rest) as two columns, or 1 to give a single column" />
+        <param name="descr_columns" type="integer" min="1" value="1" label="How many columns to divide title string into?" help="Typically 2 to take the ID (first word) and description (rest) as two columns, or 1 to give a single column" />
     </inputs>
     <outputs>
         <data name="output_file" format="tabular" />

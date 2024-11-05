@@ -31,7 +31,7 @@
 #'    stop = stop position (integer)
 #' 	\item{duplication(start,stop)} Genomic duplication. start = start position (integer);
 #'    stop = stop position (integer)
-#' 	\item{insertion(start,variant)} Genomic insertion. start = position immediately preceeding 
+#' 	\item{insertion(start,variant)} Genomic insertion. start = position immediately preceding 
 #'    the insertion (integer); seq = inserted nucleotide sequence [ACGT]+
 #' 	\item{delins(start,stop,variant)} Genomic deletion and insertion. start = start position (integer); 
 #'    stop = stop position relative to the reference (integer); seq = inserted nucleotide sequence [ACGT]+
@@ -165,7 +165,7 @@ print.hgvs.builder.g <- function() {
 #'    stop = stop position (integer); startOffset = offset from the start position when
 #'    crossing exon-intron borders (integer, defaults to 0); stopOffset = offset from the 
 #'    stop position when crossing exon-intron borders (integer, defaults to 0)
-#' 	\item{insertion(start,variant,startOffset=0)} CDS insertion. start = position immediately preceeding 
+#' 	\item{insertion(start,variant,startOffset=0)} CDS insertion. start = position immediately preceding 
 #'    the insertion (integer); seq = inserted nucleotide sequence [ACGT]+ ; 
 #'    startOffset = offset from the start position when crossing exon-intron borders 
 #'    (integer, defaults to 0)
@@ -325,7 +325,7 @@ print.hgvs.builder.c <- function() {
 #' 	\item{duplication(startPos,startAA,endPos,endAA)} AA duplication. startPos = start position (integer);
 #'    startAA = start amino acid in one-letter or three-letter code;
 #'    endPos = stop position (integer); endAA = start amino acid in one-letter or three-letter code
-#' 	\item{insertion(leftPos,leftAA,rightAA,seq)} AA insertion. leftPos = position immediately preceeding 
+#' 	\item{insertion(leftPos,leftAA,rightAA,seq)} AA insertion. leftPos = position immediately preceding 
 #'    the insertion (integer); leftAA = corresponding amino acid in one-letter or three-letter code;
 #'    rightAA = amino acid to the right of the insertion, in one-letter or three-letter code;
 #'    seq = inserted amino acid sequence, given as a character vector containing the individual

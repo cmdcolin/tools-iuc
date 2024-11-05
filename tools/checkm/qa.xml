@@ -484,7 +484,7 @@ Output in function of selection output format
 2. Extended summary of bin quality (includes GC, genome size, coding density, ...)
 3. Summary of bin quality for increasingly basal lineage-specific marker sets
     Node Id: unique id of internal node in genome tree from which lineage-specific markers were inferred
-4. ist of marker genes for each bin along with the number of times each marker was identified
+4. List of marker genes for each bin along with the number of times each marker was identified
     Node Id: unique id of internal node in genome tree from which lineage-specific markers were inferred
     Marker lineage: indicates lineage used for inferring marker set
     Useful for identifying lineage-specific gene loss or duplication

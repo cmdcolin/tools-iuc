@@ -371,7 +371,7 @@ for the TaxIDs assigned,the LENgth of the read, the SCOre given to the assignmen
   1. You can choose a filter for read quality specifically on the control samples
   2. You cans specify the minimum taxa value to avoid collapsing one level into parent
   3. A summary option is available produce a summary file
-     Some other options are available and explicite in the more advanced panel of the tool
+     Some other options are available and explicit in the more advanced panel of the tool
 
 
 rcf - Release 1.8.1 - Mar 2022

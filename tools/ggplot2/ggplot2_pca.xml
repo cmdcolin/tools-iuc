@@ -350,7 +350,7 @@ This tool generates a Principal component analysis (PCA) for a given table using
 
 **Example**
 
-**WARNING:** Be carefull when selecting row names in the second option because the grouping elements do not update automatically before executing the script. This means that columns have to be chosen as if the row name column was already be removed.
+**WARNING:** Be careful when selecting row names in the second option because the grouping elements do not update automatically before executing the script. This means that columns have to be chosen as if the row name column was already be removed.
 
 **Example for row names in table**
 

@@ -557,7 +557,7 @@ one works better.
 - log: a log file recording the core steps of MaxBin algorithm
 - abundances (only if reads are used as input): a summary file describing which contigs are being classified into which bin
 - marker: marker gene presence numbers for each bin. This table is ready to be plotted by R or other 3rd-party software.
-- marker plot (anly present if selected in the advanced options): visualization of the marker gene presence numbers using R. Will only appear if -plotmarker is specified.
+- marker plot (only present if selected in the advanced options): visualization of the marker gene presence numbers using R. Will only appear if -plotmarker is specified.
 - unclassified sequences: this file stores all sequences that pass the minimum length threshold but are not classified successfully.
 - to short sequences: this file stores all sequences that do not meet the minimum length threshold.
 - markers prediced for bins: these data sets store all markers predicted from the individual bins.

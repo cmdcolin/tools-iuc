@@ -601,7 +601,7 @@ MAQ...
 MAQ...
 
 **Skip steps**
-Some steps could be skiped:
+Some steps could be skipped:
 - skip-trna           Skip tRNA detection & annotation
 - skip-tmrna          Skip tmRNA detection & annotation
 - skip-rrna           Skip rRNA detection & annotation

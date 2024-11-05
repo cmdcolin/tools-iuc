@@ -21,7 +21,7 @@
         <conditional name="voc_source">
             <param name="choice" type="select"
                    label="Source of lineage definitions"
-                   help="Cojac detects lineage evidence based on lineage mutation patterns deined in tool-specific yaml format. You can choose between the (possibly outdated) definitions shipped with the tool or definitions provided as a collection of yaml datasets in your history. See the tool help below for more details.">
+                   help="Cojac detects lineage evidence based on lineage mutation patterns defined in tool-specific yaml format. You can choose between the (possibly outdated) definitions shipped with the tool or definitions provided as a collection of yaml datasets in your history. See the tool help below for more details.">
                 <option value="builtin">Lineage definitions shipped with the tool</option>
                 <option value="custom">YAML dataset collection in history</option>
             </param>

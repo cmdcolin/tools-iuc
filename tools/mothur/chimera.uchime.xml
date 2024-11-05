@@ -124,7 +124,7 @@ echo 'chimera.uchime(
             help="number of chunks to extract from the query sequence when searching for parents.  Default 4."/>
         <param argument="minchunk" type="integer" value="64" min="0" label="minchunk - minimum length of a chunk" help="Default 64"/>
         <param argument="maxp" type="integer" value="2" min="0" label="maxp - maximum number of candidate parents to consider"
-            help="increasing maxp gives only a very small improvement in sensivity but tends to increase the error rate quite a bit. Default 2"/>
+            help="increasing maxp gives only a very small improvement in sensitivity but tends to increase the error rate quite a bit. Default 2"/>
         <param argument="minlen" type="integer" value="10" min="0" label="minlen - minimum unaligned sequence length"
             help="Applies to both query and reference sequences. Default 10"/>
         <param argument="maxlen" type="integer" value="10000" min="0" label="maxlen - maximum unaligned sequence length"

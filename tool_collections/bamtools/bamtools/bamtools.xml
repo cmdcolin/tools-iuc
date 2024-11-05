@@ -130,7 +130,7 @@
             </when>
             <when value="revert">
                 <param name="keepDuplicate" type="boolean" truevalue="-keepDuplicate" falsevalue="" label="Keep duplicates marked" help="Do not remove duplicate marks" />
-                <param name="keepQualities" type="boolean" truevalue="-keepQualities" falsevalue="" label="Keep base qualities" help="Do not replace qualities with contect of OQ tag" />
+                <param name="keepQualities" type="boolean" truevalue="-keepQualities" falsevalue="" label="Keep base qualities" help="Do not replace qualities with content of OQ tag" />
             </when>
             <!--
             <when value="sort">

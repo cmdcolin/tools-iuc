@@ -169,9 +169,9 @@
         #if $chaining.chain:
             '${chaining.chain}'
         #end if
-        #if str( $chaining.chaning_penalties.chaning_penalties_selector ) == "yes":
-            #if $chaining.chaning_penalties.diag and $chaining.chaning_penalties.anti:
-                '--chain=${chaining.chaning_penalties.diag},${chaining.chaning_penalties.anti}'
+        #if str( $chaining.chaining_penalties.chaining_penalties_selector ) == "yes":
+            #if $chaining.chaining_penalties.diag and $chaining.chaining_penalties.anti:
+                '--chain=${chaining.chaining_penalties.diag},${chaining.chaining_penalties.anti}'
             #end if
         #end if
 
@@ -447,8 +447,8 @@
         </section>
         <section name="chaining" expanded="false" title="Chaining">
             <param type="boolean" truevalue="--chain" checked="false" argument="--chain" label="Perform chaining of HSPs with no penalties"/>
-            <conditional name="chaning_penalties">
-                <param name="chaning_penalties_selector" type="select" display="radio" argument="--chain=" label="Perform chaining with penalties">
+            <conditional name="chaining_penalties">
+                <param name="chaining_penalties_selector" type="select" display="radio" argument="--chain=" label="Perform chaining with penalties">
                     <option value="yes">Yes</option>
                     <option value="no" selected="true">No</option>
                 </param>

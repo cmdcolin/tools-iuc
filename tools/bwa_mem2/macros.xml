@@ -112,7 +112,7 @@
 **Read Groups are Important!**
 
 One of the recommended best practices in NGS analysis is adding read group information to BAM files. You can do this directly in BWA interface using the
-**Specify read group information?** widget. If you are not familiar with read groups you shold know that this is effectively a way to tag reads with an additional ID.
+**Specify read group information?** widget. If you are not familiar with read groups you should know that this is effectively a way to tag reads with an additional ID.
 This allows you to combine BAM files from, for example, multiple BWA runs into a single dataset. This significantly simplifies downstream processing as
 instead of dealing with multiple datasets you only have to handle only one. This is possible because the read group information allows you to identify
 data from different experiments even if they are combined in one file. Many downstream analysis tools such as variant callers (e.g., FreeBayes or Naive Variant Caller

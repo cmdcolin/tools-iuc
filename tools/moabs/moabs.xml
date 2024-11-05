@@ -569,7 +569,7 @@ The comparison result file can be reused for DMR calling.
 
 -----
 
-BAM files are intermediate mapping results of input reads to the referene
+BAM files are intermediate mapping results of input reads to the reference
 genome. These BAM files can be reused in downstream methylation analysis.
 
 -----

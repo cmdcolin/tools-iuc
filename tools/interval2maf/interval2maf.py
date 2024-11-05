@@ -103,7 +103,7 @@ def __main__():
     else:
         maf_utilities.tool_fail("Desired source MAF type has not been specified.")
 
-    # Create MAF writter
+    # Create MAF writer
     out = bx.align.maf.Writer(open(output_file, "w"))
 
     # Iterate over input regions

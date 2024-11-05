@@ -179,7 +179,7 @@ if __name__ == "__main__":
 
         # In the final report, the ids of clusters with fewer members than
         # args.min_cluster_size will be masked with "-".
-        # The remaining cluster ids will be renumbered to start fom 1.
+        # The remaining cluster ids will be renumbered to start from 1.
         # This has to be done for each clustering resulting from the
         # user-specified cut_values.
         cluster_member_counts = [Counter() for _ in cut_values]

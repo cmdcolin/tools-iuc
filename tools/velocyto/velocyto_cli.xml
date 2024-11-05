@@ -9,7 +9,7 @@
       <!-- Anything other than zero is an error -->
       <exit_code level="fatal" range="1:"/>
       <exit_code level="fatal" range=":-1"/>
-      <!-- In case the return code has not been set propery check stderr too -->
+      <!-- In case the return code has not been set property check stderr too -->
       <regex level="fatal" match="Error:" source="both" />
       <regex level="fatal" match="Exception:" source="both" />
       <regex level="fatal_oom" match="Can't calloc" source="both" />

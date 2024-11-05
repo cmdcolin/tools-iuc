@@ -58,7 +58,7 @@ echo 'filter.shared(
         <param argument="minnumsamples" type="integer" value="0" min="0" label="minnumsamples - indicate the minimum number of samples present in an OTU"
             help="If the number of samples present falls below the minimum, the OTU is removed"/>
         <param argument="minpercentsamples" type="integer" value="0" min="0" max="100" label="minpercentsamples - indicate the minimum percent of sample present in an OTU"
-            help="For example, if the total number of samples is 10, the number present is 3, and the minpercentsamples=50. The OTU's precent of samples is 0.333,
+            help="For example, if the total number of samples is 10, the number present is 3, and the minpercentsamples=50. The OTU's percent of samples is 0.333,
             the minimum is 0.50, so the OTU will be removed (Default=0)"/>
         <param argument="mintotal" type="integer" value="0" min="0" max="100" label="mintotal - indicate the minimum abundance required for a given OTU"
             help="If abundance across all samples falls below the minimum, the OTU is removed"/>

@@ -187,7 +187,7 @@
     <help>
 <![CDATA[
 Trinity_ assembles transcript sequences from Illumina RNA-Seq data.
-This tool extracts the transcripts that are most differentially expressed (most significant FDR and fold-changes), once differential expression analyses have been runned.
+This tool extracts the transcripts that are most differentially expressed (most significant FDR and fold-changes), once differential expression analyses have been run.
 
 **Inputs**
 

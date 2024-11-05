@@ -143,7 +143,7 @@ Output
     pdf("xxx.pdf")     #starts the graphics device driver for producing PDF graphics
     x &lt;- seq(5,100,5)  #resampling percentage (5,10,15,...,100)
     rpkm &lt;- c(32.95,35.43,35.15,36.04,36.41,37.76,38.96,38.62,37.81,38.14,37.97,38.58,38.59,38.54,38.67, 38.67,38.87,38.68,  38.42,  38.23)  #Paste RPKM values calculated from each subsets
-    scatter.smooth(x,100*abs(rpkm-rpkm[length(rpkm)])/(rpkm[length(rpkm)]),type="p",ylab="Precent Relative Error",xlab="Resampling Percentage")
+    scatter.smooth(x,100*abs(rpkm-rpkm[length(rpkm)])/(rpkm[length(rpkm)]),type="p",ylab="Percent Relative Error",xlab="Resampling Percentage")
     dev.off()          #close graphical device
 
 .. image:: $PATH_TO_IMAGES/saturation_eg.png

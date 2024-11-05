@@ -65,7 +65,7 @@ $genomefiles.append($input_name)
 
     <xml name="quality_assessment_options">
         <conditional name="quality">
-            <param name="source" type="select" label="Genome quality filtering" help="No checkM or quality filtering is not recommened but with bacteriophages or eukaryotes or things where checkM scoring does not work. Will only choose genomes based on length and N50.">
+            <param name="source" type="select" label="Genome quality filtering" help="No checkM or quality filtering is not recommended but with bacteriophages or eukaryotes or things where checkM scoring does not work. Will only choose genomes based on length and N50.">
                 <option value="checkm" selected="true">Run checkM</option>
                 <option value="genomeInfo">Provide quality information on the genome (CSV file)</option>
                 <option value="ignoreGenomeQuality">Don't run checkM or do any quality filtering (--ignoreGenomeQuality) - NOT RECOMMENDED!</option>

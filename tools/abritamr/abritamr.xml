@@ -91,7 +91,7 @@ ${i.element_identifier}	${i}
 *Taming the AMR beast*
 
 abriTAMR is an AMR gene detection pipeline that runs AMRFinderPlus on a single (or list ) of given isolates and collates the results into a table, separating genes identified into functionally relevant groups. abriTAMR is accredited by NATA for use in reporting the presence of reportable AMR genes in Victoria Australia.
-    + Acquired resistance mechanims in the form of point mutations (restricted to subset of species)
+    + Acquired resistance mechanisms in the form of point mutations (restricted to subset of species)
     + Streamlined output.
     + Presence of virulence factors
     </help>

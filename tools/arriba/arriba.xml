@@ -446,7 +446,7 @@
         </data> 
     </outputs>
     <tests>
-        <!-- Test 1 - From exisitng BAM -->
+        <!-- Test 1 - From existing BAM -->
         <test expect_num_outputs="3"> 
             <param name="input" ftype="sam" value="Aligned.out.sam"/>
             <conditional name="genome">
@@ -468,7 +468,7 @@
                 </assert_contents>
             </output>
         </test>
-        <!-- Test 2 - From exisitng BAM with protein_domains and visualization -->
+        <!-- Test 2 - From existing BAM with protein_domains and visualization -->
         <test expect_num_outputs="4"> 
             <param name="input" ftype="sam" value="Aligned.out.sam"/>
             <conditional name="genome">

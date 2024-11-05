@@ -23,7 +23,7 @@
       <!-- Anything other than zero is an error -->
       <exit_code range="1:"/>
       <exit_code range=":-1"/>
-      <!-- In case the return code has not been set propery check stderr too -->
+      <!-- In case the return code has not been set property check stderr too -->
       <regex match="Circos::Error::fatal_error.* called at"/>
     </stdio>
     <version_command>circos --version</version_command>
@@ -458,7 +458,7 @@ cp '$test_case_conf' circos/conf/galaxy_test_case.json ;
                                     <param name="snuggle_tolerance" type="float" value="0.25" min="0" label="Snuggle Tolerance" help="You can also short-circuit precise placement by setting snuggle_tolerance (absolute or relative to label's tangential size). The larger this value, the less precise the placement. (from Circos manual)"/>
                                     <param name="snuggle_link_overlap_test" type="boolean" truevalue="yes" falsevalue="no" checked="yes" label="Snuggle Link Overlap Test" help="If the labels have a link line, you choose to test whether link lines overlap with previous labels using snuggle_link_overlap_test (from Circos manual)"/>
                                     <param name="snuggle_link_overlap_tolerance" type="float" value="2" min="0" label="Snuggle Link Overlap Tolerance" help="The extent of acceptable overlap is set using snuggle_link_overlap_tolerance (from Circos manual)"/>
-                                    <param name="snuggle_refine" type="boolean" truevalue="yes" falsevalue="no" checked="yes" label="Snuggle refine" help="The snuggle_refine parameter toggles an additional check for crossing of links of labels that are placed at similar radial positions. Label pairs whose link lines cross are swapped. This refine parameter is functionaly only if show_links=yes. (from Circos manual)"/>
+                                    <param name="snuggle_refine" type="boolean" truevalue="yes" falsevalue="no" checked="yes" label="Snuggle refine" help="The snuggle_refine parameter toggles an additional check for crossing of links of labels that are placed at similar radial positions. Label pairs whose link lines cross are swapped. This refine parameter is functionally only if show_links=yes. (from Circos manual)"/>
                                 </when>
                                 <when value="no">
                                 </when>

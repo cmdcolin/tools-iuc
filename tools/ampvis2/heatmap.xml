@@ -163,7 +163,7 @@
             </param>
             <when value="no"/>
             <when value="file">
-                <!-- neeed tsv here since tabular does not fill the column_names
+                <!-- need tsv here since tabular does not fill the column_names
                      metadata and therefore the data_meta filter in the functions
                      select would not work-->
                 <param argument="function_data" type="data" format="tsv" label="Tabular dataset with functional information at Genus level" help="See help"/>

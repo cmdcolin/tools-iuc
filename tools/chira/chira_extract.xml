@@ -157,7 +157,7 @@ This tool extracts the best chimeric alignments for each read. User can optional
   * Tabular file containing CRLs information
   * Annotation GTF file
   * Reference fasta files. Provide both in case of split reference.
-  * If your alignments are merged at genomic level in previous step (chira merge), then provide a reference genomic fasta fille.
+  * If your alignments are merged at genomic level in previous step (chira merge), then provide a reference genomic fasta file.
 
 **Output**
 

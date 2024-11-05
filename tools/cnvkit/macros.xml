@@ -246,7 +246,7 @@
           <param argument="--ci" type="boolean" checked="false" truevalue="--ci" falsevalue="" label="confidence interval" help="" />
           <param argument="--pi" type="boolean" checked="false" truevalue="--pi" falsevalue="" label="prediction interval" help="" />
           <param argument="--alpha" type="boolean" checked="false" truevalue="--alpha" falsevalue="" label="alpha" help="" />
-          <param argument="--bootstrap" type="boolean" checked="false" truevalue="--bootstrap" falsevalue="" label="estimate confidence interval" help="number of bootstrp interations" />
+          <param argument="--bootstrap" type="boolean" checked="false" truevalue="--bootstrap" falsevalue="" label="estimate confidence interval" help="number of bootstrap iterations" />
     </xml>
     <xml name="citations">
         <citations>

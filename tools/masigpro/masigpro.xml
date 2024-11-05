@@ -278,7 +278,7 @@ $line
                     help="This function provides visualisation tools for gene expression
                         values in a time course experiment. The function first calls the
                         heatmap function for a general overview of experiment results.
-                        Next a partioning of the data is generated using a clustering
+                        Next a partitioning of the data is generated using a clustering
                         method.  The results of the clustering are visualized both as gene
                         expression profiles extended along all arrays in the experiment,
                         as provided by the plot.profiles function, and as summary
@@ -290,13 +290,13 @@ $line
                             providing the element names of the list
                             ‘c(sig.profiles,coefficients,t.score)’ of their list
                             position (1,2 or 3)." />
-                    <param name="k" type="integer" label="Number of clusters for data partioning" value="9" />
+                    <param name="k" type="integer" label="Number of clusters for data partitioning" value="9" />
                     <param name="print_cluster" type="boolean" truevalue="TRUE" falsevalue="FALSE" checked="true"
                         label="Add cluster information to summary file?"
                         help="Adds columns with the cluster assignment for each gene." />
                     <conditional name="clustering">
                         <param name="clusterMethod" label="Cluster Method" type="select"
-                            help="clustering method for data partioning. Currently
+                            help="clustering method for data partitioning. Currently
                                 ‘hclust’, ‘kmeans’ and ‘Mclust’ are supported">
                             <option selected="True" value="hclust">hclust</option>
                             <option value="kmeans">kmeans</option>

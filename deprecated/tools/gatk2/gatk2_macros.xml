@@ -76,7 +76,7 @@
         #end for
 
         #for $interval_count, $input_interval in enumerate( $gatk_param_type.input_exclude_intervals ):
-            -d "--excludeIntervals" "${input_interval}" "${input_interval.ext}" "input_exlude_intervals_${interval_count}"
+            -d "--excludeIntervals" "${input_interval}" "${input_interval.ext}" "input_exclude_intervals_${interval_count}"
         #end for
 
         -p '--interval_set_rule "${gatk_param_type.interval_set_rule}"'

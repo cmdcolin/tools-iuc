@@ -199,7 +199,7 @@ could also be used instead. The requirement is that those reads should be highly
 Hypo requires the following as input:
    * Short reads/HiFi reads (in FASTA/FASTQ format; can be compressed)
    * Draft contigs (in FASTA/FASTQ format; can be compressed)
-   * Alignments between short reads (or HiFi reads) and the draft (hould contain CIGAR). If long reads are also to be used for polishing, then alignments between long reads and the draft.
+   * Alignments between short reads (or HiFi reads) and the draft (should contain CIGAR). If long reads are also to be used for polishing, then alignments between long reads and the draft.
    * Expected mean coverage of short reads (or HiFi reads) and approximate size of the genome.
 
 In what follows, short reads can be replaced with HiFi reads.

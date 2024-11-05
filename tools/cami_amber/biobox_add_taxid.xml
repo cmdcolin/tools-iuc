@@ -101,7 +101,7 @@
 
         Before using GTDB-Tk output you have to use 2 other tools to map the GTDB names to the NCBI names and then map the NCBI names to there taxids.
         To map the GTDB names to the NCBI names you extract the GTDB names from the summary file and with them you can now use the gtdb_to_taxdum tool!
-        After using the gtdb_to_taxdum tool you have the extract the NCBI names here and then use the tool Taxonkit[name2taxid] to finaly get the taxids.
+        After using the gtdb_to_taxdum tool you have the extract the NCBI names here and then use the tool Taxonkit[name2taxid] to finally get the taxids.
 
         **INPUTS**
         - The CAMI amber biobox file

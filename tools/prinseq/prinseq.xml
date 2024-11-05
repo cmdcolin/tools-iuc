@@ -636,7 +636,7 @@
                             <option value="et" >Equal to</option>
                         </param>
                         <param name="window_quality_trimming_treatments" type="integer" min="0" max="300" value="1" label="Size of the sliding window used to calculated quality score by type" help="To stop at the first base that fails the rule defined, use a window size of 1 (default value). (-trim_qual_window)"/>
-                        <param name="step_quality_trimming_treatments" type="integer" min="0" max="300" value="1" label="Step size used to move the sliding window" help="To move the window over all quality scores without missing any, the step size sould be less or equal to the window size. The default value is 1. (-trim_qual_step)"/>
+                        <param name="step_quality_trimming_treatments" type="integer" min="0" max="300" value="1" label="Step size used to move the sliding window" help="To move the window over all quality scores without missing any, the step size should be less or equal to the window size. The default value is 1. (-trim_qual_step)"/>
                     </when>
                     <when value="false" />
                 </conditional>

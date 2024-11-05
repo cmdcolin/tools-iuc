@@ -93,7 +93,7 @@ if (showcode == TRUE) print("Read in data, generate initial Seurat object")
 counts <- read.delim(params$counts, row.names = 1)
 seuset <- Seurat::CreateSeuratObject(counts = counts, min.cells = min_cells, min.features = min_genes)
 
-if (showcode == TRUE && vlnfeat == TRUE) print("Raw data vizualization")
+if (showcode == TRUE && vlnfeat == TRUE) print("Raw data visualization")
 #+ echo = `showcode`, warning = `warn`, include=`vlnfeat`
 if (vlnfeat == TRUE) {
     print(Seurat::VlnPlot(object = seuset, features = c("nFeature_RNA", "nCount_RNA")))
