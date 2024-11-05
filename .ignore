@@ -1,0 +1,10 @@
+*.out*
+*.fastq
+*.gtf
+*.gff
+*.sam
+*.min.js
+*.gbk
+*.relabund
+./tools/blastxml_to_gapped_gff3/test-data/input.xml
+./tools/variant_analyzer/read2mut.py

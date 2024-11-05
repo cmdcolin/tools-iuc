@@ -1,0 +1,36 @@
+
+
+[default]
+binary = false
+check-filename = false
+
+[default.extend-words]
+clen = "clen"
+nd = "nd"
+fo = "fo"
+slac = "slac"
+lod = "lod"
+ba = "ba"
+mis = "mis"
+nax = "nax"
+LIK = "LIK"
+AKE = "AKE"
+ACN = "ACN"
+RABIT = "RABIT"
+Tiggers = "Tiggers"
+ANC = "ANC"
+SLAC = "SLAC"
+PN = "PN"
+OT = "OT"
+WARNIN = "WARNIN"
+ERRO = "ERRO"
+LOD = "LOD"
+ABD = "ABD"
+BA = "BA"
+NED = "NED"
+Pase = "Pase"
+ALPH = "ALPH"
+thr = "thr"
+hom = "hom"
+nwo = "nwo"
+Ture = "Ture"
