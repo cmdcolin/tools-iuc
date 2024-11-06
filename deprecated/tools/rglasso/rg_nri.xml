@@ -51,7 +51,7 @@
 ### Biometrics, 44(3), 837–845.
 ###
 ### summary.raplot
-###       Produces the NRIs, IDIs, IS, IP, AUCs with confidence intervals using a bootstrap or asymptotic procedure. (I prefer bootstrap which is chosed by cis=c("boot"))
+###       Produces the NRIs, IDIs, IS, IP, AUCs with confidence intervals using a bootstrap or asymptotic procedure. (I prefer bootstrap which is chosen by cis=c("boot"))
 
 
 ### Required arguments for all functions:
@@ -586,7 +586,7 @@ Copied from the documentation in pickering_code_ ::
            Biometrics, 44(3), 837–845.
 
      summary.raplot
-           Produces the NRIs, IDIs, IS, IP, AUCs with confidence intervals using a bootstrap or asymptotic procedure. (I prefer bootstrap which is chosed by cis=c("boot"))
+           Produces the NRIs, IDIs, IS, IP, AUCs with confidence intervals using a bootstrap or asymptotic procedure. (I prefer bootstrap which is chosen by cis=c("boot"))
 
 
      Required arguments for all functions:

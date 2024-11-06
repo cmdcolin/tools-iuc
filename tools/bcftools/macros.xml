@@ -635,7 +635,7 @@ identical (bcftools isec -c none).
 +------------+----------------------------------------------------------------+
 | all        | all records are compatible, regardless of whether the ALT      |
 |            | alleles match or not. In the case of records with the same     |
-|            | position, only the first wil lbe considered and appear on      |
+|            | position, only the first will be considered and appear on      |
 |            | output.                                                        |
 +------------+----------------------------------------------------------------+
 | snps       | any SNP records are compatible, regardless of whether the ALT  |
